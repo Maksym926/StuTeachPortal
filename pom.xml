@@ -52,7 +52,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.1.0</version>
                 <configuration>
-                    <mainClass>com.EduTech.educationportal.App</mainClass>
+                    <mainClass>com.EduTech.educationportal.app.view.App</mainClass>
                 </configuration>
             </plugin>
 
@@ -70,7 +70,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>com.EduTech.educationportal.App</mainClass>
+                    <mainClass>com.EduTech.educationportal.app.view.App</mainClass>
                     <modules>
                         <module>javafx.controls</module>
                         <module>javafx.fxml</module> <!-- Optional -->
