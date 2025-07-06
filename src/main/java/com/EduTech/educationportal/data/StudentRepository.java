@@ -1,11 +1,13 @@
 package com.EduTech.educationportal.data;
 
+import com.EduTech.educationportal.interfaces.repository.StudentRepositoryInterface;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class StudentRepository {
+public class StudentRepository implements StudentRepositoryInterface {
 
     private final String URL = "jdbc:h2:./data/stuTeachdb";
     private final String USER = "sa";

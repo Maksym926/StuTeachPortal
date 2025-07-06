@@ -1,7 +1,14 @@
 package com.EduTech.educationportal.app.view;
+import com.EduTech.educationportal.app.view.auth.LoginView;
+import com.EduTech.educationportal.app.view.auth.RegisterViewController;
 import com.EduTech.educationportal.data.DBConnection;
 
 
+import com.EduTech.educationportal.data.StudentRepository;
+import com.EduTech.educationportal.interfaces.presenter.AuthPresenterInterface;
+import com.EduTech.educationportal.interfaces.repository.StudentRepositoryInterface;
+import com.EduTech.educationportal.interfaces.view.AuthViewInterface;
+import com.EduTech.educationportal.presenter.auth.AuthenticationPresenter;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -15,9 +22,14 @@ import java.sql.SQLException;
 public class App extends Application {
 
      public static void main(String[] args) throws SQLException {
-        DBConnection.init();
-        Server webServer = Server.createWebServer("-web", "-webAllowOthers", "-webPort", "8082");
-        webServer.start();
+
+
+
+
+
+
+
+
 
         System.out.println("Hello world");
 
@@ -28,19 +40,23 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        System.out.println("Passed start stage ");
-        try {
-            Parent root = FXMLLoader.load(getClass().getResource("/MainMenuView.fxml"));
-            System.out.println("FXML loaded successfully.");
 
-            System.out.println("Passed load stage ");
-            Scene scene = new Scene(root);
-            stage.setScene(scene);
-            stage.setTitle("Main View");
-            stage.show();
-        } catch (Exception e) {
-            e.printStackTrace(); // ⬅️ This will reveal the root cause
-        }
+
+        DBConnection.init();
+        Server webServer = Server.createWebServer("-web", "-webAllowOthers", "-webPort", "8082");
+        webServer.start();
+
+
+        Parent root = FXMLLoader.load(getClass().getResource("/MainMenuView.fxml"));
+        initializeInterfaces();
+        Scene scene = new Scene(root);
+
+        stage.setScene(scene);
+        stage.setTitle("Main View");
+        stage.show();
+    }
+
+    private void initializeInterfaces() {
 
     }
 }

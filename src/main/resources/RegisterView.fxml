@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.EduTech.educationportal.app.view.auth.RegisterViewController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" >
    <children>
       <Text layoutX="89.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please register in education portal" wrappingWidth="421.13671875">
          <font>
