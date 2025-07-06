@@ -14,7 +14,7 @@ public class MainMenuViewController{
     private void openRegisterWindow(){
         try {
 
-            Parent registerRoot = FXMLLoader.load(getClass().getResource("/com/EduTech/educationportal/app/view/auth/RegisterView.fxml"));
+            Parent registerRoot = FXMLLoader.load(getClass().getResource("/RegisterView.fxml"));
             Stage registerStage = new Stage();
             Scene registerScene = new Scene(registerRoot);
             registerStage.setScene(registerScene);

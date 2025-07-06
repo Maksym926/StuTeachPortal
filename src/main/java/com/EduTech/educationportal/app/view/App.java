@@ -28,10 +28,19 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/com/EduTech/educationportal/app/view/shared/MainMenuView.fxml"));
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.setTitle("Main View");
-        stage.show();
+        System.out.println("Passed start stage ");
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/MainMenuView.fxml"));
+            System.out.println("FXML loaded successfully.");
+
+            System.out.println("Passed load stage ");
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setTitle("Main View");
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace(); // ⬅️ This will reveal the root cause
+        }
+
     }
 }
