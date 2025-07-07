@@ -1,6 +1,6 @@
 package com.EduTech.educationportal.app.view.shared;
 
-import com.EduTech.educationportal.app.view.auth.RegisterViewController;
+import com.EduTech.educationportal.app.view.auth.AuthViewController;
 import com.EduTech.educationportal.data.StudentRepository;
 import com.EduTech.educationportal.interfaces.presenter.AuthPresenterInterface;
 import com.EduTech.educationportal.interfaces.repository.StudentRepositoryInterface;
@@ -19,7 +19,7 @@ public class MainMenuViewController {
     private void openRegisterWindow() {
         try {
             StudentRepositoryInterface studentRepository = new StudentRepository();
-            AuthViewInterface registerView = new RegisterViewController();
+            AuthViewInterface registerView = new AuthViewController();
             AuthPresenterInterface authenticationPresenter = new AuthenticationPresenter(studentRepository, registerView);
 
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/RegisterView.fxml"));
@@ -33,5 +33,24 @@ public class MainMenuViewController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    @FXML
+    private void openLoginWindow() {
+        try{
+            StudentRepositoryInterface studentRepository = new StudentRepository();
+            AuthViewInterface loginView = new AuthViewController();
+            AuthPresenterInterface authenticationPresenter = new AuthenticationPresenter(studentRepository, loginView);
+
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/LoginView.fxml"));
+            loader.setController(loginView);
+            Parent root = loader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Login");
+            stage.show();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+
     }
 }

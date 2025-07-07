@@ -1,11 +1,10 @@
 package com.EduTech.educationportal.data;
 
 import com.EduTech.educationportal.interfaces.repository.StudentRepositoryInterface;
+import com.EduTech.educationportal.model.Student;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.ArrayList;
 
 public class StudentRepository implements StudentRepositoryInterface {
 
@@ -16,7 +15,7 @@ public class StudentRepository implements StudentRepositoryInterface {
 
     public void registerStudent(String firstName,String email, String password) {
         String sql = "INSERT INTO studentInfo (name, email, password) Values(?, ?, ?)";
-        try(Connection conn = DriverManager.getConnection(URL, USER, PASSWORD)){
+        try(Connection conn = DBConnection.getConnection()){
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setString(1, firstName);
             stmt.setString(2, email);
@@ -24,6 +23,36 @@ public class StudentRepository implements StudentRepositoryInterface {
             stmt.executeUpdate();
             System.out.println("Students were registered");
         }catch (SQLException e){
+            e.printStackTrace();
+        }
+
+    }
+//    public ArrayList<Student> getAllStudents() {
+//        ArrayList<Student> students = new ArrayList<>();
+//        String sql = "SELECT * FROM studentInfo";
+//        try(Connection conn = DBConnection.getConnection();
+//            PreparedStatement stmt = conn.prepareStatement(sql);
+//            ResultSet rs = stmt.executeQuery()){
+//            while (rs.next()){
+//                Student student = new Student();
+//                student.setId(rs.getInt("id"));
+//                student.setName(rs.getString("name"));
+//                student.setEmail(rs.getString("email"));
+//                students.add(student);
+//            }
+//
+//        }catch (SQLException e){
+//            e.printStackTrace();
+//        }
+//        return students;
+//    }
+    public void loginUser(String email, String password) {
+        String sql = "SELECT * FROM studentInfo WHERE email = ? AND password = ?";
+        try(Connection conn = DBConnection.getConnection();
+        PreparedStatement stmt = conn.prepareStatement(sql);
+        ResultSet rs = stmt.executeQuery()){}
+
+        catch (SQLException e){
             e.printStackTrace();
         }
 

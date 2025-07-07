@@ -13,7 +13,7 @@ public class DBConnection {
 
 
     public static void init() {
-        try (Connection conn = DriverManager.getConnection(URL, "sa", "");
+        try (Connection conn = getConnection();
         Statement stmt = conn.createStatement()) {
 
             String sql = "CREATE TABLE IF NOT EXISTS studentInfo (" +
@@ -28,6 +28,9 @@ public class DBConnection {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+    public static Connection getConnection() throws SQLException {
+        return DriverManager.getConnection(URL, USER, PASSWORD);
     }
 
 

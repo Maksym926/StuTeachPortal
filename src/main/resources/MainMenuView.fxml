@@ -19,8 +19,8 @@
       </Text>
       <HBox alignment="CENTER" prefHeight="25.0" prefWidth="0.0" spacing="50.0">
          <children>
-            <Button mnemonicParsing="false" text="Login " />
-            <Button contentDisplay="CENTER" graphicTextGap="3.0" mnemonicParsing="false" text="Register" onAction="#openRegisterWindow">
+            <Button mnemonicParsing="false" text="Login " onAction="#openLoginWindow"/>
+            <Button contentDisplay="CENTER" graphicTextGap="3.0" mnemonicParsing="false" onAction="#openRegisterWindow" text="Register">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
