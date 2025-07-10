@@ -23,7 +23,7 @@ public class MainMenuViewController {
             AuthPresenterInterface authenticationPresenter = new AuthenticationPresenter(studentRepository, registerView);
 
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/RegisterView.fxml"));
-            loader.setController(registerView); // Don't forget: REMOVE fx:controller from FXML
+            loader.setController(registerView);
             Parent root = loader.load();
 
             Stage stage = new Stage();

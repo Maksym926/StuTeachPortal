@@ -27,8 +27,13 @@ public class AuthenticationPresenter implements AuthPresenterInterface {
     }
 
     @Override
-    public void loginUser(String username, String password) {
-        studentRepository.loginUser(username, password);
+    public boolean loginUser(String username, String password) {
+        return studentRepository.loginUser(username, password);
+    }
+
+    @Override
+    public boolean checkUserPresence(String email) {
+        return studentRepository.checkUserPresence(email);
     }
 
 

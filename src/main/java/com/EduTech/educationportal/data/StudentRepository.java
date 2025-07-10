@@ -14,7 +14,7 @@ public class StudentRepository implements StudentRepositoryInterface {
 
 
     public void registerStudent(String firstName,String email, String password) {
-        String sql = "INSERT INTO studentInfo (name, email, password) Values(?, ?, ?)";
+        String sql = "INSERT INTO users (name, email, password) Values(?, ?, ?)";
         try(Connection conn = DBConnection.getConnection()){
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setString(1, firstName);
@@ -46,15 +46,34 @@ public class StudentRepository implements StudentRepositoryInterface {
 //        }
 //        return students;
 //    }
-    public void loginUser(String email, String password) {
-        String sql = "SELECT * FROM studentInfo WHERE email = ? AND password = ?";
+    public boolean loginUser(String email, String password) {
+        String sql = "SELECT * FROM users WHERE email = ? AND password = ?";
         try(Connection conn = DBConnection.getConnection();
-        PreparedStatement stmt = conn.prepareStatement(sql);
-        ResultSet rs = stmt.executeQuery()){}
+        PreparedStatement stmt = conn.prepareStatement(sql)){
+            stmt.setString(1, email);
+            stmt.setString(2, password);
+            ResultSet rs = stmt.executeQuery();
+            return rs.next();
+        }
 
         catch (SQLException e){
             e.printStackTrace();
+            return false;
         }
 
+
+    }
+
+    public boolean checkUserPresence(String email){
+        String sql = "SELECT * FROM users WHERE email = ?";
+        try (Connection conn = DBConnection.getConnection();
+        PreparedStatement stmt = conn.prepareStatement(sql)){
+            stmt.setString(1,email);
+            ResultSet rs = stmt.executeQuery();
+            return rs.next();
+        }catch (SQLException e){
+            e.printStackTrace();
+            return false;
+        }
     }
 }
