@@ -2,12 +2,16 @@ package com.EduTech.educationportal.app.view.auth;
 
 import com.EduTech.educationportal.interfaces.view.AuthViewInterface;
 import com.EduTech.educationportal.presenter.auth.AuthenticationPresenter;
+import com.EduTech.educationportal.utils.ViewNavigator;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.control.PasswordField;
 
 import java.util.regex.Pattern;
+
+import javafx.scene.Node;
 
 public class AuthViewController implements AuthViewInterface {
     //registerWindow inputs
@@ -30,7 +34,7 @@ public class AuthViewController implements AuthViewInterface {
 
 
     @FXML
-    private void handleRegisterData(){
+    private void handleRegisterData(ActionEvent event){
         String name = nameField.getText();
         String email = emailField.getText();
         if(passwordField.getText().equals(repeatPasswordField.getText()) && isValidPassword(passwordField.getText())){
@@ -38,6 +42,7 @@ public class AuthViewController implements AuthViewInterface {
                 errorMassageRegister.setText("");
                 String password = passwordField.getText();
                 presenter.registerUser(name, email, password);
+                ViewNavigator.switchScene((Node)event.getSource(), "/LoginView.fxml", "Login", this);
             }else{
                 errorMassageRegister.setText("Account with this email already exists");
             }
@@ -50,6 +55,8 @@ public class AuthViewController implements AuthViewInterface {
 
 
     }
+
+
 
     @FXML
 

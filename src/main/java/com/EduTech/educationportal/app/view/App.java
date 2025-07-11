@@ -11,41 +11,19 @@ import java.sql.SQLException;
 public class App extends Application {
 
      public static void main(String[] args) throws SQLException {
-
-
-
-
-
-
-
-
-
-        System.out.println("Hello world");
-
         launch(args);
-
-
     }
 
     @Override
     public void start(Stage stage) throws Exception {
-
-
         DBConnection.init();
         Server webServer = Server.createWebServer("-web", "-webAllowOthers", "-webPort", "8082");
         webServer.start();
 
-
         Parent root = FXMLLoader.load(getClass().getResource("/MainMenuView.fxml"));
-        initializeInterfaces();
         Scene scene = new Scene(root);
-
         stage.setScene(scene);
         stage.setTitle("Main View");
         stage.show();
-    }
-
-    private void initializeInterfaces() {
-
     }
 }

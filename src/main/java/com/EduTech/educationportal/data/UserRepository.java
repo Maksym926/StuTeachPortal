@@ -1,12 +1,10 @@
 package com.EduTech.educationportal.data;
 
-import com.EduTech.educationportal.interfaces.repository.StudentRepositoryInterface;
-import com.EduTech.educationportal.model.Student;
+import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
 
 import java.sql.*;
-import java.util.ArrayList;
 
-public class StudentRepository implements StudentRepositoryInterface {
+public class UserRepository implements UserRepositoryInterface {
 
     private final String URL = "jdbc:h2:./data/stuTeachdb";
     private final String USER = "sa";
@@ -22,6 +20,7 @@ public class StudentRepository implements StudentRepositoryInterface {
             stmt.setString(3, password);
             stmt.executeUpdate();
             System.out.println("Students were registered");
+
         }catch (SQLException e){
             e.printStackTrace();
         }
@@ -76,4 +75,5 @@ public class StudentRepository implements StudentRepositoryInterface {
             return false;
         }
     }
+
 }
