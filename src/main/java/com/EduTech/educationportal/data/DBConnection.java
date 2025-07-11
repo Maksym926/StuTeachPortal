@@ -16,11 +16,12 @@ public class DBConnection {
         try (Connection conn = getConnection();
         Statement stmt = conn.createStatement()) {
 
-            String sql = "CREATE TABLE IF NOT EXISTS users (" +
+            String sql = "CREATE TABLE IF NOT EXISTS usersDB (" +
                     "id INT AUTO_INCREMENT PRIMARY KEY," +
                     "name VARCHAR(255), " +
                     "email VARCHAR(255), " +
-                    "password VARCHAR(255)" +
+                    "password VARCHAR(255), " +
+                    "role VARCHAR(255)" +
                     ")";
             stmt.execute(sql);
             System.out.println("Student table created or already exists.");

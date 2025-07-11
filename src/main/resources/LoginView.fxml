@@ -28,6 +28,6 @@
       </Text>
       <PasswordField fx:id="passwordFieldLogin" layoutX="178.0" layoutY="219.0" />
       <Button layoutX="178.0" layoutY="255.0" mnemonicParsing="false" onAction="#handleLoginData" text="Login" />
-      <Label fx:id="errorMassageLogin" layoutX="178.0" layoutY="294.0" />
+      <Label fx:id="errorMassageLogin" layoutX="178.0" layoutY="294.0" prefHeight="29.0" prefWidth="243.0" />
    </children>
 </AnchorPane>
