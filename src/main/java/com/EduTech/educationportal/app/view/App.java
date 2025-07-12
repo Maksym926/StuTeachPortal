@@ -1,5 +1,6 @@
 package com.EduTech.educationportal.app.view;
 import com.EduTech.educationportal.data.DBConnection;
+import com.EduTech.educationportal.utils.Log;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -11,6 +12,7 @@ import java.sql.SQLException;
 public class App extends Application {
 
      public static void main(String[] args) throws SQLException {
+         Log.info("Starting application");
         launch(args);
     }
 

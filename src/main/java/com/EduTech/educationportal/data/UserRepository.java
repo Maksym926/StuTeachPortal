@@ -1,6 +1,7 @@
 package com.EduTech.educationportal.data;
 
 import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
+import com.EduTech.educationportal.utils.Log;
 
 import java.sql.*;
 
@@ -12,16 +13,19 @@ public class UserRepository implements UserRepositoryInterface {
 
 
     public void registerStudent(String firstName,String email, String password) {
-        String sql = "INSERT INTO users (name, email, password) Values(?, ?, ?)";
+        Log.info("Insert student into database");
+        String sql = "INSERT INTO usersDB (name, email, password, role) Values(?, ?, ?, ?)";
         try(Connection conn = DBConnection.getConnection()){
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setString(1, firstName);
             stmt.setString(2, email);
             stmt.setString(3, password);
+            stmt.setString(4, "student");
             stmt.executeUpdate();
             System.out.println("Students were registered");
 
         }catch (SQLException e){
+            Log.error("Error while registering student in database");
             e.printStackTrace();
         }
 
@@ -46,7 +50,8 @@ public class UserRepository implements UserRepositoryInterface {
 //        return students;
 //    }
     public boolean loginUser(String email, String password) {
-        String sql = "SELECT * FROM users WHERE email = ? AND password = ?";
+        Log.info("Login user");
+        String sql = "SELECT * FROM usersDB WHERE email = ? AND password = ?";
         try(Connection conn = DBConnection.getConnection();
         PreparedStatement stmt = conn.prepareStatement(sql)){
             stmt.setString(1, email);
@@ -56,6 +61,7 @@ public class UserRepository implements UserRepositoryInterface {
         }
 
         catch (SQLException e){
+            Log.error("Error while logging in user");
             e.printStackTrace();
             return false;
         }
@@ -64,16 +70,36 @@ public class UserRepository implements UserRepositoryInterface {
     }
 
     public boolean checkUserPresence(String email){
-        String sql = "SELECT * FROM users WHERE email = ?";
+        Log.info("Check in user present in database");
+        String sql = "SELECT * FROM usersDB WHERE email = ?";
         try (Connection conn = DBConnection.getConnection();
         PreparedStatement stmt = conn.prepareStatement(sql)){
             stmt.setString(1,email);
             ResultSet rs = stmt.executeQuery();
             return rs.next();
         }catch (SQLException e){
+            Log.error("Error while checking user presence");
             e.printStackTrace();
             return false;
         }
+    }
+    public void addTeacher(String firstName, String email, String password){
+        Log.info("Add teacher to database");
+        String sql = "INSERT INTO usersDB (name, email, password, role) Values(?, ?, ?, ?)";
+        try(Connection conn = DBConnection.getConnection()){
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            stmt.setString(1, firstName);
+            stmt.setString(2, email);
+            stmt.setString(3, password);
+            stmt.setString(4, "teacher");
+            stmt.executeUpdate();
+
+
+        }catch (SQLException e){
+            Log.error("Error while adding teacher to database");
+            e.printStackTrace();
+        }
+
     }
 
 }

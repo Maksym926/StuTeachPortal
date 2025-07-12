@@ -1,4 +1,6 @@
 package com.EduTech.educationportal.interfaces.view;
 
-public class StudentDashboardViewInterface {
+import  com.EduTech.educationportal.presenter.student.StudentDashboardPresenter;
+public interface StudentDashboardViewInterface {
+    void setStudentDashboardInterfacePresenter(StudentDashboardPresenter presenter);
 }

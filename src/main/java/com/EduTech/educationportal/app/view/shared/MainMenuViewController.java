@@ -6,6 +6,7 @@ import com.EduTech.educationportal.interfaces.presenter.AuthPresenterInterface;
 import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
 import com.EduTech.educationportal.interfaces.view.AuthViewInterface;
 import com.EduTech.educationportal.presenter.auth.AuthenticationPresenter;
+import com.EduTech.educationportal.utils.Log;
 import com.EduTech.educationportal.utils.ViewNavigator;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -22,6 +23,7 @@ public class MainMenuViewController {
 
     @FXML
     public void openRegisterWindow(ActionEvent event) {
+        Log.info("Opening register window");
         UserRepositoryInterface studentRepository = new UserRepository();
         AuthViewInterface registerView = new AuthViewController();
         AuthPresenterInterface authenticationPresenter = new AuthenticationPresenter(studentRepository, registerView);
@@ -31,9 +33,10 @@ public class MainMenuViewController {
     }
     @FXML
     public void openLoginWindow(ActionEvent event) {
+        Log.info("Opening login window");
         UserRepositoryInterface studentRepository = new UserRepository();
         AuthViewInterface loginView = new AuthViewController();
-        AuthPresenterInterface authenticationPresenter = new AuthenticationPresenter(studentRepository, loginView);
+            AuthPresenterInterface authenticationPresenter = new AuthenticationPresenter(studentRepository, loginView);
 
         ViewNavigator.switchScene((Node) event.getSource(), "/LoginView.fxml", "Login", loginView);
     }
