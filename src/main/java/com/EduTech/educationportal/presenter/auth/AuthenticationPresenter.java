@@ -1,5 +1,6 @@
 package com.EduTech.educationportal.presenter.auth;
 
+import com.EduTech.educationportal.data.UserRepository;
 import com.EduTech.educationportal.interfaces.presenter.AuthPresenterInterface;
 import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
 import com.EduTech.educationportal.interfaces.view.AuthViewInterface;
@@ -25,6 +26,10 @@ public class AuthenticationPresenter implements AuthPresenterInterface {
     @Override
     public boolean loginUser(String username, String password) {
         return userRepositoryInterface.loginUser(username, password);
+    }
+
+    public boolean checkUserRole(String email) {
+        return userRepositoryInterface.checkUserRole(email);
     }
 
     @Override

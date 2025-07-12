@@ -1,11 +1,15 @@
 package com.EduTech.educationportal.app.view.auth;
 
 import com.EduTech.educationportal.app.view.student.StudentDashboardViewController;
+import com.EduTech.educationportal.app.view.teacher.TeacherDashboardViewController;
 import com.EduTech.educationportal.interfaces.presenter.StudentPresenterInterface;
+import com.EduTech.educationportal.interfaces.presenter.TeacherPresenterInterface;
 import com.EduTech.educationportal.interfaces.view.AuthViewInterface;
 import com.EduTech.educationportal.interfaces.view.StudentDashboardViewInterface;
+import com.EduTech.educationportal.interfaces.view.TeacherDashboardViewInterface;
 import com.EduTech.educationportal.presenter.auth.AuthenticationPresenter;
 import com.EduTech.educationportal.presenter.student.StudentDashboardPresenter;
+import com.EduTech.educationportal.presenter.teacher.TeacherDashboardPresenter;
 import com.EduTech.educationportal.utils.Log;
 import com.EduTech.educationportal.utils.ViewNavigator;
 import javafx.event.ActionEvent;
@@ -39,7 +43,7 @@ public class AuthViewController implements AuthViewInterface {
 
 
     @FXML
-    private void handleRegisterData(ActionEvent event){
+    public void handleRegisterData(ActionEvent event){
         Log.info("Register button was pressed");
         Log.info("Starting register");
         String name = nameField.getText();
@@ -62,7 +66,7 @@ public class AuthViewController implements AuthViewInterface {
     }
 
     @FXML
-    private void handleLoginData(ActionEvent event){
+    public void handleLoginData(ActionEvent event){
         Log.info("Login button was pressed");
         Log.info("Starting login");
         String email = emailFieldLogin.getText();
@@ -73,15 +77,27 @@ public class AuthViewController implements AuthViewInterface {
         }
         else{
             Log.info("Login successful");
-            openDashboardWindow(event);
+            openDashboardWindow(event, email);
         }
     }
 
-    private void openDashboardWindow(ActionEvent event) {
+    private void openDashboardWindow(ActionEvent event, String email) {
         Log.info("Opening dashboard window");
-        StudentDashboardViewInterface StudentDashboardView = new StudentDashboardViewController();
-        StudentPresenterInterface StudentDashboardPresenter = new StudentDashboardPresenter(StudentDashboardView);
-        ViewNavigator.switchScene((Node)event.getSource(), "/StudentDashboard.fxml", "Student Dashboard", StudentDashboardView);
+        if(presenter.checkUserRole(email)){
+            Log.info("Opening teacher dashboard");
+            TeacherDashboardViewInterface TeacherDashboardView = new TeacherDashboardViewController();
+            TeacherPresenterInterface TeacherDashboardPresenter = new TeacherDashboardPresenter(TeacherDashboardView);
+            ViewNavigator.switchScene((Node)event.getSource(), "/TeacherDashboard.fxml", "Teacher Dashboard", TeacherDashboardView);
+        }else{
+            Log.info("Opening student dashboard");
+            StudentDashboardViewInterface StudentDashboardView = new StudentDashboardViewController();
+            StudentPresenterInterface StudentDashboardPresenter = new StudentDashboardPresenter(StudentDashboardView);
+            ViewNavigator.switchScene((Node)event.getSource(), "/StudentDashboard.fxml", "Student Dashboard", StudentDashboardView);
+        }
+
+
+
+
     }
 
     private boolean isValidPassword(String password) {

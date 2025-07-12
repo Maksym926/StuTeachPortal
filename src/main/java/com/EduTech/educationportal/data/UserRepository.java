@@ -101,5 +101,22 @@ public class UserRepository implements UserRepositoryInterface {
         }
 
     }
+    public boolean checkUserRole(String email){
+        Log.info("Check user role");
+        String sql = "SELECT role FROM usersDB WHERE email = ?";
+        try(Connection conn = DBConnection.getConnection();
+        PreparedStatement stmt = conn.prepareStatement(sql);
+        ){
+            stmt.setString(1,email);
+            ResultSet rs = stmt.executeQuery();
+            rs.next();
+            return rs.getString("role").equals("teacher");
+        }catch (SQLException e){
+            Log.error("Error while checking user role");
+            e.printStackTrace();
+            return false;
+        }
+
+    }
 
 }

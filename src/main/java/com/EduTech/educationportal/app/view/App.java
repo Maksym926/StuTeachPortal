@@ -28,4 +28,8 @@ public class App extends Application {
         stage.setTitle("Main View");
         stage.show();
     }
+    public void stop() throws Exception {
+        Log.info("Application is closing");
+        super.stop();
+    }
 }

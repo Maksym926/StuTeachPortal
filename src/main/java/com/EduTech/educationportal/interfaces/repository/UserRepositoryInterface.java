@@ -5,4 +5,5 @@ public interface UserRepositoryInterface {
 
     boolean loginUser(String email, String password);
     boolean checkUserPresence(String email);
+    boolean checkUserRole(String email);
 }

@@ -6,7 +6,7 @@ public class StudentDashboardViewController implements StudentDashboardViewInter
     StudentDashboardPresenter presenter;
 
     @Override
-    public void setStudentDashboardInterfacePresenter(StudentDashboardPresenter presenter) {
+    public void setStudentDashboardPresenter(StudentDashboardPresenter presenter) {
         this.presenter = presenter;
     }
 }

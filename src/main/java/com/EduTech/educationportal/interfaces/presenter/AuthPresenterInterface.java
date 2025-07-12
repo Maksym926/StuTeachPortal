@@ -9,6 +9,8 @@ public interface AuthPresenterInterface {
 
     boolean checkUserPresence(String email);
 
+    boolean checkUserRole(String email);
+
 
 
 

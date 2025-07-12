@@ -1,2 +1,46 @@
 2025-07-12 13:20:58 [main] INFO  Log - Starting application
 2025-07-12 13:25:52 [main] INFO  Log - Starting application
+2025-07-12 13:43:47 [main] INFO  Log - Starting application
+2025-07-12 13:43:49 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-12 13:43:54 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-12 13:43:54 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-12 13:43:54 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-12 13:43:55 [JavaFX Application Thread] WARN  Log - Logging failed, incorrect credentials
+2025-07-12 14:19:44 [main] INFO  Log - Starting application
+2025-07-12 14:19:47 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-12 14:33:23 [main] INFO  Log - Starting application
+2025-07-12 14:33:25 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-12 14:33:32 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-12 14:33:32 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-12 14:33:32 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-12 14:33:32 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-12 14:33:32 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-12 14:33:41 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-12 14:47:02 [main] INFO  Log - Starting application
+2025-07-12 14:47:04 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-12 14:47:12 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-12 14:47:12 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-12 14:47:12 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-12 14:47:12 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-12 14:47:12 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-12 14:47:12 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-12 14:47:12 [JavaFX Application Thread] ERROR Log - Error while checking user role
+2025-07-12 14:47:34 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-12 14:48:57 [main] INFO  Log - Starting application
+2025-07-12 14:48:59 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-12 14:49:11 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-12 14:49:11 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-12 14:49:11 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-12 14:49:11 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-12 14:49:11 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-12 14:49:11 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-12 14:49:18 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-12 14:50:38 [main] INFO  Log - Starting application
+2025-07-12 14:50:40 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-12 14:50:46 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-12 14:50:46 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-12 14:50:46 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-12 14:50:47 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-12 14:50:47 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-12 14:50:47 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-12 14:50:47 [JavaFX Application Thread] INFO  Log - Opening teacher dashboard
