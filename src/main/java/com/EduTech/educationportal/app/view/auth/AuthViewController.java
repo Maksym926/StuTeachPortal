@@ -3,9 +3,11 @@ package com.EduTech.educationportal.app.view.auth;
 import com.EduTech.educationportal.app.view.manager.ManagerDashboardViewController;
 import com.EduTech.educationportal.app.view.student.StudentDashboardViewController;
 import com.EduTech.educationportal.app.view.teacher.TeacherDashboardViewController;
+import com.EduTech.educationportal.data.UserRepository;
 import com.EduTech.educationportal.interfaces.presenter.ManagerPresenterInterface;
 import com.EduTech.educationportal.interfaces.presenter.StudentPresenterInterface;
 import com.EduTech.educationportal.interfaces.presenter.TeacherPresenterInterface;
+import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
 import com.EduTech.educationportal.interfaces.view.AuthViewInterface;
 import com.EduTech.educationportal.interfaces.view.ManagerDashboardViewInterface;
 import com.EduTech.educationportal.interfaces.view.StudentDashboardViewInterface;
@@ -102,9 +104,13 @@ public class AuthViewController implements AuthViewInterface {
                 break;
             case "manager":
                 Log.info("Opening manager dashboard");
-                ManagerDashboardViewInterface ManagerDashboardView = new ManagerDashboardViewController();
-                ManagerPresenterInterface ManagerDashboardPresenter = new ManagerDashboardPresenter(ManagerDashboardView);
-                ViewNavigator.switchScene((Node)event.getSource(), "/ManagerDashboard.fxml", "Manager Dashboard", ManagerDashboardView);
+                ManagerDashboardViewInterface managerDashboardView = new ManagerDashboardViewController();
+                UserRepositoryInterface userRepositoryInterface = new UserRepository();
+
+                ManagerPresenterInterface managerDashboardPresenter = new ManagerDashboardPresenter(managerDashboardView, userRepositoryInterface);
+
+                ViewNavigator.switchScene((Node)event.getSource(), "/ManagerDashboard.fxml", "Manager Dashboard", managerDashboardView);
+                managerDashboardView.setup();
                 break;
         }
 

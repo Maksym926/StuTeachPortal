@@ -1,6 +1,8 @@
 package com.EduTech.educationportal.data;
 
 
+import com.EduTech.educationportal.utils.Log;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -16,15 +18,25 @@ public class DBConnection {
         try (Connection conn = getConnection();
         Statement stmt = conn.createStatement()) {
 
-            String sql = "CREATE TABLE IF NOT EXISTS usersDB (" +
+            String usersDBSQL = "CREATE TABLE IF NOT EXISTS usersDB (" +
                     "id INT AUTO_INCREMENT PRIMARY KEY," +
                     "name VARCHAR(255), " +
                     "email VARCHAR(255), " +
                     "password VARCHAR(255), " +
                     "role VARCHAR(255)" +
                     ")";
-            stmt.execute(sql);
-            System.out.println("Student table created or already exists.");
+            stmt.execute(usersDBSQL);
+            Log.info("Users table created or already exists.");
+
+
+            String subjectsDBSQL = "CREATE TABLE IF NOT EXISTS subjectsDB (" +
+                    "id INT AUTO_INCREMENT PRIMARY KEY," +
+                    "name VARCHAR(255), " +
+                    "description VARCHAR(255), " +
+                    "teacherID INT" +
+                    ")";
+            stmt.execute(subjectsDBSQL);
+            Log.info("Subjects table created or already exists.");
 
         } catch (SQLException e) {
             e.printStackTrace();

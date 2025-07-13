@@ -20,7 +20,7 @@ public class App extends Application {
      public static void main(String[] args) throws SQLException {
          Log.info("Starting application");
 
-
+        UserRepository userRepository = new UserRepository();
 
          UserRepositoryInterface studentRepository = new UserRepository();
          MainMenuViewInterface mainMenuView = new MainMenuViewController();
@@ -29,7 +29,7 @@ public class App extends Application {
          presenterInterface.deleteUser("admin@school.com");
          Log.info("Setting up default system manager");
          presenterInterface.setManager();
-
+         userRepository.addTeacher("Petro", "petro", "123");
         launch(args);
     }
 

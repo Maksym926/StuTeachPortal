@@ -1,7 +1,9 @@
 package com.EduTech.educationportal.data;
 
 import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
+import com.EduTech.educationportal.model.Teacher;
 import com.EduTech.educationportal.utils.Log;
+import javafx.collections.ObservableList;
 
 import java.sql.*;
 
@@ -83,6 +85,26 @@ public class UserRepository implements UserRepositoryInterface {
             return false;
         }
     }
+    public void getTeachers(ObservableList<Teacher> teacherList){
+        Log.info("Start getting teachers from database");
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement("SELECT id, name, email, password FROM usersDB WHERE role = 'teacher'");
+             ResultSet rs = stmt.executeQuery()) {
+
+            while (rs.next()) {
+                Log.info("Get teachers from database");
+                int id = rs.getInt("id");
+                String name = rs.getString("name");
+                String email = rs.getString("email");
+                String password = rs.getString("password");
+                teacherList.add(new Teacher(id, name, email,password));
+            }
+
+        } catch (SQLException e) {
+            Log.error("Error while getting teacher from database");
+            e.printStackTrace();
+        }
+    }
     public void addTeacher(String firstName, String email, String password){
         Log.info("Add teacher to database");
         String sql = "INSERT INTO usersDB (name, email, password, role) Values(?, ?, ?, ?)";
@@ -93,6 +115,7 @@ public class UserRepository implements UserRepositoryInterface {
             stmt.setString(3, password);
             stmt.setString(4, "teacher");
             stmt.executeUpdate();
+            Log.info("Teacher was successfully added");
 
 
         }catch (SQLException e){

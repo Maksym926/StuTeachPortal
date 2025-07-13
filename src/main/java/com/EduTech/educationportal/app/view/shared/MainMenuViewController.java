@@ -29,6 +29,9 @@ public class MainMenuViewController implements MainMenuViewInterface {
     public void setManager(){
         Log.info("Setting manager");
         presenter.setManager();
+
+
+
     }
 
     @FXML
