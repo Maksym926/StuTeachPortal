@@ -7,4 +7,5 @@ public interface AuthViewInterface {
     void setAuthPresenter(AuthenticationPresenter presenter);
     void handleRegisterData(ActionEvent event);
     void handleLoginData(ActionEvent event);
+
 }

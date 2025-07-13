@@ -5,5 +5,6 @@ public interface UserRepositoryInterface {
 
     boolean loginUser(String email, String password);
     boolean checkUserPresence(String email);
-    boolean checkUserRole(String email);
+    String checkUserRole(String email);
+    void createDefaultManager(String firstName, String email, String password, String role);
 }

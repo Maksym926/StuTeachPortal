@@ -10,6 +10,7 @@ public class TeacherDashboardPresenter implements TeacherPresenterInterface {
 
     public TeacherDashboardPresenter(TeacherDashboardViewInterface view){
         this.view = view;
+        view.setTeacherDashboardPresenter(this);
     }
 
 }

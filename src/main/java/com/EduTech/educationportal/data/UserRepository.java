@@ -101,7 +101,7 @@ public class UserRepository implements UserRepositoryInterface {
         }
 
     }
-    public boolean checkUserRole(String email){
+    public String checkUserRole(String email){
         Log.info("Check user role");
         String sql = "SELECT role FROM usersDB WHERE email = ?";
         try(Connection conn = DBConnection.getConnection();
@@ -110,13 +110,60 @@ public class UserRepository implements UserRepositoryInterface {
             stmt.setString(1,email);
             ResultSet rs = stmt.executeQuery();
             rs.next();
-            return rs.getString("role").equals("teacher");
+            return switch (rs.getString("role")) {
+                case "student" -> "student";
+                case "teacher" -> "teacher";
+                default -> "manager";
+            };
+
         }catch (SQLException e){
             Log.error("Error while checking user role");
             e.printStackTrace();
-            return false;
+            return null;
         }
 
+    }
+    public void createDefaultManager(String firstName, String email, String password, String role){
+        String sql = "SELECT * FROM usersDB where role = ?";
+        Log.info("Creating a default manager");
+        try(Connection conn = DBConnection.getConnection();
+        PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, role);
+            ResultSet rs = stmt.executeQuery();
+            if(!rs.next()){
+                String insert  = "INSERT INTO usersDB (name, email, password, role) Values(?, ?, ?, ?)";
+                try(PreparedStatement insertStmt = conn.prepareStatement(insert);){
+
+                    insertStmt.setString(1, firstName);
+                    insertStmt.setString(2, email);
+                    insertStmt.setString(3, password);
+                    insertStmt.setString(4, role);
+                    insertStmt.executeUpdate();
+                    Log.info("Default manager created");
+
+                }catch (SQLException e){
+                    Log.error("Error while registering student in database");
+                    e.printStackTrace();
+                }
+
+            }
+
+        }catch (SQLException e){
+            Log.error("Error while creating default manager");
+            e.printStackTrace();
+        }
+    }
+    public void deleteUser(String email){
+        String sql = "DELETE FROM usersDB WHERE email = ?";
+        Log.info("Deleting user");
+        try(Connection conn = DBConnection.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)){
+            stmt.setString(1, email);
+            stmt.executeUpdate();
+            Log.info("User deleted was successfully");
+        }catch (SQLException e){
+            Log.error("Error while deleting user");
+            e.printStackTrace();
+        }
     }
 
 }

@@ -28,7 +28,7 @@ public class AuthenticationPresenter implements AuthPresenterInterface {
         return userRepositoryInterface.loginUser(username, password);
     }
 
-    public boolean checkUserRole(String email) {
+    public String checkUserRole(String email) {
         return userRepositoryInterface.checkUserRole(email);
     }
 

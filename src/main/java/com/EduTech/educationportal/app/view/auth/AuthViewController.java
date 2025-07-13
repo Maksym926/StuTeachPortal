@@ -1,13 +1,17 @@
 package com.EduTech.educationportal.app.view.auth;
 
+import com.EduTech.educationportal.app.view.manager.ManagerDashboardViewController;
 import com.EduTech.educationportal.app.view.student.StudentDashboardViewController;
 import com.EduTech.educationportal.app.view.teacher.TeacherDashboardViewController;
+import com.EduTech.educationportal.interfaces.presenter.ManagerPresenterInterface;
 import com.EduTech.educationportal.interfaces.presenter.StudentPresenterInterface;
 import com.EduTech.educationportal.interfaces.presenter.TeacherPresenterInterface;
 import com.EduTech.educationportal.interfaces.view.AuthViewInterface;
+import com.EduTech.educationportal.interfaces.view.ManagerDashboardViewInterface;
 import com.EduTech.educationportal.interfaces.view.StudentDashboardViewInterface;
 import com.EduTech.educationportal.interfaces.view.TeacherDashboardViewInterface;
 import com.EduTech.educationportal.presenter.auth.AuthenticationPresenter;
+import com.EduTech.educationportal.presenter.manager.ManagerDashboardPresenter;
 import com.EduTech.educationportal.presenter.student.StudentDashboardPresenter;
 import com.EduTech.educationportal.presenter.teacher.TeacherDashboardPresenter;
 import com.EduTech.educationportal.utils.Log;
@@ -83,20 +87,26 @@ public class AuthViewController implements AuthViewInterface {
 
     private void openDashboardWindow(ActionEvent event, String email) {
         Log.info("Opening dashboard window");
-        if(presenter.checkUserRole(email)){
-            Log.info("Opening teacher dashboard");
-            TeacherDashboardViewInterface TeacherDashboardView = new TeacherDashboardViewController();
-            TeacherPresenterInterface TeacherDashboardPresenter = new TeacherDashboardPresenter(TeacherDashboardView);
-            ViewNavigator.switchScene((Node)event.getSource(), "/TeacherDashboard.fxml", "Teacher Dashboard", TeacherDashboardView);
-        }else{
-            Log.info("Opening student dashboard");
-            StudentDashboardViewInterface StudentDashboardView = new StudentDashboardViewController();
-            StudentPresenterInterface StudentDashboardPresenter = new StudentDashboardPresenter(StudentDashboardView);
-            ViewNavigator.switchScene((Node)event.getSource(), "/StudentDashboard.fxml", "Student Dashboard", StudentDashboardView);
+        switch (presenter.checkUserRole(email)){
+            case "student":
+                Log.info("Opening student dashboard");
+                StudentDashboardViewInterface StudentDashboardView = new StudentDashboardViewController();
+                StudentPresenterInterface StudentDashboardPresenter = new StudentDashboardPresenter(StudentDashboardView);
+                ViewNavigator.switchScene((Node)event.getSource(), "/StudentDashboard.fxml", "Student Dashboard", StudentDashboardView);
+                break;
+            case "teacher":
+                Log.info("Opening teacher dashboard");
+                TeacherDashboardViewInterface TeacherDashboardView = new TeacherDashboardViewController();
+                TeacherPresenterInterface TeacherDashboardPresenter = new TeacherDashboardPresenter(TeacherDashboardView);
+                ViewNavigator.switchScene((Node)event.getSource(), "/TeacherDashboard.fxml", "Teacher Dashboard", TeacherDashboardView);
+                break;
+            case "manager":
+                Log.info("Opening manager dashboard");
+                ManagerDashboardViewInterface ManagerDashboardView = new ManagerDashboardViewController();
+                ManagerPresenterInterface ManagerDashboardPresenter = new ManagerDashboardPresenter(ManagerDashboardView);
+                ViewNavigator.switchScene((Node)event.getSource(), "/ManagerDashboard.fxml", "Manager Dashboard", ManagerDashboardView);
+                break;
         }
-
-
-
 
     }
 
