@@ -1,13 +1,22 @@
 package com.EduTech.educationportal.app.view.manager;
 
+import com.EduTech.educationportal.data.UserRepository;
+import com.EduTech.educationportal.interfaces.presenter.AddTeacherPresenterInterface;
 import com.EduTech.educationportal.interfaces.presenter.ManagerPresenterInterface;
+import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
+import com.EduTech.educationportal.interfaces.view.AddTeacherViewInterface;
 import com.EduTech.educationportal.interfaces.view.ManagerDashboardViewInterface;
 import com.EduTech.educationportal.model.Teacher;
+import com.EduTech.educationportal.presenter.manager.AddTeacherPresenter;
 import com.EduTech.educationportal.presenter.manager.ManagerDashboardPresenter;
 import com.EduTech.educationportal.presenter.student.StudentDashboardPresenter;
+import com.EduTech.educationportal.utils.Log;
+import com.EduTech.educationportal.utils.ViewNavigator;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 
@@ -26,6 +35,7 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
     }
 
     public void setup() {
+        Log.info("Setting up teacher list");
         teacherListView.setItems(teacherList);
         teacherListView.setCellFactory(list -> new ListCell<Teacher>() {
             @Override
@@ -34,10 +44,18 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
                 if (empty || teacher == null) {
                     setText(null);
                 } else {
-                    setText(teacher.getID() + " - " + teacher.getName() + " - " + teacher.getEmail());
+                    setText(teacher.getID() + " - " +   teacher.getName() + " - " + teacher.getEmail());
                 }
             }
         });
         presenter.getTeachers(teacherList);
+    }
+    @FXML
+    private void openAddTeacherWindow(ActionEvent event){
+        Log.info("Opening add teacher window");
+        AddTeacherViewInterface addTeacherViewInterface = new AddTeacherController();
+        UserRepositoryInterface userRepositoryInterface = new UserRepository();
+        AddTeacherPresenterInterface addTeacherPresenterInterface = new AddTeacherPresenter(addTeacherViewInterface, userRepositoryInterface);
+        ViewNavigator.switchScene((Node) event.getSource(), "/AddTeacherView.fxml", "Add Teacher", addTeacherViewInterface);
     }
 }

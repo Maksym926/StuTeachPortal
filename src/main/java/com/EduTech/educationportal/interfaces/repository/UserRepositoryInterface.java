@@ -11,4 +11,5 @@ public interface UserRepositoryInterface {
     String checkUserRole(String email);
     void createDefaultManager(String firstName, String email, String password, String role);
     void getTeachers(ObservableList<Teacher> teacherList);
+    void addTeacher(String name, String email, String city, String password, String subject);
 }

@@ -96,8 +96,10 @@ public class UserRepository implements UserRepositoryInterface {
                 int id = rs.getInt("id");
                 String name = rs.getString("name");
                 String email = rs.getString("email");
+                String city = rs.getString("city");
                 String password = rs.getString("password");
-                teacherList.add(new Teacher(id, name, email,password));
+                String subject = rs.getString("subject");
+                teacherList.add(new Teacher(id, name, email, city, password, subject));
             }
 
         } catch (SQLException e) {
@@ -105,15 +107,17 @@ public class UserRepository implements UserRepositoryInterface {
             e.printStackTrace();
         }
     }
-    public void addTeacher(String firstName, String email, String password){
+    public void addTeacher(String name, String email, String city, String password, String subject){
         Log.info("Add teacher to database");
-        String sql = "INSERT INTO usersDB (name, email, password, role) Values(?, ?, ?, ?)";
+        String sql = "INSERT INTO usersDB (name, email, city, password, subject, role) Values(?, ?, ?, ?, ?, ?)";
         try(Connection conn = DBConnection.getConnection()){
             PreparedStatement stmt = conn.prepareStatement(sql);
-            stmt.setString(1, firstName);
+            stmt.setString(1, name);
             stmt.setString(2, email);
-            stmt.setString(3, password);
-            stmt.setString(4, "teacher");
+            stmt.setString(3, city);
+            stmt.setString(4, password);
+            stmt.setString(5, subject);
+            stmt.setString(6, "teacher");
             stmt.executeUpdate();
             Log.info("Teacher was successfully added");
 

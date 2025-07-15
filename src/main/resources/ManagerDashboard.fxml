@@ -1,15 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button layoutX="551.0" layoutY="32.0" mnemonicParsing="false" text="+" />
-      <Text layoutX="474.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add teacher " />
-      <Text layoutX="34.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manager " />
-      <ListView fx:id="teacherListView" layoutX="130.0" layoutY="76.0" prefHeight="268.0" prefWidth="445.0" />
+      <ListView fx:id="teacherListView" layoutX="120.0" layoutY="109.0" prefHeight="268.0" prefWidth="445.0" />
+      <Text layoutX="22.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filters">
+         <font>
+            <Font size="31.0" />
+         </font></Text>
+      <Text layoutX="18.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role" />
+      <CheckBox layoutX="18.0" layoutY="109.0" mnemonicParsing="false" text="Teachers" />
+      <CheckBox layoutX="18.0" layoutY="136.0" mnemonicParsing="false" text="Students" />
+      <Text layoutX="18.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" />
+      <SplitMenuButton layoutX="14.0" layoutY="208.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="97.0" text="City">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </SplitMenuButton>
+      <TextField layoutX="119.0" layoutY="20.0" prefWidth="370.0" />
+      <Text layoutX="501.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Account" wrappingWidth="51.562496185302734" />
+
+      <Button layoutX="119.0" layoutY="67.0" mnemonicParsing="false" text="Manage courses" />
+      <Button layoutX="244.0" layoutY="67.0" mnemonicParsing="false" text="Manage users" />
+      <Button layoutX="350.0" layoutY="67.0" mnemonicParsing="false" text="Add teachers" onAction="#openAddTeacherWindow"/>
    </children>
 </AnchorPane>
