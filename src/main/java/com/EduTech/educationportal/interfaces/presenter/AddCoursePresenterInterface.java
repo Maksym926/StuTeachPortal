@@ -1,5 +1,5 @@
-package com.EduTech.educationportal.interfaces.repository;
+package com.EduTech.educationportal.interfaces.presenter;
 
-public interface CourseRepositoryInterface {
+public interface AddCoursePresenterInterface {
     void addCourse(String courseTitle, String courseCode, int teacherID, String courseDescription, int courseDuration);
 }

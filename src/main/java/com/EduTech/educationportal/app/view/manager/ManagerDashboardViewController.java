@@ -1,12 +1,17 @@
 package com.EduTech.educationportal.app.view.manager;
 
+import com.EduTech.educationportal.data.CourseRepository;
 import com.EduTech.educationportal.data.UserRepository;
+import com.EduTech.educationportal.interfaces.presenter.AddCoursePresenterInterface;
 import com.EduTech.educationportal.interfaces.presenter.AddTeacherPresenterInterface;
 import com.EduTech.educationportal.interfaces.presenter.ManagerPresenterInterface;
+import com.EduTech.educationportal.interfaces.repository.CourseRepositoryInterface;
 import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
+import com.EduTech.educationportal.interfaces.view.AddCourseViewInterface;
 import com.EduTech.educationportal.interfaces.view.AddTeacherViewInterface;
 import com.EduTech.educationportal.interfaces.view.ManagerDashboardViewInterface;
 import com.EduTech.educationportal.model.Teacher;
+import com.EduTech.educationportal.presenter.manager.AddCoursePresenter;
 import com.EduTech.educationportal.presenter.manager.AddTeacherPresenter;
 import com.EduTech.educationportal.presenter.manager.ManagerDashboardPresenter;
 import com.EduTech.educationportal.presenter.student.StudentDashboardPresenter;
@@ -57,5 +62,13 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
         UserRepositoryInterface userRepositoryInterface = new UserRepository();
         AddTeacherPresenterInterface addTeacherPresenterInterface = new AddTeacherPresenter(addTeacherViewInterface, userRepositoryInterface);
         ViewNavigator.switchScene((Node) event.getSource(), "/AddTeacherView.fxml", "Add Teacher", addTeacherViewInterface);
+    }
+    @FXML
+    private void openAddCourseWindow(ActionEvent event){
+        Log.info("Opening add course window");
+        AddCourseViewInterface addCourseViewInterface = new AddCourseController();
+        CourseRepositoryInterface courseRepositoryInterface = new CourseRepository();
+        AddCoursePresenterInterface addCoursePresenterInterface = new AddCoursePresenter(addCourseViewInterface, courseRepositoryInterface);
+        ViewNavigator.switchScene((Node) event.getSource(), "/AddCourseView.fxml", "Add Course", addCourseViewInterface);
     }
 }

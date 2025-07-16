@@ -32,14 +32,17 @@ public class DBConnection {
             Log.info("Users table created or already exists.");
 
 
-            String subjectsDBSQL = "CREATE TABLE IF NOT EXISTS subjectsDB (" +
+            String subjectsDBSQL = "CREATE TABLE IF NOT EXISTS coursesDB (" +
                     "id INT AUTO_INCREMENT PRIMARY KEY," +
-                    "name VARCHAR(255), " +
-                    "description VARCHAR(255), " +
-                    "teacherID INT" +
+                    "courseTitle VARCHAR(255), " +
+                    "courseCode VARCHAR(255), " +
+                    "teacherID INT, " +
+                    "courseDescription VARCHAR(255), " +
+                    "courseDuration INT" +
                     ")";
             stmt.execute(subjectsDBSQL);
-            Log.info("Subjects table created or already exists.");
+            Log.info("Course table created or already exists.");
+
 
         } catch (SQLException e) {
             e.printStackTrace();

@@ -9,11 +9,6 @@ import java.sql.*;
 
 public class UserRepository implements UserRepositoryInterface {
 
-    private final String URL = "jdbc:h2:./data/stuTeachdb";
-    private final String USER = "sa";
-    private final String PASSWORD = "";
-
-
     public void registerStudent(String firstName,String email, String password) {
         Log.info("Insert student into database");
         String sql = "INSERT INTO usersDB (name, email, password, role) Values(?, ?, ?, ?)";
@@ -88,7 +83,7 @@ public class UserRepository implements UserRepositoryInterface {
     public void getTeachers(ObservableList<Teacher> teacherList){
         Log.info("Start getting teachers from database");
         try (Connection conn = DBConnection.getConnection();
-             PreparedStatement stmt = conn.prepareStatement("SELECT id, name, email, password FROM usersDB WHERE role = 'teacher'");
+             PreparedStatement stmt = conn.prepareStatement("SELECT id, name, email, city, password, subject FROM usersDB WHERE role = 'teacher'");
              ResultSet rs = stmt.executeQuery()) {
 
             while (rs.next()) {
