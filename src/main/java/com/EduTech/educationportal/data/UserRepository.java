@@ -6,6 +6,7 @@ import com.EduTech.educationportal.utils.Log;
 import javafx.collections.ObservableList;
 
 import java.sql.*;
+import java.util.List;
 
 public class UserRepository implements UserRepositoryInterface {
 
@@ -81,6 +82,28 @@ public class UserRepository implements UserRepositoryInterface {
         }
     }
     public void getTeachers(ObservableList<Teacher> teacherList){
+        Log.info("Start getting teachers from database");
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement("SELECT id, name, email, city, password, subject FROM usersDB WHERE role = 'teacher'");
+             ResultSet rs = stmt.executeQuery()) {
+
+            while (rs.next()) {
+                Log.info("Get teachers from database");
+                int id = rs.getInt("id");
+                String name = rs.getString("name");
+                String email = rs.getString("email");
+                String city = rs.getString("city");
+                String password = rs.getString("password");
+                String subject = rs.getString("subject");
+                teacherList.add(new Teacher(id, name, email, city, password, subject));
+            }
+
+        } catch (SQLException e) {
+            Log.error("Error while getting teacher from database");
+            e.printStackTrace();
+        }
+    }
+    public void getTeachers(List<Teacher> teacherList){
         Log.info("Start getting teachers from database");
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement("SELECT id, name, email, city, password, subject FROM usersDB WHERE role = 'teacher'");

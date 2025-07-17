@@ -3,6 +3,8 @@ package com.EduTech.educationportal.interfaces.repository;
 import com.EduTech.educationportal.model.Teacher;
 import javafx.collections.ObservableList;
 
+import java.util.List;
+
 public interface UserRepositoryInterface {
     void registerStudent(String firstName,String email, String password);
 
@@ -12,4 +14,5 @@ public interface UserRepositoryInterface {
     void createDefaultManager(String firstName, String email, String password, String role);
     void getTeachers(ObservableList<Teacher> teacherList);
     void addTeacher(String name, String email, String city, String password, String subject);
+    void getTeachers(List<Teacher> teacherList);
 }

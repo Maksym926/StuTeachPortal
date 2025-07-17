@@ -33,11 +33,7 @@
             <Font size="14.0" />
          </font>
       </Text>
-      <MenuButton fx:id="teacher" layoutX="35.0" layoutY="231.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="263.0" text="Maksym Chechotkin">
-        <items>
-          <MenuItem mnemonicParsing="false" text="Action 1" />
-          <MenuItem mnemonicParsing="false" text="Action 2" />
-        </items>
+      <MenuButton fx:id="teacherMenuButton" layoutX="35.0" layoutY="231.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="263.0" text="Select teacher">
       </MenuButton>
       <TextArea fx:id="courseDescription" layoutX="35.0" layoutY="310.0" prefHeight="91.0" prefWidth="263.0" />
       <Text layoutX="35.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course description" wrappingWidth="117.15625">

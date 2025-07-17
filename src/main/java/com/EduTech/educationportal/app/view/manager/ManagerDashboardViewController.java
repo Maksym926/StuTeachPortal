@@ -68,7 +68,9 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
         Log.info("Opening add course window");
         AddCourseViewInterface addCourseViewInterface = new AddCourseController();
         CourseRepositoryInterface courseRepositoryInterface = new CourseRepository();
-        AddCoursePresenterInterface addCoursePresenterInterface = new AddCoursePresenter(addCourseViewInterface, courseRepositoryInterface);
+        UserRepositoryInterface userRepositoryInterface = new UserRepository();
+        AddCoursePresenterInterface addCoursePresenterInterface = new AddCoursePresenter(addCourseViewInterface, courseRepositoryInterface, userRepositoryInterface);
         ViewNavigator.switchScene((Node) event.getSource(), "/AddCourseView.fxml", "Add Course", addCourseViewInterface);
+        addCourseViewInterface.setup();
     }
 }

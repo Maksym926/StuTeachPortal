@@ -1,5 +1,10 @@
 package com.EduTech.educationportal.interfaces.presenter;
 
+import com.EduTech.educationportal.model.Teacher;
+
+import java.util.List;
+
 public interface AddCoursePresenterInterface {
     void addCourse(String courseTitle, String courseCode, int teacherID, String courseDescription, int courseDuration);
+    void getTeachers(List<Teacher> teacherList);
 }
