@@ -64,12 +64,13 @@ public class CourseRepository implements CourseRepositoryInterface {
             ResultSet rs = stmt.executeQuery();
             while(rs.next()){
                 Course course = new Course();
+                course.setID(rs.getInt("id"));
                 course.setTitle(rs.getString("courseTitle"));
                 course.setCode(rs.getString("courseCode"));
                 course.setTeacherId(rs.getInt("teacherID"));
                 course.setDescription(rs.getString("courseDescription"));
                 course.setDuration(rs.getInt("courseDuration"));
-                Log.info("printing course.... " + course.getTitle() + " " + course.getCode() + " " + course.getTeacherId() + " " + course.getDescription() + " " + course.getDuration());
+                Log.info("printing course.... " + "ID: " + course.getID() + " " + course.getTitle() + " " + course.getCode() + " " + course.getTeacherId() + " " + course.getDescription() + " " + course.getDuration());
             }
 
         }catch (SQLException e){

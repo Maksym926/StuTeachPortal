@@ -681,3 +681,9 @@ org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "city" not found [42122-224]
 	at javafx.graphics@24.0.1/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
 	at javafx.graphics@24.0.1/com.sun.glass.ui.win.WinApplication.lambda$runLoop$0(WinApplication.java:168)
 	at java.base/java.lang.Thread.run(Thread.java:1570)
+2025-07-18 17:39:45.187215+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT id, name, email, city, password, subject FROM usersDB WHERE role = 'teacher' AND (subject IS NULL OR subject = '' [*]"; expected "[, ., ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+SELECT id, name, email, city, password, subject FROM usersDB WHERE role = 'teacher' AND (subject IS NULL OR subject = ''  [42001-224]
+2025-07-18 17:42:38.679250+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]DESCRIBE usersDB"; expected "DELETE, DROP"; SQL statement:
+DESCRIBE usersDB [42001-224]

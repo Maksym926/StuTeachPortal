@@ -5,6 +5,7 @@ import com.EduTech.educationportal.data.UserRepository;
 import com.EduTech.educationportal.interfaces.presenter.MainMenuPresenterInterface;
 import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
 import com.EduTech.educationportal.interfaces.view.MainMenuViewInterface;
+import com.EduTech.educationportal.model.Teacher;
 import com.EduTech.educationportal.presenter.shared.MainMenuPresenter;
 import com.EduTech.educationportal.utils.Log;
 import javafx.application.Application;
@@ -29,6 +30,10 @@ public class App extends Application {
          presenterInterface.deleteUser("admin@school.com");
          Log.info("Setting up default system manager");
          presenterInterface.setManager();
+         UserRepository userRepository = new UserRepository();
+         for (Teacher teacher : userRepository.getAllTeachers()){
+             Log.info("Getting all teachers... "  +  teacher.getName() + " " + teacher.getEmail() + " "   + teacher.getPassword() + " "  + teacher.getCity() + " "  + teacher.getSubject());
+         }
 
         launch(args);
     }

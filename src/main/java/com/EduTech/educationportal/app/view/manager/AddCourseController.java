@@ -5,8 +5,11 @@ import com.EduTech.educationportal.data.UserRepository;
 import com.EduTech.educationportal.interfaces.view.AddCourseViewInterface;
 import com.EduTech.educationportal.model.Teacher;
 import com.EduTech.educationportal.presenter.manager.AddCoursePresenter;
+import com.EduTech.educationportal.utils.Log;
+import com.EduTech.educationportal.utils.ViewNavigator;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextArea;
@@ -45,6 +48,7 @@ public class AddCourseController implements AddCourseViewInterface {
         }
         int courseDurationText = Integer.parseInt(courseDuration.getText());
         presenter.addCourse(courseTitleText, courseCodeText , teacherID, courseDescriptionText, 12);
+
 //        courseRepository.printCourseInfo();
 
     }
@@ -65,5 +69,10 @@ public class AddCourseController implements AddCourseViewInterface {
             teacherMenuButton.getItems().add(item);
         }
         teacherMenuButton.setText("Select Teacher");
+    }
+    @FXML
+    public void returnToPreviousForm(ActionEvent event){
+        Log.info("Returning to previous form");
+        ViewNavigator.goBack((Node) event.getSource());
     }
 }

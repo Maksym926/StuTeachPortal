@@ -19,6 +19,8 @@ public class DBConnection {
         Statement stmt = conn.createStatement()) {
 //            String deleteDBSQL = "DROP TABLE IF EXISTS usersDB";
 //            stmt.execute(deleteDBSQL);
+//            String checkDB = "DESCRIBE usersDB";
+//            stmt.execute(checkDB);
             String usersDBSQL = "CREATE TABLE IF NOT EXISTS usersDB (" +
                     "id INT AUTO_INCREMENT PRIMARY KEY," +
                     "name VARCHAR(255), " +
@@ -31,7 +33,8 @@ public class DBConnection {
             stmt.execute(usersDBSQL);
             Log.info("Users table created or already exists.");
 
-
+//            String deleteDBSQL2 = "DROP TABLE IF EXISTS coursesDB";
+//            stmt.execute(deleteDBSQL2);
             String subjectsDBSQL = "CREATE TABLE IF NOT EXISTS coursesDB (" +
                     "id INT AUTO_INCREMENT PRIMARY KEY," +
                     "courseTitle VARCHAR(255), " +

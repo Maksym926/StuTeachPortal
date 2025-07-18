@@ -125,4 +125,9 @@ public class AuthViewController implements AuthViewInterface {
     public void setAuthPresenter(AuthenticationPresenter authPresenter) {
         this.presenter = authPresenter;
     }
+    @FXML
+    public void returnToPreviousForm(ActionEvent event){
+        Log.info("Returning to previous form");
+        ViewNavigator.goBack((Node) event.getSource());
+    }
 }

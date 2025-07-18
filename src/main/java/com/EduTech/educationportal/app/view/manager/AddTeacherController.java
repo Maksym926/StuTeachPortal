@@ -5,12 +5,16 @@ import com.EduTech.educationportal.interfaces.view.AddTeacherViewInterface;
 import com.EduTech.educationportal.model.Course;
 import com.EduTech.educationportal.presenter.manager.AddTeacherPresenter;
 import com.EduTech.educationportal.utils.Log;
+import com.EduTech.educationportal.utils.ViewNavigator;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
+import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -64,5 +68,10 @@ public class AddTeacherController implements AddTeacherViewInterface {
             courseMenuButton.getItems().add(menuItem);
         }
         courseMenuButton.setText("Select Course");
+    }
+    @FXML
+    public void returnToPreviousForm(ActionEvent event){
+        Log.info("Returning to previous form");
+        ViewNavigator.goBack((Node) event.getSource());
     }
 }

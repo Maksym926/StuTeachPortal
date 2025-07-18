@@ -9,6 +9,8 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 <AnchorPane prefHeight="533.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Text layoutX="35.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create course " wrappingWidth="157.3515625">
@@ -33,7 +35,8 @@
             <Font size="14.0" />
          </font>
       </Text>
-      <MenuButton fx:id="teacherMenuButton" layoutX="35.0" layoutY="231.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="263.0" text="Select teacher">
+      <MenuButton fx:id="teacherMenuButton" layoutX="35.0" layoutY="231.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="263.0" text="1">
+
       </MenuButton>
       <TextArea fx:id="courseDescription" layoutX="35.0" layoutY="310.0" prefHeight="91.0" prefWidth="263.0" />
       <Text layoutX="35.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course description" wrappingWidth="117.15625">
@@ -48,5 +51,14 @@
       </Text>
       <TextField fx:id="courseDuration" layoutX="34.0" layoutY="426.0" prefHeight="26.0" prefWidth="263.0" />
       <Button layoutX="35.0" layoutY="470.0" mnemonicParsing="false" text="Create" onAction="#addCourse"/>
+      <Button onAction="#returnToPreviousForm">
+         <graphic>
+            <ImageView fitHeight="20" fitWidth="20">
+               <image>
+                  <Image url="@/images/arrow_back.png"/>
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
    </children>
 </AnchorPane>

@@ -64,8 +64,8 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
         AddTeacherPresenterInterface addTeacherPresenterInterface = new AddTeacherPresenter(addTeacherViewInterface, userRepositoryInterface, courseRepositoryInterface);
         ViewNavigator.switchScene((Node) event.getSource(), "/AddTeacherView.fxml", "Add Teacher", addTeacherViewInterface);
         addTeacherViewInterface.setup();
-//        CourseRepository courseRepository = new CourseRepository();
-//        courseRepository.printCourseInfo();
+        CourseRepository courseRepository = new CourseRepository();
+        courseRepository.printCourseInfo();
     }
     @FXML
     private void openAddCourseWindow(ActionEvent event){
@@ -76,5 +76,10 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
         AddCoursePresenterInterface addCoursePresenterInterface = new AddCoursePresenter(addCourseViewInterface, courseRepositoryInterface, userRepositoryInterface);
         ViewNavigator.switchScene((Node) event.getSource(), "/AddCourseView.fxml", "Add Course", addCourseViewInterface);
         addCourseViewInterface.setup();
+    }
+    @FXML
+    public void returnToPreviousForm(ActionEvent event){
+        Log.info("Returning to previous form");
+        ViewNavigator.goBack((Node) event.getSource());
     }
 }

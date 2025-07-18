@@ -1873,3 +1873,1471 @@
 2025-07-18 13:42:23 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
 2025-07-18 13:42:23 [JavaFX Application Thread] INFO  Log - Get teachers from database
 2025-07-18 13:42:23 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:04:51 [main] INFO  Log - Starting application
+2025-07-18 16:04:51 [main] INFO  Log - Deleting manager
+2025-07-18 16:04:51 [main] INFO  Log - Deleting user
+2025-07-18 16:04:51 [main] INFO  Log - User deleted was successfully
+2025-07-18 16:04:51 [main] INFO  Log - Setting up default system manager
+2025-07-18 16:04:51 [main] INFO  Log - Creating a default manager
+2025-07-18 16:04:51 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 16:04:51 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 16:04:53 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 16:04:57 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 16:04:57 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 16:04:57 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 16:04:57 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 16:04:57 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 16:04:57 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 16:04:57 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 16:04:57 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 16:04:57 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:04:57 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:04:57 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:05:04 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 16:05:04 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 16:05:04 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 16:05:04 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:05:04 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:05:08 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-18 16:07:41 [main] INFO  Log - Starting application
+2025-07-18 16:07:41 [main] INFO  Log - Deleting manager
+2025-07-18 16:07:41 [main] INFO  Log - Deleting user
+2025-07-18 16:07:42 [main] INFO  Log - User deleted was successfully
+2025-07-18 16:07:42 [main] INFO  Log - Setting up default system manager
+2025-07-18 16:07:42 [main] INFO  Log - Creating a default manager
+2025-07-18 16:07:42 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 16:07:42 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 16:07:44 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 16:07:47 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 16:07:47 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 16:07:47 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 16:07:47 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 16:07:47 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 16:07:47 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 16:07:47 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 16:07:47 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 16:07:47 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:07:47 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:07:47 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:07:48 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 16:07:48 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 16:07:48 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 16:07:49 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:07:49 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:07:59 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-18 16:10:30 [main] INFO  Log - Starting application
+2025-07-18 16:10:30 [main] INFO  Log - Deleting manager
+2025-07-18 16:10:30 [main] INFO  Log - Deleting user
+2025-07-18 16:10:30 [main] INFO  Log - User deleted was successfully
+2025-07-18 16:10:30 [main] INFO  Log - Setting up default system manager
+2025-07-18 16:10:30 [main] INFO  Log - Creating a default manager
+2025-07-18 16:10:31 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 16:10:31 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 16:10:32 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 16:10:37 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 16:10:37 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 16:10:37 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 16:10:37 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 16:10:37 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 16:10:37 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 16:10:37 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 16:10:37 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 16:10:37 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:10:37 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:10:37 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:10:39 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 16:10:39 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 16:10:39 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 16:10:39 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:10:39 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:11:45 [main] INFO  Log - Starting application
+2025-07-18 16:11:45 [main] INFO  Log - Deleting manager
+2025-07-18 16:11:45 [main] INFO  Log - Deleting user
+2025-07-18 16:11:45 [main] INFO  Log - User deleted was successfully
+2025-07-18 16:11:45 [main] INFO  Log - Setting up default system manager
+2025-07-18 16:11:45 [main] INFO  Log - Creating a default manager
+2025-07-18 16:11:46 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 16:11:46 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 16:11:47 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 16:11:50 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 16:11:50 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 16:11:50 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 16:11:51 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 16:11:51 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 16:11:51 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 16:11:51 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 16:11:51 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 16:11:51 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:11:51 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:11:51 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:11:52 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 16:11:52 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 16:11:52 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 16:11:52 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:11:52 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:12:11 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-18 16:17:14 [main] INFO  Log - Starting application
+2025-07-18 16:17:14 [main] INFO  Log - Deleting manager
+2025-07-18 16:17:14 [main] INFO  Log - Deleting user
+2025-07-18 16:17:15 [main] INFO  Log - User deleted was successfully
+2025-07-18 16:17:15 [main] INFO  Log - Setting up default system manager
+2025-07-18 16:17:15 [main] INFO  Log - Creating a default manager
+2025-07-18 16:17:15 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 16:17:15 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 16:17:17 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 16:17:21 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 16:17:21 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 16:17:21 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 16:17:21 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 16:17:21 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 16:17:21 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 16:17:22 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 16:17:22 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 16:17:22 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:17:22 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:17:22 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:17:22 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 16:17:22 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 16:17:22 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 16:17:22 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:17:22 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:30:20 [main] INFO  Log - Starting application
+2025-07-18 16:30:20 [main] INFO  Log - Deleting manager
+2025-07-18 16:30:20 [main] INFO  Log - Deleting user
+2025-07-18 16:30:20 [main] INFO  Log - User deleted was successfully
+2025-07-18 16:30:20 [main] INFO  Log - Setting up default system manager
+2025-07-18 16:30:20 [main] INFO  Log - Creating a default manager
+2025-07-18 16:30:21 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 16:30:21 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 16:30:22 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 16:30:27 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 16:30:27 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 16:30:27 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 16:30:27 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 16:30:27 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 16:30:27 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 16:30:27 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 16:30:27 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 16:30:27 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:30:27 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:30:27 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:30:30 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 16:30:30 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 16:30:30 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 16:30:30 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:30:30 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:32:59 [main] INFO  Log - Starting application
+2025-07-18 16:32:59 [main] INFO  Log - Deleting manager
+2025-07-18 16:32:59 [main] INFO  Log - Deleting user
+2025-07-18 16:32:59 [main] INFO  Log - User deleted was successfully
+2025-07-18 16:32:59 [main] INFO  Log - Setting up default system manager
+2025-07-18 16:32:59 [main] INFO  Log - Creating a default manager
+2025-07-18 16:33:00 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 16:33:00 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 16:33:01 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 16:33:04 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 16:33:04 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 16:33:04 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 16:33:04 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 16:33:04 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 16:33:04 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 16:33:05 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 16:33:05 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 16:33:05 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:33:05 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:33:05 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:33:10 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 16:33:10 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 16:33:10 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 16:33:10 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:33:10 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:34:35 [main] INFO  Log - Starting application
+2025-07-18 16:34:35 [main] INFO  Log - Deleting manager
+2025-07-18 16:34:35 [main] INFO  Log - Deleting user
+2025-07-18 16:34:35 [main] INFO  Log - User deleted was successfully
+2025-07-18 16:34:35 [main] INFO  Log - Setting up default system manager
+2025-07-18 16:34:35 [main] INFO  Log - Creating a default manager
+2025-07-18 16:34:35 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 16:34:35 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 16:34:37 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 16:34:40 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 16:34:40 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 16:34:40 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 16:34:40 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 16:34:40 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 16:34:40 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 16:34:41 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 16:34:41 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 16:34:41 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:34:41 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:34:41 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:34:42 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 16:34:42 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 16:34:42 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 16:34:42 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:34:42 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:35:03 [main] INFO  Log - Starting application
+2025-07-18 16:35:03 [main] INFO  Log - Deleting manager
+2025-07-18 16:35:03 [main] INFO  Log - Deleting user
+2025-07-18 16:35:03 [main] INFO  Log - User deleted was successfully
+2025-07-18 16:35:04 [main] INFO  Log - Setting up default system manager
+2025-07-18 16:35:04 [main] INFO  Log - Creating a default manager
+2025-07-18 16:35:04 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 16:35:04 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 16:35:06 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 16:35:09 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 16:35:09 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 16:35:09 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 16:35:09 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 16:35:09 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 16:35:09 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 16:35:09 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 16:35:09 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 16:35:09 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:35:09 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:35:09 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:35:11 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 16:35:11 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 16:35:11 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 16:35:11 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:35:11 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:35:12 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 16:36:42 [main] INFO  Log - Starting application
+2025-07-18 16:36:42 [main] INFO  Log - Deleting manager
+2025-07-18 16:36:42 [main] INFO  Log - Deleting user
+2025-07-18 16:36:42 [main] INFO  Log - User deleted was successfully
+2025-07-18 16:36:42 [main] INFO  Log - Setting up default system manager
+2025-07-18 16:36:42 [main] INFO  Log - Creating a default manager
+2025-07-18 16:36:42 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 16:36:42 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 16:36:44 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 16:36:47 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 16:36:47 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 16:36:47 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 16:36:47 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 16:36:47 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 16:36:47 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 16:36:48 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 16:36:48 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 16:36:48 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:36:48 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:36:48 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:36:49 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 16:36:49 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 16:36:49 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 16:36:49 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:36:49 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:36:50 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 16:36:58 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 16:37:02 [main] INFO  Log - Starting application
+2025-07-18 16:37:02 [main] INFO  Log - Deleting manager
+2025-07-18 16:37:02 [main] INFO  Log - Deleting user
+2025-07-18 16:37:02 [main] INFO  Log - User deleted was successfully
+2025-07-18 16:37:02 [main] INFO  Log - Setting up default system manager
+2025-07-18 16:37:02 [main] INFO  Log - Creating a default manager
+2025-07-18 16:37:02 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 16:37:02 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 16:37:05 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 16:37:08 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 16:37:08 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 16:37:08 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 16:37:08 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 16:37:08 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 16:37:08 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 16:37:08 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 16:37:09 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 16:37:09 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:37:09 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:37:09 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:38:07 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 16:38:07 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 16:38:07 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 16:38:07 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:38:07 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:38:07 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 16:38:12 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 16:40:39 [main] INFO  Log - Starting application
+2025-07-18 16:40:39 [main] INFO  Log - Deleting manager
+2025-07-18 16:40:39 [main] INFO  Log - Deleting user
+2025-07-18 16:40:39 [main] INFO  Log - User deleted was successfully
+2025-07-18 16:40:40 [main] INFO  Log - Setting up default system manager
+2025-07-18 16:40:40 [main] INFO  Log - Creating a default manager
+2025-07-18 16:40:40 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 16:40:40 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 16:40:43 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 16:40:47 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 16:40:47 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 16:40:47 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 16:40:47 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 16:40:47 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 16:40:47 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 16:40:47 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 16:40:47 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 16:40:47 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:40:47 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:40:47 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:40:48 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 16:40:48 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 16:40:48 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 16:40:48 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:40:48 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:40:49 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 16:40:49 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 16:46:55 [main] INFO  Log - Starting application
+2025-07-18 16:46:55 [main] INFO  Log - Deleting manager
+2025-07-18 16:46:55 [main] INFO  Log - Deleting user
+2025-07-18 16:46:55 [main] INFO  Log - User deleted was successfully
+2025-07-18 16:46:55 [main] INFO  Log - Setting up default system manager
+2025-07-18 16:46:55 [main] INFO  Log - Creating a default manager
+2025-07-18 16:46:55 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 16:46:55 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 16:46:57 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 16:47:24 [main] INFO  Log - Starting application
+2025-07-18 16:47:24 [main] INFO  Log - Deleting manager
+2025-07-18 16:47:24 [main] INFO  Log - Deleting user
+2025-07-18 16:47:24 [main] INFO  Log - User deleted was successfully
+2025-07-18 16:47:24 [main] INFO  Log - Setting up default system manager
+2025-07-18 16:47:24 [main] INFO  Log - Creating a default manager
+2025-07-18 16:47:24 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 16:47:24 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 16:47:26 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 16:47:33 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 16:47:33 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 16:47:33 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 16:47:33 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 16:47:33 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 16:47:33 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 16:47:33 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 16:47:33 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 16:47:33 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:47:33 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:47:33 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:47:40 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 16:47:40 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 16:47:44 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 16:47:44 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 16:47:44 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 16:47:45 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 16:47:45 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 16:47:45 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 16:47:45 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 16:47:45 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 16:47:45 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:47:45 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:47:45 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:47:49 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 16:47:49 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:47:49 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:48:08 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 16:48:08 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 16:48:09 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 16:48:09 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 16:48:09 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 16:48:09 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:48:09 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:48:11 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 16:48:11 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 16:48:12 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 16:48:12 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:48:12 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:49:04 [main] INFO  Log - Starting application
+2025-07-18 16:49:04 [main] INFO  Log - Deleting manager
+2025-07-18 16:49:04 [main] INFO  Log - Deleting user
+2025-07-18 16:49:04 [main] INFO  Log - User deleted was successfully
+2025-07-18 16:49:04 [main] INFO  Log - Setting up default system manager
+2025-07-18 16:49:04 [main] INFO  Log - Creating a default manager
+2025-07-18 16:49:04 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 16:49:04 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 16:49:06 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 16:49:10 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 16:49:10 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 16:49:10 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 16:49:10 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 16:49:10 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 16:49:10 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 16:49:10 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 16:49:10 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 16:49:10 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:49:10 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:49:10 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:49:11 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 16:49:11 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:49:11 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:49:21 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 16:49:21 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 16:49:22 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 16:49:22 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 16:49:22 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 16:49:22 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:49:22 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:49:29 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 16:49:29 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 16:49:30 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 16:49:30 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:49:30 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:50:49 [main] INFO  Log - Starting application
+2025-07-18 16:50:49 [main] INFO  Log - Deleting manager
+2025-07-18 16:50:49 [main] INFO  Log - Deleting user
+2025-07-18 16:50:50 [main] INFO  Log - User deleted was successfully
+2025-07-18 16:50:50 [main] INFO  Log - Setting up default system manager
+2025-07-18 16:50:50 [main] INFO  Log - Creating a default manager
+2025-07-18 16:50:50 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 16:50:50 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 16:50:52 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 16:50:55 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 16:50:55 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 16:50:55 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 16:50:56 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 16:50:56 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 16:50:56 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 16:50:56 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 16:50:56 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 16:50:56 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:50:56 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:50:56 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:50:57 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 16:50:58 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:50:58 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:51:51 [main] INFO  Log - Starting application
+2025-07-18 16:51:51 [main] INFO  Log - Deleting manager
+2025-07-18 16:51:51 [main] INFO  Log - Deleting user
+2025-07-18 16:51:52 [main] INFO  Log - User deleted was successfully
+2025-07-18 16:51:52 [main] INFO  Log - Setting up default system manager
+2025-07-18 16:51:52 [main] INFO  Log - Creating a default manager
+2025-07-18 16:51:52 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 16:51:52 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 16:51:53 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 16:51:57 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 16:51:57 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 16:51:57 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 16:51:57 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 16:51:57 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 16:51:57 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 16:51:57 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 16:51:57 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 16:51:57 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:51:57 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:51:57 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:51:58 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 16:51:59 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:51:59 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:52:17 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-18 16:52:42 [main] INFO  Log - Starting application
+2025-07-18 16:52:42 [main] INFO  Log - Deleting manager
+2025-07-18 16:52:42 [main] INFO  Log - Deleting user
+2025-07-18 16:52:42 [main] INFO  Log - User deleted was successfully
+2025-07-18 16:52:43 [main] INFO  Log - Setting up default system manager
+2025-07-18 16:52:43 [main] INFO  Log - Creating a default manager
+2025-07-18 16:52:43 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 16:52:43 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 16:52:45 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 16:52:49 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 16:52:49 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 16:52:49 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 16:52:49 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 16:52:49 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 16:52:49 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 16:52:49 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 16:52:49 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 16:52:49 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:52:49 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:52:49 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:52:55 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 16:52:56 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:52:56 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:53:01 [JavaFX Application Thread] INFO  Log - Course was successfully inserted
+2025-07-18 16:53:04 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 16:53:04 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 16:53:06 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 16:53:06 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 16:53:06 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 16:53:06 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:53:06 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:53:07 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 16:53:07 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 16:53:08 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 16:53:08 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:53:08 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:53:11 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 16:53:11 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 16:53:12 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 16:53:12 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:53:12 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:53:14 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 16:53:14 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 16:53:24 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 16:53:24 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 16:53:24 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 16:53:24 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:53:24 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:53:29 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 16:53:29 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 16:53:30 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 16:53:30 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:53:30 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:53:33 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 16:53:33 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 16:53:34 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 16:53:34 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:53:34 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:53:58 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 16:53:58 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 16:54:06 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 16:54:06 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 16:54:08 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 16:54:08 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 16:54:08 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 16:54:08 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:54:08 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:54:09 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 16:54:09 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 16:54:10 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 16:54:10 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:54:10 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:54:13 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 16:54:13 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 16:54:42 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-18 16:54:47 [main] INFO  Log - Starting application
+2025-07-18 16:54:47 [main] INFO  Log - Deleting manager
+2025-07-18 16:54:47 [main] INFO  Log - Deleting user
+2025-07-18 16:54:47 [main] INFO  Log - User deleted was successfully
+2025-07-18 16:54:47 [main] INFO  Log - Setting up default system manager
+2025-07-18 16:54:47 [main] INFO  Log - Creating a default manager
+2025-07-18 16:54:48 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 16:54:48 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 16:54:49 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 16:54:53 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 16:54:53 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 16:54:53 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 16:54:53 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 16:54:53 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 16:54:53 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 16:54:53 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 16:54:53 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 16:54:53 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:54:53 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:54:53 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:54:55 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 16:54:55 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:54:55 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:54:57 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 16:54:57 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 16:55:05 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-18 16:57:06 [main] INFO  Log - Starting application
+2025-07-18 16:57:06 [main] INFO  Log - Deleting manager
+2025-07-18 16:57:06 [main] INFO  Log - Deleting user
+2025-07-18 16:57:07 [main] INFO  Log - User deleted was successfully
+2025-07-18 16:57:07 [main] INFO  Log - Setting up default system manager
+2025-07-18 16:57:07 [main] INFO  Log - Creating a default manager
+2025-07-18 16:57:07 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 16:57:07 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 16:57:09 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 16:57:12 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 16:57:12 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 16:57:12 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 16:57:12 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 16:57:12 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 16:57:12 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 16:57:13 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 16:57:13 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 16:57:13 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:57:13 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:57:13 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:57:18 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 16:57:18 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:57:18 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:57:27 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 16:57:27 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 16:57:28 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 16:57:28 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 16:57:28 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 16:57:28 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:57:28 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:57:29 [JavaFX Application Thread] INFO  Log - Getting course info from db
+2025-07-18 16:57:29 [JavaFX Application Thread] INFO  Log - printing course.... sdc sdf 121 sdf 12
+2025-07-18 16:57:29 [JavaFX Application Thread] INFO  Log - printing course.... JavaFx JV01 2 Super JavaFX coures, which will have to create beautiful UI 12
+2025-07-18 16:57:29 [JavaFX Application Thread] INFO  Log - printing course.... erfewf wsf 2 sfdsf 12
+2025-07-18 16:57:29 [JavaFX Application Thread] INFO  Log - printing course.... C# C#101 2 Unity game development 12
+2025-07-18 16:57:29 [JavaFX Application Thread] INFO  Log - printing course.... Python 123Py 0 sf 12
+2025-07-18 16:57:29 [JavaFX Application Thread] INFO  Log - printing course.... JavaScript JS123 0 JavaScript basics 12
+2025-07-18 16:57:29 [JavaFX Application Thread] INFO  Log - printing course.... Node.js ND21 3 grgfsedaf 12
+2025-07-18 16:57:29 [JavaFX Application Thread] INFO  Log - printing course.... sdf sdf 3 213 12
+2025-07-18 16:58:18 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 16:58:18 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 16:58:18 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 16:58:18 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 16:58:18 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 16:58:20 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 16:58:20 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 16:59:06 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 16:59:06 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 16:59:06 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 16:59:06 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:59:06 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 16:59:06 [JavaFX Application Thread] INFO  Log - Getting course info from db
+2025-07-18 16:59:06 [JavaFX Application Thread] INFO  Log - printing course.... sdc sdf 121 sdf 12
+2025-07-18 16:59:06 [JavaFX Application Thread] INFO  Log - printing course.... JavaFx JV01 2 Super JavaFX coures, which will have to create beautiful UI 12
+2025-07-18 16:59:06 [JavaFX Application Thread] INFO  Log - printing course.... erfewf wsf 2 sfdsf 12
+2025-07-18 16:59:06 [JavaFX Application Thread] INFO  Log - printing course.... C# C#101 2 Unity game development 12
+2025-07-18 16:59:06 [JavaFX Application Thread] INFO  Log - printing course.... Python 123Py 0 sf 12
+2025-07-18 16:59:06 [JavaFX Application Thread] INFO  Log - printing course.... JavaScript JS123 0 JavaScript basics 12
+2025-07-18 16:59:06 [JavaFX Application Thread] INFO  Log - printing course.... Node.js ND21 3 grgfsedaf 12
+2025-07-18 16:59:06 [JavaFX Application Thread] INFO  Log - printing course.... sdf sdf 3 213 12
+2025-07-18 17:03:02 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 17:03:02 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 17:03:04 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:03:04 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:03:04 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:03:09 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 17:03:09 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 17:03:11 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-18 17:04:15 [main] INFO  Log - Starting application
+2025-07-18 17:04:15 [main] INFO  Log - Deleting manager
+2025-07-18 17:04:15 [main] INFO  Log - Deleting user
+2025-07-18 17:04:15 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:04:15 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:04:15 [main] INFO  Log - Creating a default manager
+2025-07-18 17:04:16 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:04:16 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:04:18 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:04:22 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:04:22 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:04:22 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:04:22 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:04:22 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:04:22 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:04:22 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:04:22 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:04:22 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:04:22 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:04:28 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:04:28 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:04:28 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:04:30 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-18 17:04:45 [main] INFO  Log - Starting application
+2025-07-18 17:04:45 [main] INFO  Log - Deleting manager
+2025-07-18 17:04:45 [main] INFO  Log - Deleting user
+2025-07-18 17:04:45 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:04:46 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:04:46 [main] INFO  Log - Creating a default manager
+2025-07-18 17:04:46 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:04:46 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:04:48 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:04:52 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:04:52 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:04:52 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:04:52 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:04:52 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:04:52 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:04:52 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:04:52 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:04:52 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:04:52 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:04:52 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:04:53 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:04:53 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:04:53 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:06:15 [main] INFO  Log - Starting application
+2025-07-18 17:06:15 [main] INFO  Log - Deleting manager
+2025-07-18 17:06:15 [main] INFO  Log - Deleting user
+2025-07-18 17:06:16 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:06:16 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:06:16 [main] INFO  Log - Creating a default manager
+2025-07-18 17:06:16 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:06:16 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:06:18 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:06:21 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:06:21 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:06:21 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:06:21 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:06:21 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:06:21 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:06:22 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:06:22 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:06:22 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:06:22 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:06:22 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:06:23 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:06:23 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:06:23 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:06:30 [JavaFX Application Thread] INFO  Log - Course was successfully inserted
+2025-07-18 17:06:32 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 17:06:32 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 17:06:33 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:06:33 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:06:33 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:06:35 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 17:06:35 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 17:06:36 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-18 17:06:41 [main] INFO  Log - Starting application
+2025-07-18 17:06:41 [main] INFO  Log - Deleting manager
+2025-07-18 17:06:41 [main] INFO  Log - Deleting user
+2025-07-18 17:06:41 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:06:41 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:06:41 [main] INFO  Log - Creating a default manager
+2025-07-18 17:06:42 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:06:42 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:06:44 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:06:47 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:06:47 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:06:47 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:06:48 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:06:48 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:06:48 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:06:48 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:06:48 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:06:48 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:06:48 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:06:48 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:06:49 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:06:49 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:06:49 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:06:50 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 17:06:50 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 17:08:45 [main] INFO  Log - Starting application
+2025-07-18 17:08:45 [main] INFO  Log - Deleting manager
+2025-07-18 17:08:45 [main] INFO  Log - Deleting user
+2025-07-18 17:08:46 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:08:46 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:08:46 [main] INFO  Log - Creating a default manager
+2025-07-18 17:08:46 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:08:46 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:08:48 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:08:52 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:08:52 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:08:52 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:08:52 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:08:52 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:08:52 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:08:53 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:08:53 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:08:53 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:08:53 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:08:53 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:08:55 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:08:59 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:10:01 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:10:08 [main] INFO  Log - Starting application
+2025-07-18 17:10:08 [main] INFO  Log - Deleting manager
+2025-07-18 17:10:08 [main] INFO  Log - Deleting user
+2025-07-18 17:10:08 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:10:09 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:10:09 [main] INFO  Log - Creating a default manager
+2025-07-18 17:10:09 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:10:09 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:10:11 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:10:14 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:10:14 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:10:14 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:10:14 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:10:14 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:10:14 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:10:14 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:10:14 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:10:14 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:10:14 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:10:14 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:10:15 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:10:20 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:10:20 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:10:23 [main] INFO  Log - Starting application
+2025-07-18 17:10:23 [main] INFO  Log - Deleting manager
+2025-07-18 17:10:23 [main] INFO  Log - Deleting user
+2025-07-18 17:10:24 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:10:24 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:10:24 [main] INFO  Log - Creating a default manager
+2025-07-18 17:10:27 [main] INFO  Log - Starting application
+2025-07-18 17:10:27 [main] INFO  Log - Deleting manager
+2025-07-18 17:10:27 [main] INFO  Log - Deleting user
+2025-07-18 17:10:27 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:10:27 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:10:27 [main] INFO  Log - Creating a default manager
+2025-07-18 17:10:28 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:10:28 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:10:29 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:10:33 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:10:33 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:10:33 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:10:34 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:10:34 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:10:34 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:10:34 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:10:34 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:10:34 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:10:34 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:10:34 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:10:37 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:10:37 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:10:37 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:10:45 [JavaFX Application Thread] INFO  Log - Course was successfully inserted
+2025-07-18 17:10:55 [main] INFO  Log - Starting application
+2025-07-18 17:10:55 [main] INFO  Log - Deleting manager
+2025-07-18 17:10:55 [main] INFO  Log - Deleting user
+2025-07-18 17:10:55 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:10:55 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:10:55 [main] INFO  Log - Creating a default manager
+2025-07-18 17:10:56 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:10:56 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:10:57 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:11:01 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:11:01 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:11:01 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:11:01 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:11:01 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:11:01 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:11:01 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:11:01 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:11:01 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:11:01 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:11:01 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:11:03 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:11:03 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:11:03 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:14:28 [JavaFX Application Thread] INFO  Log - Course was successfully inserted
+2025-07-18 17:14:33 [main] INFO  Log - Starting application
+2025-07-18 17:14:33 [main] INFO  Log - Deleting manager
+2025-07-18 17:14:33 [main] INFO  Log - Deleting user
+2025-07-18 17:14:33 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:14:33 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:14:33 [main] INFO  Log - Creating a default manager
+2025-07-18 17:14:33 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:14:33 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:14:35 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:14:38 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:14:38 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:14:38 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:14:38 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:14:38 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:14:38 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:14:38 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:14:39 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:14:39 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:14:39 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:14:39 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:14:44 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-18 17:17:18 [main] INFO  Log - Starting application
+2025-07-18 17:17:18 [main] INFO  Log - Deleting manager
+2025-07-18 17:17:18 [main] INFO  Log - Deleting user
+2025-07-18 17:17:18 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:17:18 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:17:18 [main] INFO  Log - Creating a default manager
+2025-07-18 17:17:19 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:17:19 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:17:20 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:17:24 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:17:24 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:17:24 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:17:25 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:17:25 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:17:25 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:17:25 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:17:25 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:17:25 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:17:25 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:17:25 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:17:26 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:17:26 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:17:26 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:17:28 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 17:17:28 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 17:17:29 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 17:17:29 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 17:17:29 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 17:17:29 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 17:17:29 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-07-18 17:17:29 [JavaFX Application Thread] INFO  Log - Getting course info from db
+2025-07-18 17:17:29 [JavaFX Application Thread] INFO  Log - printing course.... sdc sdf 121 sdf 12
+2025-07-18 17:17:29 [JavaFX Application Thread] INFO  Log - printing course.... JavaFx JV01 2 Super JavaFX coures, which will have to create beautiful UI 12
+2025-07-18 17:17:29 [JavaFX Application Thread] INFO  Log - printing course.... erfewf wsf 2 sfdsf 12
+2025-07-18 17:17:29 [JavaFX Application Thread] INFO  Log - printing course.... C# C#101 2 Unity game development 12
+2025-07-18 17:17:29 [JavaFX Application Thread] INFO  Log - printing course.... Python 123Py 0 sf 12
+2025-07-18 17:17:29 [JavaFX Application Thread] INFO  Log - printing course.... JavaScript JS123 0 JavaScript basics 12
+2025-07-18 17:17:29 [JavaFX Application Thread] INFO  Log - printing course.... Node.js ND21 3 grgfsedaf 12
+2025-07-18 17:17:29 [JavaFX Application Thread] INFO  Log - printing course.... sdf sdf 3 213 12
+2025-07-18 17:17:29 [JavaFX Application Thread] INFO  Log - printing course.... sdf sdf 3 sdfsd 12
+2025-07-18 17:17:29 [JavaFX Application Thread] INFO  Log - printing course.... asdfs fdsg 3 sdg 12
+2025-07-18 17:17:29 [JavaFX Application Thread] INFO  Log - printing course.... 123 343 3 34324 12
+2025-07-18 17:17:31 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 17:17:31 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 17:17:33 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:17:33 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:17:33 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:18:51 [main] INFO  Log - Starting application
+2025-07-18 17:18:51 [main] INFO  Log - Deleting manager
+2025-07-18 17:18:51 [main] INFO  Log - Deleting user
+2025-07-18 17:18:51 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:18:52 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:18:52 [main] INFO  Log - Creating a default manager
+2025-07-18 17:18:52 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:18:52 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:18:53 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:18:57 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:18:57 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:18:57 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:18:57 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:18:57 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:18:57 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:18:57 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:18:58 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:18:58 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:18:58 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:18:58 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:18:59 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:18:59 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:19:12 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:22:08 [main] INFO  Log - Starting application
+2025-07-18 17:22:08 [main] INFO  Log - Deleting manager
+2025-07-18 17:22:08 [main] INFO  Log - Deleting user
+2025-07-18 17:22:08 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:22:08 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:22:08 [main] INFO  Log - Creating a default manager
+2025-07-18 17:22:08 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:22:08 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:22:12 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-18 17:22:23 [main] INFO  Log - Starting application
+2025-07-18 17:22:23 [main] INFO  Log - Deleting manager
+2025-07-18 17:22:23 [main] INFO  Log - Deleting user
+2025-07-18 17:22:23 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:22:23 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:22:23 [main] INFO  Log - Creating a default manager
+2025-07-18 17:22:24 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:22:24 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:22:28 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:22:32 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:22:32 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:22:32 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:22:32 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:22:32 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:22:32 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:22:32 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:22:32 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:22:32 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:22:32 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:22:32 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:22:34 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:22:34 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:22:34 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:24:27 [main] INFO  Log - Starting application
+2025-07-18 17:24:27 [main] INFO  Log - Deleting manager
+2025-07-18 17:24:27 [main] INFO  Log - Deleting user
+2025-07-18 17:24:27 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:24:27 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:24:27 [main] INFO  Log - Creating a default manager
+2025-07-18 17:24:27 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:24:27 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:24:29 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:24:33 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:24:33 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:24:33 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:24:34 [JavaFX Application Thread] WARN  Log - Logging failed, incorrect credentials
+2025-07-18 17:24:36 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:24:36 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:24:36 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:24:36 [JavaFX Application Thread] WARN  Log - Logging failed, incorrect credentials
+2025-07-18 17:24:38 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:24:38 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:24:38 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:24:38 [JavaFX Application Thread] WARN  Log - Logging failed, incorrect credentials
+2025-07-18 17:24:49 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 17:24:49 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 17:24:57 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-18 17:25:14 [main] INFO  Log - Starting application
+2025-07-18 17:25:14 [main] INFO  Log - Deleting manager
+2025-07-18 17:25:14 [main] INFO  Log - Deleting user
+2025-07-18 17:25:14 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:25:14 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:25:14 [main] INFO  Log - Creating a default manager
+2025-07-18 17:25:14 [main] INFO  Log - Default manager created
+2025-07-18 17:25:14 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:25:14 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:25:23 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:25:26 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:25:26 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:25:26 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:25:26 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:25:26 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:25:26 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:25:26 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:25:26 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:25:27 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:25:31 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:25:31 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:25:34 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 17:25:34 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 17:25:35 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 17:25:35 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 17:25:35 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 17:25:35 [JavaFX Application Thread] INFO  Log - Getting course info from db
+2025-07-18 17:25:49 [JavaFX Application Thread] INFO  Log - Check in user present in database
+2025-07-18 17:25:49 [JavaFX Application Thread] INFO  Log - Add teacher to database
+2025-07-18 17:25:49 [JavaFX Application Thread] WARN  Log - course was not selected
+2025-07-18 17:25:49 [JavaFX Application Thread] INFO  Log - Teacher was successfully added
+2025-07-18 17:25:51 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 17:25:51 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 17:25:53 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:25:53 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:25:53 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:26:13 [JavaFX Application Thread] INFO  Log - Course was successfully inserted
+2025-07-18 17:26:16 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 17:26:16 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 17:26:17 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 17:26:18 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 17:26:18 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 17:26:18 [JavaFX Application Thread] INFO  Log - Getting course info from db
+2025-07-18 17:26:18 [JavaFX Application Thread] INFO  Log - printing course.... JavaFX JF 2 wdefwf 12
+2025-07-18 17:26:21 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 17:26:21 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 17:26:21 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:26:21 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:26:21 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:28:47 [main] INFO  Log - Starting application
+2025-07-18 17:28:47 [main] INFO  Log - Deleting manager
+2025-07-18 17:28:47 [main] INFO  Log - Deleting user
+2025-07-18 17:28:47 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:28:47 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:28:47 [main] INFO  Log - Creating a default manager
+2025-07-18 17:28:48 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:28:48 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:28:50 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-18 17:28:54 [main] INFO  Log - Starting application
+2025-07-18 17:28:54 [main] INFO  Log - Deleting manager
+2025-07-18 17:28:54 [main] INFO  Log - Deleting user
+2025-07-18 17:28:54 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:28:54 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:28:54 [main] INFO  Log - Creating a default manager
+2025-07-18 17:28:54 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:28:54 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:28:56 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:28:59 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:28:59 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:28:59 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:28:59 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:28:59 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:28:59 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:28:59 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:29:00 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:29:00 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:29:00 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:29:08 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:29:08 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:29:09 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:31:55 [main] INFO  Log - Starting application
+2025-07-18 17:31:55 [main] INFO  Log - Deleting manager
+2025-07-18 17:31:55 [main] INFO  Log - Deleting user
+2025-07-18 17:31:55 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:31:55 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:31:55 [main] INFO  Log - Creating a default manager
+2025-07-18 17:31:56 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:31:56 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:31:58 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:32:02 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:32:02 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:32:02 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:32:02 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:32:02 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:32:02 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:32:02 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:32:03 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:32:03 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:32:03 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:32:04 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:32:04 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:32:04 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:33:36 [main] INFO  Log - Starting application
+2025-07-18 17:33:36 [main] INFO  Log - Deleting manager
+2025-07-18 17:33:36 [main] INFO  Log - Deleting user
+2025-07-18 17:33:36 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:33:37 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:33:37 [main] INFO  Log - Creating a default manager
+2025-07-18 17:33:37 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:33:37 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:33:38 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:33:42 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:33:42 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:33:42 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:33:42 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:33:42 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:33:42 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:33:43 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:33:43 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:33:43 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:33:43 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:33:44 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:33:44 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:33:44 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:33:48 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 17:33:48 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 17:33:49 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:33:49 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:33:49 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:36:14 [main] INFO  Log - Starting application
+2025-07-18 17:36:14 [main] INFO  Log - Deleting manager
+2025-07-18 17:36:14 [main] INFO  Log - Deleting user
+2025-07-18 17:36:15 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:36:15 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:36:15 [main] INFO  Log - Creating a default manager
+2025-07-18 17:36:15 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:36:15 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:36:17 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:36:23 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:36:23 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:36:23 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:36:24 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:36:24 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:36:24 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:36:24 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:36:24 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:36:24 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:36:24 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:36:26 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:36:26 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:36:26 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:37:26 [main] INFO  Log - Starting application
+2025-07-18 17:37:26 [main] INFO  Log - Deleting manager
+2025-07-18 17:37:26 [main] INFO  Log - Deleting user
+2025-07-18 17:37:26 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:37:26 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:37:26 [main] INFO  Log - Creating a default manager
+2025-07-18 17:37:26 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:37:26 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:37:28 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:37:31 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:37:31 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:37:31 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:37:31 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:37:31 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:37:31 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:37:31 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:37:31 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:37:31 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:37:31 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:37:33 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:37:33 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:37:33 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:37:39 [JavaFX Application Thread] WARN  Log - Teacher is not selected for this course
+2025-07-18 17:37:39 [JavaFX Application Thread] INFO  Log - Course was successfully inserted
+2025-07-18 17:37:42 [JavaFX Application Thread] INFO  Log - Course was successfully inserted
+2025-07-18 17:37:43 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 17:37:43 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 17:37:47 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:37:47 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:37:47 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:37:50 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 17:37:50 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 17:39:37 [main] INFO  Log - Starting application
+2025-07-18 17:39:37 [main] INFO  Log - Deleting manager
+2025-07-18 17:39:37 [main] INFO  Log - Deleting user
+2025-07-18 17:39:37 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:39:37 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:39:37 [main] INFO  Log - Creating a default manager
+2025-07-18 17:39:38 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:39:38 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:39:39 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:39:43 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:39:43 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:39:43 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:39:43 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:39:43 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:39:43 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:39:43 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:39:44 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:39:44 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:39:44 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:39:45 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:39:45 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:39:45 [JavaFX Application Thread] ERROR Log - Error while getting teacher from database
+2025-07-18 17:40:30 [main] INFO  Log - Starting application
+2025-07-18 17:40:30 [main] INFO  Log - Deleting manager
+2025-07-18 17:40:30 [main] INFO  Log - Deleting user
+2025-07-18 17:40:30 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:40:30 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:40:30 [main] INFO  Log - Creating a default manager
+2025-07-18 17:40:30 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:40:30 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:40:32 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:40:35 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:40:35 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:40:35 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:40:35 [JavaFX Application Thread] WARN  Log - Logging failed, incorrect credentials
+2025-07-18 17:40:47 [main] INFO  Log - Starting application
+2025-07-18 17:40:47 [main] INFO  Log - Deleting manager
+2025-07-18 17:40:47 [main] INFO  Log - Deleting user
+2025-07-18 17:40:48 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:40:48 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:40:48 [main] INFO  Log - Creating a default manager
+2025-07-18 17:40:48 [main] INFO  Log - Default manager created
+2025-07-18 17:40:48 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:40:48 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:40:51 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:40:54 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:40:54 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:40:54 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:40:54 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:40:54 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:40:54 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:40:54 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:40:54 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:40:54 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:40:55 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:40:55 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:40:57 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 17:40:57 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 17:40:58 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 17:40:58 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 17:40:58 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 17:40:58 [JavaFX Application Thread] INFO  Log - Getting course info from db
+2025-07-18 17:41:12 [JavaFX Application Thread] INFO  Log - Check in user present in database
+2025-07-18 17:41:12 [JavaFX Application Thread] INFO  Log - Add teacher to database
+2025-07-18 17:41:12 [JavaFX Application Thread] WARN  Log - course was not selected
+2025-07-18 17:41:12 [JavaFX Application Thread] INFO  Log - Teacher was successfully added
+2025-07-18 17:41:13 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 17:41:13 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 17:41:15 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:41:15 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:41:15 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:41:32 [JavaFX Application Thread] INFO  Log - Course was successfully inserted
+2025-07-18 17:41:34 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 17:41:34 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 17:41:37 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:41:37 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:41:37 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:41:46 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-18 17:42:38 [main] INFO  Log - Starting application
+2025-07-18 17:42:38 [main] INFO  Log - Deleting manager
+2025-07-18 17:42:38 [main] INFO  Log - Deleting user
+2025-07-18 17:42:38 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:42:38 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:42:38 [main] INFO  Log - Creating a default manager
+2025-07-18 17:47:01 [main] INFO  Log - Starting application
+2025-07-18 17:47:01 [main] INFO  Log - Deleting manager
+2025-07-18 17:47:01 [main] INFO  Log - Deleting user
+2025-07-18 17:47:01 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:47:01 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:47:01 [main] INFO  Log - Creating a default manager
+2025-07-18 17:47:01 [main] INFO  Log - Getting all teachers... [1fsdf (sdfds), 2ert (tre), 35 (345), 4234 (432), 932423 (432342), 13324234 (2342323423), 14324234122 (2342323423312), 16324234122124 (2342323423312423423), 17Maksym  (Chechotkin), 18345df (df), 19Maksym (maxchechotkin), 20234 (maxchechotkin@gmail.com), 232143 (max)]
+2025-07-18 17:47:02 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:47:02 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:48:06 [main] INFO  Log - Starting application
+2025-07-18 17:48:06 [main] INFO  Log - Deleting manager
+2025-07-18 17:48:06 [main] INFO  Log - Deleting user
+2025-07-18 17:48:06 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:48:07 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:48:07 [main] INFO  Log - Creating a default manager
+2025-07-18 17:48:07 [main] INFO  Log - Getting all teachers... [1fsdf (sdfds), 2ert (tre), 35 (345), 4234 (432), 932423 (432342), 13324234 (2342323423), 14324234122 (2342323423312), 16324234122124 (2342323423312423423), 17Maksym  (Chechotkin), 18345df (df), 19Maksym (maxchechotkin), 20234 (maxchechotkin@gmail.com), 232143 (max)]
+2025-07-18 17:48:07 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:48:07 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:49:06 [main] INFO  Log - Starting application
+2025-07-18 17:49:06 [main] INFO  Log - Deleting manager
+2025-07-18 17:49:06 [main] INFO  Log - Deleting user
+2025-07-18 17:49:06 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:49:07 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:49:07 [main] INFO  Log - Creating a default manager
+2025-07-18 17:49:07 [main] INFO  Log - Default manager created
+2025-07-18 17:49:07 [main] INFO  Log - Getting all teachers... []
+2025-07-18 17:49:07 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:49:07 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:49:10 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:49:14 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:49:14 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:49:14 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:49:14 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:49:14 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:49:14 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:49:15 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:49:15 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:49:15 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:49:16 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 17:49:16 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 17:49:16 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 17:49:16 [JavaFX Application Thread] INFO  Log - Getting course info from db
+2025-07-18 17:49:28 [JavaFX Application Thread] INFO  Log - Check in user present in database
+2025-07-18 17:49:29 [JavaFX Application Thread] INFO  Log - Add teacher to database
+2025-07-18 17:49:29 [JavaFX Application Thread] WARN  Log - course was not selected
+2025-07-18 17:49:29 [JavaFX Application Thread] INFO  Log - Teacher was successfully added
+2025-07-18 17:49:31 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 17:49:31 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 17:49:32 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-18 17:49:37 [main] INFO  Log - Starting application
+2025-07-18 17:49:37 [main] INFO  Log - Deleting manager
+2025-07-18 17:49:37 [main] INFO  Log - Deleting user
+2025-07-18 17:49:37 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:49:37 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:49:37 [main] INFO  Log - Creating a default manager
+2025-07-18 17:49:38 [main] INFO  Log - Getting all teachers... [2Maksym (123)]
+2025-07-18 17:49:38 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:49:38 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:50:42 [main] INFO  Log - Starting application
+2025-07-18 17:50:42 [main] INFO  Log - Deleting manager
+2025-07-18 17:50:42 [main] INFO  Log - Deleting user
+2025-07-18 17:50:42 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:50:42 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:50:42 [main] INFO  Log - Creating a default manager
+2025-07-18 17:50:43 [main] INFO  Log - Getting all teachers... [2Maksym (123)]
+2025-07-18 17:50:43 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:50:43 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:50:50 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-18 17:51:32 [main] INFO  Log - Starting application
+2025-07-18 17:51:32 [main] INFO  Log - Deleting manager
+2025-07-18 17:51:32 [main] INFO  Log - Deleting user
+2025-07-18 17:51:33 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:51:33 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:51:33 [main] INFO  Log - Creating a default manager
+2025-07-18 17:51:33 [main] INFO  Log - Getting all teachers... [2Maksym (123)]
+2025-07-18 17:51:33 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:51:33 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:51:36 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-18 17:51:44 [main] INFO  Log - Starting application
+2025-07-18 17:51:44 [main] INFO  Log - Deleting manager
+2025-07-18 17:51:44 [main] INFO  Log - Deleting user
+2025-07-18 17:51:44 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:51:44 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:51:44 [main] INFO  Log - Creating a default manager
+2025-07-18 17:51:44 [main] INFO  Log - Default manager created
+2025-07-18 17:51:45 [main] INFO  Log - Getting all teachers... []
+2025-07-18 17:51:45 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:51:45 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:51:46 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-18 17:51:53 [main] INFO  Log - Starting application
+2025-07-18 17:51:53 [main] INFO  Log - Deleting manager
+2025-07-18 17:51:53 [main] INFO  Log - Deleting user
+2025-07-18 17:51:54 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:51:54 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:51:54 [main] INFO  Log - Creating a default manager
+2025-07-18 17:51:54 [main] INFO  Log - Default manager created
+2025-07-18 17:51:54 [main] INFO  Log - Getting all teachers... []
+2025-07-18 17:51:54 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:51:54 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:51:57 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:52:00 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:52:00 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:52:00 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:52:00 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:52:00 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:52:00 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:52:00 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:52:01 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:52:01 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:52:02 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:52:02 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:52:05 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 17:52:05 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 17:52:05 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 17:52:05 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 17:52:05 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 17:52:05 [JavaFX Application Thread] INFO  Log - Getting course info from db
+2025-07-18 17:52:14 [JavaFX Application Thread] INFO  Log - Check in user present in database
+2025-07-18 17:52:15 [JavaFX Application Thread] INFO  Log - Add teacher to database
+2025-07-18 17:52:15 [JavaFX Application Thread] WARN  Log - course was not selected
+2025-07-18 17:52:15 [JavaFX Application Thread] INFO  Log - Teacher was successfully added
+2025-07-18 17:52:16 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-18 17:52:21 [main] INFO  Log - Starting application
+2025-07-18 17:52:21 [main] INFO  Log - Deleting manager
+2025-07-18 17:52:21 [main] INFO  Log - Deleting user
+2025-07-18 17:52:21 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:52:22 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:52:22 [main] INFO  Log - Creating a default manager
+2025-07-18 17:52:22 [main] INFO  Log - Getting all teachers... [2Maksym (123)]
+2025-07-18 17:52:22 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:52:22 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:52:26 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-18 17:53:53 [main] INFO  Log - Starting application
+2025-07-18 17:53:53 [main] INFO  Log - Deleting manager
+2025-07-18 17:53:53 [main] INFO  Log - Deleting user
+2025-07-18 17:53:53 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:53:53 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:53:53 [main] INFO  Log - Creating a default manager
+2025-07-18 17:53:53 [main] INFO  Log - Getting all teachers... Maksym1231231230
+2025-07-18 17:53:53 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:53:53 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:53:55 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:53:59 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:53:59 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:53:59 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:53:59 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:53:59 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:53:59 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:53:59 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:53:59 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:53:59 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:53:59 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:54:01 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:54:01 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:54:01 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:54:03 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 17:54:03 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 17:54:16 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-18 17:54:43 [main] INFO  Log - Starting application
+2025-07-18 17:54:43 [main] INFO  Log - Deleting manager
+2025-07-18 17:54:43 [main] INFO  Log - Deleting user
+2025-07-18 17:54:43 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:54:43 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:54:43 [main] INFO  Log - Creating a default manager
+2025-07-18 17:54:44 [main] INFO  Log - Getting all teachers... Maksym 123 123 123 0
+2025-07-18 17:54:44 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:54:44 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:54:50 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:55:04 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-18 17:55:18 [main] INFO  Log - Starting application
+2025-07-18 17:55:18 [main] INFO  Log - Deleting manager
+2025-07-18 17:55:18 [main] INFO  Log - Deleting user
+2025-07-18 17:55:18 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:55:18 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:55:18 [main] INFO  Log - Creating a default manager
+2025-07-18 17:55:18 [main] INFO  Log - Getting all teachers... Maksym 123 123 123 0
+2025-07-18 17:55:18 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:55:18 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:55:20 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:55:29 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:55:29 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:55:29 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:55:29 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:55:29 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:55:29 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:55:29 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:55:29 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:55:29 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:55:29 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:55:33 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:55:33 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:55:33 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:55:41 [JavaFX Application Thread] INFO  Log - Course was successfully inserted
+2025-07-18 17:55:42 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 17:55:42 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 17:55:44 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 17:55:44 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 17:55:44 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 17:55:44 [JavaFX Application Thread] INFO  Log - Getting course info from db
+2025-07-18 17:55:44 [JavaFX Application Thread] INFO  Log - printing course.... Java 123 2 123 12
+2025-07-18 17:55:51 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 17:55:51 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 17:55:52 [JavaFX Application Thread] INFO  Log - Opening add course window
+2025-07-18 17:55:52 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:55:52 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:56:09 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-07-18 17:56:09 [JavaFX Application Thread] INFO  Log - Going back
+2025-07-18 17:56:10 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-07-18 17:56:16 [main] INFO  Log - Starting application
+2025-07-18 17:56:16 [main] INFO  Log - Deleting manager
+2025-07-18 17:56:16 [main] INFO  Log - Deleting user
+2025-07-18 17:56:16 [main] INFO  Log - User deleted was successfully
+2025-07-18 17:56:16 [main] INFO  Log - Setting up default system manager
+2025-07-18 17:56:16 [main] INFO  Log - Creating a default manager
+2025-07-18 17:56:17 [main] INFO  Log - Getting all teachers... Maksym 123 123 123 0
+2025-07-18 17:56:17 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-07-18 17:56:17 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-07-18 17:56:20 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-07-18 17:56:24 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-07-18 17:56:24 [JavaFX Application Thread] INFO  Log - Starting login
+2025-07-18 17:56:24 [JavaFX Application Thread] INFO  Log - Login user
+2025-07-18 17:56:24 [JavaFX Application Thread] INFO  Log - Login successful
+2025-07-18 17:56:24 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-07-18 17:56:24 [JavaFX Application Thread] INFO  Log - Check user role
+2025-07-18 17:56:24 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-07-18 17:56:25 [JavaFX Application Thread] INFO  Log - Setting up teacher list
+2025-07-18 17:56:25 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-07-18 17:56:25 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-07-18 17:57:14 [JavaFX Application Thread] INFO  Log - Opening add teacher window
+2025-07-18 17:57:14 [JavaFX Application Thread] INFO  Log - Setting up add teacher view
+2025-07-18 17:57:14 [JavaFX Application Thread] INFO  Log - Getting courses from db
+2025-07-18 17:57:14 [JavaFX Application Thread] INFO  Log - Getting course info from db
+2025-07-18 17:57:14 [JavaFX Application Thread] INFO  Log - printing course.... Java 123 2 123 12

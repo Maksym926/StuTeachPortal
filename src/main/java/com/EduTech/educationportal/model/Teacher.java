@@ -6,9 +6,12 @@ public class Teacher {
     private String email;
     private String city;
     private String password;
-    private String subject;
+    private Integer subject;
 
-    public Teacher(int ID, String name, String email, String city, String password, String subject) {
+    public Teacher(){
+
+    }
+    public Teacher(int ID, String name, String email, String city, String password, Integer subject) {
         this.ID = ID;
         this.name = name;
         this.email = email;
@@ -26,7 +29,7 @@ public class Teacher {
     public String getCity() {
         return city;
     }
-    public String getSubject() {
+    public int getSubject() {
         return subject;
     }
     public String getEmail() {
@@ -41,7 +44,7 @@ public class Teacher {
     public void setCity(String city) {
         this.city = city;
     }
-    public void setSubject(String subject) {
+    public void setSubject(int subject) {
         this.subject = subject;
     }
     public void setName(String name) {

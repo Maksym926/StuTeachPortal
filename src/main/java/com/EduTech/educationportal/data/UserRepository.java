@@ -6,6 +6,7 @@ import com.EduTech.educationportal.utils.Log;
 import javafx.collections.ObservableList;
 
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class UserRepository implements UserRepositoryInterface {
@@ -28,25 +29,28 @@ public class UserRepository implements UserRepositoryInterface {
         }
 
     }
-//    public ArrayList<Student> getAllStudents() {
-//        ArrayList<Student> students = new ArrayList<>();
-//        String sql = "SELECT * FROM studentInfo";
-//        try(Connection conn = DBConnection.getConnection();
-//            PreparedStatement stmt = conn.prepareStatement(sql);
-//            ResultSet rs = stmt.executeQuery()){
-//            while (rs.next()){
-//                Student student = new Student();
-//                student.setId(rs.getInt("id"));
-//                student.setName(rs.getString("name"));
-//                student.setEmail(rs.getString("email"));
-//                students.add(student);
-//            }
-//
-//        }catch (SQLException e){
-//            e.printStackTrace();
-//        }
-//        return students;
-//    }
+    public ArrayList<Teacher> getAllTeachers() {
+        ArrayList<Teacher> students = new ArrayList<>();
+        String sql = "SELECT * FROM usersDB WHERE role = 'teacher'";
+        try(Connection conn = DBConnection.getConnection();
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery()){
+            while (rs.next()){
+                Teacher student = new Teacher();
+                student.setID(rs.getInt("id"));
+                student.setName(rs.getString("name"));
+                student.setEmail(rs.getString("email"));
+                student.setPassword(rs.getString("password"));
+                student.setCity(rs.getString("city"));
+                student.setSubject(rs.getInt("subject"));
+                students.add(student);
+            }
+
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return students;
+    }
     public boolean loginUser(String email, String password) {
         Log.info("Login user");
         String sql = "SELECT * FROM usersDB WHERE email = ? AND password = ?";
@@ -94,7 +98,7 @@ public class UserRepository implements UserRepositoryInterface {
                 String email = rs.getString("email");
                 String city = rs.getString("city");
                 String password = rs.getString("password");
-                String subject = rs.getString("subject");
+                int subject = rs.getInt("subject");
                 teacherList.add(new Teacher(id, name, email, city, password, subject));
             }
 
@@ -106,7 +110,7 @@ public class UserRepository implements UserRepositoryInterface {
     public void getTeachers(List<Teacher> teacherList){
         Log.info("Start getting teachers from database");
         try (Connection conn = DBConnection.getConnection();
-             PreparedStatement stmt = conn.prepareStatement("SELECT id, name, email, city, password, subject FROM usersDB WHERE role = 'teacher' AND subject IS NUll");
+             PreparedStatement stmt = conn.prepareStatement("SELECT id, name, email, city, password, subject FROM usersDB WHERE role = 'teacher' AND (subject IS NULL OR subject = '') ");
              ResultSet rs = stmt.executeQuery()) {
 
             while (rs.next()) {
@@ -116,7 +120,7 @@ public class UserRepository implements UserRepositoryInterface {
                 String email = rs.getString("email");
                 String city = rs.getString("city");
                 String password = rs.getString("password");
-                String subject = rs.getString("subject");
+                Integer subject = rs.getObject("subject", Integer.class);
                 teacherList.add(new Teacher(id, name, email, city, password, subject));
             }
 
