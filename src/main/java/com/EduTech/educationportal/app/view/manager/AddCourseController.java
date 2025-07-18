@@ -39,22 +39,27 @@ public class AddCourseController implements AddCourseViewInterface {
         String courseTitleText = courseTitle.getText();
         String courseCodeText = courseCode.getText();
         String courseDescriptionText = courseDescription.getText();
+        Integer teacherID = null;
+        if(selectedTeacher != null){
+            teacherID = selectedTeacher.getID();
+        }
         int courseDurationText = Integer.parseInt(courseDuration.getText());
-        presenter.addCourse(courseTitleText, courseCodeText , selectedTeacher.getID(), courseDescriptionText, 12);
+        presenter.addCourse(courseTitleText, courseCodeText , teacherID, courseDescriptionText, 12);
 //        courseRepository.printCourseInfo();
 
     }
     public void setup(){
-        Map<MenuItem, Teacher> teacherMap = new HashMap<>();
+//        Map<MenuItem, Teacher> teacherMap = new HashMap<>();
         presenter.getTeachers(teachers);
 
         for(Teacher teacher : teachers){
             MenuItem item = new MenuItem(teacher.getName() + " - " + teacher.getEmail());
-            teacherMap.put(item, teacher);
+//            teacherMap.put(item, teacher);
             item.setOnAction(event -> {
                 teacherMenuButton.setText(teacher.getName() + " - " + teacher.getEmail());
-                MenuItem selectedMenuItem = (MenuItem) event.getSource();
-                selectedTeacher = teacherMap.get(selectedMenuItem);
+//                MenuItem selectedMenuItem = (MenuItem) event.getSource();
+//                selectedTeacher = teacherMap.get(selectedMenuItem);
+                selectedTeacher = teacher;
 
             });
             teacherMenuButton.getItems().add(item);

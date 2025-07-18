@@ -1,12 +1,19 @@
 package com.EduTech.educationportal.model;
 
 public class Course {
+    int ID;
     private String title;
     private String code;
     private int teacherId;
     private String description;
     private int duration;
 
+    public void setID(int ID) {
+        this.ID = ID;
+    }
+    public int getID() {
+        return ID;
+    }
     public void setTitle(String title) {
         this.title = title;
     }

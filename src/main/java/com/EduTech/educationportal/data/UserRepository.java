@@ -106,7 +106,7 @@ public class UserRepository implements UserRepositoryInterface {
     public void getTeachers(List<Teacher> teacherList){
         Log.info("Start getting teachers from database");
         try (Connection conn = DBConnection.getConnection();
-             PreparedStatement stmt = conn.prepareStatement("SELECT id, name, email, city, password, subject FROM usersDB WHERE role = 'teacher'");
+             PreparedStatement stmt = conn.prepareStatement("SELECT id, name, email, city, password, subject FROM usersDB WHERE role = 'teacher' AND subject IS NUll");
              ResultSet rs = stmt.executeQuery()) {
 
             while (rs.next()) {
@@ -125,7 +125,7 @@ public class UserRepository implements UserRepositoryInterface {
             e.printStackTrace();
         }
     }
-    public void addTeacher(String name, String email, String city, String password, String subject){
+    public void addTeacher(String name, String email, String city, String password, Integer courseID){
         Log.info("Add teacher to database");
         String sql = "INSERT INTO usersDB (name, email, city, password, subject, role) Values(?, ?, ?, ?, ?, ?)";
         try(Connection conn = DBConnection.getConnection()){
@@ -134,7 +134,14 @@ public class UserRepository implements UserRepositoryInterface {
             stmt.setString(2, email);
             stmt.setString(3, city);
             stmt.setString(4, password);
-            stmt.setString(5, subject);
+            if(courseID != null){
+                stmt.setInt(5, courseID);
+            }
+            else{
+                Log.warn("course was not selected");
+                stmt.setNull(5, java.sql.Types.INTEGER);
+            }
+
             stmt.setString(6, "teacher");
             stmt.executeUpdate();
             Log.info("Teacher was successfully added");

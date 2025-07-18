@@ -60,8 +60,12 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
         Log.info("Opening add teacher window");
         AddTeacherViewInterface addTeacherViewInterface = new AddTeacherController();
         UserRepositoryInterface userRepositoryInterface = new UserRepository();
-        AddTeacherPresenterInterface addTeacherPresenterInterface = new AddTeacherPresenter(addTeacherViewInterface, userRepositoryInterface);
+        CourseRepositoryInterface courseRepositoryInterface = new CourseRepository();
+        AddTeacherPresenterInterface addTeacherPresenterInterface = new AddTeacherPresenter(addTeacherViewInterface, userRepositoryInterface, courseRepositoryInterface);
         ViewNavigator.switchScene((Node) event.getSource(), "/AddTeacherView.fxml", "Add Teacher", addTeacherViewInterface);
+        addTeacherViewInterface.setup();
+//        CourseRepository courseRepository = new CourseRepository();
+//        courseRepository.printCourseInfo();
     }
     @FXML
     private void openAddCourseWindow(ActionEvent event){
