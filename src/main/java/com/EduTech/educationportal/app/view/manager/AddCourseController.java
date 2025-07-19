@@ -48,7 +48,8 @@ public class AddCourseController implements AddCourseViewInterface {
         }
         int courseDurationText = Integer.parseInt(courseDuration.getText());
         presenter.addCourse(courseTitleText, courseCodeText , teacherID, courseDescriptionText, 12);
-
+        if(teacherID != null)
+            presenter.setSubject(courseTitleText, teacherID);
 //        courseRepository.printCourseInfo();
 
     }

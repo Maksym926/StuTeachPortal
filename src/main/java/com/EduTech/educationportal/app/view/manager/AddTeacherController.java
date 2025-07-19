@@ -49,6 +49,9 @@ public class AddTeacherController implements AddTeacherViewInterface {
         }
         if(!presenter.checkUserPresence(emailText))
             presenter.addTeacherToDB(nameText, emailText, cityText, passwordText, courseID);
+            if(courseID != null){
+                presenter.setTeacher(emailText, courseID);
+            }
         else{
             Log.warn("The teacher with this email already exists");
         }

@@ -2,6 +2,7 @@ package com.EduTech.educationportal.data;
 
 import com.EduTech.educationportal.interfaces.repository.CourseRepositoryInterface;
 import com.EduTech.educationportal.model.Course;
+import com.EduTech.educationportal.model.Teacher;
 import com.EduTech.educationportal.utils.Log;
 
 import java.sql.Connection;
@@ -56,6 +57,86 @@ public class CourseRepository implements CourseRepositoryInterface {
         }
 
     }
+
+    @Override
+    public void setSubject(String courseTitle, Integer teacherID) {
+        Log.info("Entering setSubject method");
+        String sql = "SELECT * FROM coursesDB where courseTitle = ?";
+        try(Connection conn = DBConnection.getConnection();PreparedStatement stmt = conn.prepareStatement(sql)
+        ){
+            Log.info("Setting subject");
+            stmt.setString(1, courseTitle);
+            ResultSet rs = stmt.executeQuery();
+            if(rs.next()){
+                int courseID = rs.getInt("id");
+                String sql2 = "UPDATE usersDB SET subject = ? WHERE id = ?";
+                try(Connection conn2 = DBConnection.getConnection();PreparedStatement stmt2 = conn2.prepareStatement(sql2)){
+                    stmt2.setInt(1, courseID);
+                    stmt2.setInt(2, teacherID);
+
+                    int rowsUpdated = stmt2.executeUpdate();
+                    if(rowsUpdated > 0){
+                        Log.info("Subject was successfully set");
+                    }else
+                        Log.warn("Subject was not set");
+
+
+
+                }catch (SQLException e){
+                    Log.error("Error while setting subject");
+                    e.printStackTrace();
+                }
+            }
+            else {
+                Log.warn("No course found with title: " + courseTitle);
+            }
+
+        }catch (SQLException e){
+            Log.error("Error setSubject method");
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void setTeacher(String email, Integer courseID) {
+        Log.info("Entering setCourse method");
+        String sql = "SELECT * FROM usersDB where email = ?";
+        try(Connection conn = DBConnection.getConnection();PreparedStatement stmt = conn.prepareStatement(sql)
+        ){
+            Log.info("Setting teacher");
+            stmt.setString(1, email);
+            ResultSet rs = stmt.executeQuery();
+            if(rs.next()){
+                int teacherID = rs.getInt("id");
+                String sql2 = "UPDATE coursesDB SET teacherID = ? WHERE id = ?";
+                try(Connection conn2 = DBConnection.getConnection();PreparedStatement stmt2 = conn2.prepareStatement(sql2)){
+                    stmt2.setInt(1, teacherID);
+                    stmt2.setInt(2, courseID);
+
+                    int rowsUpdated = stmt2.executeUpdate();
+                    if(rowsUpdated > 0){
+                        Log.info("Teacher was successfully set");
+                    }else
+                        Log.warn("Teacher was not set");
+
+
+
+                }catch (SQLException e){
+                    Log.error("Error while setting teacher");
+                    e.printStackTrace();
+                }
+            }
+            else {
+                Log.warn("No teacher is found with email: " + email);
+            }
+
+        }catch (SQLException e){
+            Log.error("Error in setCourse method");
+            e.printStackTrace();
+        }
+    }
+
+
     public void printCourseInfo(){
         String sql = "SELECT * FROM coursesDB";
         Log.info("Getting course info from db");

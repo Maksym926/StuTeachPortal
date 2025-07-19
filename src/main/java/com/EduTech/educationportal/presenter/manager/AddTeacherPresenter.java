@@ -33,4 +33,9 @@ public class AddTeacherPresenter implements AddTeacherPresenterInterface {
     public void getCourses(List<Course> course){
         courseRepository.getCourses(course);
     }
+
+    @Override
+    public void setTeacher(String email, Integer courseID) {
+        courseRepository.setTeacher(email, courseID);
+    }
 }

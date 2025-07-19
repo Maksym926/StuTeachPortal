@@ -7,4 +7,6 @@ import java.util.List;
 public interface CourseRepositoryInterface {
     void addCourse(String courseTitle, String courseCode, Integer teacherID, String courseDescription, int courseDuration);
     void getCourses(List<Course> courses);
+    void setSubject(String courseTitle, Integer teacherID );
+    void setTeacher(String email, Integer courseID);
 }

@@ -24,4 +24,9 @@ public class AddCoursePresenter implements AddCoursePresenterInterface {
     public void getTeachers(List<Teacher> teacherList){
         userRepository.getTeachers(teacherList);
     }
+
+
+    public void setSubject(String courseTittle, Integer teacherID) {
+        courseRepository.setSubject(courseTittle, teacherID);
+    }
 }
