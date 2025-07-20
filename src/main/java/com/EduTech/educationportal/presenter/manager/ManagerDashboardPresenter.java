@@ -1,10 +1,9 @@
 package com.EduTech.educationportal.presenter.manager;
 
-import com.EduTech.educationportal.data.UserRepository;
 import com.EduTech.educationportal.interfaces.presenter.ManagerPresenterInterface;
 import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
 import com.EduTech.educationportal.interfaces.view.ManagerDashboardViewInterface;
-import com.EduTech.educationportal.model.Teacher;
+import com.EduTech.educationportal.model.User;
 import javafx.collections.ObservableList;
 
 public class ManagerDashboardPresenter implements ManagerPresenterInterface {
@@ -17,7 +16,7 @@ public class ManagerDashboardPresenter implements ManagerPresenterInterface {
     }
 
     @Override
-    public void getTeachers(ObservableList<Teacher> teacherList) {
-        userRepositoryInterface.getTeachers(teacherList);
+    public void getUsers(ObservableList<User> teacherList) {
+        userRepositoryInterface.getUsers(teacherList);
     }
 }

@@ -1,26 +1,9 @@
 package com.EduTech.educationportal.model;
 
-public class Student {
-    int id;
-    String name;
-    String email;
-    public void setId(int id) {
-        this.id = id;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public void setEmail(String email) {
-        this.email = email;
-    }
+public class Student extends User {
 
-    public int getId() {
-        return id;
-    }
-    public String getName() {
-        return name;
-    }
-    public String getEmail() {
-        return email;
+
+    public Student(int ID, String name, String email, String city, String password) {
+        super(ID, name, email, city, password, "teacher");
     }
 }

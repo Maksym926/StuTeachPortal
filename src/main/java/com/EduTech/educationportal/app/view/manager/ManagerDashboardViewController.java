@@ -12,6 +12,7 @@ import com.EduTech.educationportal.interfaces.view.AddTeacherViewInterface;
 import com.EduTech.educationportal.interfaces.view.ManagerDashboardViewInterface;
 import com.EduTech.educationportal.interfaces.view.SetupControllerInterface;
 import com.EduTech.educationportal.model.Teacher;
+import com.EduTech.educationportal.model.User;
 import com.EduTech.educationportal.presenter.manager.AddCoursePresenter;
 import com.EduTech.educationportal.presenter.manager.AddTeacherPresenter;
 import com.EduTech.educationportal.presenter.manager.ManagerDashboardPresenter;
@@ -30,9 +31,9 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
     private ManagerDashboardPresenter presenter;
 
     @FXML
-    ListView<Teacher> teacherListView;
+    ListView<User> teacherListView;
 
-    private final ObservableList<Teacher> teacherList = FXCollections.observableArrayList();
+    private final ObservableList<User> teacherList = FXCollections.observableArrayList();
 
 
     @Override
@@ -46,9 +47,9 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
 
         teacherListView.setItems(teacherList);
 
-        teacherListView.setCellFactory(list -> new ListCell<Teacher>() {
+        teacherListView.setCellFactory(list -> new ListCell<User>() {
             @Override
-            protected void updateItem(Teacher teacher, boolean empty) {
+            protected void updateItem(User teacher, boolean empty) {
                 super.updateItem(teacher, empty);
                 if (empty || teacher == null) {
                     setText(null);
@@ -57,7 +58,7 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
                 }
             }
         });
-        presenter.getTeachers(teacherList);
+        presenter.getUsers(teacherList);
 
     }
     @FXML

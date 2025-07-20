@@ -2,6 +2,7 @@ package com.EduTech.educationportal.data;
 
 import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
 import com.EduTech.educationportal.model.Teacher;
+import com.EduTech.educationportal.model.User;
 import com.EduTech.educationportal.utils.Log;
 import javafx.collections.ObservableList;
 
@@ -42,7 +43,7 @@ public class UserRepository implements UserRepositoryInterface {
                 student.setEmail(rs.getString("email"));
                 student.setPassword(rs.getString("password"));
                 student.setCity(rs.getString("city"));
-                student.setSubject(rs.getInt("subject"));
+//                student.setSubject(rs.getInt("subject"));
                 students.add(student);
             }
 
@@ -85,12 +86,11 @@ public class UserRepository implements UserRepositoryInterface {
             return false;
         }
     }
-    public void getTeachers(ObservableList<Teacher> teacherList){
+    public void getUsers(ObservableList<User> teacherList){
         Log.info("Start getting teachers from database");
         try (Connection conn = DBConnection.getConnection();
-             PreparedStatement stmt = conn.prepareStatement("SELECT id, name, email, city, password, subject FROM usersDB WHERE role = 'teacher'");
+             PreparedStatement stmt = conn.prepareStatement("SELECT id, name, email, city, password, role FROM usersDB WHERE role != 'manager'");
              ResultSet rs = stmt.executeQuery()) {
-
             while (rs.next()) {
                 Log.info("Get teachers from database");
                 int id = rs.getInt("id");
@@ -98,8 +98,8 @@ public class UserRepository implements UserRepositoryInterface {
                 String email = rs.getString("email");
                 String city = rs.getString("city");
                 String password = rs.getString("password");
-                int subject = rs.getInt("subject");
-                teacherList.add(new Teacher(id, name, email, city, password, subject));
+                String role = rs.getString("role");
+                teacherList.add(new User(id, name, email, city, password, role));
             }
 
         } catch (SQLException e) {

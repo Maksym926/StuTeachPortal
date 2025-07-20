@@ -32,9 +32,9 @@ public class App extends Application {
          Log.info("Setting up default system manager");
          presenterInterface.setManager();
          UserRepository userRepository = new UserRepository();
-         for (Teacher teacher : userRepository.getAllTeachers()){
-             Log.info("Getting all teachers... "  +  teacher.getName() + " " + teacher.getEmail() + " "   + teacher.getPassword() + " "  + teacher.getCity() + " "  + teacher.getSubject());
-         }
+//         for (Teacher teacher : userRepository.getAllTeachers()){
+//             Log.info("Getting all teachers... "  +  teacher.getName() + " " + teacher.getEmail() + " "   + teacher.getPassword() + " "  + teacher.getCity() + " "  + teacher.getSubject());
+//         }
 
         launch(args);
     }
