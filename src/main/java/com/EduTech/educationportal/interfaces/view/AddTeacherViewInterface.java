@@ -4,5 +4,5 @@ import com.EduTech.educationportal.presenter.manager.AddTeacherPresenter;
 
 public interface AddTeacherViewInterface {
     void setPresenter(AddTeacherPresenter presenter);
-    void setup();
+
 }

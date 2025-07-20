@@ -8,6 +8,7 @@ import com.EduTech.educationportal.interfaces.view.MainMenuViewInterface;
 import com.EduTech.educationportal.model.Teacher;
 import com.EduTech.educationportal.presenter.shared.MainMenuPresenter;
 import com.EduTech.educationportal.utils.Log;
+import com.EduTech.educationportal.utils.ViewNavigator;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -49,6 +50,7 @@ public class App extends Application {
         stage.setScene(scene);
         stage.setTitle("Main View");
         stage.show();
+        ViewNavigator.addScene("/MainMenuView.fxml", "Main Menu");
     }
     public void stop() throws Exception {
         Log.info("Application is closing");

@@ -6,5 +6,5 @@ import com.EduTech.educationportal.presenter.student.StudentDashboardPresenter;
 public interface ManagerDashboardViewInterface {
     void setManagerDashboardPresenter(ManagerDashboardPresenter presenter);
 
-    void setup();
+
 }

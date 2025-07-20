@@ -30,23 +30,16 @@ import javafx.scene.Node;
 
 public class AuthViewController implements AuthViewInterface {
     //registerWindow inputs
-
     @FXML private TextField nameField;
     @FXML private TextField emailField;
     @FXML private PasswordField passwordField;
-
     // loginWindow inputs
-
     @FXML private TextField emailFieldLogin;
     @FXML private PasswordField passwordFieldLogin;
-
     @FXML private Label errorMassageLogin;
     @FXML private Label errorMassageRegister;
     @FXML private PasswordField repeatPasswordField;
-
     private AuthenticationPresenter presenter;
-
-
 
     @FXML
     public void handleRegisterData(ActionEvent event){
@@ -106,14 +99,10 @@ public class AuthViewController implements AuthViewInterface {
                 Log.info("Opening manager dashboard");
                 ManagerDashboardViewInterface managerDashboardView = new ManagerDashboardViewController();
                 UserRepositoryInterface userRepositoryInterface = new UserRepository();
-
                 ManagerPresenterInterface managerDashboardPresenter = new ManagerDashboardPresenter(managerDashboardView, userRepositoryInterface);
-
                 ViewNavigator.switchScene((Node)event.getSource(), "/ManagerDashboard.fxml", "Manager Dashboard", managerDashboardView);
-                managerDashboardView.setup();
                 break;
         }
-
     }
 
     private boolean isValidPassword(String password) {

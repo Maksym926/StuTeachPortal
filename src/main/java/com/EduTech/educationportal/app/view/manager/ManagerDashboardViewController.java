@@ -10,6 +10,7 @@ import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface
 import com.EduTech.educationportal.interfaces.view.AddCourseViewInterface;
 import com.EduTech.educationportal.interfaces.view.AddTeacherViewInterface;
 import com.EduTech.educationportal.interfaces.view.ManagerDashboardViewInterface;
+import com.EduTech.educationportal.interfaces.view.SetupControllerInterface;
 import com.EduTech.educationportal.model.Teacher;
 import com.EduTech.educationportal.presenter.manager.AddCoursePresenter;
 import com.EduTech.educationportal.presenter.manager.AddTeacherPresenter;
@@ -25,13 +26,13 @@ import javafx.scene.Node;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 
-public class ManagerDashboardViewController  implements ManagerDashboardViewInterface {
+public class ManagerDashboardViewController  implements ManagerDashboardViewInterface, SetupControllerInterface {
     private ManagerDashboardPresenter presenter;
 
     @FXML
     ListView<Teacher> teacherListView;
 
-    private ObservableList<Teacher> teacherList = FXCollections.observableArrayList();
+    private final ObservableList<Teacher> teacherList = FXCollections.observableArrayList();
 
 
     @Override
@@ -40,8 +41,11 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
     }
 
     public void setup() {
+        teacherList.clear();
         Log.info("Setting up teacher list");
+
         teacherListView.setItems(teacherList);
+
         teacherListView.setCellFactory(list -> new ListCell<Teacher>() {
             @Override
             protected void updateItem(Teacher teacher, boolean empty) {
@@ -54,6 +58,7 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
             }
         });
         presenter.getTeachers(teacherList);
+
     }
     @FXML
     private void openAddTeacherWindow(ActionEvent event){
@@ -63,9 +68,9 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
         CourseRepositoryInterface courseRepositoryInterface = new CourseRepository();
         AddTeacherPresenterInterface addTeacherPresenterInterface = new AddTeacherPresenter(addTeacherViewInterface, userRepositoryInterface, courseRepositoryInterface);
         ViewNavigator.switchScene((Node) event.getSource(), "/AddTeacherView.fxml", "Add Teacher", addTeacherViewInterface);
-        addTeacherViewInterface.setup();
-        CourseRepository courseRepository = new CourseRepository();
-        courseRepository.printCourseInfo();
+
+//        CourseRepository courseRepository = new CourseRepository();
+//        courseRepository.printCourseInfo();
     }
     @FXML
     private void openAddCourseWindow(ActionEvent event){
@@ -75,7 +80,7 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
         UserRepositoryInterface userRepositoryInterface = new UserRepository();
         AddCoursePresenterInterface addCoursePresenterInterface = new AddCoursePresenter(addCourseViewInterface, courseRepositoryInterface, userRepositoryInterface);
         ViewNavigator.switchScene((Node) event.getSource(), "/AddCourseView.fxml", "Add Course", addCourseViewInterface);
-        addCourseViewInterface.setup();
+
     }
     @FXML
     public void returnToPreviousForm(ActionEvent event){

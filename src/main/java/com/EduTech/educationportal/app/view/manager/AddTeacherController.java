@@ -2,6 +2,7 @@ package com.EduTech.educationportal.app.view.manager;
 
 import com.EduTech.educationportal.interfaces.presenter.AddTeacherPresenterInterface;
 import com.EduTech.educationportal.interfaces.view.AddTeacherViewInterface;
+import com.EduTech.educationportal.interfaces.view.SetupControllerInterface;
 import com.EduTech.educationportal.model.Course;
 import com.EduTech.educationportal.presenter.manager.AddTeacherPresenter;
 import com.EduTech.educationportal.utils.Log;
@@ -20,7 +21,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class AddTeacherController implements AddTeacherViewInterface {
+public class AddTeacherController implements AddTeacherViewInterface, SetupControllerInterface {
 
     AddTeacherPresenterInterface presenter;
 
@@ -61,7 +62,6 @@ public class AddTeacherController implements AddTeacherViewInterface {
     public void setup(){
         Log.info("Setting up add teacher view");
         presenter.getCourses(courses);
-//        Map<MenuItem, Course> courseMap = new HashMap<>();
         for(Course course : courses){
             MenuItem menuItem = new MenuItem(course.getTitle());
             menuItem.setOnAction(event -> {

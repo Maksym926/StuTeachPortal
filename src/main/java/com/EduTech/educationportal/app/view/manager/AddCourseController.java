@@ -3,6 +3,7 @@ package com.EduTech.educationportal.app.view.manager;
 import com.EduTech.educationportal.data.CourseRepository;
 import com.EduTech.educationportal.data.UserRepository;
 import com.EduTech.educationportal.interfaces.view.AddCourseViewInterface;
+import com.EduTech.educationportal.interfaces.view.SetupControllerInterface;
 import com.EduTech.educationportal.model.Teacher;
 import com.EduTech.educationportal.presenter.manager.AddCoursePresenter;
 import com.EduTech.educationportal.utils.Log;
@@ -20,7 +21,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class AddCourseController implements AddCourseViewInterface {
+public class AddCourseController implements AddCourseViewInterface, SetupControllerInterface {
 
     AddCoursePresenter presenter;
 
