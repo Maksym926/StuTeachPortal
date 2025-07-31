@@ -1,5 +1,6 @@
 package com.EduTech.educationportal.model;
 
+
 public class User {
     private int ID;
     private String name;
@@ -11,6 +12,11 @@ public class User {
 
     public User(){
 
+    }
+    public User(String name, String email, String role){
+        this.name = name;
+        this.email = email;
+        this.role = role;
     }
     public User(int ID, String name, String email, String city, String password, String role) {
         this.ID = ID;
