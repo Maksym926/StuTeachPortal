@@ -16,7 +16,7 @@ public class ManagerDashboardPresenter implements ManagerPresenterInterface {
     }
 
     @Override
-    public void getUsers(ObservableList<User> teacherList) {
+    public void getAllUsers(ObservableList<User> teacherList) {
         userRepositoryInterface.getUsers(teacherList);
     }
 }

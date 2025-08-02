@@ -18,24 +18,19 @@ public class ViewNavigator {
             Stage stage = (Stage)source.getScene().getWindow();
             Scene scene = stage.getScene();
             if(scene != null){
-                scenes.push(new SceneData(fxmlPath, title, controller));
-            }
+                scenes.push(new SceneData(fxmlPath, title, controller));}
             FXMLLoader loader = new FXMLLoader(ViewNavigator.class.getResource(fxmlPath));
             loader.setController(controller);
             Parent root = loader.load();
             if(controller instanceof SetupControllerInterface setupController){
                 Log.info("Setting up controller using setup interface");
-                setupController.setup();
-            }
+                setupController.setup();}
             stage.setScene(new Scene(root));
             stage.setTitle(title);
-
             stage.show();
-
         }catch (IOException e){
             e.printStackTrace();
         }
-
     }
     public static void addScene(String fxmlPath, String title){
         scenes.push(new SceneData(fxmlPath, title));
@@ -45,10 +40,7 @@ public class ViewNavigator {
             Log.info("Going back");
             scenes.pop();
             SceneData sceneData = scenes.peek();
-
             switchScene(source, sceneData.getFxmlPath(), sceneData.getTitle(), sceneData.getController());
-
-
         }
     }
 }

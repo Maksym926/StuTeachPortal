@@ -21,11 +21,11 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.layout.BorderPane;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 
 public class ManagerDashboardViewController  implements ManagerDashboardViewInterface, SetupControllerInterface {
@@ -40,13 +40,44 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
     @FXML TableColumn<User, String> fullNameColumn = new TableColumn<>("Name");
     @FXML TableColumn<User, String> emailColumn = new TableColumn<>("Email");
     @FXML TableColumn<User, String> roleColumn = new TableColumn<>("Role");
+
+    @FXML MenuButton locationMenu;
+
+    @FXML CheckBox teacherCheckBox;
+    @FXML CheckBox studentCheckBox;
+
+    public String selectedLocation;
     @Override
     public void setManagerDashboardPresenter(ManagerDashboardPresenter presenter) {
         this.presenter = presenter;
     }
 
+    @Override
+    public List<User> getFilteredUsers(String location, boolean isStudent, boolean isTeacher) {
+        userList.clear();
+        presenter.getAllUsers(userList);
+
+        return userList.stream().filter(user -> {
+            if(location != null && !location.equals(user.getCity()))
+                return false;
+
+            if(location != null){
+                if(isStudent && !user.getRole().equals("student") && !location.equals(user.getCity()))return false;
+                if(isTeacher && !user.getRole().equals("teacher") && !location.equals(user.getCity()))return false;
+            }else {
+                if(isStudent && !user.getRole().equals("student"))return false;
+                if(isTeacher && !user.getRole().equals("teacher"))return false;
+            }
+            return true;
+        }).collect(Collectors.toList());
+
+    }
+
     public void setup() {
         Log.info("Setting up manage view...");
+
+        userList.clear();
+
 
         // Configure the columns
         fullNameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
@@ -54,9 +85,28 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
         roleColumn.setCellValueFactory(new PropertyValueFactory<>("role"));
 
         // Add some test data or fetch from presenter
-        presenter.getUsers(userList);
+
+        presenter.getAllUsers(userList);
+
+
+
 
         userTable.setItems(userList);
+
+        Log.info("Getting all users locations from DB ");
+        for(User user : userList){
+
+            MenuItem menuItem = new MenuItem(user.getCity());
+            menuItem.setOnAction(event -> {
+
+                locationMenu.setText(user.getCity());
+                selectedLocation = user.getCity();
+            });
+            locationMenu.getItems().add(menuItem);
+
+
+        }
+        locationMenu.setText("Select Location");
 
 
 
@@ -88,4 +138,20 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
         Log.info("Returning to previous form");
         ViewNavigator.goBack((Node) event.getSource());
     }
+    @FXML
+    public void applyFilters(ActionEvent event){
+        Log.info("Applying filters");
+        userList.clear();
+        userTable.getItems().clear();
+        if(selectedLocation == null && teacherCheckBox.isSelected() && studentCheckBox.isSelected() || selectedLocation == null && !teacherCheckBox.isSelected() && !studentCheckBox.isSelected()){
+            presenter.getAllUsers(userList);
+            userTable.setItems(userList);
+
+        } else {
+          List<User> users = getFilteredUsers(selectedLocation, studentCheckBox.isSelected(), teacherCheckBox.isSelected());
+          userTable.setItems(FXCollections.observableArrayList(users));
+        }
+
+    }
+
 }

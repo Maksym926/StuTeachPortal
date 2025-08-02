@@ -6,10 +6,13 @@ import com.EduTech.educationportal.interfaces.presenter.MainMenuPresenterInterfa
 import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
 import com.EduTech.educationportal.interfaces.view.MainMenuViewInterface;
 import com.EduTech.educationportal.model.Teacher;
+import com.EduTech.educationportal.model.User;
 import com.EduTech.educationportal.presenter.shared.MainMenuPresenter;
 import com.EduTech.educationportal.utils.Log;
 import com.EduTech.educationportal.utils.ViewNavigator;
 import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -31,10 +34,14 @@ public class App extends Application {
          presenterInterface.deleteUser("admin@school.com");
          Log.info("Setting up default system manager");
          presenterInterface.setManager();
+         ObservableList<User> testList = FXCollections.observableArrayList();
          UserRepository userRepository = new UserRepository();
-//         for (Teacher teacher : userRepository.getAllTeachers()){
-//             Log.info("Getting all teachers... "  +  teacher.getName() + " " + teacher.getEmail() + " "   + teacher.getPassword() + " "  + teacher.getCity() + " "  + teacher.getSubject());
-//         }
+         userRepository.getUsers(testList);
+
+         for(User user : testList){
+             Log.warn("All user's locations and name : " + user.getName() + " " + user.getCity() + " " + user.getRole());
+         }
+
 
         launch(args);
     }

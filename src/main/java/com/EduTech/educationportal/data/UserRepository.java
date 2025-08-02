@@ -86,7 +86,7 @@ public class UserRepository implements UserRepositoryInterface {
             return false;
         }
     }
-    public void getUsers(ObservableList<User> teacherList){
+    public void getUsers(ObservableList<User> userList){
         Log.info("Start getting teachers from database");
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement("SELECT id, name, email, city, password, role FROM usersDB WHERE role != 'manager'");
@@ -99,7 +99,7 @@ public class UserRepository implements UserRepositoryInterface {
                 String city = rs.getString("city");
                 String password = rs.getString("password");
                 String role = rs.getString("role");
-                teacherList.add(new User(id, name, email, city, password, role));
+                userList.add(new User(id, name, email, city, password, role));
             }
 
         } catch (SQLException e) {
