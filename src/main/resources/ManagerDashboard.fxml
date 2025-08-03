@@ -28,7 +28,7 @@
       <TextField fx:id="userSearch" layoutX="119.0" layoutY="20.0" prefWidth="370.0" />
       <Text layoutX="501.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Account" wrappingWidth="51.562496185302734" />
 
-      <Button layoutX="119.0" layoutY="67.0" mnemonicParsing="false" text="Manage courses" />
+      <Button layoutX="119.0" layoutY="67.0" mnemonicParsing="false" text="Manage courses" onAction="#openManageCourseWindow"/>
       <Button layoutX="244.0" layoutY="67.0" mnemonicParsing="false" text="Manage users" />
       <Button layoutX="455.0" layoutY="67.0" mnemonicParsing="false" onAction="#openAddTeacherWindow" text="Add teachers" />
       <Button layoutX="351.0" layoutY="67.0" mnemonicParsing="false" onAction="#openAddCourseWindow" text="Add courses" />

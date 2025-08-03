@@ -31,7 +31,7 @@ public class AddTeacherPresenter implements AddTeacherPresenterInterface {
     }
 
     public void getCourses(List<Course> course){
-        courseRepository.getCourses(course);
+        courseRepository.getNonAssignedCourses(course);
     }
 
     @Override

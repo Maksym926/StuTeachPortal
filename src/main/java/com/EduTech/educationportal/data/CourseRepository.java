@@ -4,6 +4,7 @@ import com.EduTech.educationportal.interfaces.repository.CourseRepositoryInterfa
 import com.EduTech.educationportal.model.Course;
 import com.EduTech.educationportal.model.Teacher;
 import com.EduTech.educationportal.utils.Log;
+import javafx.collections.ObservableList;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -34,7 +35,7 @@ public class CourseRepository implements CourseRepositoryInterface {
             e.printStackTrace();
         }
     }
-    public void getCourses(List<Course> courses){
+    public void getNonAssignedCourses(List<Course> courses){
         String sql = "SELECT * FROM coursesDB where teacherID is NULL";
         Log.info("Getting courses from db");
         try(Connection conn = DBConnection.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql);
@@ -57,7 +58,28 @@ public class CourseRepository implements CourseRepositoryInterface {
         }
 
     }
+    public void getAllCourses(ObservableList<Course> courses){
+        Log.info("Getting all courses from db");
+        String sql = "SELECT * From coursesDB";
+        try(Connection conn = DBConnection.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)){
+            ResultSet rs = stmt.executeQuery();
+            while(rs.next()){
+                Course course = new Course();
+                course.setID(rs.getInt("id"));
+                course.setTitle(rs.getString("courseTitle"));
+                course.setCode(rs.getString("courseCode"));
+                course.setTeacherId(rs.getInt("teacherID"));
+                course.setDescription(rs.getString("courseDescription"));
+                course.setDuration(rs.getInt("courseDuration"));
+                courses.add(course);
+                Log.info("Course was successfully parsed");
+            }
 
+        }catch (SQLException e){
+            Log.error("Error while getting all courses");
+            e.printStackTrace();
+        }
+    }
     @Override
     public void setSubject(String courseTitle, Integer teacherID) {
         Log.info("Entering setSubject method");

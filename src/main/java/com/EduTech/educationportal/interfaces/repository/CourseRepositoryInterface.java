@@ -1,12 +1,14 @@
 package com.EduTech.educationportal.interfaces.repository;
 
 import com.EduTech.educationportal.model.Course;
+import javafx.collections.ObservableList;
 
 import java.util.List;
 
 public interface CourseRepositoryInterface {
     void addCourse(String courseTitle, String courseCode, Integer teacherID, String courseDescription, int courseDuration);
-    void getCourses(List<Course> courses);
+    void getNonAssignedCourses(List<Course> courses);
     void setSubject(String courseTitle, Integer teacherID );
     void setTeacher(String email, Integer courseID);
+    void getAllCourses(ObservableList<Course> courses);
 }

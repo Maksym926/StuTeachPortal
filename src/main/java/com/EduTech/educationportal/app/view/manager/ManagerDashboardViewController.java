@@ -1,19 +1,19 @@
 package com.EduTech.educationportal.app.view.manager;
 
+import com.EduTech.educationportal.app.view.shared.ManageCourseController;
 import com.EduTech.educationportal.data.CourseRepository;
 import com.EduTech.educationportal.data.UserRepository;
 import com.EduTech.educationportal.interfaces.presenter.AddCoursePresenterInterface;
 import com.EduTech.educationportal.interfaces.presenter.AddTeacherPresenterInterface;
+import com.EduTech.educationportal.interfaces.presenter.ManageCoursePresenterInterface;
 import com.EduTech.educationportal.interfaces.repository.CourseRepositoryInterface;
 import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
-import com.EduTech.educationportal.interfaces.view.AddCourseViewInterface;
-import com.EduTech.educationportal.interfaces.view.AddTeacherViewInterface;
-import com.EduTech.educationportal.interfaces.view.ManagerDashboardViewInterface;
-import com.EduTech.educationportal.interfaces.view.SetupControllerInterface;
+import com.EduTech.educationportal.interfaces.view.*;
 import com.EduTech.educationportal.model.User;
 import com.EduTech.educationportal.presenter.manager.AddCoursePresenter;
 import com.EduTech.educationportal.presenter.manager.AddTeacherPresenter;
 import com.EduTech.educationportal.presenter.manager.ManagerDashboardPresenter;
+import com.EduTech.educationportal.presenter.shared.ManageCoursePresenter;
 import com.EduTech.educationportal.utils.Log;
 import com.EduTech.educationportal.utils.ViewNavigator;
 import javafx.collections.FXCollections;
@@ -165,6 +165,14 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
         AddCoursePresenterInterface addCoursePresenterInterface = new AddCoursePresenter(addCourseViewInterface, courseRepositoryInterface, userRepositoryInterface);
         ViewNavigator.switchScene((Node) event.getSource(), "/AddCourseView.fxml", "Add Course", addCourseViewInterface);
 
+    }
+    @FXML
+    private void openManageCourseWindow(ActionEvent event){
+        Log.info("Opening manageCourseWindow");
+        ManageCourseViewInterface manageCourseViewInterface = new ManageCourseController();
+        CourseRepositoryInterface courseRepositoryInterface = new CourseRepository();
+        ManageCoursePresenterInterface manageCoursePresenterInterface = new ManageCoursePresenter(manageCourseViewInterface, courseRepositoryInterface);
+        ViewNavigator.switchScene((Node) event.getSource(), "/ManageCourses.fxml", "Manage courses dashboard", manageCourseViewInterface);
     }
     @FXML
     public void returnToPreviousForm(ActionEvent event){

@@ -687,3 +687,6 @@ SELECT id, name, email, city, password, subject FROM usersDB WHERE role = 'teach
 2025-07-18 17:42:38.679250+01:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]DESCRIBE usersDB"; expected "DELETE, DROP"; SQL statement:
 DESCRIBE usersDB [42001-224]
+2025-08-03 19:11:35.381333+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COURSEDB" not found; SQL statement:
+SELECT * From courseDB [42102-224]
