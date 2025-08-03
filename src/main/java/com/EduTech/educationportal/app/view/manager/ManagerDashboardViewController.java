@@ -61,13 +61,12 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
             if(location != null && !location.equals(user.getCity()))
                 return false;
 
-            if(location != null){
-                if(isStudent && !user.getRole().equals("student") && !location.equals(user.getCity()))return false;
-                if(isTeacher && !user.getRole().equals("teacher") && !location.equals(user.getCity()))return false;
-            }else {
-                if(isStudent && !user.getRole().equals("student"))return false;
-                if(isTeacher && !user.getRole().equals("teacher"))return false;
-            }
+            if(isStudent && isTeacher && location!= null && location.equals(user.getCity()))
+                return true;
+
+            if(isStudent && !user.getRole().equals("student"))return false;
+            if(isTeacher && !user.getRole().equals("teacher"))return false;
+
             return true;
         }).collect(Collectors.toList());
 
