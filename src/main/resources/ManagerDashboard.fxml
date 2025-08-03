@@ -25,7 +25,7 @@
       <CheckBox fx:id="teacherCheckBox" layoutX="18.0" layoutY="109.0" mnemonicParsing="false" text="Teachers" />
       <CheckBox fx:id="studentCheckBox" layoutX="18.0" layoutY="136.0" mnemonicParsing="false" text="Students" />
       <Text layoutX="16.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" />
-      <TextField layoutX="119.0" layoutY="20.0" prefWidth="370.0" />
+      <TextField fx:id="userSearch" layoutX="119.0" layoutY="20.0" prefWidth="370.0" />
       <Text layoutX="501.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Account" wrappingWidth="51.562496185302734" />
 
       <Button layoutX="119.0" layoutY="67.0" mnemonicParsing="false" text="Manage courses" />

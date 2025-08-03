@@ -9,6 +9,7 @@ import java.util.List;
 public interface ManagerDashboardViewInterface {
     void setManagerDashboardPresenter(ManagerDashboardPresenter presenter);
     List<User> getFilteredUsers(String location, boolean isStudent, boolean isTeacher);
+    List<User> getFilteredUsers(String query);
 
 
 }

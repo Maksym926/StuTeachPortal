@@ -24,6 +24,7 @@ import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -47,6 +48,8 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
     @FXML CheckBox studentCheckBox;
 
     @FXML MenuItem allLocations;
+
+    @FXML TextField userSearch;
 
     public String selectedLocation;
 
@@ -78,6 +81,18 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
             return true;
         }).collect(Collectors.toList());
 
+    }
+
+    @Override
+    public List<User> getFilteredUsers(String query) {
+        userList.clear();
+        presenter.getAllUsers(userList);
+        List<User> filteredUsers = new ArrayList<>();
+        for(User user: userList){
+            if(user.getName().toLowerCase().contains(query.toLowerCase()) || user.getEmail().toLowerCase().contains(query.toLowerCase()))
+                filteredUsers.add(user);
+        }
+        return filteredUsers;
     }
 
     public void setup() {
@@ -119,6 +134,13 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
         });
         locationMenu.setText("Select Location");
 
+        userSearch.setOnAction(event ->{
+            String query = userSearch.getText();
+            userTable.setItems(FXCollections.observableArrayList(getFilteredUsers(query)));
+
+
+
+        });
 
 
     }
@@ -165,5 +187,6 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
         }
 
     }
+
 
 }
