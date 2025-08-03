@@ -46,7 +46,12 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
     @FXML CheckBox teacherCheckBox;
     @FXML CheckBox studentCheckBox;
 
+    @FXML MenuItem allLocations;
+
     public String selectedLocation;
+
+
+
     @Override
     public void setManagerDashboardPresenter(ManagerDashboardPresenter presenter) {
         this.presenter = presenter;
@@ -58,6 +63,9 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
         presenter.getAllUsers(userList);
 
         return userList.stream().filter(user -> {
+
+            if(location.equals("All locations")) return true;
+
             if(location != null && !location.equals(user.getCity()))
                 return false;
 
@@ -105,6 +113,10 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
 
 
         }
+        allLocations.setOnAction(e ->{
+            locationMenu.setText("All locations");
+            selectedLocation = "All locations";
+        });
         locationMenu.setText("Select Location");
 
 
@@ -140,9 +152,10 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
     @FXML
     public void applyFilters(ActionEvent event){
         Log.info("Applying filters");
+
         userList.clear();
         userTable.getItems().clear();
-        if(selectedLocation == null && teacherCheckBox.isSelected() && studentCheckBox.isSelected() || selectedLocation == null && !teacherCheckBox.isSelected() && !studentCheckBox.isSelected()){
+        if( selectedLocation == null && teacherCheckBox.isSelected() && studentCheckBox.isSelected() || selectedLocation == null && !teacherCheckBox.isSelected() && !studentCheckBox.isSelected() ){
             presenter.getAllUsers(userList);
             userTable.setItems(userList);
 
