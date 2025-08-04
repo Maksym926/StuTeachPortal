@@ -90,7 +90,9 @@ public class UserRepository implements UserRepositoryInterface {
         Log.info("Start getting teachers from database");
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement("SELECT id, name, email, city, password, role FROM usersDB WHERE role != 'manager'");
+
              ResultSet rs = stmt.executeQuery()) {
+
             while (rs.next()) {
                 Log.info("Get teachers from database");
                 int id = rs.getInt("id");
@@ -128,6 +130,34 @@ public class UserRepository implements UserRepositoryInterface {
             Log.error("Error while getting teacher from database");
             e.printStackTrace();
         }
+    }
+    public User getTeacherByID(int id){
+
+        String sql = "Select * From usersDB where id=? AND role = 'teacher'";
+        try(Connection conn = DBConnection.getConnection();
+        PreparedStatement stmt = conn.prepareStatement(sql)){
+            stmt.setInt(1,id);
+            ResultSet rs = stmt.executeQuery();
+            if(rs.next()){
+                String name = rs.getString("name");
+                String email = rs.getString("email");
+                String city = rs.getString("city");
+                String password = rs.getString("password");
+                Integer subject = rs.getObject("subject", Integer.class);
+                return new Teacher(id, name, email, city, password, subject);
+            }else{
+                Log.warn("No teacher was found with provided ID");
+            }
+
+
+
+
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+
+
+        return null;
     }
     public void addTeacher(String name, String email, String city, String password, Integer courseID){
         Log.info("Add teacher to database");

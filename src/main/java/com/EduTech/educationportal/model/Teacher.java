@@ -7,6 +7,7 @@ public class Teacher extends User {
     public Teacher(){
 
     }
+
     public Teacher(int ID, String name, String email, String city, String password, Integer subject) {
         super(ID, name, email, city, password, "teacher");
         this.subject = subject;
@@ -16,5 +17,6 @@ public class Teacher extends User {
     public int getSubject() {
         return subject;
     }
+
 
 }

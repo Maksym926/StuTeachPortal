@@ -171,7 +171,8 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
         Log.info("Opening manageCourseWindow");
         ManageCourseViewInterface manageCourseViewInterface = new ManageCourseController();
         CourseRepositoryInterface courseRepositoryInterface = new CourseRepository();
-        ManageCoursePresenterInterface manageCoursePresenterInterface = new ManageCoursePresenter(manageCourseViewInterface, courseRepositoryInterface);
+        UserRepositoryInterface userRepositoryInterface = new UserRepository();
+        ManageCoursePresenterInterface manageCoursePresenterInterface = new ManageCoursePresenter(manageCourseViewInterface, courseRepositoryInterface, userRepositoryInterface);
         ViewNavigator.switchScene((Node) event.getSource(), "/ManageCourses.fxml", "Manage courses dashboard", manageCourseViewInterface);
     }
     @FXML

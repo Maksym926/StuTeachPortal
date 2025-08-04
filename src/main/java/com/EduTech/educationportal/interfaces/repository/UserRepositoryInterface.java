@@ -17,4 +17,6 @@ public interface UserRepositoryInterface {
     void addTeacher(String name, String email, String city, String password, Integer courseID );
 
     void getTeachers(List<Teacher> teacherList);
+
+    User getTeacherByID(int id);
 }
