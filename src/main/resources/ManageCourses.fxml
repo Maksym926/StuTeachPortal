@@ -28,7 +28,7 @@
       </Text>
       <TextField layoutX="160.0" layoutY="48.0" prefHeight="26.0" prefWidth="383.0" />
       <Button layoutX="264.0" layoutY="338.0" mnemonicParsing="false" text="Manage course" />
-      <Button layoutX="382.0" layoutY="338.0" mnemonicParsing="false" text="Manage course description" onAction="#manageDescription"/>
+      <Button layoutX="382.0" layoutY="338.0" mnemonicParsing="false" text="Manage course description" onAction="#openManageDescriptionWindow"/>
        <Button onAction="#returnToPreviousForm">
            <graphic>
                <ImageView fitHeight="20" fitWidth="20">

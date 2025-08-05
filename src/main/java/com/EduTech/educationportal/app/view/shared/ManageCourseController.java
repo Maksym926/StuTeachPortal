@@ -1,15 +1,13 @@
 package com.EduTech.educationportal.app.view.shared;
 
-import com.EduTech.educationportal.interfaces.view.EditCourseDescriptionContainerInterface;
+import com.EduTech.educationportal.interfaces.view.CourseDescriptionPreviewInterface;
 import com.EduTech.educationportal.interfaces.view.ManageCourseViewInterface;
 import com.EduTech.educationportal.interfaces.view.SetupControllerInterface;
 import com.EduTech.educationportal.model.Course;
-import com.EduTech.educationportal.model.Teacher;
 import com.EduTech.educationportal.model.User;
 import com.EduTech.educationportal.presenter.shared.ManageCoursePresenter;
 import com.EduTech.educationportal.utils.Log;
 import com.EduTech.educationportal.utils.ViewNavigator;
-import javafx.beans.binding.Bindings;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -62,15 +60,15 @@ public class ManageCourseController implements SetupControllerInterface, ManageC
 
     }
     @FXML
-    public void manageDescription(ActionEvent event){
+    public void openManageDescriptionWindow(ActionEvent event){
         Log.info("Opening manageDescription Window ");
         Course course = courseTable.getSelectionModel().getSelectedItem();
         if(course == null){
             Log.info("Selected item is empty");
             return;
         }
-        EditCourseDescriptionContainerInterface editCourseDescriptionContainerInterface = new EditCourseDescriptionController(course);
-        ViewNavigator.switchScene((Node)event.getSource(), "/EditCourseDescription.fxml", "Edit description", editCourseDescriptionContainerInterface, true);
+        CourseDescriptionPreviewInterface courseDescriptionPreviewController = new CourseDescriptionPreviewController(course);
+        ViewNavigator.switchScene((Node)event.getSource(), "/CourseDescriptionPreview.fxml", "Edit description", courseDescriptionPreviewController, true);
     }
     @FXML
     public void returnToPreviousForm(ActionEvent event){

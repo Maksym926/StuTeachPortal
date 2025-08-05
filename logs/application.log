@@ -10868,3 +10868,453 @@
 2025-08-05 15:12:30 [JavaFX Application Thread] INFO  Log - Returning to previous form
 2025-08-05 15:12:30 [JavaFX Application Thread] INFO  Log - Going back
 2025-08-05 15:12:32 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-08-05 16:01:04 [main] INFO  Log - Starting application
+2025-08-05 16:01:04 [main] INFO  Log - Deleting manager
+2025-08-05 16:01:04 [main] INFO  Log - Deleting user
+2025-08-05 16:01:04 [main] INFO  Log - User deleted was successfully
+2025-08-05 16:01:04 [main] INFO  Log - Setting up default system manager
+2025-08-05 16:01:04 [main] INFO  Log - Creating a default manager
+2025-08-05 16:01:05 [main] INFO  Log - Start getting teachers from database
+2025-08-05 16:01:05 [main] INFO  Log - Get teachers from database
+2025-08-05 16:01:05 [main] INFO  Log - Get teachers from database
+2025-08-05 16:01:05 [main] INFO  Log - Get teachers from database
+2025-08-05 16:01:05 [main] INFO  Log - Get teachers from database
+2025-08-05 16:01:05 [main] INFO  Log - Get teachers from database
+2025-08-05 16:01:05 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-05 16:01:05 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-05 16:01:05 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-05 16:01:05 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-05 16:01:05 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-05 16:01:05 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-05 16:01:05 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-05 16:01:07 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-08-05 16:01:10 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-08-05 16:01:10 [JavaFX Application Thread] INFO  Log - Starting login
+2025-08-05 16:01:10 [JavaFX Application Thread] INFO  Log - Login user
+2025-08-05 16:01:11 [JavaFX Application Thread] INFO  Log - Login successful
+2025-08-05 16:01:11 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-08-05 16:01:11 [JavaFX Application Thread] INFO  Log - Check user role
+2025-08-05 16:01:11 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-08-05 16:01:11 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:01:11 [JavaFX Application Thread] INFO  Log - Setting up manage view...
+2025-08-05 16:01:11 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-08-05 16:01:11 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:01:11 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:01:11 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:01:11 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:01:11 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:01:11 [JavaFX Application Thread] INFO  Log - Getting all users locations from DB 
+2025-08-05 16:01:13 [JavaFX Application Thread] INFO  Log - Opening manageCourseWindow
+2025-08-05 16:01:13 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:01:13 [JavaFX Application Thread] INFO  Log - Setting up Manage Course Window
+2025-08-05 16:01:13 [JavaFX Application Thread] INFO  Log - Getting all courses from db
+2025-08-05 16:01:13 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:01:13 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:01:13 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:01:13 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:01:15 [JavaFX Application Thread] INFO  Log - Opening manageDescription Window 
+2025-08-05 16:03:10 [main] INFO  Log - Starting application
+2025-08-05 16:03:10 [main] INFO  Log - Deleting manager
+2025-08-05 16:03:10 [main] INFO  Log - Deleting user
+2025-08-05 16:03:10 [main] INFO  Log - User deleted was successfully
+2025-08-05 16:03:11 [main] INFO  Log - Setting up default system manager
+2025-08-05 16:03:11 [main] INFO  Log - Creating a default manager
+2025-08-05 16:03:11 [main] INFO  Log - Start getting teachers from database
+2025-08-05 16:03:11 [main] INFO  Log - Get teachers from database
+2025-08-05 16:03:11 [main] INFO  Log - Get teachers from database
+2025-08-05 16:03:11 [main] INFO  Log - Get teachers from database
+2025-08-05 16:03:11 [main] INFO  Log - Get teachers from database
+2025-08-05 16:03:11 [main] INFO  Log - Get teachers from database
+2025-08-05 16:03:11 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-05 16:03:11 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-05 16:03:11 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-05 16:03:11 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-05 16:03:11 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-05 16:03:11 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-05 16:03:11 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-05 16:03:13 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-08-05 16:03:15 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-08-05 16:03:15 [JavaFX Application Thread] INFO  Log - Starting login
+2025-08-05 16:03:15 [JavaFX Application Thread] INFO  Log - Login user
+2025-08-05 16:03:16 [JavaFX Application Thread] INFO  Log - Login successful
+2025-08-05 16:03:16 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-08-05 16:03:16 [JavaFX Application Thread] INFO  Log - Check user role
+2025-08-05 16:03:16 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-08-05 16:03:16 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:03:16 [JavaFX Application Thread] INFO  Log - Setting up manage view...
+2025-08-05 16:03:16 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-08-05 16:03:16 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:03:16 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:03:16 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:03:16 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:03:16 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:03:16 [JavaFX Application Thread] INFO  Log - Getting all users locations from DB 
+2025-08-05 16:03:17 [JavaFX Application Thread] INFO  Log - Opening manageCourseWindow
+2025-08-05 16:03:17 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:03:17 [JavaFX Application Thread] INFO  Log - Setting up Manage Course Window
+2025-08-05 16:03:17 [JavaFX Application Thread] INFO  Log - Getting all courses from db
+2025-08-05 16:03:17 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:03:17 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:03:17 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:03:17 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:03:19 [JavaFX Application Thread] INFO  Log - Opening manageDescription Window 
+2025-08-05 16:08:32 [main] INFO  Log - Starting application
+2025-08-05 16:08:32 [main] INFO  Log - Deleting manager
+2025-08-05 16:08:32 [main] INFO  Log - Deleting user
+2025-08-05 16:08:32 [main] INFO  Log - User deleted was successfully
+2025-08-05 16:08:33 [main] INFO  Log - Setting up default system manager
+2025-08-05 16:08:33 [main] INFO  Log - Creating a default manager
+2025-08-05 16:08:33 [main] INFO  Log - Start getting teachers from database
+2025-08-05 16:08:33 [main] INFO  Log - Get teachers from database
+2025-08-05 16:08:33 [main] INFO  Log - Get teachers from database
+2025-08-05 16:08:33 [main] INFO  Log - Get teachers from database
+2025-08-05 16:08:33 [main] INFO  Log - Get teachers from database
+2025-08-05 16:08:33 [main] INFO  Log - Get teachers from database
+2025-08-05 16:08:33 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-05 16:08:33 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-05 16:08:33 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-05 16:08:33 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-05 16:08:33 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-05 16:08:33 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-05 16:08:33 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-05 16:08:35 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-08-05 16:08:39 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-08-05 16:08:39 [JavaFX Application Thread] INFO  Log - Starting login
+2025-08-05 16:08:39 [JavaFX Application Thread] INFO  Log - Login user
+2025-08-05 16:08:39 [JavaFX Application Thread] INFO  Log - Login successful
+2025-08-05 16:08:39 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-08-05 16:08:39 [JavaFX Application Thread] INFO  Log - Check user role
+2025-08-05 16:08:39 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-08-05 16:08:40 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:08:40 [JavaFX Application Thread] INFO  Log - Setting up manage view...
+2025-08-05 16:08:40 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-08-05 16:08:40 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:08:40 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:08:40 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:08:40 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:08:40 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:08:40 [JavaFX Application Thread] INFO  Log - Getting all users locations from DB 
+2025-08-05 16:08:40 [JavaFX Application Thread] INFO  Log - Opening manageCourseWindow
+2025-08-05 16:08:41 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:08:41 [JavaFX Application Thread] INFO  Log - Setting up Manage Course Window
+2025-08-05 16:08:41 [JavaFX Application Thread] INFO  Log - Getting all courses from db
+2025-08-05 16:08:41 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:08:41 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:08:41 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:08:41 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:08:44 [JavaFX Application Thread] INFO  Log - Opening manageDescription Window 
+2025-08-05 16:11:26 [main] INFO  Log - Starting application
+2025-08-05 16:11:26 [main] INFO  Log - Deleting manager
+2025-08-05 16:11:26 [main] INFO  Log - Deleting user
+2025-08-05 16:11:27 [main] INFO  Log - User deleted was successfully
+2025-08-05 16:11:27 [main] INFO  Log - Setting up default system manager
+2025-08-05 16:11:27 [main] INFO  Log - Creating a default manager
+2025-08-05 16:11:27 [main] INFO  Log - Start getting teachers from database
+2025-08-05 16:11:27 [main] INFO  Log - Get teachers from database
+2025-08-05 16:11:27 [main] INFO  Log - Get teachers from database
+2025-08-05 16:11:27 [main] INFO  Log - Get teachers from database
+2025-08-05 16:11:27 [main] INFO  Log - Get teachers from database
+2025-08-05 16:11:27 [main] INFO  Log - Get teachers from database
+2025-08-05 16:11:27 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-05 16:11:27 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-05 16:11:27 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-05 16:11:27 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-05 16:11:27 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-05 16:11:27 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-05 16:11:27 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-05 16:11:29 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-08-05 16:11:31 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-08-05 16:11:31 [JavaFX Application Thread] INFO  Log - Starting login
+2025-08-05 16:11:31 [JavaFX Application Thread] INFO  Log - Login user
+2025-08-05 16:11:32 [JavaFX Application Thread] INFO  Log - Login successful
+2025-08-05 16:11:32 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-08-05 16:11:32 [JavaFX Application Thread] INFO  Log - Check user role
+2025-08-05 16:11:32 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-08-05 16:11:32 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:11:32 [JavaFX Application Thread] INFO  Log - Setting up manage view...
+2025-08-05 16:11:32 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-08-05 16:11:32 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:11:32 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:11:32 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:11:32 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:11:32 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:11:32 [JavaFX Application Thread] INFO  Log - Getting all users locations from DB 
+2025-08-05 16:11:33 [JavaFX Application Thread] INFO  Log - Opening manageCourseWindow
+2025-08-05 16:11:33 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:11:33 [JavaFX Application Thread] INFO  Log - Setting up Manage Course Window
+2025-08-05 16:11:33 [JavaFX Application Thread] INFO  Log - Getting all courses from db
+2025-08-05 16:11:33 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:11:33 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:11:33 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:11:33 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:11:35 [JavaFX Application Thread] INFO  Log - Opening manageDescription Window 
+2025-08-05 16:13:19 [main] INFO  Log - Starting application
+2025-08-05 16:13:19 [main] INFO  Log - Deleting manager
+2025-08-05 16:13:19 [main] INFO  Log - Deleting user
+2025-08-05 16:13:19 [main] INFO  Log - User deleted was successfully
+2025-08-05 16:13:19 [main] INFO  Log - Setting up default system manager
+2025-08-05 16:13:19 [main] INFO  Log - Creating a default manager
+2025-08-05 16:13:19 [main] INFO  Log - Start getting teachers from database
+2025-08-05 16:13:19 [main] INFO  Log - Get teachers from database
+2025-08-05 16:13:19 [main] INFO  Log - Get teachers from database
+2025-08-05 16:13:19 [main] INFO  Log - Get teachers from database
+2025-08-05 16:13:19 [main] INFO  Log - Get teachers from database
+2025-08-05 16:13:19 [main] INFO  Log - Get teachers from database
+2025-08-05 16:13:20 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-05 16:13:20 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-05 16:13:20 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-05 16:13:20 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-05 16:13:20 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-05 16:13:20 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-05 16:13:20 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-05 16:13:22 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-08-05 16:14:33 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-08-05 16:14:33 [JavaFX Application Thread] INFO  Log - Starting login
+2025-08-05 16:14:33 [JavaFX Application Thread] INFO  Log - Login user
+2025-08-05 16:14:34 [JavaFX Application Thread] INFO  Log - Login successful
+2025-08-05 16:14:34 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-08-05 16:14:34 [JavaFX Application Thread] INFO  Log - Check user role
+2025-08-05 16:14:34 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-08-05 16:14:34 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:14:34 [JavaFX Application Thread] INFO  Log - Setting up manage view...
+2025-08-05 16:14:34 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-08-05 16:14:34 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:14:34 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:14:34 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:14:34 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:14:34 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:14:34 [JavaFX Application Thread] INFO  Log - Getting all users locations from DB 
+2025-08-05 16:14:35 [JavaFX Application Thread] INFO  Log - Opening manageCourseWindow
+2025-08-05 16:14:35 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:14:35 [JavaFX Application Thread] INFO  Log - Setting up Manage Course Window
+2025-08-05 16:14:35 [JavaFX Application Thread] INFO  Log - Getting all courses from db
+2025-08-05 16:14:35 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:14:35 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:14:35 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:14:35 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:14:37 [JavaFX Application Thread] INFO  Log - Opening manageDescription Window 
+2025-08-05 16:14:37 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:14:40 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:14:54 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-08-05 16:24:46 [main] INFO  Log - Starting application
+2025-08-05 16:24:46 [main] INFO  Log - Deleting manager
+2025-08-05 16:24:46 [main] INFO  Log - Deleting user
+2025-08-05 16:24:46 [main] INFO  Log - User deleted was successfully
+2025-08-05 16:24:46 [main] INFO  Log - Setting up default system manager
+2025-08-05 16:24:46 [main] INFO  Log - Creating a default manager
+2025-08-05 16:24:46 [main] INFO  Log - Start getting teachers from database
+2025-08-05 16:24:46 [main] INFO  Log - Get teachers from database
+2025-08-05 16:24:46 [main] INFO  Log - Get teachers from database
+2025-08-05 16:24:46 [main] INFO  Log - Get teachers from database
+2025-08-05 16:24:46 [main] INFO  Log - Get teachers from database
+2025-08-05 16:24:46 [main] INFO  Log - Get teachers from database
+2025-08-05 16:24:47 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-05 16:24:47 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-05 16:24:47 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-05 16:24:47 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-05 16:24:47 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-05 16:24:47 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-05 16:24:47 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-05 16:24:48 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-08-05 16:24:51 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-08-05 16:24:51 [JavaFX Application Thread] INFO  Log - Starting login
+2025-08-05 16:24:51 [JavaFX Application Thread] INFO  Log - Login user
+2025-08-05 16:24:51 [JavaFX Application Thread] INFO  Log - Login successful
+2025-08-05 16:24:51 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-08-05 16:24:51 [JavaFX Application Thread] INFO  Log - Check user role
+2025-08-05 16:24:51 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-08-05 16:24:51 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:24:51 [JavaFX Application Thread] INFO  Log - Setting up manage view...
+2025-08-05 16:24:51 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-08-05 16:24:51 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:24:51 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:24:51 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:24:51 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:24:51 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:24:52 [JavaFX Application Thread] INFO  Log - Getting all users locations from DB 
+2025-08-05 16:24:53 [JavaFX Application Thread] INFO  Log - Opening manageCourseWindow
+2025-08-05 16:24:53 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:24:53 [JavaFX Application Thread] INFO  Log - Setting up Manage Course Window
+2025-08-05 16:24:53 [JavaFX Application Thread] INFO  Log - Getting all courses from db
+2025-08-05 16:24:53 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:24:53 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:24:53 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:24:53 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:24:55 [JavaFX Application Thread] INFO  Log - Opening manageDescription Window 
+2025-08-05 16:24:55 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:24:57 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:51:49 [main] INFO  Log - Starting application
+2025-08-05 16:51:49 [main] INFO  Log - Deleting manager
+2025-08-05 16:51:49 [main] INFO  Log - Deleting user
+2025-08-05 16:51:50 [main] INFO  Log - User deleted was successfully
+2025-08-05 16:52:33 [main] INFO  Log - Starting application
+2025-08-05 16:52:33 [main] INFO  Log - Deleting manager
+2025-08-05 16:52:33 [main] INFO  Log - Deleting user
+2025-08-05 16:52:33 [main] INFO  Log - User deleted was successfully
+2025-08-05 16:52:33 [main] INFO  Log - Setting up default system manager
+2025-08-05 16:52:33 [main] INFO  Log - Creating a default manager
+2025-08-05 16:52:33 [main] INFO  Log - Start getting teachers from database
+2025-08-05 16:52:33 [main] INFO  Log - Get teachers from database
+2025-08-05 16:52:33 [main] INFO  Log - Get teachers from database
+2025-08-05 16:52:33 [main] INFO  Log - Get teachers from database
+2025-08-05 16:52:33 [main] INFO  Log - Get teachers from database
+2025-08-05 16:52:33 [main] INFO  Log - Get teachers from database
+2025-08-05 16:52:34 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-05 16:52:34 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-05 16:52:34 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-05 16:52:34 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-05 16:52:34 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-05 16:52:34 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-05 16:52:34 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-05 16:52:35 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-08-05 16:52:39 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-08-05 16:52:39 [JavaFX Application Thread] INFO  Log - Starting login
+2025-08-05 16:52:39 [JavaFX Application Thread] INFO  Log - Login user
+2025-08-05 16:52:39 [JavaFX Application Thread] INFO  Log - Login successful
+2025-08-05 16:52:39 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-08-05 16:52:39 [JavaFX Application Thread] INFO  Log - Check user role
+2025-08-05 16:52:40 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-08-05 16:52:40 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:52:40 [JavaFX Application Thread] INFO  Log - Setting up manage view...
+2025-08-05 16:52:40 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-08-05 16:52:40 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:52:40 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:52:40 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:52:40 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:52:40 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:52:40 [JavaFX Application Thread] INFO  Log - Getting all users locations from DB 
+2025-08-05 16:52:42 [JavaFX Application Thread] INFO  Log - Opening manageCourseWindow
+2025-08-05 16:52:42 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:52:42 [JavaFX Application Thread] INFO  Log - Setting up Manage Course Window
+2025-08-05 16:52:42 [JavaFX Application Thread] INFO  Log - Getting all courses from db
+2025-08-05 16:52:42 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:52:42 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:52:42 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:52:42 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:52:44 [JavaFX Application Thread] INFO  Log - Opening manageDescription Window 
+2025-08-05 16:52:44 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:52:46 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:53:32 [main] INFO  Log - Starting application
+2025-08-05 16:53:32 [main] INFO  Log - Deleting manager
+2025-08-05 16:53:32 [main] INFO  Log - Deleting user
+2025-08-05 16:53:32 [main] INFO  Log - User deleted was successfully
+2025-08-05 16:53:32 [main] INFO  Log - Setting up default system manager
+2025-08-05 16:53:32 [main] INFO  Log - Creating a default manager
+2025-08-05 16:53:32 [main] INFO  Log - Start getting teachers from database
+2025-08-05 16:53:32 [main] INFO  Log - Get teachers from database
+2025-08-05 16:53:32 [main] INFO  Log - Get teachers from database
+2025-08-05 16:53:32 [main] INFO  Log - Get teachers from database
+2025-08-05 16:53:32 [main] INFO  Log - Get teachers from database
+2025-08-05 16:53:32 [main] INFO  Log - Get teachers from database
+2025-08-05 16:53:33 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-05 16:53:33 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-05 16:53:33 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-05 16:53:33 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-05 16:53:33 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-05 16:53:33 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-05 16:53:33 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-05 16:53:34 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-08-05 16:53:37 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-08-05 16:53:37 [JavaFX Application Thread] INFO  Log - Starting login
+2025-08-05 16:53:37 [JavaFX Application Thread] INFO  Log - Login user
+2025-08-05 16:53:37 [JavaFX Application Thread] INFO  Log - Login successful
+2025-08-05 16:53:37 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-08-05 16:53:37 [JavaFX Application Thread] INFO  Log - Check user role
+2025-08-05 16:53:37 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-08-05 16:53:37 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:53:37 [JavaFX Application Thread] INFO  Log - Setting up manage view...
+2025-08-05 16:53:37 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-08-05 16:53:37 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:53:37 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:53:37 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:53:37 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:53:37 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:53:38 [JavaFX Application Thread] INFO  Log - Getting all users locations from DB 
+2025-08-05 16:53:39 [JavaFX Application Thread] INFO  Log - Opening manageCourseWindow
+2025-08-05 16:53:39 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:53:39 [JavaFX Application Thread] INFO  Log - Setting up Manage Course Window
+2025-08-05 16:53:39 [JavaFX Application Thread] INFO  Log - Getting all courses from db
+2025-08-05 16:53:39 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:53:39 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:53:39 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:53:39 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:53:41 [JavaFX Application Thread] INFO  Log - Opening manageDescription Window 
+2025-08-05 16:53:41 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:53:42 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:53:50 [JavaFX Application Thread] INFO  Log - Starting updating course
+2025-08-05 16:53:55 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-08-05 16:54:02 [main] INFO  Log - Starting application
+2025-08-05 16:54:02 [main] INFO  Log - Deleting manager
+2025-08-05 16:54:02 [main] INFO  Log - Deleting user
+2025-08-05 16:54:02 [main] INFO  Log - User deleted was successfully
+2025-08-05 16:54:03 [main] INFO  Log - Setting up default system manager
+2025-08-05 16:54:03 [main] INFO  Log - Creating a default manager
+2025-08-05 16:54:03 [main] INFO  Log - Start getting teachers from database
+2025-08-05 16:54:03 [main] INFO  Log - Get teachers from database
+2025-08-05 16:54:03 [main] INFO  Log - Get teachers from database
+2025-08-05 16:54:03 [main] INFO  Log - Get teachers from database
+2025-08-05 16:54:03 [main] INFO  Log - Get teachers from database
+2025-08-05 16:54:03 [main] INFO  Log - Get teachers from database
+2025-08-05 16:54:03 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-05 16:54:03 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-05 16:54:03 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-05 16:54:03 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-05 16:54:03 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-05 16:54:03 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-05 16:54:03 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-05 16:54:05 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-08-05 16:54:08 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-08-05 16:54:08 [JavaFX Application Thread] INFO  Log - Starting login
+2025-08-05 16:54:08 [JavaFX Application Thread] INFO  Log - Login user
+2025-08-05 16:54:08 [JavaFX Application Thread] INFO  Log - Login successful
+2025-08-05 16:54:08 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-08-05 16:54:08 [JavaFX Application Thread] INFO  Log - Check user role
+2025-08-05 16:54:09 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-08-05 16:54:09 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:54:09 [JavaFX Application Thread] INFO  Log - Setting up manage view...
+2025-08-05 16:54:09 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-08-05 16:54:09 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:54:09 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:54:09 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:54:09 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:54:09 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:54:09 [JavaFX Application Thread] INFO  Log - Getting all users locations from DB 
+2025-08-05 16:54:10 [JavaFX Application Thread] INFO  Log - Opening manageCourseWindow
+2025-08-05 16:54:10 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:54:10 [JavaFX Application Thread] INFO  Log - Setting up Manage Course Window
+2025-08-05 16:54:10 [JavaFX Application Thread] INFO  Log - Getting all courses from db
+2025-08-05 16:54:10 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:54:10 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:54:10 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:54:10 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:54:12 [JavaFX Application Thread] INFO  Log - Opening manageDescription Window 
+2025-08-05 16:54:12 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:54:17 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-08-05 16:54:17 [JavaFX Application Thread] INFO  Log - Going back
+2025-08-05 16:54:17 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:54:17 [JavaFX Application Thread] INFO  Log - Setting up Manage Course Window
+2025-08-05 16:54:17 [JavaFX Application Thread] INFO  Log - Getting all courses from db
+2025-08-05 16:54:17 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:54:17 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:54:17 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:54:17 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-05 16:54:19 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-08-05 16:54:19 [JavaFX Application Thread] INFO  Log - Going back
+2025-08-05 16:54:19 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-05 16:54:19 [JavaFX Application Thread] INFO  Log - Setting up manage view...
+2025-08-05 16:54:19 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-08-05 16:54:19 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:54:19 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:54:19 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:54:19 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:54:19 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-05 16:54:19 [JavaFX Application Thread] INFO  Log - Getting all users locations from DB 
+2025-08-05 16:54:20 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-08-05 16:54:20 [JavaFX Application Thread] INFO  Log - Going back
+2025-08-05 16:54:27 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-08-05 16:54:27 [JavaFX Application Thread] INFO  Log - Going back
+2025-08-05 16:54:28 [JavaFX Application Thread] INFO  Log - Opening register window
+2025-08-05 16:54:29 [JavaFX Application Thread] INFO  Log - Returning to previous form
+2025-08-05 16:54:29 [JavaFX Application Thread] INFO  Log - Going back
+2025-08-05 16:54:30 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-08-05 17:11:24 [JavaFX Application Thread] INFO  Log - Application is closing

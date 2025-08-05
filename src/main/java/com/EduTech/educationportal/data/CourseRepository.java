@@ -157,7 +157,26 @@ public class CourseRepository implements CourseRepositoryInterface {
             e.printStackTrace();
         }
     }
+    public void updateCourseDescription(Course course){
+        Log.info("Starting updating course");
+        String sql = "UPDATE coursesDB SET courseTitle = ?, courseCode = ?, teacherID = ?, courseDescription = ?, courseDuration = ? WHERE id = ?";
+        try(Connection conn = DBConnection.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)){
+            stmt.setString(1,course.getTitle());
+            stmt.setString(2, course.getCode());
+            stmt.setInt(3, course.getTeacherId());
+            stmt.setString(4, course.getDescription());
+            stmt.setInt(5, course.getDuration());
+            stmt.setInt(6, course.getID());
+            stmt.executeUpdate();
 
+
+
+
+
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
 
     public void printCourseInfo(){
         String sql = "SELECT * FROM coursesDB";
