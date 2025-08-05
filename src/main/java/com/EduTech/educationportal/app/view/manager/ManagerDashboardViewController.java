@@ -67,7 +67,7 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
 
         return userList.stream().filter(user -> {
 
-            if(location.equals("All locations")) return true;
+            if(location != null && location.equals("All locations")) return true;
 
             if(location != null && !location.equals(user.getCity()))
                 return false;
