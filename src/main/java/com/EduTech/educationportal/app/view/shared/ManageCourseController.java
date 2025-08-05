@@ -46,13 +46,13 @@ public class ManageCourseController implements SetupControllerInterface, ManageC
 
 
         courseTitleColumn.setCellValueFactory(new PropertyValueFactory<>("title"));
-        courseTeacherColumn.setCellValueFactory(data -> {
-
-            Course course = data.getValue();
-            User teacher = presenter.getTeacherByID(course.getTeacherId());
-            return Bindings.createStringBinding(() -> (teacher!=null) ? teacher.getName() : "Unknown");
-
-        });
+//        courseTeacherColumn.setCellValueFactory(data -> {
+//
+//            Course course = data.getValue();
+//            User teacher = presenter.getTeacherByID(course.getTeacherId());
+//            return Bindings.createStringBinding(() -> (teacher!=null) ? teacher.getName() : "Unknown");
+//
+//        });
         presenter.getAllCourses(courseList);
 
 
@@ -70,6 +70,11 @@ public class ManageCourseController implements SetupControllerInterface, ManageC
             return;
         }
         EditCourseDescriptionContainerInterface editCourseDescriptionContainerInterface = new EditCourseDescriptionController(course);
-        ViewNavigator.switchScene((Node)event.getSource(), "/EditCourseDescription.fxml", "Edit description", editCourseDescriptionContainerInterface);
+        ViewNavigator.switchScene((Node)event.getSource(), "/EditCourseDescription.fxml", "Edit description", editCourseDescriptionContainerInterface, true);
+    }
+    @FXML
+    public void returnToPreviousForm(ActionEvent event){
+        Log.info("Returning to previous form");
+        ViewNavigator.goBack((Node) event.getSource());
     }
 }

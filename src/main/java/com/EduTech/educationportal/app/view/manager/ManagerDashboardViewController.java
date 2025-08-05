@@ -151,7 +151,7 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
         UserRepositoryInterface userRepositoryInterface = new UserRepository();
         CourseRepositoryInterface courseRepositoryInterface = new CourseRepository();
         AddTeacherPresenterInterface addTeacherPresenterInterface = new AddTeacherPresenter(addTeacherViewInterface, userRepositoryInterface, courseRepositoryInterface);
-        ViewNavigator.switchScene((Node) event.getSource(), "/AddTeacherView.fxml", "Add Teacher", addTeacherViewInterface);
+        ViewNavigator.switchScene((Node) event.getSource(), "/AddTeacherView.fxml", "Add Teacher", addTeacherViewInterface, true);
 
 //        CourseRepository courseRepository = new CourseRepository();
 //        courseRepository.printCourseInfo();
@@ -163,7 +163,7 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
         CourseRepositoryInterface courseRepositoryInterface = new CourseRepository();
         UserRepositoryInterface userRepositoryInterface = new UserRepository();
         AddCoursePresenterInterface addCoursePresenterInterface = new AddCoursePresenter(addCourseViewInterface, courseRepositoryInterface, userRepositoryInterface);
-        ViewNavigator.switchScene((Node) event.getSource(), "/AddCourseView.fxml", "Add Course", addCourseViewInterface);
+        ViewNavigator.switchScene((Node) event.getSource(), "/AddCourseView.fxml", "Add Course", addCourseViewInterface, true);
 
     }
     @FXML
@@ -173,7 +173,7 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
         CourseRepositoryInterface courseRepositoryInterface = new CourseRepository();
         UserRepositoryInterface userRepositoryInterface = new UserRepository();
         ManageCoursePresenterInterface manageCoursePresenterInterface = new ManageCoursePresenter(manageCourseViewInterface, courseRepositoryInterface, userRepositoryInterface);
-        ViewNavigator.switchScene((Node) event.getSource(), "/ManageCourses.fxml", "Manage courses dashboard", manageCourseViewInterface);
+        ViewNavigator.switchScene((Node) event.getSource(), "/ManageCourses.fxml", "Manage courses dashboard", manageCourseViewInterface, true);
     }
     @FXML
     public void returnToPreviousForm(ActionEvent event){

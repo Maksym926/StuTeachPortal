@@ -52,7 +52,7 @@ public class AuthViewController implements AuthViewInterface {
                 errorMassageRegister.setText("");
                 String password = passwordField.getText();
                 presenter.registerUser(name, email, password);
-                ViewNavigator.switchScene((Node)event.getSource(), "/LoginView.fxml", "Login", this);
+                ViewNavigator.switchScene((Node)event.getSource(), "/LoginView.fxml", "Login", this, true);
             }else{
                 Log.warn("Register failed, account with this email already exists");
                 errorMassageRegister.setText("Account with this email already exists");
@@ -87,20 +87,20 @@ public class AuthViewController implements AuthViewInterface {
                 Log.info("Opening student dashboard");
                 StudentDashboardViewInterface StudentDashboardView = new StudentDashboardViewController();
                 StudentPresenterInterface StudentDashboardPresenter = new StudentDashboardPresenter(StudentDashboardView);
-                ViewNavigator.switchScene((Node)event.getSource(), "/StudentDashboard.fxml", "Student Dashboard", StudentDashboardView);
+                ViewNavigator.switchScene((Node)event.getSource(), "/StudentDashboard.fxml", "Student Dashboard", StudentDashboardView, true);
                 break;
             case "teacher":
                 Log.info("Opening teacher dashboard");
                 TeacherDashboardViewInterface TeacherDashboardView = new TeacherDashboardViewController();
                 TeacherPresenterInterface TeacherDashboardPresenter = new TeacherDashboardPresenter(TeacherDashboardView);
-                ViewNavigator.switchScene((Node)event.getSource(), "/TeacherDashboard.fxml", "Teacher Dashboard", TeacherDashboardView);
+                ViewNavigator.switchScene((Node)event.getSource(), "/TeacherDashboard.fxml", "Teacher Dashboard", TeacherDashboardView, true);
                 break;
             case "manager":
                 Log.info("Opening manager dashboard");
                 ManagerDashboardViewInterface managerDashboardView = new ManagerDashboardViewController();
                 UserRepositoryInterface userRepositoryInterface = new UserRepository();
                 ManagerPresenterInterface managerDashboardPresenter = new ManagerDashboardPresenter(managerDashboardView, userRepositoryInterface);
-                ViewNavigator.switchScene((Node)event.getSource(), "/ManagerDashboard.fxml", "Manager Dashboard", managerDashboardView);
+                ViewNavigator.switchScene((Node)event.getSource(), "/ManagerDashboard.fxml", "Manager Dashboard", managerDashboardView, true);
                 break;
         }
     }

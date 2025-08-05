@@ -43,7 +43,7 @@ public class MainMenuViewController implements MainMenuViewInterface {
         AuthPresenterInterface authenticationPresenter = new AuthenticationPresenter(studentRepository, registerView);
 
 
-        ViewNavigator.switchScene((Node) event.getSource(), "/RegisterView.fxml", "Register", registerView);
+        ViewNavigator.switchScene((Node) event.getSource(), "/RegisterView.fxml", "Register", registerView, true);
     }
     @FXML
     public void openLoginWindow(ActionEvent event) {
@@ -52,7 +52,7 @@ public class MainMenuViewController implements MainMenuViewInterface {
         AuthViewInterface loginView = new AuthViewController();
             AuthPresenterInterface authenticationPresenter = new AuthenticationPresenter(studentRepository, loginView);
 
-        ViewNavigator.switchScene((Node) event.getSource(), "/LoginView.fxml", "Login", loginView);
+        ViewNavigator.switchScene((Node) event.getSource(), "/LoginView.fxml", "Login", loginView, true);
     }
 
     @Override

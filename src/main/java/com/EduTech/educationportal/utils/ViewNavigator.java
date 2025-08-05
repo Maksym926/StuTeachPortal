@@ -12,12 +12,12 @@ import java.util.Stack;
 
 public class ViewNavigator {
     private static Stack<SceneData> scenes = new Stack<>();
-    public static void switchScene(Node source, String fxmlPath, String title, Object controller){
+    public static void switchScene(Node source, String fxmlPath, String title, Object controller, boolean isPushInStack){
         try{
             //Pushing current stage
             Stage stage = (Stage)source.getScene().getWindow();
             Scene scene = stage.getScene();
-            if(scene != null){
+            if(scene != null && isPushInStack){
                 scenes.push(new SceneData(fxmlPath, title, controller));}
             FXMLLoader loader = new FXMLLoader(ViewNavigator.class.getResource(fxmlPath));
             loader.setController(controller);
@@ -40,7 +40,7 @@ public class ViewNavigator {
             Log.info("Going back");
             scenes.pop();
             SceneData sceneData = scenes.peek();
-            switchScene(source, sceneData.getFxmlPath(), sceneData.getTitle(), sceneData.getController());
+            switchScene(source, sceneData.getFxmlPath(), sceneData.getTitle(), sceneData.getController(), false);
         }
     }
 }
