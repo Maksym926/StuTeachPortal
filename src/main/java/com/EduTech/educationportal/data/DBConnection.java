@@ -17,10 +17,7 @@ public class DBConnection {
     public static void init() {
         try (Connection conn = getConnection();
         Statement stmt = conn.createStatement()) {
-//            String deleteDBSQL = "DROP TABLE IF EXISTS usersDB";
-//            stmt.execute(deleteDBSQL);
-//            String checkDB = "DESCRIBE usersDB";
-//            stmt.execute(checkDB);
+
             String usersDBSQL = "CREATE TABLE IF NOT EXISTS usersDB (" +
                     "id INT AUTO_INCREMENT PRIMARY KEY," +
                     "name VARCHAR(255), " +
@@ -46,6 +43,27 @@ public class DBConnection {
             stmt.execute(subjectsDBSQL);
             Log.info("Course table created or already exists.");
 
+//            String topicsDBSQL = "CREATE TABLE IF NOT EXISTS topicsDB (" +
+//                    "id INT AUTO_INCREMENT PRIMARY KEY, " +
+//                    "courseID INT, " +
+//                    "title VARCHAR(255), " +
+//                    "subTitle VARCHAR(255), " +
+//                    "content VARCHAR(255), " +
+//                    "image VARCHAR(255), " +
+//                    "assignment VARCHAR(255)" +
+//                    ")";
+//            stmt.execute(topicsDBSQL);
+//            String deleteDBSQL = "DROP TABLE IF EXISTS topicsDB";
+//            stmt.execute(deleteDBSQL);
+
+            String topicsDBSQL = "CREATE TABLE IF NOT EXISTS topicsDB (" +
+                    "id INT AUTO_INCREMENT PRIMARY KEY, " +
+                    "courseID INT, " +
+                    "title VARCHAR(255) " +
+                    ")";
+            stmt.execute(topicsDBSQL);
+
+            Log.info("Topic tables was created or already exists");
 
         } catch (SQLException e) {
             e.printStackTrace();

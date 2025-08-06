@@ -2500,3 +2500,6 @@ Select * From usersDB where id=? AND role = 'teacher' [90012-224]
 	at javafx.graphics@24.0.1/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
 	at javafx.graphics@24.0.1/com.sun.glass.ui.win.WinApplication.lambda$runLoop$0(WinApplication.java:168)
 	at java.base/java.lang.Thread.run(Thread.java:1570)
+2025-08-06 17:16:43.034347+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]DESCRIBE topicsDB"; expected "DELETE, DROP"; SQL statement:
+DESCRIBE topicsDB [42001-224]

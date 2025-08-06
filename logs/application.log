@@ -11318,3 +11318,407 @@
 2025-08-05 16:54:29 [JavaFX Application Thread] INFO  Log - Going back
 2025-08-05 16:54:30 [JavaFX Application Thread] INFO  Log - Opening login window
 2025-08-05 17:11:24 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-08-06 12:56:23 [main] INFO  Log - Starting application
+2025-08-06 12:56:24 [main] INFO  Log - Deleting manager
+2025-08-06 12:56:24 [main] INFO  Log - Deleting user
+2025-08-06 12:56:24 [main] INFO  Log - User deleted was successfully
+2025-08-06 12:56:24 [main] INFO  Log - Setting up default system manager
+2025-08-06 12:56:24 [main] INFO  Log - Creating a default manager
+2025-08-06 12:56:24 [main] INFO  Log - Start getting teachers from database
+2025-08-06 12:56:24 [main] INFO  Log - Get teachers from database
+2025-08-06 12:56:24 [main] INFO  Log - Get teachers from database
+2025-08-06 12:56:24 [main] INFO  Log - Get teachers from database
+2025-08-06 12:56:24 [main] INFO  Log - Get teachers from database
+2025-08-06 12:56:24 [main] INFO  Log - Get teachers from database
+2025-08-06 12:56:24 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-06 12:56:24 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-06 12:56:24 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-06 12:56:24 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-06 12:56:24 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-06 12:56:24 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-06 12:56:24 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-06 12:56:26 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-08-06 12:56:30 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-08-06 12:56:30 [JavaFX Application Thread] INFO  Log - Starting login
+2025-08-06 12:56:30 [JavaFX Application Thread] INFO  Log - Login user
+2025-08-06 12:56:30 [JavaFX Application Thread] INFO  Log - Login successful
+2025-08-06 12:56:30 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-08-06 12:56:30 [JavaFX Application Thread] INFO  Log - Check user role
+2025-08-06 12:56:30 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-08-06 12:56:30 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-06 12:56:30 [JavaFX Application Thread] INFO  Log - Setting up manage view...
+2025-08-06 12:56:30 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-08-06 12:56:30 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-06 12:56:30 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-06 12:56:30 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-06 12:56:30 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-06 12:56:30 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-06 12:56:30 [JavaFX Application Thread] INFO  Log - Getting all users locations from DB 
+2025-08-06 12:56:32 [JavaFX Application Thread] INFO  Log - Opening manageCourseWindow
+2025-08-06 12:56:32 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-06 12:56:32 [JavaFX Application Thread] INFO  Log - Setting up Manage Course Window
+2025-08-06 12:56:32 [JavaFX Application Thread] INFO  Log - Getting all courses from db
+2025-08-06 12:56:32 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-06 12:56:32 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-06 12:56:32 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-06 12:56:32 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-06 12:56:36 [JavaFX Application Thread] INFO  Log - Opening manageDescription Window 
+2025-08-06 12:56:36 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-06 12:56:38 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-06 12:56:46 [JavaFX Application Thread] INFO  Log - Starting updating course
+2025-08-06 12:56:48 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-08-06 12:56:53 [main] INFO  Log - Starting application
+2025-08-06 12:56:53 [main] INFO  Log - Deleting manager
+2025-08-06 12:56:53 [main] INFO  Log - Deleting user
+2025-08-06 12:56:53 [main] INFO  Log - User deleted was successfully
+2025-08-06 12:56:53 [main] INFO  Log - Setting up default system manager
+2025-08-06 12:56:53 [main] INFO  Log - Creating a default manager
+2025-08-06 12:56:54 [main] INFO  Log - Start getting teachers from database
+2025-08-06 12:56:54 [main] INFO  Log - Get teachers from database
+2025-08-06 12:56:54 [main] INFO  Log - Get teachers from database
+2025-08-06 12:56:54 [main] INFO  Log - Get teachers from database
+2025-08-06 12:56:54 [main] INFO  Log - Get teachers from database
+2025-08-06 12:56:54 [main] INFO  Log - Get teachers from database
+2025-08-06 12:56:54 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-06 12:56:54 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-06 12:56:54 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-06 12:56:54 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-06 12:56:54 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-06 12:56:54 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-06 12:56:54 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-06 12:56:55 [JavaFX Application Thread] INFO  Log - Opening login window
+2025-08-06 12:57:01 [JavaFX Application Thread] INFO  Log - Login button was pressed
+2025-08-06 12:57:01 [JavaFX Application Thread] INFO  Log - Starting login
+2025-08-06 12:57:01 [JavaFX Application Thread] INFO  Log - Login user
+2025-08-06 12:57:01 [JavaFX Application Thread] INFO  Log - Login successful
+2025-08-06 12:57:01 [JavaFX Application Thread] INFO  Log - Opening dashboard window
+2025-08-06 12:57:01 [JavaFX Application Thread] INFO  Log - Check user role
+2025-08-06 12:57:01 [JavaFX Application Thread] INFO  Log - Opening manager dashboard
+2025-08-06 12:57:01 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-06 12:57:01 [JavaFX Application Thread] INFO  Log - Setting up manage view...
+2025-08-06 12:57:01 [JavaFX Application Thread] INFO  Log - Start getting teachers from database
+2025-08-06 12:57:01 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-06 12:57:01 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-06 12:57:01 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-06 12:57:01 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-06 12:57:01 [JavaFX Application Thread] INFO  Log - Get teachers from database
+2025-08-06 12:57:02 [JavaFX Application Thread] INFO  Log - Getting all users locations from DB 
+2025-08-06 12:57:03 [JavaFX Application Thread] INFO  Log - Opening manageCourseWindow
+2025-08-06 12:57:03 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-06 12:57:03 [JavaFX Application Thread] INFO  Log - Setting up Manage Course Window
+2025-08-06 12:57:03 [JavaFX Application Thread] INFO  Log - Getting all courses from db
+2025-08-06 12:57:03 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-06 12:57:03 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-06 12:57:03 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-06 12:57:03 [JavaFX Application Thread] INFO  Log - Course was successfully parsed
+2025-08-06 12:57:15 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-08-06 14:09:33 [main] INFO  Log - Starting application
+2025-08-06 14:09:33 [main] INFO  Log - Deleting manager
+2025-08-06 14:09:33 [main] INFO  Log - Deleting user
+2025-08-06 14:09:34 [main] INFO  Log - User deleted was successfully
+2025-08-06 14:09:34 [main] INFO  Log - Setting up default system manager
+2025-08-06 14:09:34 [main] INFO  Log - Creating a default manager
+2025-08-06 14:09:34 [main] INFO  Log - Start getting teachers from database
+2025-08-06 14:09:34 [main] INFO  Log - Get teachers from database
+2025-08-06 14:09:34 [main] INFO  Log - Get teachers from database
+2025-08-06 14:09:34 [main] INFO  Log - Get teachers from database
+2025-08-06 14:09:34 [main] INFO  Log - Get teachers from database
+2025-08-06 14:09:34 [main] INFO  Log - Get teachers from database
+2025-08-06 14:09:34 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-06 14:09:34 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-06 14:09:34 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-06 14:09:34 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-06 14:09:34 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-06 14:09:34 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-06 14:09:34 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-06 14:09:40 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-08-06 14:10:27 [main] INFO  Log - Starting application
+2025-08-06 14:10:27 [main] INFO  Log - Deleting manager
+2025-08-06 14:10:27 [main] INFO  Log - Deleting user
+2025-08-06 14:10:27 [main] INFO  Log - User deleted was successfully
+2025-08-06 14:10:28 [main] INFO  Log - Setting up default system manager
+2025-08-06 14:10:28 [main] INFO  Log - Creating a default manager
+2025-08-06 14:10:28 [main] INFO  Log - Start getting teachers from database
+2025-08-06 14:10:28 [main] INFO  Log - Get teachers from database
+2025-08-06 14:10:28 [main] INFO  Log - Get teachers from database
+2025-08-06 14:10:28 [main] INFO  Log - Get teachers from database
+2025-08-06 14:10:28 [main] INFO  Log - Get teachers from database
+2025-08-06 14:10:28 [main] INFO  Log - Get teachers from database
+2025-08-06 14:10:28 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-06 14:10:28 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-06 14:10:28 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-06 14:10:28 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-06 14:10:28 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-06 14:10:28 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-06 14:10:28 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-06 14:17:37 [main] INFO  Log - Starting application
+2025-08-06 14:17:37 [main] INFO  Log - Deleting manager
+2025-08-06 14:17:37 [main] INFO  Log - Deleting user
+2025-08-06 14:17:37 [main] INFO  Log - User deleted was successfully
+2025-08-06 14:17:38 [main] INFO  Log - Setting up default system manager
+2025-08-06 14:17:38 [main] INFO  Log - Creating a default manager
+2025-08-06 14:17:38 [main] INFO  Log - Start getting teachers from database
+2025-08-06 14:17:38 [main] INFO  Log - Get teachers from database
+2025-08-06 14:17:38 [main] INFO  Log - Get teachers from database
+2025-08-06 14:17:38 [main] INFO  Log - Get teachers from database
+2025-08-06 14:17:38 [main] INFO  Log - Get teachers from database
+2025-08-06 14:17:38 [main] INFO  Log - Get teachers from database
+2025-08-06 14:17:38 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-06 14:17:38 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-06 14:17:38 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-06 14:17:38 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-06 14:17:38 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-06 14:17:38 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-06 14:17:38 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-06 14:17:39 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-06 14:17:39 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-08-06 14:34:42 [main] INFO  Log - Starting application
+2025-08-06 14:34:42 [main] INFO  Log - Deleting manager
+2025-08-06 14:34:42 [main] INFO  Log - Deleting user
+2025-08-06 14:34:42 [main] INFO  Log - User deleted was successfully
+2025-08-06 14:34:42 [main] INFO  Log - Setting up default system manager
+2025-08-06 14:34:42 [main] INFO  Log - Creating a default manager
+2025-08-06 14:34:42 [main] INFO  Log - Start getting teachers from database
+2025-08-06 14:34:42 [main] INFO  Log - Get teachers from database
+2025-08-06 14:34:42 [main] INFO  Log - Get teachers from database
+2025-08-06 14:34:42 [main] INFO  Log - Get teachers from database
+2025-08-06 14:34:42 [main] INFO  Log - Get teachers from database
+2025-08-06 14:34:42 [main] INFO  Log - Get teachers from database
+2025-08-06 14:34:43 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-06 14:34:43 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-06 14:34:43 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-06 14:34:43 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-06 14:34:43 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-06 14:34:43 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-06 14:34:43 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-06 14:34:43 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-06 14:34:56 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-08-06 14:37:28 [main] INFO  Log - Starting application
+2025-08-06 14:37:28 [main] INFO  Log - Deleting manager
+2025-08-06 14:37:28 [main] INFO  Log - Deleting user
+2025-08-06 14:37:28 [main] INFO  Log - User deleted was successfully
+2025-08-06 14:37:28 [main] INFO  Log - Setting up default system manager
+2025-08-06 14:37:28 [main] INFO  Log - Creating a default manager
+2025-08-06 14:37:29 [main] INFO  Log - Start getting teachers from database
+2025-08-06 14:37:29 [main] INFO  Log - Get teachers from database
+2025-08-06 14:37:29 [main] INFO  Log - Get teachers from database
+2025-08-06 14:37:29 [main] INFO  Log - Get teachers from database
+2025-08-06 14:37:29 [main] INFO  Log - Get teachers from database
+2025-08-06 14:37:29 [main] INFO  Log - Get teachers from database
+2025-08-06 14:37:29 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-06 14:37:29 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-06 14:37:29 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-06 14:37:29 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-06 14:37:29 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-06 14:37:29 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-06 14:37:29 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-06 14:37:29 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-06 14:37:29 [JavaFX Application Thread] INFO  Log - Application is closing
+2025-08-06 14:42:48 [main] INFO  Log - Starting application
+2025-08-06 14:42:48 [main] INFO  Log - Deleting manager
+2025-08-06 14:42:48 [main] INFO  Log - Deleting user
+2025-08-06 14:42:48 [main] INFO  Log - User deleted was successfully
+2025-08-06 14:42:48 [main] INFO  Log - Setting up default system manager
+2025-08-06 14:42:48 [main] INFO  Log - Creating a default manager
+2025-08-06 14:42:49 [main] INFO  Log - Start getting teachers from database
+2025-08-06 14:42:49 [main] INFO  Log - Get teachers from database
+2025-08-06 14:42:49 [main] INFO  Log - Get teachers from database
+2025-08-06 14:42:49 [main] INFO  Log - Get teachers from database
+2025-08-06 14:42:49 [main] INFO  Log - Get teachers from database
+2025-08-06 14:42:49 [main] INFO  Log - Get teachers from database
+2025-08-06 14:42:49 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-06 14:42:49 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-06 14:42:49 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-06 14:42:49 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-06 14:42:49 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-06 14:42:49 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-06 14:42:49 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-06 14:42:50 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-06 15:00:46 [main] INFO  Log - Starting application
+2025-08-06 15:00:46 [main] INFO  Log - Deleting manager
+2025-08-06 15:00:46 [main] INFO  Log - Deleting user
+2025-08-06 15:00:47 [main] INFO  Log - User deleted was successfully
+2025-08-06 15:00:47 [main] INFO  Log - Setting up default system manager
+2025-08-06 15:00:47 [main] INFO  Log - Creating a default manager
+2025-08-06 15:00:47 [main] INFO  Log - Start getting teachers from database
+2025-08-06 15:00:47 [main] INFO  Log - Get teachers from database
+2025-08-06 15:00:47 [main] INFO  Log - Get teachers from database
+2025-08-06 15:00:47 [main] INFO  Log - Get teachers from database
+2025-08-06 15:00:47 [main] INFO  Log - Get teachers from database
+2025-08-06 15:00:47 [main] INFO  Log - Get teachers from database
+2025-08-06 15:00:47 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-06 15:00:47 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-06 15:00:47 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-06 15:00:47 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-06 15:00:47 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-06 15:00:47 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-06 15:00:47 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-06 15:00:47 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-06 15:00:48 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-06 16:32:23 [main] INFO  Log - Starting application
+2025-08-06 16:32:23 [main] INFO  Log - Deleting manager
+2025-08-06 16:32:23 [main] INFO  Log - Deleting user
+2025-08-06 16:32:23 [main] INFO  Log - User deleted was successfully
+2025-08-06 16:32:23 [main] INFO  Log - Setting up default system manager
+2025-08-06 16:32:23 [main] INFO  Log - Creating a default manager
+2025-08-06 16:32:24 [main] INFO  Log - Start getting teachers from database
+2025-08-06 16:32:24 [main] INFO  Log - Get teachers from database
+2025-08-06 16:32:24 [main] INFO  Log - Get teachers from database
+2025-08-06 16:32:24 [main] INFO  Log - Get teachers from database
+2025-08-06 16:32:24 [main] INFO  Log - Get teachers from database
+2025-08-06 16:32:24 [main] INFO  Log - Get teachers from database
+2025-08-06 16:32:24 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-06 16:32:24 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-06 16:32:24 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-06 16:32:24 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-06 16:32:24 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-06 16:32:24 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-06 16:32:24 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-06 16:32:24 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-06 16:32:25 [JavaFX Application Thread] INFO  Log - Setting up controller using setup interface
+2025-08-06 16:46:57 [main] INFO  Log - Starting application
+2025-08-06 16:46:57 [main] INFO  Log - Deleting manager
+2025-08-06 16:46:57 [main] INFO  Log - Deleting user
+2025-08-06 16:46:57 [main] INFO  Log - User deleted was successfully
+2025-08-06 16:46:57 [main] INFO  Log - Setting up default system manager
+2025-08-06 16:46:57 [main] INFO  Log - Creating a default manager
+2025-08-06 16:46:58 [main] INFO  Log - Start getting teachers from database
+2025-08-06 16:46:58 [main] INFO  Log - Get teachers from database
+2025-08-06 16:46:58 [main] INFO  Log - Get teachers from database
+2025-08-06 16:46:58 [main] INFO  Log - Get teachers from database
+2025-08-06 16:46:58 [main] INFO  Log - Get teachers from database
+2025-08-06 16:46:58 [main] INFO  Log - Get teachers from database
+2025-08-06 16:46:58 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-06 16:46:58 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-06 16:46:58 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-06 16:46:58 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-06 16:46:58 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-06 16:46:58 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-06 16:46:58 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-06 16:46:58 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-06 16:48:12 [main] INFO  Log - Starting application
+2025-08-06 16:48:12 [main] INFO  Log - Deleting manager
+2025-08-06 16:48:12 [main] INFO  Log - Deleting user
+2025-08-06 16:48:12 [main] INFO  Log - User deleted was successfully
+2025-08-06 16:48:13 [main] INFO  Log - Setting up default system manager
+2025-08-06 16:48:13 [main] INFO  Log - Creating a default manager
+2025-08-06 16:48:13 [main] INFO  Log - Start getting teachers from database
+2025-08-06 16:48:13 [main] INFO  Log - Get teachers from database
+2025-08-06 16:48:13 [main] INFO  Log - Get teachers from database
+2025-08-06 16:48:13 [main] INFO  Log - Get teachers from database
+2025-08-06 16:48:13 [main] INFO  Log - Get teachers from database
+2025-08-06 16:48:13 [main] INFO  Log - Get teachers from database
+2025-08-06 16:48:13 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-06 16:48:13 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-06 16:48:13 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-06 16:48:13 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-06 16:48:13 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-06 16:48:13 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-06 16:48:13 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-06 16:48:13 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-06 16:48:13 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-06 17:16:42 [main] INFO  Log - Starting application
+2025-08-06 17:16:42 [main] INFO  Log - Deleting manager
+2025-08-06 17:16:42 [main] INFO  Log - Deleting user
+2025-08-06 17:16:42 [main] INFO  Log - User deleted was successfully
+2025-08-06 17:16:42 [main] INFO  Log - Setting up default system manager
+2025-08-06 17:16:42 [main] INFO  Log - Creating a default manager
+2025-08-06 17:16:42 [main] INFO  Log - Start getting teachers from database
+2025-08-06 17:16:42 [main] INFO  Log - Get teachers from database
+2025-08-06 17:16:42 [main] INFO  Log - Get teachers from database
+2025-08-06 17:16:42 [main] INFO  Log - Get teachers from database
+2025-08-06 17:16:42 [main] INFO  Log - Get teachers from database
+2025-08-06 17:16:42 [main] INFO  Log - Get teachers from database
+2025-08-06 17:16:43 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-06 17:16:43 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-06 17:16:43 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-06 17:16:43 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-06 17:16:43 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-06 17:16:43 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-06 17:16:43 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-06 17:16:43 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-06 17:17:31 [main] INFO  Log - Starting application
+2025-08-06 17:17:31 [main] INFO  Log - Deleting manager
+2025-08-06 17:17:31 [main] INFO  Log - Deleting user
+2025-08-06 17:17:32 [main] INFO  Log - User deleted was successfully
+2025-08-06 17:17:32 [main] INFO  Log - Setting up default system manager
+2025-08-06 17:17:32 [main] INFO  Log - Creating a default manager
+2025-08-06 17:17:32 [main] INFO  Log - Start getting teachers from database
+2025-08-06 17:17:32 [main] INFO  Log - Get teachers from database
+2025-08-06 17:17:32 [main] INFO  Log - Get teachers from database
+2025-08-06 17:17:32 [main] INFO  Log - Get teachers from database
+2025-08-06 17:17:32 [main] INFO  Log - Get teachers from database
+2025-08-06 17:17:32 [main] INFO  Log - Get teachers from database
+2025-08-06 17:17:32 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-06 17:17:32 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-06 17:17:32 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-06 17:17:32 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-06 17:17:32 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-06 17:17:32 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-06 17:17:32 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-06 17:17:32 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-06 17:17:33 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-06 18:09:45 [main] INFO  Log - Starting application
+2025-08-06 18:09:45 [main] INFO  Log - Deleting manager
+2025-08-06 18:09:45 [main] INFO  Log - Deleting user
+2025-08-06 18:09:45 [main] INFO  Log - User deleted was successfully
+2025-08-06 18:09:46 [main] INFO  Log - Setting up default system manager
+2025-08-06 18:09:46 [main] INFO  Log - Creating a default manager
+2025-08-06 18:09:46 [main] INFO  Log - Start getting teachers from database
+2025-08-06 18:09:46 [main] INFO  Log - Get teachers from database
+2025-08-06 18:09:46 [main] INFO  Log - Get teachers from database
+2025-08-06 18:09:46 [main] INFO  Log - Get teachers from database
+2025-08-06 18:09:46 [main] INFO  Log - Get teachers from database
+2025-08-06 18:09:46 [main] INFO  Log - Get teachers from database
+2025-08-06 18:09:46 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-06 18:09:46 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-06 18:09:46 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-06 18:09:46 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-06 18:09:46 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-06 18:09:46 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-06 18:09:46 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-06 18:09:46 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-06 18:09:47 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-06 18:10:21 [main] INFO  Log - Starting application
+2025-08-06 18:10:21 [main] INFO  Log - Deleting manager
+2025-08-06 18:10:21 [main] INFO  Log - Deleting user
+2025-08-06 18:10:21 [main] INFO  Log - User deleted was successfully
+2025-08-06 18:10:21 [main] INFO  Log - Setting up default system manager
+2025-08-06 18:10:21 [main] INFO  Log - Creating a default manager
+2025-08-06 18:10:21 [main] INFO  Log - Start getting teachers from database
+2025-08-06 18:10:21 [main] INFO  Log - Get teachers from database
+2025-08-06 18:10:21 [main] INFO  Log - Get teachers from database
+2025-08-06 18:10:21 [main] INFO  Log - Get teachers from database
+2025-08-06 18:10:21 [main] INFO  Log - Get teachers from database
+2025-08-06 18:10:21 [main] INFO  Log - Get teachers from database
+2025-08-06 18:10:22 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-06 18:10:22 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-06 18:10:22 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-06 18:10:22 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-06 18:10:22 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-06 18:10:22 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-06 18:10:22 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-06 18:10:22 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-06 18:10:22 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-06 18:11:10 [main] INFO  Log - Starting application
+2025-08-06 18:11:10 [main] INFO  Log - Deleting manager
+2025-08-06 18:11:10 [main] INFO  Log - Deleting user
+2025-08-06 18:11:10 [main] INFO  Log - User deleted was successfully
+2025-08-06 18:11:11 [main] INFO  Log - Setting up default system manager
+2025-08-06 18:11:11 [main] INFO  Log - Creating a default manager
+2025-08-06 18:11:11 [main] INFO  Log - Start getting teachers from database
+2025-08-06 18:11:11 [main] INFO  Log - Get teachers from database
+2025-08-06 18:11:11 [main] INFO  Log - Get teachers from database
+2025-08-06 18:11:11 [main] INFO  Log - Get teachers from database
+2025-08-06 18:11:11 [main] INFO  Log - Get teachers from database
+2025-08-06 18:11:11 [main] INFO  Log - Get teachers from database
+2025-08-06 18:11:11 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-06 18:11:11 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-06 18:11:11 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-06 18:11:11 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-06 18:11:11 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-06 18:11:11 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-06 18:11:11 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-06 18:11:11 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-06 18:11:12 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-06 18:11:23 [JavaFX Application Thread] INFO  Log - Topic was successfully inserted

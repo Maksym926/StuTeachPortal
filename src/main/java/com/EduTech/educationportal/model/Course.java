@@ -7,6 +7,17 @@ public class Course {
     private int teacherId;
     private String description;
     private int duration;
+    public Course(){
+
+    }
+    public Course(int ID, String title, String code, int teacherId, String description, int duration){
+        this.ID = ID;
+        this.title = title;
+        this.code = code;
+        this.teacherId = teacherId;
+        this.description = description;
+        this.duration = duration;
+    }
 
     public void setID(int ID) {
         this.ID = ID;
