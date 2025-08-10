@@ -15,6 +15,7 @@ import com.EduTech.educationportal.utils.ViewNavigator;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
+import javafx.scene.control.TreeCell;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeView;
 
@@ -30,6 +31,7 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
 
     @FXML
     private TreeView<String> courseContentList;
+    TreeItem<String> rootItem = new TreeItem<>("Topics");
 
     public ManageCourseContentController(Course course){
         this.course = course;
@@ -39,13 +41,45 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
     @Override
     public void setup() {
         presenter.getTopicByCourseID(course.getID(), topics);
+        addTopics();
+        TreeItem<String> addTopicItem = new TreeItem<>("[Add new topic]");
+        rootItem.getChildren().add(addTopicItem);
 
 
-        TreeItem<String> rootItem = new TreeItem<>("Topics");
-        rootItem.setExpanded(true);
-        for (Topic topic : topics){
-            rootItem.getChildren().add(new TreeItem<>(topic.getTitle()));
-        }
+
+        courseContentList.setCellFactory(tv -> new TreeCell<String>(){
+            @Override
+            protected void updateItem(String item, boolean empty){
+                super.updateItem(item, empty);
+                if(empty || item == null){
+                    setText(null);
+                    setStyle(null);
+                    setOnMouseClicked(null);
+                }
+                else{
+                    setText(item);
+                    if(item.equals("[Add new topic]")){
+                        setStyle("-fx-text-fill: blue; -fx-underline: true;");
+                        setOnMouseClicked(e -> {
+                            if(e.getClickCount() == 1){
+//                                openAddTopicWindow(ActionEvent event);
+                            }
+                        });
+                    }
+                    else if(item.equals("[Add new subtopic]")){
+                        setStyle("-fx-text-fill: green; -fx-underline: true;");
+                        setOnMouseClicked(e ->{
+                            if(e.getClickCount() == 1){
+                                TreeItem<String> parent = getTreeItem().getParent();
+//                                openAddSubtopicDialog()
+                            }
+                        });
+                    }
+                }
+            }
+        });
+
+
 
 
 
@@ -65,5 +99,16 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
     @Override
     public void setPresenter(ManageCourseContentPresenter presenter) {
         this.presenter = presenter;
+    }
+
+    private void addTopics(){
+        rootItem.setExpanded(true);
+        for (Topic topic : topics){
+            int insertPos = rootItem.getChildren().size() -1;
+            if(insertPos>= 0)
+                rootItem.getChildren().add(insertPos, new TreeItem<>(topic.getTitle()));
+            else
+                rootItem.getChildren().add(new TreeItem<>(topic.getTitle()));
+        }
     }
 }
