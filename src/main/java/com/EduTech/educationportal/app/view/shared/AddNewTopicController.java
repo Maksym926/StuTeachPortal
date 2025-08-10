@@ -4,6 +4,7 @@ import com.EduTech.educationportal.interfaces.view.AddNewTopicInterface;
 import com.EduTech.educationportal.model.Course;
 import com.EduTech.educationportal.model.Topic;
 import com.EduTech.educationportal.presenter.shared.AddNewTopicPresenter;
+import com.EduTech.educationportal.utils.Log;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
@@ -17,6 +18,7 @@ public class AddNewTopicController implements AddNewTopicInterface {
     @FXML
     public void addTopic(){
         String newTitle = title.getText();
+        Log.info("Course ID: " + course.getID() + " title " + newTitle);
         Topic newTopic = new Topic(course.getID(), newTitle);
         presenter.insertNewTopic(newTopic);
 

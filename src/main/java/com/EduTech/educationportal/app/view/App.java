@@ -1,9 +1,12 @@
 package com.EduTech.educationportal.app.view;
 import com.EduTech.educationportal.app.view.shared.MainMenuViewController;
 import com.EduTech.educationportal.app.view.shared.ManageCourseContentController;
+import com.EduTech.educationportal.data.CourseContentRepository;
 import com.EduTech.educationportal.data.DBConnection;
 import com.EduTech.educationportal.data.UserRepository;
 import com.EduTech.educationportal.interfaces.presenter.MainMenuPresenterInterface;
+import com.EduTech.educationportal.interfaces.presenter.ManageCourseContentPresenterInterface;
+import com.EduTech.educationportal.interfaces.repository.CourseContentRepositoryInterface;
 import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
 import com.EduTech.educationportal.interfaces.view.MainMenuViewInterface;
 import com.EduTech.educationportal.interfaces.view.ManageCourseContentInterface;
@@ -12,6 +15,7 @@ import com.EduTech.educationportal.model.Course;
 import com.EduTech.educationportal.model.Teacher;
 import com.EduTech.educationportal.model.User;
 import com.EduTech.educationportal.presenter.shared.MainMenuPresenter;
+import com.EduTech.educationportal.presenter.shared.ManageCourseContentPresenter;
 import com.EduTech.educationportal.utils.Log;
 import com.EduTech.educationportal.utils.ViewNavigator;
 import javafx.application.Application;
@@ -90,6 +94,10 @@ public class App extends Application {
         stage.show();
 
 // Setup logic
+        CourseContentRepositoryInterface courseContentRepositoryInterface= new CourseContentRepository();
+        CourseContentRepository test = new CourseContentRepository();
+        test.printTopicInfo();
+        ManageCourseContentPresenterInterface manageCourseContentPresenterInterface = new ManageCourseContentPresenter(manageCourseContentInterface, courseContentRepositoryInterface);
         SetupControllerInterface setupController = (SetupControllerInterface) manageCourseContentInterface;
         setupController.setup();
     }

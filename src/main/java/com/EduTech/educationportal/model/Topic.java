@@ -5,6 +5,9 @@ public class Topic {
     private int courseID;
     private String title;
 
+    public Topic(String title){
+        this.title = title;
+    }
     public Topic(int courseID, String title){
         this.courseID = courseID;
         this.title = title;

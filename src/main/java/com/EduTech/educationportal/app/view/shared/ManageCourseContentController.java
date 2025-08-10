@@ -6,6 +6,7 @@ import com.EduTech.educationportal.interfaces.view.AddNewTopicInterface;
 import com.EduTech.educationportal.interfaces.view.ManageCourseContentInterface;
 import com.EduTech.educationportal.interfaces.view.SetupControllerInterface;
 import com.EduTech.educationportal.model.Course;
+import com.EduTech.educationportal.model.Topic;
 import com.EduTech.educationportal.presenter.shared.AddNewTopicPresenter;
 import com.EduTech.educationportal.presenter.shared.ManageCourseContentPresenter;
 import com.EduTech.educationportal.presenter.shared.ManageCoursePresenter;
@@ -17,10 +18,15 @@ import javafx.scene.Node;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ManageCourseContentController implements ManageCourseContentInterface, SetupControllerInterface {
 
     Course course;
     ManageCourseContentPresenter presenter;
+
+    List<Topic> topics = new ArrayList<>();
 
     @FXML
     private TreeView<String> courseContentList;
@@ -32,20 +38,18 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
 
     @Override
     public void setup() {
+        presenter.getTopicByCourseID(course.getID(), topics);
+
+
         TreeItem<String> rootItem = new TreeItem<>("Topics");
         rootItem.setExpanded(true);
+        for (Topic topic : topics){
+            rootItem.getChildren().add(new TreeItem<>(topic.getTitle()));
+        }
 
-        TreeItem<String> topic1 = new TreeItem<>("Objects");
-        topic1.getChildren().addAll(
-                new TreeItem<>("Inheritance"),
-                new TreeItem<>("Polymorphism")
-        );
-        TreeItem<String> topic2 = new TreeItem<>("Algorithms");
-        topic2.getChildren().addAll(
-                new TreeItem<>("Binary search"),
-                new TreeItem<>("Depth search")
-        );
-        rootItem.getChildren().addAll(topic1, topic2);
+
+
+
         courseContentList.setRoot(rootItem);
 
 
