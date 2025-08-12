@@ -2,6 +2,7 @@ package com.EduTech.educationportal.data;
 
 import com.EduTech.educationportal.interfaces.repository.CourseContentRepositoryInterface;
 import com.EduTech.educationportal.model.Course;
+import com.EduTech.educationportal.model.SubTopic;
 import com.EduTech.educationportal.model.Topic;
 import com.EduTech.educationportal.utils.Log;
 
@@ -32,10 +33,10 @@ public class CourseContentRepository implements CourseContentRepositoryInterface
             stmt.setInt(1,ID);
             ResultSet rs = stmt.executeQuery();
             while (rs.next()){
-                int TopicID = rs.getInt("Id");
+                int topicID = rs.getInt("Id");
                 int courseID = rs.getInt("courseID");
                 String title = rs.getString("title");
-                Topic topic = new Topic(title);
+                Topic topic = new Topic(topicID, courseID, title);
                 topics.add(topic);
 
             }
@@ -46,15 +47,50 @@ public class CourseContentRepository implements CourseContentRepositoryInterface
             e.printStackTrace();
         }
     }
+    public void getSubTopicByTopicID(int topicID, List<SubTopic> subTopics){
+        String sql = "SELECT * FROM subTopicsDB WHERE topicID = ?";
+        try(Connection conn = DBConnection.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)){
+            stmt.setInt(1, topicID);
+            ResultSet rs = stmt.executeQuery();
+            while(rs.next()){
+                int id = rs.getInt("id");
+                String title = rs.getString("title");
+                String content = rs.getString("content");
+                String image = rs.getString("image");
+                String assignment = rs.getString("assignment");
+                subTopics.add(new SubTopic(id, topicID, title,content, image, assignment));
+                Log.info("subTopic was successfully received");
+            }
+        }catch (SQLException e){
+            Log.error("Error during getting subTopics from DB");
+            e.printStackTrace();
+        }
+    }
+    public void addNewSubTopic(SubTopic subTopic){
+        String sql = "INSERT INTO subTopicsDB (topicID, title, content, image, assignment) VALUES (?, ?, ?, ?, ?)";
+        try(Connection conn = DBConnection.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)){
+            stmt.setInt(1, subTopic.getTopicID());
+            stmt.setString(2, subTopic.getTitle());
+            stmt.setString(3, subTopic.getContent());
+            stmt.setString(4, subTopic.getImage());
+            stmt.setString(5, subTopic.getAssignment());
+            stmt.executeUpdate();
+            Log.info("subTopic was successfully inserted");
+        }catch (SQLException e){
+            Log.error("Error while adding new sub topic");
+            e.printStackTrace();
+        }
+
+    }
     public void printTopicInfo(){
-        String sql = "SELECT * FROM topicsDB";
+        String sql = "SELECT * FROM subTopicsDB";
         Log.info("Getting topic info from db");
         try(Connection conn = DBConnection.getConnection();
             PreparedStatement stmt = conn.prepareStatement(sql)){
             ResultSet rs = stmt.executeQuery();
             while(rs.next()){
                 int ID = rs.getInt("Id");
-                int courseID = rs.getInt("courseID");
+                int courseID = rs.getInt("topicID");
                 String title = rs.getString("title");
 
                 Log.info("printing topic.... " + "ID: " + ID + " " + title + "CourseID" + courseID);

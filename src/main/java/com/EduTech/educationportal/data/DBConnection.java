@@ -62,8 +62,20 @@ public class DBConnection {
                     "title VARCHAR(255) " +
                     ")";
             stmt.execute(topicsDBSQL);
-
             Log.info("Topic tables was created or already exists");
+
+            String subTopicDBSQL = "CREATE TABLE IF NOT EXISTS subTopicsDB (" +
+                    "id INT AUTO_INCREMENT PRIMARY KEY, " +
+                    "topicID INT, " +
+                    "title VARCHAR(255), " +
+                    "content VARCHAR(255), " +
+                    "image VARCHAR(255), " +
+                    "assignment VARCHAR(255) " +
+                    ")";
+            stmt.execute(subTopicDBSQL);
+            Log.info("subTopic table was created or already exists");
+
+
 
         } catch (SQLException e) {
             e.printStackTrace();

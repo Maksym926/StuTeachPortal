@@ -1,12 +1,14 @@
 package com.EduTech.educationportal.app.view.shared;
 
 import com.EduTech.educationportal.data.CourseContentRepository;
+import com.EduTech.educationportal.interfaces.presenter.AddNewSubTopicPresenterInterface;
+import com.EduTech.educationportal.interfaces.presenter.AddNewTopicPresenterInterface;
 import com.EduTech.educationportal.interfaces.repository.CourseContentRepositoryInterface;
-import com.EduTech.educationportal.interfaces.view.AddNewTopicInterface;
-import com.EduTech.educationportal.interfaces.view.ManageCourseContentInterface;
-import com.EduTech.educationportal.interfaces.view.SetupControllerInterface;
+import com.EduTech.educationportal.interfaces.view.*;
 import com.EduTech.educationportal.model.Course;
+import com.EduTech.educationportal.model.SubTopic;
 import com.EduTech.educationportal.model.Topic;
+import com.EduTech.educationportal.presenter.shared.AddNewSubTopicPresenter;
 import com.EduTech.educationportal.presenter.shared.AddNewTopicPresenter;
 import com.EduTech.educationportal.presenter.shared.ManageCourseContentPresenter;
 import com.EduTech.educationportal.presenter.shared.ManageCoursePresenter;
@@ -29,62 +31,88 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
 
     List<Topic> topics = new ArrayList<>();
 
+    List<SubTopic> subTopics = new ArrayList<>();
+
     @FXML
-    private TreeView<String> courseContentList;
-    TreeItem<String> rootItem = new TreeItem<>("Topics");
+    private TreeView<CourseContentItem > courseContentList;
+
+    private TreeItem<CourseContentItem > rootItem;
 
     public ManageCourseContentController(Course course){
         this.course = course;
         Log.info("The course was parsed "  + course.getID());
     }
+    private void setupTree() {
+        rootItem = new TreeItem<>(new Topic("Topics")); // root topic
+        rootItem.setExpanded(true);
+        courseContentList.setRoot(rootItem);
 
-    @Override
-    public void setup() {
-        presenter.getTopicByCourseID(course.getID(), topics);
-        addTopics();
-        TreeItem<String> addTopicItem = new TreeItem<>("[Add new topic]");
-        rootItem.getChildren().add(addTopicItem);
-
-
-
-        courseContentList.setCellFactory(tv -> new TreeCell<String>(){
+        courseContentList.setCellFactory(tv -> new TreeCell<>() {
             @Override
-            protected void updateItem(String item, boolean empty){
+            protected void updateItem(CourseContentItem item, boolean empty) {
                 super.updateItem(item, empty);
-                if(empty || item == null){
+
+                if (empty || item == null) {
                     setText(null);
                     setStyle(null);
                     setOnMouseClicked(null);
+                    return;
+
                 }
-                else{
-                    setText(item);
-                    if(item.equals("[Add new topic]")){
-                        setStyle("-fx-text-fill: blue; -fx-underline: true;");
-                        setOnMouseClicked(e -> {
-                            if(e.getClickCount() == 1){
-//                                openAddTopicWindow(ActionEvent event);
+                String title = item.getTitle();
+
+                setText(title);
+                setStyle(null);
+                setOnMouseClicked(null);
+
+                if (title.equals("[Add new topic]")) {
+                    setStyle("-fx-text-fill: blue; -fx-underline: true;");
+                    setOnMouseClicked(e -> {
+                        if (e.getClickCount() == 1) {
+                            openAddTopicWindow(new ActionEvent(e.getSource(), null));
+                        }
+                    });
+                } else if (title.equals("[Add new subtopic]")) {
+                    setStyle("-fx-text-fill: green; -fx-underline: true;");
+                    setOnMouseClicked(e -> {
+                        if (e.getClickCount() == 1) {
+                            TreeItem<CourseContentItem> parentItem = getTreeItem().getParent();
+                            if(parentItem != null){
+                                Topic topic = (Topic)parentItem.getValue();
+                                openAddSubTopicWindow(new ActionEvent(e.getSource(),null), topic);
                             }
-                        });
-                    }
-                    else if(item.equals("[Add new subtopic]")){
-                        setStyle("-fx-text-fill: green; -fx-underline: true;");
-                        setOnMouseClicked(e ->{
-                            if(e.getClickCount() == 1){
-                                TreeItem<String> parent = getTreeItem().getParent();
-//                                openAddSubtopicDialog()
-                            }
-                        });
-                    }
+
+                        }
+                    });
                 }
+
+
+
+
             }
         });
+    }
+
+    @Override
+    public void setup() {
+        setupTree();
+        presenter.getTopicByCourseID(course.getID(), topics);
+
+        addTopics();
 
 
 
 
 
 
-        courseContentList.setRoot(rootItem);
+
+
+
+
+
+
+
+
 
 
     }
@@ -92,9 +120,16 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
     public void openAddTopicWindow(ActionEvent event){
         AddNewTopicInterface addNewTopicInterface = new AddNewTopicController(course);
         CourseContentRepositoryInterface courseContentRepositoryInterface = new CourseContentRepository();
-        AddNewTopicPresenter addNewTopicPresenter = new AddNewTopicPresenter(addNewTopicInterface, courseContentRepositoryInterface);
+        AddNewTopicPresenterInterface addNewTopicPresenter = new AddNewTopicPresenter(addNewTopicInterface, courseContentRepositoryInterface);
         ViewNavigator.switchScene((Node)event.getSource(), "/AddNewTopicView.fxml", "Add new Topic", addNewTopicInterface, true);
     }
+    public void openAddSubTopicWindow(ActionEvent event, Topic topic){
+        AddNewSubTopicInterface addNewSubTopicInterface = new AddNewSubTopicController(topic);
+        CourseContentRepositoryInterface courseContentRepositoryInterface = new CourseContentRepository();
+        AddNewSubTopicPresenterInterface addNewSubTopicPresenterInterface = new AddNewSubTopicPresenter(addNewSubTopicInterface, courseContentRepositoryInterface);
+        ViewNavigator.switchScene((Node)event.getSource(), "/AddNewSubTopicView.fxml", "Add new Subtopic", addNewSubTopicInterface, true);
+    }
+
 
     @Override
     public void setPresenter(ManageCourseContentPresenter presenter) {
@@ -104,11 +139,28 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
     private void addTopics(){
         rootItem.setExpanded(true);
         for (Topic topic : topics){
-            int insertPos = rootItem.getChildren().size() -1;
-            if(insertPos>= 0)
-                rootItem.getChildren().add(insertPos, new TreeItem<>(topic.getTitle()));
-            else
-                rootItem.getChildren().add(new TreeItem<>(topic.getTitle()));
+            presenter.getSubTopicByCourseID(topic.getID(), subTopics);
+            TreeItem<CourseContentItem> topicItem = new TreeItem<>(topic);
+
+
+
+
+            for(SubTopic subTopic: subTopics){
+                if(topic.getID() == subTopic.getTopicID()){
+                    topicItem.getChildren().add(new TreeItem<>(subTopic));
+                }
+
+            }
+            topicItem.getChildren().add(new TreeItem<>(new SubTopic("[Add new subtopic]")));
+            rootItem.getChildren().add(0,topicItem);
+
+
+
+
+
+
         }
+        TreeItem<CourseContentItem> addTopicItem = new TreeItem<>(new Topic("[Add new topic]"));
+        rootItem.getChildren().add(addTopicItem);
     }
 }

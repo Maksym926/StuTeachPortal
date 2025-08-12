@@ -12441,3 +12441,1641 @@
 2025-08-10 18:09:53 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
 2025-08-10 18:09:53 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
 2025-08-10 18:09:53 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-11 12:52:13 [main] INFO  Log - Starting application
+2025-08-11 12:52:13 [main] INFO  Log - Deleting manager
+2025-08-11 12:52:13 [main] INFO  Log - Deleting user
+2025-08-11 12:52:13 [main] INFO  Log - User deleted was successfully
+2025-08-11 12:52:13 [main] INFO  Log - Setting up default system manager
+2025-08-11 12:52:13 [main] INFO  Log - Creating a default manager
+2025-08-11 12:52:13 [main] INFO  Log - Start getting teachers from database
+2025-08-11 12:52:13 [main] INFO  Log - Get teachers from database
+2025-08-11 12:52:13 [main] INFO  Log - Get teachers from database
+2025-08-11 12:52:13 [main] INFO  Log - Get teachers from database
+2025-08-11 12:52:13 [main] INFO  Log - Get teachers from database
+2025-08-11 12:52:13 [main] INFO  Log - Get teachers from database
+2025-08-11 12:52:14 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-11 12:52:14 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-11 12:52:14 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-11 12:52:14 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-11 12:52:14 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-11 12:52:14 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-11 12:52:14 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-11 12:52:14 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-11 12:52:14 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-11 12:52:15 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-11 12:52:15 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-11 12:52:15 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-11 12:52:15 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-11 12:52:15 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-11 12:52:15 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-11 12:52:15 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-11 12:58:33 [main] INFO  Log - Starting application
+2025-08-11 12:58:33 [main] INFO  Log - Deleting manager
+2025-08-11 12:58:33 [main] INFO  Log - Deleting user
+2025-08-11 12:58:34 [main] INFO  Log - User deleted was successfully
+2025-08-11 12:58:34 [main] INFO  Log - Setting up default system manager
+2025-08-11 12:58:34 [main] INFO  Log - Creating a default manager
+2025-08-11 12:58:34 [main] INFO  Log - Start getting teachers from database
+2025-08-11 12:58:34 [main] INFO  Log - Get teachers from database
+2025-08-11 12:58:34 [main] INFO  Log - Get teachers from database
+2025-08-11 12:58:34 [main] INFO  Log - Get teachers from database
+2025-08-11 12:58:34 [main] INFO  Log - Get teachers from database
+2025-08-11 12:58:34 [main] INFO  Log - Get teachers from database
+2025-08-11 12:58:34 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-11 12:58:34 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-11 12:58:34 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-11 12:58:34 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-11 12:58:34 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-11 12:58:34 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-11 12:58:34 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-11 12:58:34 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-11 12:58:35 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-11 12:58:35 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-11 12:58:35 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-11 12:58:35 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-11 12:58:35 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-11 12:58:35 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-11 12:58:35 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-11 12:58:35 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-11 12:58:39 [JavaFX Application Thread] INFO  Log - Course ID: 17 title 123
+2025-08-11 12:58:39 [JavaFX Application Thread] INFO  Log - Topic was successfully inserted
+2025-08-11 12:58:48 [main] INFO  Log - Starting application
+2025-08-11 12:58:48 [main] INFO  Log - Deleting manager
+2025-08-11 12:58:48 [main] INFO  Log - Deleting user
+2025-08-11 12:58:48 [main] INFO  Log - User deleted was successfully
+2025-08-11 12:58:48 [main] INFO  Log - Setting up default system manager
+2025-08-11 12:58:48 [main] INFO  Log - Creating a default manager
+2025-08-11 12:58:49 [main] INFO  Log - Start getting teachers from database
+2025-08-11 12:58:49 [main] INFO  Log - Get teachers from database
+2025-08-11 12:58:49 [main] INFO  Log - Get teachers from database
+2025-08-11 12:58:49 [main] INFO  Log - Get teachers from database
+2025-08-11 12:58:49 [main] INFO  Log - Get teachers from database
+2025-08-11 12:58:49 [main] INFO  Log - Get teachers from database
+2025-08-11 12:58:49 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-11 12:58:49 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-11 12:58:49 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-11 12:58:49 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-11 12:58:49 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-11 12:58:49 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-11 12:58:49 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-11 12:58:49 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-11 12:58:49 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-11 12:58:50 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-11 12:58:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-11 12:58:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-11 12:58:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-11 12:58:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-11 12:58:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-11 12:58:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-11 12:58:50 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-11 13:13:01 [main] INFO  Log - Starting application
+2025-08-11 13:13:01 [main] INFO  Log - Deleting manager
+2025-08-11 13:13:01 [main] INFO  Log - Deleting user
+2025-08-11 13:13:01 [main] INFO  Log - User deleted was successfully
+2025-08-11 13:13:01 [main] INFO  Log - Setting up default system manager
+2025-08-11 13:13:01 [main] INFO  Log - Creating a default manager
+2025-08-11 13:13:02 [main] INFO  Log - Start getting teachers from database
+2025-08-11 13:13:02 [main] INFO  Log - Get teachers from database
+2025-08-11 13:13:02 [main] INFO  Log - Get teachers from database
+2025-08-11 13:13:02 [main] INFO  Log - Get teachers from database
+2025-08-11 13:13:02 [main] INFO  Log - Get teachers from database
+2025-08-11 13:13:02 [main] INFO  Log - Get teachers from database
+2025-08-11 13:13:02 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-11 13:13:02 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-11 13:13:02 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-11 13:13:02 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-11 13:13:02 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-11 13:13:02 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-11 13:13:02 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-11 13:13:02 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-11 13:13:02 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-11 13:13:02 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-11 13:13:03 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-11 13:13:03 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-11 13:13:03 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-11 13:13:03 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-11 13:13:03 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-11 13:13:03 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-11 13:13:03 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-11 13:13:03 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-11 13:14:19 [main] INFO  Log - Starting application
+2025-08-11 13:14:19 [main] INFO  Log - Deleting manager
+2025-08-11 13:14:19 [main] INFO  Log - Deleting user
+2025-08-11 13:14:19 [main] INFO  Log - User deleted was successfully
+2025-08-11 13:14:19 [main] INFO  Log - Setting up default system manager
+2025-08-11 13:14:19 [main] INFO  Log - Creating a default manager
+2025-08-11 13:14:19 [main] INFO  Log - Start getting teachers from database
+2025-08-11 13:14:19 [main] INFO  Log - Get teachers from database
+2025-08-11 13:14:19 [main] INFO  Log - Get teachers from database
+2025-08-11 13:14:19 [main] INFO  Log - Get teachers from database
+2025-08-11 13:14:19 [main] INFO  Log - Get teachers from database
+2025-08-11 13:14:19 [main] INFO  Log - Get teachers from database
+2025-08-11 13:14:20 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-11 13:14:20 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-11 13:14:20 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-11 13:14:20 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-11 13:14:20 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-11 13:14:20 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-11 13:14:20 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-11 13:14:20 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-11 13:14:20 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-11 13:14:20 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-11 13:14:20 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-11 13:14:21 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-11 13:14:21 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-11 13:14:21 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-11 13:14:21 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-11 13:14:21 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-11 13:14:21 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-11 13:14:21 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-11 13:14:51 [main] INFO  Log - Starting application
+2025-08-11 13:14:51 [main] INFO  Log - Deleting manager
+2025-08-11 13:14:51 [main] INFO  Log - Deleting user
+2025-08-11 13:14:51 [main] INFO  Log - User deleted was successfully
+2025-08-11 13:14:52 [main] INFO  Log - Setting up default system manager
+2025-08-11 13:14:52 [main] INFO  Log - Creating a default manager
+2025-08-11 13:14:52 [main] INFO  Log - Start getting teachers from database
+2025-08-11 13:14:52 [main] INFO  Log - Get teachers from database
+2025-08-11 13:14:52 [main] INFO  Log - Get teachers from database
+2025-08-11 13:14:52 [main] INFO  Log - Get teachers from database
+2025-08-11 13:14:52 [main] INFO  Log - Get teachers from database
+2025-08-11 13:14:52 [main] INFO  Log - Get teachers from database
+2025-08-11 13:14:52 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-11 13:14:52 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-11 13:14:52 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-11 13:14:52 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-11 13:14:52 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-11 13:14:52 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-11 13:14:52 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-11 13:14:52 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-11 13:14:52 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-11 13:14:52 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-11 13:14:53 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-11 13:14:53 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-11 13:14:53 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-11 13:14:53 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-11 13:14:53 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-11 13:14:53 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-11 13:14:53 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-11 13:14:53 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 14:32:03 [main] INFO  Log - Starting application
+2025-08-12 14:32:03 [main] INFO  Log - Deleting manager
+2025-08-12 14:32:03 [main] INFO  Log - Deleting user
+2025-08-12 14:32:03 [main] INFO  Log - User deleted was successfully
+2025-08-12 14:32:03 [main] INFO  Log - Setting up default system manager
+2025-08-12 14:32:03 [main] INFO  Log - Creating a default manager
+2025-08-12 14:32:04 [main] INFO  Log - Start getting teachers from database
+2025-08-12 14:32:04 [main] INFO  Log - Get teachers from database
+2025-08-12 14:32:04 [main] INFO  Log - Get teachers from database
+2025-08-12 14:32:04 [main] INFO  Log - Get teachers from database
+2025-08-12 14:32:04 [main] INFO  Log - Get teachers from database
+2025-08-12 14:32:04 [main] INFO  Log - Get teachers from database
+2025-08-12 14:32:04 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 14:32:04 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 14:32:04 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 14:32:04 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 14:32:04 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 14:32:04 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 14:32:04 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 14:32:04 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 14:32:04 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 14:32:04 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 14:32:05 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 14:32:05 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 14:32:05 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 14:32:05 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 14:32:05 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 14:32:05 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 14:32:05 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 14:32:05 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 14:34:28 [main] INFO  Log - Starting application
+2025-08-12 14:34:28 [main] INFO  Log - Deleting manager
+2025-08-12 14:34:28 [main] INFO  Log - Deleting user
+2025-08-12 14:34:28 [main] INFO  Log - User deleted was successfully
+2025-08-12 14:34:28 [main] INFO  Log - Setting up default system manager
+2025-08-12 14:34:28 [main] INFO  Log - Creating a default manager
+2025-08-12 14:34:29 [main] INFO  Log - Start getting teachers from database
+2025-08-12 14:34:29 [main] INFO  Log - Get teachers from database
+2025-08-12 14:34:29 [main] INFO  Log - Get teachers from database
+2025-08-12 14:34:29 [main] INFO  Log - Get teachers from database
+2025-08-12 14:34:29 [main] INFO  Log - Get teachers from database
+2025-08-12 14:34:29 [main] INFO  Log - Get teachers from database
+2025-08-12 14:34:29 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 14:34:29 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 14:34:29 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 14:34:29 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 14:34:29 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 14:34:29 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 14:34:29 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 14:34:29 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 14:34:29 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 14:34:29 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 14:34:30 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 14:34:30 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 14:34:30 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 14:34:30 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 14:34:30 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 14:34:30 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 14:34:30 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 14:34:30 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 14:35:09 [main] INFO  Log - Starting application
+2025-08-12 14:35:09 [main] INFO  Log - Deleting manager
+2025-08-12 14:35:09 [main] INFO  Log - Deleting user
+2025-08-12 14:35:10 [main] INFO  Log - User deleted was successfully
+2025-08-12 14:35:10 [main] INFO  Log - Setting up default system manager
+2025-08-12 14:35:10 [main] INFO  Log - Creating a default manager
+2025-08-12 14:35:10 [main] INFO  Log - Start getting teachers from database
+2025-08-12 14:35:10 [main] INFO  Log - Get teachers from database
+2025-08-12 14:35:10 [main] INFO  Log - Get teachers from database
+2025-08-12 14:35:10 [main] INFO  Log - Get teachers from database
+2025-08-12 14:35:10 [main] INFO  Log - Get teachers from database
+2025-08-12 14:35:10 [main] INFO  Log - Get teachers from database
+2025-08-12 14:35:10 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 14:35:10 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 14:35:10 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 14:35:10 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 14:35:10 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 14:35:10 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 14:35:10 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 14:35:10 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 14:35:10 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 14:35:11 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 14:35:11 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 14:35:11 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 14:35:11 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 14:35:11 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 14:35:11 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 14:35:11 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 14:35:11 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 14:35:11 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 14:35:19 [JavaFX Application Thread] INFO  Log - Course ID: 17 title asds
+2025-08-12 14:35:19 [JavaFX Application Thread] INFO  Log - Topic was successfully inserted
+2025-08-12 14:35:27 [main] INFO  Log - Starting application
+2025-08-12 14:35:27 [main] INFO  Log - Deleting manager
+2025-08-12 14:35:27 [main] INFO  Log - Deleting user
+2025-08-12 14:35:27 [main] INFO  Log - User deleted was successfully
+2025-08-12 14:35:27 [main] INFO  Log - Setting up default system manager
+2025-08-12 14:35:27 [main] INFO  Log - Creating a default manager
+2025-08-12 14:35:27 [main] INFO  Log - Start getting teachers from database
+2025-08-12 14:35:27 [main] INFO  Log - Get teachers from database
+2025-08-12 14:35:27 [main] INFO  Log - Get teachers from database
+2025-08-12 14:35:27 [main] INFO  Log - Get teachers from database
+2025-08-12 14:35:27 [main] INFO  Log - Get teachers from database
+2025-08-12 14:35:27 [main] INFO  Log - Get teachers from database
+2025-08-12 14:35:28 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 14:35:28 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 14:35:28 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 14:35:28 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 14:35:28 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 14:35:28 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 14:35:28 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 14:35:28 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 14:35:28 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 14:35:28 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 14:35:28 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 14:35:28 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 14:35:28 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 14:35:28 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 14:35:28 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 14:35:28 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 14:35:28 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 14:35:28 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 14:35:29 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 14:42:08 [main] INFO  Log - Starting application
+2025-08-12 14:42:08 [main] INFO  Log - Deleting manager
+2025-08-12 14:42:08 [main] INFO  Log - Deleting user
+2025-08-12 14:42:08 [main] INFO  Log - User deleted was successfully
+2025-08-12 14:42:08 [main] INFO  Log - Setting up default system manager
+2025-08-12 14:42:08 [main] INFO  Log - Creating a default manager
+2025-08-12 14:42:08 [main] INFO  Log - Start getting teachers from database
+2025-08-12 14:42:08 [main] INFO  Log - Get teachers from database
+2025-08-12 14:42:08 [main] INFO  Log - Get teachers from database
+2025-08-12 14:42:08 [main] INFO  Log - Get teachers from database
+2025-08-12 14:42:08 [main] INFO  Log - Get teachers from database
+2025-08-12 14:42:08 [main] INFO  Log - Get teachers from database
+2025-08-12 14:42:08 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 14:42:08 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 14:42:08 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 14:42:08 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 14:42:08 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 14:42:08 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 14:42:08 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 14:42:08 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 14:42:08 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 14:42:09 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 14:42:09 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 14:42:09 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 14:42:09 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 14:42:09 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 14:42:09 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 14:42:09 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 14:42:09 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 14:42:09 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 14:42:09 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 14:44:29 [main] INFO  Log - Starting application
+2025-08-12 14:44:29 [main] INFO  Log - Deleting manager
+2025-08-12 14:44:29 [main] INFO  Log - Deleting user
+2025-08-12 14:44:29 [main] INFO  Log - User deleted was successfully
+2025-08-12 14:44:29 [main] INFO  Log - Setting up default system manager
+2025-08-12 14:44:29 [main] INFO  Log - Creating a default manager
+2025-08-12 14:44:30 [main] INFO  Log - Start getting teachers from database
+2025-08-12 14:44:30 [main] INFO  Log - Get teachers from database
+2025-08-12 14:44:30 [main] INFO  Log - Get teachers from database
+2025-08-12 14:44:30 [main] INFO  Log - Get teachers from database
+2025-08-12 14:44:30 [main] INFO  Log - Get teachers from database
+2025-08-12 14:44:30 [main] INFO  Log - Get teachers from database
+2025-08-12 14:44:30 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 14:44:30 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 14:44:30 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 14:44:30 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 14:44:30 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 14:44:30 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 14:44:30 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 14:44:30 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 14:44:30 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 14:44:30 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 14:44:31 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 14:44:31 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 14:44:31 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 14:44:31 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 14:44:31 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 14:44:31 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 14:44:31 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 14:44:31 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 14:44:31 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 14:44:47 [main] INFO  Log - Starting application
+2025-08-12 14:44:47 [main] INFO  Log - Deleting manager
+2025-08-12 14:44:47 [main] INFO  Log - Deleting user
+2025-08-12 14:44:47 [main] INFO  Log - User deleted was successfully
+2025-08-12 14:44:48 [main] INFO  Log - Setting up default system manager
+2025-08-12 14:44:48 [main] INFO  Log - Creating a default manager
+2025-08-12 14:44:48 [main] INFO  Log - Start getting teachers from database
+2025-08-12 14:44:48 [main] INFO  Log - Get teachers from database
+2025-08-12 14:44:48 [main] INFO  Log - Get teachers from database
+2025-08-12 14:44:48 [main] INFO  Log - Get teachers from database
+2025-08-12 14:44:48 [main] INFO  Log - Get teachers from database
+2025-08-12 14:44:48 [main] INFO  Log - Get teachers from database
+2025-08-12 14:44:48 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 14:44:48 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 14:44:48 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 14:44:48 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 14:44:48 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 14:44:48 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 14:44:48 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 14:44:48 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 14:44:48 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 14:44:48 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 14:44:49 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 14:44:49 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 14:44:49 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 14:44:49 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 14:44:49 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 14:44:49 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 14:44:49 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 14:44:49 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 14:44:49 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 14:46:24 [main] INFO  Log - Starting application
+2025-08-12 14:46:24 [main] INFO  Log - Deleting manager
+2025-08-12 14:46:24 [main] INFO  Log - Deleting user
+2025-08-12 14:46:24 [main] INFO  Log - User deleted was successfully
+2025-08-12 14:46:25 [main] INFO  Log - Setting up default system manager
+2025-08-12 14:46:25 [main] INFO  Log - Creating a default manager
+2025-08-12 14:46:25 [main] INFO  Log - Start getting teachers from database
+2025-08-12 14:46:25 [main] INFO  Log - Get teachers from database
+2025-08-12 14:46:25 [main] INFO  Log - Get teachers from database
+2025-08-12 14:46:25 [main] INFO  Log - Get teachers from database
+2025-08-12 14:46:25 [main] INFO  Log - Get teachers from database
+2025-08-12 14:46:25 [main] INFO  Log - Get teachers from database
+2025-08-12 14:46:25 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 14:46:25 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 14:46:25 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 14:46:25 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 14:46:25 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 14:46:25 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 14:46:25 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 14:46:25 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 14:46:25 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 14:46:26 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 14:46:26 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 14:46:26 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 14:46:26 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 14:46:26 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 14:46:26 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 14:46:26 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 14:46:26 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 14:46:26 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 14:46:26 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 14:48:17 [main] INFO  Log - Starting application
+2025-08-12 14:48:17 [main] INFO  Log - Deleting manager
+2025-08-12 14:48:17 [main] INFO  Log - Deleting user
+2025-08-12 14:48:17 [main] INFO  Log - User deleted was successfully
+2025-08-12 14:48:17 [main] INFO  Log - Setting up default system manager
+2025-08-12 14:48:17 [main] INFO  Log - Creating a default manager
+2025-08-12 14:48:18 [main] INFO  Log - Start getting teachers from database
+2025-08-12 14:48:18 [main] INFO  Log - Get teachers from database
+2025-08-12 14:48:18 [main] INFO  Log - Get teachers from database
+2025-08-12 14:48:18 [main] INFO  Log - Get teachers from database
+2025-08-12 14:48:18 [main] INFO  Log - Get teachers from database
+2025-08-12 14:48:18 [main] INFO  Log - Get teachers from database
+2025-08-12 14:48:18 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 14:48:18 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 14:48:18 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 14:48:18 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 14:48:18 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 14:48:18 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 14:48:18 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 14:48:18 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 14:48:18 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 14:48:18 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 14:48:18 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 14:48:19 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 14:48:19 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 14:48:19 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 14:48:19 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 14:48:19 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 14:48:19 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 14:48:19 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 14:48:19 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 14:48:53 [main] INFO  Log - Starting application
+2025-08-12 14:48:53 [main] INFO  Log - Deleting manager
+2025-08-12 14:48:53 [main] INFO  Log - Deleting user
+2025-08-12 14:48:53 [main] INFO  Log - User deleted was successfully
+2025-08-12 14:48:54 [main] INFO  Log - Setting up default system manager
+2025-08-12 14:48:54 [main] INFO  Log - Creating a default manager
+2025-08-12 14:48:54 [main] INFO  Log - Start getting teachers from database
+2025-08-12 14:48:54 [main] INFO  Log - Get teachers from database
+2025-08-12 14:48:54 [main] INFO  Log - Get teachers from database
+2025-08-12 14:48:54 [main] INFO  Log - Get teachers from database
+2025-08-12 14:48:54 [main] INFO  Log - Get teachers from database
+2025-08-12 14:48:54 [main] INFO  Log - Get teachers from database
+2025-08-12 14:48:54 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 14:48:54 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 14:48:54 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 14:48:54 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 14:48:54 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 14:48:54 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 14:48:54 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 14:48:54 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 14:48:54 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 14:48:54 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 14:48:55 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 14:48:55 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 14:48:55 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 14:48:55 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 14:48:55 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 14:48:55 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 14:48:55 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 14:48:55 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 14:48:55 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 14:48:57 [JavaFX Application Thread] INFO  Log - 
+2025-08-12 14:49:01 [JavaFX Application Thread] INFO  Log - 
+2025-08-12 15:38:55 [main] INFO  Log - Starting application
+2025-08-12 15:38:55 [main] INFO  Log - Deleting manager
+2025-08-12 15:38:55 [main] INFO  Log - Deleting user
+2025-08-12 15:38:56 [main] INFO  Log - User deleted was successfully
+2025-08-12 15:38:56 [main] INFO  Log - Setting up default system manager
+2025-08-12 15:38:56 [main] INFO  Log - Creating a default manager
+2025-08-12 15:38:56 [main] INFO  Log - Start getting teachers from database
+2025-08-12 15:38:56 [main] INFO  Log - Get teachers from database
+2025-08-12 15:38:56 [main] INFO  Log - Get teachers from database
+2025-08-12 15:38:56 [main] INFO  Log - Get teachers from database
+2025-08-12 15:38:56 [main] INFO  Log - Get teachers from database
+2025-08-12 15:38:56 [main] INFO  Log - Get teachers from database
+2025-08-12 15:38:56 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 15:38:56 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 15:38:56 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 15:38:56 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 15:38:56 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 15:38:56 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 15:38:56 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 15:38:56 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 15:38:56 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 15:38:57 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 15:38:57 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 15:38:57 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 15:38:57 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 15:38:57 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 15:38:57 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 15:38:57 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 15:38:57 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 15:38:57 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 15:38:58 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 15:38:58 [JavaFX Application Thread] ERROR Log - Error during getting subTopics from DB
+2025-08-12 15:38:58 [JavaFX Application Thread] ERROR Log - Error during getting subTopics from DB
+2025-08-12 15:38:59 [JavaFX Application Thread] ERROR Log - Error during getting subTopics from DB
+2025-08-12 15:38:59 [JavaFX Application Thread] ERROR Log - Error during getting subTopics from DB
+2025-08-12 15:38:59 [JavaFX Application Thread] ERROR Log - Error during getting subTopics from DB
+2025-08-12 15:38:59 [JavaFX Application Thread] ERROR Log - Error during getting subTopics from DB
+2025-08-12 15:38:59 [JavaFX Application Thread] ERROR Log - Error during getting subTopics from DB
+2025-08-12 15:40:38 [main] INFO  Log - Starting application
+2025-08-12 15:40:38 [main] INFO  Log - Deleting manager
+2025-08-12 15:40:38 [main] INFO  Log - Deleting user
+2025-08-12 15:40:38 [main] INFO  Log - User deleted was successfully
+2025-08-12 15:40:38 [main] INFO  Log - Setting up default system manager
+2025-08-12 15:40:38 [main] INFO  Log - Creating a default manager
+2025-08-12 15:40:38 [main] INFO  Log - Start getting teachers from database
+2025-08-12 15:40:38 [main] INFO  Log - Get teachers from database
+2025-08-12 15:40:38 [main] INFO  Log - Get teachers from database
+2025-08-12 15:40:38 [main] INFO  Log - Get teachers from database
+2025-08-12 15:40:38 [main] INFO  Log - Get teachers from database
+2025-08-12 15:40:38 [main] INFO  Log - Get teachers from database
+2025-08-12 15:40:38 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 15:40:38 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 15:40:38 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 15:40:38 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 15:40:38 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 15:40:39 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 15:40:39 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 15:40:39 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 15:40:39 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 15:40:39 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 15:40:39 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 15:40:39 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 15:40:39 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 15:40:39 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 15:40:39 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 15:40:39 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 15:40:39 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 15:40:39 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 15:40:40 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 16:02:01 [main] INFO  Log - Starting application
+2025-08-12 16:02:01 [main] INFO  Log - Deleting manager
+2025-08-12 16:02:01 [main] INFO  Log - Deleting user
+2025-08-12 16:02:01 [main] INFO  Log - User deleted was successfully
+2025-08-12 16:02:02 [main] INFO  Log - Setting up default system manager
+2025-08-12 16:02:02 [main] INFO  Log - Creating a default manager
+2025-08-12 16:02:02 [main] INFO  Log - Start getting teachers from database
+2025-08-12 16:02:02 [main] INFO  Log - Get teachers from database
+2025-08-12 16:02:02 [main] INFO  Log - Get teachers from database
+2025-08-12 16:02:02 [main] INFO  Log - Get teachers from database
+2025-08-12 16:02:02 [main] INFO  Log - Get teachers from database
+2025-08-12 16:02:02 [main] INFO  Log - Get teachers from database
+2025-08-12 16:02:02 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 16:02:02 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 16:02:02 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 16:02:02 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 16:02:02 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 16:02:02 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 16:02:02 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 16:02:02 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 16:02:02 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 16:02:02 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 16:02:03 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 16:02:03 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 16:02:03 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 16:02:03 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 16:02:03 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 16:02:03 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 16:02:03 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 16:02:03 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 16:02:03 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 16:03:31 [main] INFO  Log - Starting application
+2025-08-12 16:03:31 [main] INFO  Log - Deleting manager
+2025-08-12 16:03:31 [main] INFO  Log - Deleting user
+2025-08-12 16:03:31 [main] INFO  Log - User deleted was successfully
+2025-08-12 16:03:32 [main] INFO  Log - Setting up default system manager
+2025-08-12 16:03:32 [main] INFO  Log - Creating a default manager
+2025-08-12 16:03:32 [main] INFO  Log - Start getting teachers from database
+2025-08-12 16:03:32 [main] INFO  Log - Get teachers from database
+2025-08-12 16:03:32 [main] INFO  Log - Get teachers from database
+2025-08-12 16:03:32 [main] INFO  Log - Get teachers from database
+2025-08-12 16:03:32 [main] INFO  Log - Get teachers from database
+2025-08-12 16:03:32 [main] INFO  Log - Get teachers from database
+2025-08-12 16:03:32 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 16:03:32 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 16:03:32 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 16:03:32 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 16:03:32 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 16:03:32 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 16:03:32 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 16:03:32 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 16:03:32 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 16:03:32 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 16:03:33 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 16:03:33 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 16:03:33 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 16:03:33 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 16:03:33 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 16:03:33 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 16:03:33 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 16:03:33 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 16:03:33 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 16:15:55 [main] INFO  Log - Starting application
+2025-08-12 16:15:55 [main] INFO  Log - Deleting manager
+2025-08-12 16:15:55 [main] INFO  Log - Deleting user
+2025-08-12 16:15:55 [main] INFO  Log - User deleted was successfully
+2025-08-12 16:15:55 [main] INFO  Log - Setting up default system manager
+2025-08-12 16:15:55 [main] INFO  Log - Creating a default manager
+2025-08-12 16:15:55 [main] INFO  Log - Start getting teachers from database
+2025-08-12 16:15:55 [main] INFO  Log - Get teachers from database
+2025-08-12 16:15:55 [main] INFO  Log - Get teachers from database
+2025-08-12 16:15:55 [main] INFO  Log - Get teachers from database
+2025-08-12 16:15:55 [main] INFO  Log - Get teachers from database
+2025-08-12 16:15:55 [main] INFO  Log - Get teachers from database
+2025-08-12 16:15:56 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 16:15:56 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 16:15:56 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 16:15:56 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 16:15:56 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 16:15:56 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 16:15:56 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 16:15:56 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 16:15:56 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 16:15:56 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 16:15:56 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 16:15:56 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 16:15:56 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 16:15:56 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 16:15:56 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 16:15:56 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 16:15:56 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 16:15:56 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 16:15:57 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 16:17:01 [JavaFX Application Thread] INFO  Log - subTopic was successfully inserted
+2025-08-12 16:17:08 [main] INFO  Log - Starting application
+2025-08-12 16:17:08 [main] INFO  Log - Deleting manager
+2025-08-12 16:17:08 [main] INFO  Log - Deleting user
+2025-08-12 16:17:08 [main] INFO  Log - User deleted was successfully
+2025-08-12 16:17:09 [main] INFO  Log - Setting up default system manager
+2025-08-12 16:17:09 [main] INFO  Log - Creating a default manager
+2025-08-12 16:17:09 [main] INFO  Log - Start getting teachers from database
+2025-08-12 16:17:09 [main] INFO  Log - Get teachers from database
+2025-08-12 16:17:09 [main] INFO  Log - Get teachers from database
+2025-08-12 16:17:09 [main] INFO  Log - Get teachers from database
+2025-08-12 16:17:09 [main] INFO  Log - Get teachers from database
+2025-08-12 16:17:09 [main] INFO  Log - Get teachers from database
+2025-08-12 16:17:09 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 16:17:09 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 16:17:09 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 16:17:09 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 16:17:09 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 16:17:09 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 16:17:09 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 16:17:09 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 16:17:09 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 16:17:09 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 16:17:10 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 16:17:10 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 16:17:10 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 16:17:10 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 16:17:10 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 16:17:10 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 16:17:10 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 16:17:10 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 16:17:10 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 16:17:10 [JavaFX Application Thread] INFO  Log - subTopic was successfully received
+2025-08-12 16:17:10 [JavaFX Application Thread] INFO  Log - subTopic was successfully received
+2025-08-12 16:17:11 [JavaFX Application Thread] INFO  Log - subTopic was successfully received
+2025-08-12 16:17:11 [JavaFX Application Thread] INFO  Log - subTopic was successfully received
+2025-08-12 16:17:11 [JavaFX Application Thread] INFO  Log - subTopic was successfully received
+2025-08-12 16:17:11 [JavaFX Application Thread] INFO  Log - subTopic was successfully received
+2025-08-12 16:17:12 [JavaFX Application Thread] INFO  Log - subTopic was successfully received
+2025-08-12 16:18:55 [main] INFO  Log - Starting application
+2025-08-12 16:18:55 [main] INFO  Log - Deleting manager
+2025-08-12 16:18:55 [main] INFO  Log - Deleting user
+2025-08-12 16:18:55 [main] INFO  Log - User deleted was successfully
+2025-08-12 16:18:55 [main] INFO  Log - Setting up default system manager
+2025-08-12 16:18:55 [main] INFO  Log - Creating a default manager
+2025-08-12 16:18:55 [main] INFO  Log - Start getting teachers from database
+2025-08-12 16:18:55 [main] INFO  Log - Get teachers from database
+2025-08-12 16:18:55 [main] INFO  Log - Get teachers from database
+2025-08-12 16:18:55 [main] INFO  Log - Get teachers from database
+2025-08-12 16:18:55 [main] INFO  Log - Get teachers from database
+2025-08-12 16:18:55 [main] INFO  Log - Get teachers from database
+2025-08-12 16:18:55 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 16:18:55 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 16:18:55 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 16:18:55 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 16:18:55 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 16:18:55 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 16:18:55 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 16:18:55 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 16:18:55 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 16:18:56 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 16:18:56 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 16:18:56 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 16:18:56 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 16:18:56 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 16:18:56 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 16:18:56 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 16:18:56 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 16:18:56 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 16:18:56 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 16:18:57 [JavaFX Application Thread] INFO  Log - subTopic was successfully received
+2025-08-12 16:18:57 [JavaFX Application Thread] INFO  Log - subTopic was successfully received
+2025-08-12 16:18:57 [JavaFX Application Thread] INFO  Log - subTopic was successfully received
+2025-08-12 16:18:57 [JavaFX Application Thread] INFO  Log - subTopic was successfully received
+2025-08-12 16:18:57 [JavaFX Application Thread] INFO  Log - subTopic was successfully received
+2025-08-12 16:18:58 [JavaFX Application Thread] INFO  Log - subTopic was successfully received
+2025-08-12 16:18:58 [JavaFX Application Thread] INFO  Log - subTopic was successfully received
+2025-08-12 16:30:32 [main] INFO  Log - Starting application
+2025-08-12 16:30:32 [main] INFO  Log - Deleting manager
+2025-08-12 16:30:32 [main] INFO  Log - Deleting user
+2025-08-12 16:30:32 [main] INFO  Log - User deleted was successfully
+2025-08-12 16:30:32 [main] INFO  Log - Setting up default system manager
+2025-08-12 16:30:32 [main] INFO  Log - Creating a default manager
+2025-08-12 16:30:32 [main] INFO  Log - Start getting teachers from database
+2025-08-12 16:30:32 [main] INFO  Log - Get teachers from database
+2025-08-12 16:30:32 [main] INFO  Log - Get teachers from database
+2025-08-12 16:30:32 [main] INFO  Log - Get teachers from database
+2025-08-12 16:30:32 [main] INFO  Log - Get teachers from database
+2025-08-12 16:30:32 [main] INFO  Log - Get teachers from database
+2025-08-12 16:30:32 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 16:30:32 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 16:30:32 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 16:30:32 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 16:30:32 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 16:30:32 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 16:30:32 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 16:30:32 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 16:30:32 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 16:30:33 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 16:30:33 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 16:30:33 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 16:30:33 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 16:30:33 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 16:30:33 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 16:30:33 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 16:30:33 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 16:30:33 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 16:30:34 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 16:30:34 [JavaFX Application Thread] ERROR Log - Error during getting subTopics from DB
+2025-08-12 16:30:34 [JavaFX Application Thread] ERROR Log - Error during getting subTopics from DB
+2025-08-12 16:30:34 [JavaFX Application Thread] ERROR Log - Error during getting subTopics from DB
+2025-08-12 16:30:35 [JavaFX Application Thread] ERROR Log - Error during getting subTopics from DB
+2025-08-12 16:30:35 [JavaFX Application Thread] ERROR Log - Error during getting subTopics from DB
+2025-08-12 16:30:35 [JavaFX Application Thread] ERROR Log - Error during getting subTopics from DB
+2025-08-12 16:30:35 [JavaFX Application Thread] ERROR Log - Error during getting subTopics from DB
+2025-08-12 16:31:27 [main] INFO  Log - Starting application
+2025-08-12 16:31:27 [main] INFO  Log - Deleting manager
+2025-08-12 16:31:27 [main] INFO  Log - Deleting user
+2025-08-12 16:31:27 [main] INFO  Log - User deleted was successfully
+2025-08-12 16:31:27 [main] INFO  Log - Setting up default system manager
+2025-08-12 16:31:27 [main] INFO  Log - Creating a default manager
+2025-08-12 16:31:28 [main] INFO  Log - Start getting teachers from database
+2025-08-12 16:31:28 [main] INFO  Log - Get teachers from database
+2025-08-12 16:31:28 [main] INFO  Log - Get teachers from database
+2025-08-12 16:31:28 [main] INFO  Log - Get teachers from database
+2025-08-12 16:31:28 [main] INFO  Log - Get teachers from database
+2025-08-12 16:31:28 [main] INFO  Log - Get teachers from database
+2025-08-12 16:31:28 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 16:31:28 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 16:31:28 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 16:31:28 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 16:31:28 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 16:31:28 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 16:31:28 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 16:31:28 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 16:31:28 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 16:31:28 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 16:31:29 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 16:31:29 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 16:31:29 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 16:31:29 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 16:31:29 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 16:31:29 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 16:31:29 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 16:31:29 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 16:31:29 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 16:34:00 [main] INFO  Log - Starting application
+2025-08-12 16:34:00 [main] INFO  Log - Deleting manager
+2025-08-12 16:34:00 [main] INFO  Log - Deleting user
+2025-08-12 16:34:00 [main] INFO  Log - User deleted was successfully
+2025-08-12 16:34:01 [main] INFO  Log - Setting up default system manager
+2025-08-12 16:34:01 [main] INFO  Log - Creating a default manager
+2025-08-12 16:34:01 [main] INFO  Log - Start getting teachers from database
+2025-08-12 16:34:01 [main] INFO  Log - Get teachers from database
+2025-08-12 16:34:01 [main] INFO  Log - Get teachers from database
+2025-08-12 16:34:01 [main] INFO  Log - Get teachers from database
+2025-08-12 16:34:01 [main] INFO  Log - Get teachers from database
+2025-08-12 16:34:01 [main] INFO  Log - Get teachers from database
+2025-08-12 16:34:01 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 16:34:01 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 16:34:01 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 16:34:01 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 16:34:01 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 16:34:01 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 16:34:01 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 16:34:01 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 16:34:01 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 16:34:01 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 16:34:02 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 16:34:02 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 16:34:02 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 16:34:02 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 16:34:02 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 16:34:02 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 16:34:02 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 16:34:02 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 16:34:02 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 16:34:16 [JavaFX Application Thread] INFO  Log - subTopic was successfully inserted
+2025-08-12 16:34:23 [main] INFO  Log - Starting application
+2025-08-12 16:34:23 [main] INFO  Log - Deleting manager
+2025-08-12 16:34:23 [main] INFO  Log - Deleting user
+2025-08-12 16:34:23 [main] INFO  Log - User deleted was successfully
+2025-08-12 16:34:23 [main] INFO  Log - Setting up default system manager
+2025-08-12 16:34:23 [main] INFO  Log - Creating a default manager
+2025-08-12 16:34:24 [main] INFO  Log - Start getting teachers from database
+2025-08-12 16:34:24 [main] INFO  Log - Get teachers from database
+2025-08-12 16:34:24 [main] INFO  Log - Get teachers from database
+2025-08-12 16:34:24 [main] INFO  Log - Get teachers from database
+2025-08-12 16:34:24 [main] INFO  Log - Get teachers from database
+2025-08-12 16:34:24 [main] INFO  Log - Get teachers from database
+2025-08-12 16:34:24 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 16:34:24 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 16:34:24 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 16:34:24 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 16:34:24 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 16:34:24 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 16:34:24 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 16:34:24 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 16:34:24 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 16:34:24 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 16:34:24 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 16:34:25 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 16:34:25 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 16:34:25 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 16:34:25 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 16:34:25 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 16:34:25 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 16:34:25 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 16:34:25 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 16:34:25 [JavaFX Application Thread] INFO  Log - subTopic was successfully received
+2025-08-12 16:34:25 [JavaFX Application Thread] INFO  Log - subTopic was successfully received
+2025-08-12 16:34:25 [JavaFX Application Thread] INFO  Log - subTopic was successfully received
+2025-08-12 16:34:26 [JavaFX Application Thread] INFO  Log - subTopic was successfully received
+2025-08-12 16:34:26 [JavaFX Application Thread] INFO  Log - subTopic was successfully received
+2025-08-12 16:34:26 [JavaFX Application Thread] INFO  Log - subTopic was successfully received
+2025-08-12 16:34:26 [JavaFX Application Thread] INFO  Log - subTopic was successfully received
+2025-08-12 16:34:55 [main] INFO  Log - Starting application
+2025-08-12 16:34:55 [main] INFO  Log - Deleting manager
+2025-08-12 16:34:55 [main] INFO  Log - Deleting user
+2025-08-12 16:34:55 [main] INFO  Log - User deleted was successfully
+2025-08-12 16:34:56 [main] INFO  Log - Setting up default system manager
+2025-08-12 16:34:56 [main] INFO  Log - Creating a default manager
+2025-08-12 16:34:56 [main] INFO  Log - Start getting teachers from database
+2025-08-12 16:34:56 [main] INFO  Log - Get teachers from database
+2025-08-12 16:34:56 [main] INFO  Log - Get teachers from database
+2025-08-12 16:34:56 [main] INFO  Log - Get teachers from database
+2025-08-12 16:34:56 [main] INFO  Log - Get teachers from database
+2025-08-12 16:34:56 [main] INFO  Log - Get teachers from database
+2025-08-12 16:34:56 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 16:34:56 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 16:34:56 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 16:34:56 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 16:34:56 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 16:34:56 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 16:34:56 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 16:34:56 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 16:34:56 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 16:34:57 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 16:34:57 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 16:34:57 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 16:34:57 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 16:34:57 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 16:34:57 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 16:34:57 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 16:34:57 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 16:34:57 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 16:34:57 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 16:34:57 [JavaFX Application Thread] INFO  Log - subTopic was successfully received
+2025-08-12 16:42:10 [main] INFO  Log - Starting application
+2025-08-12 16:42:10 [main] INFO  Log - Deleting manager
+2025-08-12 16:42:10 [main] INFO  Log - Deleting user
+2025-08-12 16:42:10 [main] INFO  Log - User deleted was successfully
+2025-08-12 16:42:10 [main] INFO  Log - Setting up default system manager
+2025-08-12 16:42:10 [main] INFO  Log - Creating a default manager
+2025-08-12 16:42:11 [main] INFO  Log - Start getting teachers from database
+2025-08-12 16:42:11 [main] INFO  Log - Get teachers from database
+2025-08-12 16:42:11 [main] INFO  Log - Get teachers from database
+2025-08-12 16:42:11 [main] INFO  Log - Get teachers from database
+2025-08-12 16:42:11 [main] INFO  Log - Get teachers from database
+2025-08-12 16:42:11 [main] INFO  Log - Get teachers from database
+2025-08-12 16:42:11 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 16:42:11 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 16:42:11 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 16:42:11 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 16:42:11 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 16:42:11 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 16:42:11 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 16:42:11 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 16:42:11 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 16:42:11 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 16:42:12 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 16:42:12 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 16:42:12 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 16:42:12 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 16:42:12 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 16:42:12 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 16:42:12 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 16:42:12 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 16:42:12 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 16:42:23 [main] INFO  Log - Starting application
+2025-08-12 16:42:23 [main] INFO  Log - Deleting manager
+2025-08-12 16:42:23 [main] INFO  Log - Deleting user
+2025-08-12 16:42:23 [main] INFO  Log - User deleted was successfully
+2025-08-12 16:42:23 [main] INFO  Log - Setting up default system manager
+2025-08-12 16:42:23 [main] INFO  Log - Creating a default manager
+2025-08-12 16:42:24 [main] INFO  Log - Start getting teachers from database
+2025-08-12 16:42:24 [main] INFO  Log - Get teachers from database
+2025-08-12 16:42:24 [main] INFO  Log - Get teachers from database
+2025-08-12 16:42:24 [main] INFO  Log - Get teachers from database
+2025-08-12 16:42:24 [main] INFO  Log - Get teachers from database
+2025-08-12 16:42:24 [main] INFO  Log - Get teachers from database
+2025-08-12 16:42:24 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 16:42:24 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 16:42:24 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 16:42:24 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 16:42:24 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 16:42:24 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 16:42:24 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 16:42:24 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 16:42:24 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 16:42:24 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 16:42:25 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 16:42:25 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 16:42:25 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 16:42:25 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 16:42:25 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 16:42:25 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 16:42:25 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 16:42:25 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 16:42:25 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 16:42:42 [JavaFX Application Thread] INFO  Log - subTopic was successfully inserted
+2025-08-12 16:42:49 [main] INFO  Log - Starting application
+2025-08-12 16:42:49 [main] INFO  Log - Deleting manager
+2025-08-12 16:42:49 [main] INFO  Log - Deleting user
+2025-08-12 16:42:49 [main] INFO  Log - User deleted was successfully
+2025-08-12 16:42:49 [main] INFO  Log - Setting up default system manager
+2025-08-12 16:42:49 [main] INFO  Log - Creating a default manager
+2025-08-12 16:42:49 [main] INFO  Log - Start getting teachers from database
+2025-08-12 16:42:49 [main] INFO  Log - Get teachers from database
+2025-08-12 16:42:49 [main] INFO  Log - Get teachers from database
+2025-08-12 16:42:49 [main] INFO  Log - Get teachers from database
+2025-08-12 16:42:49 [main] INFO  Log - Get teachers from database
+2025-08-12 16:42:49 [main] INFO  Log - Get teachers from database
+2025-08-12 16:42:50 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 16:42:50 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 16:42:50 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 16:42:50 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 16:42:50 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 16:42:50 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 16:42:50 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 16:42:50 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 16:42:50 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 16:42:50 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 16:42:50 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 16:42:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 16:42:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 16:42:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 16:42:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 16:42:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 16:42:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 16:42:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 16:42:51 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 17:09:15 [main] INFO  Log - Starting application
+2025-08-12 17:09:15 [main] INFO  Log - Deleting manager
+2025-08-12 17:09:15 [main] INFO  Log - Deleting user
+2025-08-12 17:09:15 [main] INFO  Log - User deleted was successfully
+2025-08-12 17:09:15 [main] INFO  Log - Setting up default system manager
+2025-08-12 17:09:15 [main] INFO  Log - Creating a default manager
+2025-08-12 17:09:15 [main] INFO  Log - Start getting teachers from database
+2025-08-12 17:09:15 [main] INFO  Log - Get teachers from database
+2025-08-12 17:09:15 [main] INFO  Log - Get teachers from database
+2025-08-12 17:09:15 [main] INFO  Log - Get teachers from database
+2025-08-12 17:09:15 [main] INFO  Log - Get teachers from database
+2025-08-12 17:09:15 [main] INFO  Log - Get teachers from database
+2025-08-12 17:09:16 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 17:09:16 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 17:09:16 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 17:09:16 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 17:09:16 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 17:09:16 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 17:09:16 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 17:09:16 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 17:09:16 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 17:09:16 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 17:09:17 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 17:09:17 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 17:09:17 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 17:09:17 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 17:09:17 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 17:09:17 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 17:09:17 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 17:09:17 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 17:09:17 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 17:09:47 [main] INFO  Log - Starting application
+2025-08-12 17:09:47 [main] INFO  Log - Deleting manager
+2025-08-12 17:09:47 [main] INFO  Log - Deleting user
+2025-08-12 17:09:47 [main] INFO  Log - User deleted was successfully
+2025-08-12 17:09:47 [main] INFO  Log - Setting up default system manager
+2025-08-12 17:09:47 [main] INFO  Log - Creating a default manager
+2025-08-12 17:09:47 [main] INFO  Log - Start getting teachers from database
+2025-08-12 17:09:47 [main] INFO  Log - Get teachers from database
+2025-08-12 17:09:47 [main] INFO  Log - Get teachers from database
+2025-08-12 17:09:47 [main] INFO  Log - Get teachers from database
+2025-08-12 17:09:47 [main] INFO  Log - Get teachers from database
+2025-08-12 17:09:47 [main] INFO  Log - Get teachers from database
+2025-08-12 17:09:48 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 17:09:48 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 17:09:48 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 17:09:48 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 17:09:48 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 17:09:48 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 17:09:48 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 17:09:48 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 17:09:48 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 17:09:48 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 17:09:49 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 17:09:49 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 17:09:49 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 17:09:49 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 17:09:49 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 17:09:49 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 17:09:49 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 17:09:49 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 17:09:49 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 17:10:23 [main] INFO  Log - Starting application
+2025-08-12 17:10:23 [main] INFO  Log - Deleting manager
+2025-08-12 17:10:23 [main] INFO  Log - Deleting user
+2025-08-12 17:10:23 [main] INFO  Log - User deleted was successfully
+2025-08-12 17:10:23 [main] INFO  Log - Setting up default system manager
+2025-08-12 17:10:23 [main] INFO  Log - Creating a default manager
+2025-08-12 17:10:24 [main] INFO  Log - Start getting teachers from database
+2025-08-12 17:10:24 [main] INFO  Log - Get teachers from database
+2025-08-12 17:10:24 [main] INFO  Log - Get teachers from database
+2025-08-12 17:10:24 [main] INFO  Log - Get teachers from database
+2025-08-12 17:10:24 [main] INFO  Log - Get teachers from database
+2025-08-12 17:10:24 [main] INFO  Log - Get teachers from database
+2025-08-12 17:10:24 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 17:10:24 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 17:10:24 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 17:10:24 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 17:10:24 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 17:10:24 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 17:10:24 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 17:10:24 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 17:10:24 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 17:10:24 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 17:10:25 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 17:10:25 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 17:10:25 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 17:10:25 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 17:10:25 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 17:10:25 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 17:10:25 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 17:10:25 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 17:10:25 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 17:11:49 [main] INFO  Log - Starting application
+2025-08-12 17:11:49 [main] INFO  Log - Deleting manager
+2025-08-12 17:11:49 [main] INFO  Log - Deleting user
+2025-08-12 17:11:49 [main] INFO  Log - User deleted was successfully
+2025-08-12 17:11:49 [main] INFO  Log - Setting up default system manager
+2025-08-12 17:11:49 [main] INFO  Log - Creating a default manager
+2025-08-12 17:11:49 [main] INFO  Log - Start getting teachers from database
+2025-08-12 17:11:49 [main] INFO  Log - Get teachers from database
+2025-08-12 17:11:49 [main] INFO  Log - Get teachers from database
+2025-08-12 17:11:49 [main] INFO  Log - Get teachers from database
+2025-08-12 17:11:49 [main] INFO  Log - Get teachers from database
+2025-08-12 17:11:49 [main] INFO  Log - Get teachers from database
+2025-08-12 17:11:49 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 17:11:49 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 17:11:49 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 17:11:49 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 17:11:49 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 17:11:49 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 17:11:49 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 17:11:49 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 17:11:49 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 17:11:50 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 17:11:50 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 17:11:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 17:11:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 17:11:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 17:11:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 17:11:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 17:11:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 17:11:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 17:11:50 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 17:12:29 [JavaFX Application Thread] INFO  Log - subTopic was successfully inserted
+2025-08-12 17:13:22 [main] INFO  Log - Starting application
+2025-08-12 17:13:22 [main] INFO  Log - Deleting manager
+2025-08-12 17:13:22 [main] INFO  Log - Deleting user
+2025-08-12 17:13:22 [main] INFO  Log - User deleted was successfully
+2025-08-12 17:13:22 [main] INFO  Log - Setting up default system manager
+2025-08-12 17:13:22 [main] INFO  Log - Creating a default manager
+2025-08-12 17:13:22 [main] INFO  Log - Start getting teachers from database
+2025-08-12 17:13:22 [main] INFO  Log - Get teachers from database
+2025-08-12 17:13:22 [main] INFO  Log - Get teachers from database
+2025-08-12 17:13:22 [main] INFO  Log - Get teachers from database
+2025-08-12 17:13:22 [main] INFO  Log - Get teachers from database
+2025-08-12 17:13:22 [main] INFO  Log - Get teachers from database
+2025-08-12 17:13:23 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 17:13:23 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 17:13:23 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 17:13:23 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 17:13:23 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 17:13:23 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 17:13:23 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 17:13:23 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 17:13:23 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 17:13:23 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 17:13:24 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 17:13:24 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 17:13:24 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 17:13:24 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 17:13:24 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 17:13:24 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 17:13:24 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 17:13:24 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 17:13:24 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 17:16:59 [main] INFO  Log - Starting application
+2025-08-12 17:16:59 [main] INFO  Log - Deleting manager
+2025-08-12 17:16:59 [main] INFO  Log - Deleting user
+2025-08-12 17:17:00 [main] INFO  Log - User deleted was successfully
+2025-08-12 17:17:00 [main] INFO  Log - Setting up default system manager
+2025-08-12 17:17:00 [main] INFO  Log - Creating a default manager
+2025-08-12 17:17:00 [main] INFO  Log - Start getting teachers from database
+2025-08-12 17:17:00 [main] INFO  Log - Get teachers from database
+2025-08-12 17:17:00 [main] INFO  Log - Get teachers from database
+2025-08-12 17:17:00 [main] INFO  Log - Get teachers from database
+2025-08-12 17:17:00 [main] INFO  Log - Get teachers from database
+2025-08-12 17:17:00 [main] INFO  Log - Get teachers from database
+2025-08-12 17:17:00 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 17:17:00 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 17:17:00 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 17:17:00 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 17:17:00 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 17:17:00 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 17:17:00 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 17:17:00 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 17:17:00 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 17:17:01 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 17:17:01 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 17:17:01 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 17:17:01 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 17:17:01 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 17:17:01 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 17:17:01 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 17:17:01 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 17:17:01 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 17:17:01 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 17:17:30 [main] INFO  Log - Starting application
+2025-08-12 17:17:30 [main] INFO  Log - Deleting manager
+2025-08-12 17:17:30 [main] INFO  Log - Deleting user
+2025-08-12 17:17:30 [main] INFO  Log - User deleted was successfully
+2025-08-12 17:17:30 [main] INFO  Log - Setting up default system manager
+2025-08-12 17:17:30 [main] INFO  Log - Creating a default manager
+2025-08-12 17:17:30 [main] INFO  Log - Start getting teachers from database
+2025-08-12 17:17:30 [main] INFO  Log - Get teachers from database
+2025-08-12 17:17:30 [main] INFO  Log - Get teachers from database
+2025-08-12 17:17:30 [main] INFO  Log - Get teachers from database
+2025-08-12 17:17:30 [main] INFO  Log - Get teachers from database
+2025-08-12 17:17:30 [main] INFO  Log - Get teachers from database
+2025-08-12 17:17:30 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 17:17:30 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 17:17:30 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 17:17:30 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 17:17:30 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 17:17:31 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 17:17:31 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 17:17:31 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 17:17:31 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 17:17:31 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 17:17:31 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 17:17:31 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 17:17:31 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 17:17:31 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 17:17:31 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 17:17:31 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 17:17:31 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 17:17:31 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 17:17:32 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 17:18:22 [main] INFO  Log - Starting application
+2025-08-12 17:18:22 [main] INFO  Log - Deleting manager
+2025-08-12 17:18:22 [main] INFO  Log - Deleting user
+2025-08-12 17:18:22 [main] INFO  Log - User deleted was successfully
+2025-08-12 17:18:23 [main] INFO  Log - Setting up default system manager
+2025-08-12 17:18:23 [main] INFO  Log - Creating a default manager
+2025-08-12 17:18:23 [main] INFO  Log - Start getting teachers from database
+2025-08-12 17:18:23 [main] INFO  Log - Get teachers from database
+2025-08-12 17:18:23 [main] INFO  Log - Get teachers from database
+2025-08-12 17:18:23 [main] INFO  Log - Get teachers from database
+2025-08-12 17:18:23 [main] INFO  Log - Get teachers from database
+2025-08-12 17:18:23 [main] INFO  Log - Get teachers from database
+2025-08-12 17:18:23 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 17:18:23 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 17:18:23 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 17:18:23 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 17:18:23 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 17:18:23 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 17:18:23 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 17:18:23 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 17:18:23 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 17:18:24 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 17:18:24 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 17:18:24 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 17:18:24 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 17:18:24 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 17:18:24 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 17:18:24 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 17:18:24 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 17:18:24 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 17:18:24 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 17:19:00 [main] INFO  Log - Starting application
+2025-08-12 17:19:00 [main] INFO  Log - Deleting manager
+2025-08-12 17:19:00 [main] INFO  Log - Deleting user
+2025-08-12 17:19:00 [main] INFO  Log - User deleted was successfully
+2025-08-12 17:19:00 [main] INFO  Log - Setting up default system manager
+2025-08-12 17:19:00 [main] INFO  Log - Creating a default manager
+2025-08-12 17:19:01 [main] INFO  Log - Start getting teachers from database
+2025-08-12 17:19:01 [main] INFO  Log - Get teachers from database
+2025-08-12 17:19:01 [main] INFO  Log - Get teachers from database
+2025-08-12 17:19:01 [main] INFO  Log - Get teachers from database
+2025-08-12 17:19:01 [main] INFO  Log - Get teachers from database
+2025-08-12 17:19:01 [main] INFO  Log - Get teachers from database
+2025-08-12 17:19:01 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 17:19:01 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 17:19:01 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 17:19:01 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 17:19:01 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 17:19:01 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 17:19:01 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 17:19:01 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 17:19:01 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 17:19:01 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 17:19:02 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 17:19:02 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 17:19:02 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 17:19:02 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 17:19:02 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 17:19:02 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 17:19:02 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 17:19:02 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 17:19:02 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 17:19:14 [main] INFO  Log - Starting application
+2025-08-12 17:19:14 [main] INFO  Log - Deleting manager
+2025-08-12 17:19:14 [main] INFO  Log - Deleting user
+2025-08-12 17:19:14 [main] INFO  Log - User deleted was successfully
+2025-08-12 17:19:14 [main] INFO  Log - Setting up default system manager
+2025-08-12 17:19:14 [main] INFO  Log - Creating a default manager
+2025-08-12 17:19:15 [main] INFO  Log - Start getting teachers from database
+2025-08-12 17:19:15 [main] INFO  Log - Get teachers from database
+2025-08-12 17:19:15 [main] INFO  Log - Get teachers from database
+2025-08-12 17:19:15 [main] INFO  Log - Get teachers from database
+2025-08-12 17:19:15 [main] INFO  Log - Get teachers from database
+2025-08-12 17:19:15 [main] INFO  Log - Get teachers from database
+2025-08-12 17:19:15 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 17:19:15 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 17:19:15 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 17:19:15 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 17:19:15 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 17:19:15 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 17:19:15 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 17:19:15 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 17:19:15 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 17:19:15 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 17:19:16 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 17:19:16 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 17:19:16 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 17:19:16 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 17:19:16 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 17:19:16 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 17:19:16 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 17:19:16 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 17:19:16 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 17:19:23 [JavaFX Application Thread] INFO  Log - subTopic was successfully inserted
+2025-08-12 17:19:49 [main] INFO  Log - Starting application
+2025-08-12 17:19:49 [main] INFO  Log - Deleting manager
+2025-08-12 17:19:49 [main] INFO  Log - Deleting user
+2025-08-12 17:19:49 [main] INFO  Log - User deleted was successfully
+2025-08-12 17:19:49 [main] INFO  Log - Setting up default system manager
+2025-08-12 17:19:49 [main] INFO  Log - Creating a default manager
+2025-08-12 17:19:49 [main] INFO  Log - Start getting teachers from database
+2025-08-12 17:19:49 [main] INFO  Log - Get teachers from database
+2025-08-12 17:19:49 [main] INFO  Log - Get teachers from database
+2025-08-12 17:19:49 [main] INFO  Log - Get teachers from database
+2025-08-12 17:19:49 [main] INFO  Log - Get teachers from database
+2025-08-12 17:19:49 [main] INFO  Log - Get teachers from database
+2025-08-12 17:19:49 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 17:19:49 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 17:19:49 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 17:19:49 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 17:19:49 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 17:19:49 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 17:19:49 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 17:19:49 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 17:19:49 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 17:19:50 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 17:19:50 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 17:19:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 17:19:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 17:19:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 17:19:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 17:19:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 17:19:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 17:19:50 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 17:19:51 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 17:20:17 [JavaFX Application Thread] INFO  Log - subTopic was successfully inserted
+2025-08-12 17:20:27 [main] INFO  Log - Starting application
+2025-08-12 17:20:27 [main] INFO  Log - Deleting manager
+2025-08-12 17:20:27 [main] INFO  Log - Deleting user
+2025-08-12 17:20:28 [main] INFO  Log - User deleted was successfully
+2025-08-12 17:20:28 [main] INFO  Log - Setting up default system manager
+2025-08-12 17:20:28 [main] INFO  Log - Creating a default manager
+2025-08-12 17:20:28 [main] INFO  Log - Start getting teachers from database
+2025-08-12 17:20:28 [main] INFO  Log - Get teachers from database
+2025-08-12 17:20:28 [main] INFO  Log - Get teachers from database
+2025-08-12 17:20:28 [main] INFO  Log - Get teachers from database
+2025-08-12 17:20:28 [main] INFO  Log - Get teachers from database
+2025-08-12 17:20:28 [main] INFO  Log - Get teachers from database
+2025-08-12 17:20:28 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 17:20:28 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 17:20:28 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 17:20:28 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 17:20:28 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 17:20:29 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 17:20:29 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 17:20:29 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 17:20:29 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 17:20:29 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 17:20:30 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 17:20:30 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 17:20:30 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 17:20:30 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 17:20:30 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 17:20:30 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 17:20:30 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 17:20:30 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 17:20:30 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 17:22:02 [main] INFO  Log - Starting application
+2025-08-12 17:22:02 [main] INFO  Log - Deleting manager
+2025-08-12 17:22:02 [main] INFO  Log - Deleting user
+2025-08-12 17:22:02 [main] INFO  Log - User deleted was successfully
+2025-08-12 17:22:03 [main] INFO  Log - Setting up default system manager
+2025-08-12 17:22:03 [main] INFO  Log - Creating a default manager
+2025-08-12 17:22:03 [main] INFO  Log - Start getting teachers from database
+2025-08-12 17:22:03 [main] INFO  Log - Get teachers from database
+2025-08-12 17:22:03 [main] INFO  Log - Get teachers from database
+2025-08-12 17:22:03 [main] INFO  Log - Get teachers from database
+2025-08-12 17:22:03 [main] INFO  Log - Get teachers from database
+2025-08-12 17:22:03 [main] INFO  Log - Get teachers from database
+2025-08-12 17:22:03 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 17:22:03 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 17:22:03 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 17:22:03 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 17:22:03 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 17:22:03 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 17:22:03 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 17:22:03 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 17:22:03 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 17:22:03 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 17:22:04 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 17:22:04 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 17:22:04 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 17:22:04 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 17:22:04 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 17:22:04 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 17:22:04 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 17:22:04 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 17:22:04 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 17:22:27 [main] INFO  Log - Starting application
+2025-08-12 17:22:27 [main] INFO  Log - Deleting manager
+2025-08-12 17:22:27 [main] INFO  Log - Deleting user
+2025-08-12 17:22:28 [main] INFO  Log - User deleted was successfully
+2025-08-12 17:22:28 [main] INFO  Log - Setting up default system manager
+2025-08-12 17:22:28 [main] INFO  Log - Creating a default manager
+2025-08-12 17:22:28 [main] INFO  Log - Start getting teachers from database
+2025-08-12 17:22:28 [main] INFO  Log - Get teachers from database
+2025-08-12 17:22:28 [main] INFO  Log - Get teachers from database
+2025-08-12 17:22:28 [main] INFO  Log - Get teachers from database
+2025-08-12 17:22:28 [main] INFO  Log - Get teachers from database
+2025-08-12 17:22:28 [main] INFO  Log - Get teachers from database
+2025-08-12 17:22:28 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 17:22:28 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 17:22:28 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 17:22:28 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 17:22:28 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 17:22:28 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 17:22:28 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 17:22:28 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 17:22:28 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 17:22:29 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 17:22:29 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 17:22:29 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 17:22:29 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 17:22:29 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 17:22:29 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 17:22:29 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 17:22:29 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 17:22:29 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 17:22:29 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 17:23:12 [main] INFO  Log - Starting application
+2025-08-12 17:23:12 [main] INFO  Log - Deleting manager
+2025-08-12 17:23:12 [main] INFO  Log - Deleting user
+2025-08-12 17:23:12 [main] INFO  Log - User deleted was successfully
+2025-08-12 17:23:12 [main] INFO  Log - Setting up default system manager
+2025-08-12 17:23:12 [main] INFO  Log - Creating a default manager
+2025-08-12 17:23:12 [main] INFO  Log - Start getting teachers from database
+2025-08-12 17:23:12 [main] INFO  Log - Get teachers from database
+2025-08-12 17:23:12 [main] INFO  Log - Get teachers from database
+2025-08-12 17:23:12 [main] INFO  Log - Get teachers from database
+2025-08-12 17:23:12 [main] INFO  Log - Get teachers from database
+2025-08-12 17:23:12 [main] INFO  Log - Get teachers from database
+2025-08-12 17:23:13 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 17:23:13 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 17:23:13 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 17:23:13 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 17:23:13 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 17:23:13 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 17:23:13 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 17:23:13 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 17:23:13 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 17:23:13 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 17:23:13 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 17:23:13 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 C#CourseID17
+2025-08-12 17:23:13 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 OOPCourseID17
+2025-08-12 17:23:13 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 JavaScriptCourseID17
+2025-08-12 17:23:13 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 PythonCourseID17
+2025-08-12 17:23:13 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 RubyCourseID17
+2025-08-12 17:23:13 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 123CourseID17
+2025-08-12 17:23:13 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 7 asdsCourseID17
+2025-08-12 17:23:14 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 17:25:36 [main] INFO  Log - Starting application
+2025-08-12 17:25:36 [main] INFO  Log - Deleting manager
+2025-08-12 17:25:36 [main] INFO  Log - Deleting user
+2025-08-12 17:25:37 [main] INFO  Log - User deleted was successfully
+2025-08-12 17:25:37 [main] INFO  Log - Setting up default system manager
+2025-08-12 17:25:37 [main] INFO  Log - Creating a default manager
+2025-08-12 17:25:37 [main] INFO  Log - Start getting teachers from database
+2025-08-12 17:25:37 [main] INFO  Log - Get teachers from database
+2025-08-12 17:25:37 [main] INFO  Log - Get teachers from database
+2025-08-12 17:25:37 [main] INFO  Log - Get teachers from database
+2025-08-12 17:25:37 [main] INFO  Log - Get teachers from database
+2025-08-12 17:25:37 [main] INFO  Log - Get teachers from database
+2025-08-12 17:25:37 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 17:25:37 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 17:25:37 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 17:25:37 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 17:25:37 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 17:25:37 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 17:25:37 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 17:25:37 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 17:25:37 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 17:25:38 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 17:25:38 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 17:25:38 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 MethodsCourseID0
+2025-08-12 17:25:38 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 234CourseID0
+2025-08-12 17:25:38 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 ewfre`CourseID0
+2025-08-12 17:25:38 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 13412CourseID0
+2025-08-12 17:25:38 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 wfw3fCourseID0
+2025-08-12 17:25:38 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 17:27:32 [main] INFO  Log - Starting application
+2025-08-12 17:27:32 [main] INFO  Log - Deleting manager
+2025-08-12 17:27:32 [main] INFO  Log - Deleting user
+2025-08-12 17:27:32 [main] INFO  Log - User deleted was successfully
+2025-08-12 17:27:32 [main] INFO  Log - Setting up default system manager
+2025-08-12 17:27:32 [main] INFO  Log - Creating a default manager
+2025-08-12 17:27:32 [main] INFO  Log - Start getting teachers from database
+2025-08-12 17:27:32 [main] INFO  Log - Get teachers from database
+2025-08-12 17:27:32 [main] INFO  Log - Get teachers from database
+2025-08-12 17:27:32 [main] INFO  Log - Get teachers from database
+2025-08-12 17:27:32 [main] INFO  Log - Get teachers from database
+2025-08-12 17:27:32 [main] INFO  Log - Get teachers from database
+2025-08-12 17:27:32 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 17:27:32 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 17:27:32 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 17:27:32 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 17:27:32 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 17:27:32 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 17:27:32 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 17:27:32 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 17:27:32 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 17:27:33 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 17:27:33 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 17:27:33 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 MethodsCourseID0
+2025-08-12 17:27:33 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 234CourseID0
+2025-08-12 17:27:33 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 ewfre`CourseID0
+2025-08-12 17:27:33 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 13412CourseID0
+2025-08-12 17:27:33 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 wfw3fCourseID0
+2025-08-12 17:27:34 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 17:28:36 [main] INFO  Log - Starting application
+2025-08-12 17:28:36 [main] INFO  Log - Deleting manager
+2025-08-12 17:28:36 [main] INFO  Log - Deleting user
+2025-08-12 17:28:36 [main] INFO  Log - User deleted was successfully
+2025-08-12 17:28:36 [main] INFO  Log - Setting up default system manager
+2025-08-12 17:28:36 [main] INFO  Log - Creating a default manager
+2025-08-12 17:28:37 [main] INFO  Log - Start getting teachers from database
+2025-08-12 17:28:37 [main] INFO  Log - Get teachers from database
+2025-08-12 17:28:37 [main] INFO  Log - Get teachers from database
+2025-08-12 17:28:37 [main] INFO  Log - Get teachers from database
+2025-08-12 17:28:37 [main] INFO  Log - Get teachers from database
+2025-08-12 17:28:37 [main] INFO  Log - Get teachers from database
+2025-08-12 17:28:37 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 17:28:37 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 17:28:37 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 17:28:37 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 17:28:37 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 17:28:37 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 17:28:37 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 17:28:37 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 17:28:37 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 17:28:37 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 17:28:38 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 17:28:38 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 MethodsCourseID0
+2025-08-12 17:28:38 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 234CourseID0
+2025-08-12 17:28:38 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 ewfre`CourseID0
+2025-08-12 17:28:38 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 13412CourseID0
+2025-08-12 17:28:38 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 wfw3fCourseID0
+2025-08-12 17:28:38 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 17:28:52 [main] INFO  Log - Starting application
+2025-08-12 17:28:52 [main] INFO  Log - Deleting manager
+2025-08-12 17:28:52 [main] INFO  Log - Deleting user
+2025-08-12 17:28:52 [main] INFO  Log - User deleted was successfully
+2025-08-12 17:28:53 [main] INFO  Log - Setting up default system manager
+2025-08-12 17:28:53 [main] INFO  Log - Creating a default manager
+2025-08-12 17:28:53 [main] INFO  Log - Start getting teachers from database
+2025-08-12 17:28:53 [main] INFO  Log - Get teachers from database
+2025-08-12 17:28:53 [main] INFO  Log - Get teachers from database
+2025-08-12 17:28:53 [main] INFO  Log - Get teachers from database
+2025-08-12 17:28:53 [main] INFO  Log - Get teachers from database
+2025-08-12 17:28:53 [main] INFO  Log - Get teachers from database
+2025-08-12 17:28:53 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 17:28:53 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 17:28:53 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 17:28:53 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 17:28:53 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 17:28:53 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 17:28:53 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 17:28:53 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 17:28:53 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 17:28:53 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 17:28:54 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 17:28:54 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 MethodsCourseID0
+2025-08-12 17:28:54 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 234CourseID0
+2025-08-12 17:28:54 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 ewfre`CourseID0
+2025-08-12 17:28:54 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 13412CourseID0
+2025-08-12 17:28:54 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 wfw3fCourseID0
+2025-08-12 17:28:54 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 17:29:42 [JavaFX Application Thread] ERROR Log - Error while adding new sub topic
+2025-08-12 17:30:03 [main] INFO  Log - Starting application
+2025-08-12 17:30:03 [main] INFO  Log - Deleting manager
+2025-08-12 17:30:03 [main] INFO  Log - Deleting user
+2025-08-12 17:30:03 [main] INFO  Log - User deleted was successfully
+2025-08-12 17:30:03 [main] INFO  Log - Setting up default system manager
+2025-08-12 17:30:03 [main] INFO  Log - Creating a default manager
+2025-08-12 17:30:04 [main] INFO  Log - Start getting teachers from database
+2025-08-12 17:30:04 [main] INFO  Log - Get teachers from database
+2025-08-12 17:30:04 [main] INFO  Log - Get teachers from database
+2025-08-12 17:30:04 [main] INFO  Log - Get teachers from database
+2025-08-12 17:30:04 [main] INFO  Log - Get teachers from database
+2025-08-12 17:30:04 [main] INFO  Log - Get teachers from database
+2025-08-12 17:30:04 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 17:30:04 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 17:30:04 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 17:30:04 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 17:30:04 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 17:30:04 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 17:30:04 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 17:30:04 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 17:30:04 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 17:30:04 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 17:30:05 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 17:30:05 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 MethodsCourseID0
+2025-08-12 17:30:05 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 234CourseID0
+2025-08-12 17:30:05 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 ewfre`CourseID0
+2025-08-12 17:30:05 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 13412CourseID0
+2025-08-12 17:30:05 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 wfw3fCourseID0
+2025-08-12 17:30:05 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 17:30:14 [JavaFX Application Thread] INFO  Log - subTopic was successfully inserted
+2025-08-12 17:30:21 [main] INFO  Log - Starting application
+2025-08-12 17:30:21 [main] INFO  Log - Deleting manager
+2025-08-12 17:30:21 [main] INFO  Log - Deleting user
+2025-08-12 17:30:21 [main] INFO  Log - User deleted was successfully
+2025-08-12 17:30:22 [main] INFO  Log - Setting up default system manager
+2025-08-12 17:30:22 [main] INFO  Log - Creating a default manager
+2025-08-12 17:30:22 [main] INFO  Log - Start getting teachers from database
+2025-08-12 17:30:22 [main] INFO  Log - Get teachers from database
+2025-08-12 17:30:22 [main] INFO  Log - Get teachers from database
+2025-08-12 17:30:22 [main] INFO  Log - Get teachers from database
+2025-08-12 17:30:22 [main] INFO  Log - Get teachers from database
+2025-08-12 17:30:22 [main] INFO  Log - Get teachers from database
+2025-08-12 17:30:22 [main] WARN  Log - All user's locations and name : Maksym Dublin teacher
+2025-08-12 17:30:22 [main] WARN  Log - All user's locations and name : Maksym Dub teacher
+2025-08-12 17:30:22 [main] WARN  Log - All user's locations and name : Makson null student
+2025-08-12 17:30:22 [main] WARN  Log - All user's locations and name : Peddy 123 teacher
+2025-08-12 17:30:22 [main] WARN  Log - All user's locations and name : Tracey dublin teacher
+2025-08-12 17:30:22 [JavaFX Application Thread] INFO  Log - Users table created or already exists.
+2025-08-12 17:30:22 [JavaFX Application Thread] INFO  Log - Course table created or already exists.
+2025-08-12 17:30:22 [JavaFX Application Thread] INFO  Log - Topic tables was created or already exists
+2025-08-12 17:30:22 [JavaFX Application Thread] INFO  Log - subTopic table was created or already exists
+2025-08-12 17:30:22 [JavaFX Application Thread] INFO  Log - The course was parsed 17
+2025-08-12 17:30:23 [JavaFX Application Thread] INFO  Log - Getting topic info from db
+2025-08-12 17:30:23 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 1 MethodsCourseID0
+2025-08-12 17:30:23 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 2 234CourseID0
+2025-08-12 17:30:23 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 3 ewfre`CourseID0
+2025-08-12 17:30:23 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 4 13412CourseID0
+2025-08-12 17:30:23 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 5 wfw3fCourseID0
+2025-08-12 17:30:23 [JavaFX Application Thread] INFO  Log - printing topic.... ID: 6 69659CourseID3
+2025-08-12 17:30:23 [JavaFX Application Thread] INFO  Log - Topics were parsed successfully
+2025-08-12 17:30:24 [JavaFX Application Thread] INFO  Log - subTopic was successfully received

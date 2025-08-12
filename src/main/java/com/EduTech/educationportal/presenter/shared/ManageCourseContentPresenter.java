@@ -3,6 +3,7 @@ package com.EduTech.educationportal.presenter.shared;
 import com.EduTech.educationportal.interfaces.presenter.ManageCourseContentPresenterInterface;
 import com.EduTech.educationportal.interfaces.repository.CourseContentRepositoryInterface;
 import com.EduTech.educationportal.interfaces.view.ManageCourseContentInterface;
+import com.EduTech.educationportal.model.SubTopic;
 import com.EduTech.educationportal.model.Topic;
 
 import java.util.List;
@@ -17,5 +18,8 @@ public class ManageCourseContentPresenter implements  ManageCourseContentPresent
     }
     public void getTopicByCourseID(int ID, List<Topic> topics){
         courseContentRepository.getTopicByCourseID(ID, topics);
+    }
+    public void getSubTopicByCourseID(int ID, List<SubTopic> subTopics){
+        courseContentRepository.getSubTopicByTopicID(ID, subTopics);
     }
 }

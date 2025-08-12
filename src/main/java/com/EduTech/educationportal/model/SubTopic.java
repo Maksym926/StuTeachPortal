@@ -1,22 +1,41 @@
 package com.EduTech.educationportal.model;
 
-public class subTopic {
+import com.EduTech.educationportal.interfaces.view.CourseContentItem;
+
+public class SubTopic implements CourseContentItem {
     private int ID;
-    private int courseID;
+    private int topicID;
     private String title;
-    private String subTitle;
+
     private String content;
     private String image;
     private String assignment;
 
+    public SubTopic(String title){
+        this.title = title;
+    }
+    public SubTopic(int topicID , String title, String content){
+        this.topicID = topicID;
+        this.title = title;
+        this.content = content;
+    }
+
+    public SubTopic(int ID, int topicID, String title, String content, String image, String assignment){
+        this.ID = ID;
+        this.topicID = topicID;
+        this.title = title;
+        this.content = content;
+        this.image = image;
+        this.assignment = assignment;
+    }
     public int getID(){
         return ID;
     }
-    public void setCourseID(int courseID){
-        this.courseID = courseID;
+    public void setTopicID(int topicID){
+        this.topicID = topicID;
     }
-    public int getCourseID(){
-        return courseID;
+    public int getTopicID(){
+        return topicID;
     }
     public void setTitle(String title){
         this.title = title;
@@ -24,12 +43,7 @@ public class subTopic {
     public String getTitle(){
         return title;
     }
-    public void setSubTitle(String subTitle){
-        this.subTitle = subTitle;
-    }
-    public String getSubTitle(){
-        return subTitle;
-    }
+
     public void setContent(String content){
         this.content = content;
     }
