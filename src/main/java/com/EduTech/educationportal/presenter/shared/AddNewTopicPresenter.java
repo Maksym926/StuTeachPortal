@@ -17,4 +17,5 @@ public class AddNewTopicPresenter implements AddNewTopicPresenterInterface {
     public void insertNewTopic(Topic topic){
         courseContentRepository.addNewTopic(topic);
     }
+
 }

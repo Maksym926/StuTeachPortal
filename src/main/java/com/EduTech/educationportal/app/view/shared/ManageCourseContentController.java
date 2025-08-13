@@ -20,6 +20,7 @@ import javafx.scene.Node;
 import javafx.scene.control.TreeCell;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeView;
+import javafx.scene.text.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,6 +38,12 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
     private TreeView<CourseContentItem > courseContentList;
 
     private TreeItem<CourseContentItem > rootItem;
+
+    @FXML private Text courseTitle;
+    @FXML private Text subTopicTitle;
+    @FXML private Text mainContent;
+
+    SubTopic firstSubTopic = null;
 
     public ManageCourseContentController(Course course){
         this.course = course;
@@ -91,14 +98,26 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
 
             }
         });
+        courseContentList.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
+            if (newSelection != null && newSelection.getValue() instanceof SubTopic selectedSubTopic) {
+
+                // Now you have the SubTopic object
+                subTopicTitle.setText(selectedSubTopic.getTitle());
+                mainContent.setText(selectedSubTopic.getContent());
+            }
+        });
     }
 
     @Override
     public void setup() {
+        courseTitle.setText(course.getTitle());
         setupTree();
         presenter.getTopicByCourseID(course.getID(), topics);
-
         addTopics();
+        if (firstSubTopic != null){
+            subTopicTitle.setText(firstSubTopic.getTitle());
+            mainContent.setText(firstSubTopic.getContent());
+        }
 
 
 
@@ -129,7 +148,11 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
         AddNewSubTopicPresenterInterface addNewSubTopicPresenterInterface = new AddNewSubTopicPresenter(addNewSubTopicInterface, courseContentRepositoryInterface);
         ViewNavigator.switchScene((Node)event.getSource(), "/AddNewSubTopicView.fxml", "Add new Subtopic", addNewSubTopicInterface, true);
     }
-
+    @FXML
+    public void returnToPreviousForm(ActionEvent event){
+        Log.info("Returning to previous form");
+        ViewNavigator.goBack((Node) event.getSource());
+    }
 
     @Override
     public void setPresenter(ManageCourseContentPresenter presenter) {
@@ -148,6 +171,9 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
             for(SubTopic subTopic: subTopics){
                 if(topic.getID() == subTopic.getTopicID()){
                     topicItem.getChildren().add(new TreeItem<>(subTopic));
+                    if (firstSubTopic == null) {
+                        firstSubTopic = subTopic; // store the first match
+                    }
                 }
 
             }

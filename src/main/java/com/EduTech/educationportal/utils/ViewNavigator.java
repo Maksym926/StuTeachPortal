@@ -35,6 +35,9 @@ public class ViewNavigator {
     public static void addScene(String fxmlPath, String title){
         scenes.push(new SceneData(fxmlPath, title));
     }
+    public static void addScene(String fxmlPath, String title, Object controller){
+        scenes.push(new SceneData(fxmlPath, title, controller));
+    }
     public static void goBack(Node source){
         if(!scenes.isEmpty()){
             Log.info("Going back");

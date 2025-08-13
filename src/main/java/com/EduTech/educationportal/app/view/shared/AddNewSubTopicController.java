@@ -4,7 +4,10 @@ import com.EduTech.educationportal.interfaces.view.AddNewSubTopicInterface;
 import com.EduTech.educationportal.model.SubTopic;
 import com.EduTech.educationportal.model.Topic;
 import com.EduTech.educationportal.presenter.shared.AddNewSubTopicPresenter;
+import com.EduTech.educationportal.utils.Log;
+import com.EduTech.educationportal.utils.ViewNavigator;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
@@ -27,7 +30,10 @@ public class AddNewSubTopicController implements AddNewSubTopicInterface {
         presenter.addSubTopic(newSubTopic);
 
     }
-
+    public void returnToPreviousForm(ActionEvent event){
+        Log.info("Returning to previous form");
+        ViewNavigator.goBack((Node) event.getSource());
+    }
     @Override
     public void setPresenter(AddNewSubTopicPresenter presenter) {
         this.presenter = presenter;

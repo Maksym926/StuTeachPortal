@@ -48,4 +48,5 @@ public class CourseDescriptionPreviewController implements CourseDescriptionPrev
         EditCourseDescriptionPresenterInterface editCourseDescriptionPresenterInterface = new EditCourseDescriptionPresenter(editCourseDescriptionInterface, courseRepositoryInterface);
         ViewNavigator.switchScene((Node)event.getSource(), "/EditCourseDescriptionView.fxml", "Edit Course", editCourseDescriptionInterface, true);
     }
+
 }

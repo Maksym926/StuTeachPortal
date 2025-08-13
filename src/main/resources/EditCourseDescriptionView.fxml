@@ -8,6 +8,8 @@
 <?import javafx.scene.text.Text?>
 
 
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 <AnchorPane prefHeight="437.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Text layoutX="210.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit course description">
@@ -26,5 +28,14 @@
       <Text layoutX="24.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course description" wrappingWidth="118.13671875" />
       <TextArea fx:id="courseDescription" layoutX="24.0" layoutY="311.0" prefHeight="60.0" prefWidth="352.0" />
       <Button layoutX="23.0" layoutY="391.0" mnemonicParsing="false" text="Save changes" onAction="#updateDescription"/>
+      <Button onAction="#returnToPreviousForm">
+         <graphic>
+            <ImageView fitHeight="20" fitWidth="20">
+               <image>
+                  <Image url="@/images/arrow_back.png"/>
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
    </children>
 </AnchorPane>

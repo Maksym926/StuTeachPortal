@@ -93,12 +93,17 @@ public class App extends Application {
         stage.setTitle("Manage course");
         stage.show();
 
+
+
 // Setup logic
+
         CourseContentRepositoryInterface courseContentRepositoryInterface= new CourseContentRepository();
         CourseContentRepository test = new CourseContentRepository();
         test.printTopicInfo();
         ManageCourseContentPresenterInterface manageCourseContentPresenterInterface = new ManageCourseContentPresenter(manageCourseContentInterface, courseContentRepositoryInterface);
         SetupControllerInterface setupController = (SetupControllerInterface) manageCourseContentInterface;
+
         setupController.setup();
+
     }
 }

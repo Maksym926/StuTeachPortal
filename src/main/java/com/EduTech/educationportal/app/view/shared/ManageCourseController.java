@@ -70,6 +70,7 @@ public class ManageCourseController implements SetupControllerInterface, ManageC
         CourseDescriptionPreviewInterface courseDescriptionPreviewController = new CourseDescriptionPreviewController(course);
         ViewNavigator.switchScene((Node)event.getSource(), "/CourseDescriptionPreview.fxml", "Edit description", courseDescriptionPreviewController, true);
     }
+
     @FXML
     public void returnToPreviousForm(ActionEvent event){
         Log.info("Returning to previous form");

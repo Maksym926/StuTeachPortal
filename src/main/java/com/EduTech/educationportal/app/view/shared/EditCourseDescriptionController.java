@@ -4,8 +4,11 @@ import com.EduTech.educationportal.interfaces.view.EditCourseDescriptionInterfac
 import com.EduTech.educationportal.interfaces.view.SetupControllerInterface;
 import com.EduTech.educationportal.model.Course;
 import com.EduTech.educationportal.presenter.shared.EditCourseDescriptionPresenter;
+import com.EduTech.educationportal.utils.Log;
+import com.EduTech.educationportal.utils.ViewNavigator;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
@@ -43,5 +46,9 @@ public class EditCourseDescriptionController implements EditCourseDescriptionInt
         course.setDuration(Integer.valueOf(courseDuration.getText()));
         course.setDescription(courseDescription.getText());
         presenter.updateCourseDescription(course);
+    }
+    public void returnToPreviousForm(ActionEvent event){
+        Log.info("Returning to previous form");
+        ViewNavigator.goBack((Node) event.getSource());
     }
 }
