@@ -10,4 +10,6 @@ public interface CourseContentRepositoryInterface {
     void getTopicByCourseID(int ID, List<Topic> topics);
     void addNewSubTopic(SubTopic subTopic);
     void getSubTopicByTopicID(int topicID, List<SubTopic> subTopics);
+    void deleteTopic(int ID);
+    void deleteSubTopic(int ID);
 }

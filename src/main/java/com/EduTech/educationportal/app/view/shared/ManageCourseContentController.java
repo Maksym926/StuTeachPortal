@@ -92,10 +92,6 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
                         }
                     });
                 }
-
-
-
-
             }
         });
         courseContentList.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
@@ -107,9 +103,10 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
             }
         });
     }
-
     @Override
     public void setup() {
+        topics.clear();
+        subTopics.clear();
         courseTitle.setText(course.getTitle());
         setupTree();
         presenter.getTopicByCourseID(course.getID(), topics);
@@ -118,24 +115,8 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
             subTopicTitle.setText(firstSubTopic.getTitle());
             mainContent.setText(firstSubTopic.getContent());
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
-    @FXML
+
     public void openAddTopicWindow(ActionEvent event){
         AddNewTopicInterface addNewTopicInterface = new AddNewTopicController(course);
         CourseContentRepositoryInterface courseContentRepositoryInterface = new CourseContentRepository();
@@ -147,6 +128,25 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
         CourseContentRepositoryInterface courseContentRepositoryInterface = new CourseContentRepository();
         AddNewSubTopicPresenterInterface addNewSubTopicPresenterInterface = new AddNewSubTopicPresenter(addNewSubTopicInterface, courseContentRepositoryInterface);
         ViewNavigator.switchScene((Node)event.getSource(), "/AddNewSubTopicView.fxml", "Add new Subtopic", addNewSubTopicInterface, true);
+    }
+    @FXML
+    public void deleteCourseContentItem(){
+        TreeItem<CourseContentItem> selectedItem = courseContentList.getSelectionModel().getSelectedItem();
+        if (selectedItem != null) {
+            Object value = selectedItem.getValue();
+
+            if (value instanceof Topic) {
+                Topic topic = (Topic) value;
+                presenter.deleteTopic(topic.getID());
+                // delete logic for topic
+            }
+            else if (value instanceof SubTopic) {
+                SubTopic subTopic = (SubTopic) value;
+                presenter.deleteSubTopic(subTopic.getID());
+                // delete logic for subtopic
+            }
+            setup();
+        }
     }
     @FXML
     public void returnToPreviousForm(ActionEvent event){

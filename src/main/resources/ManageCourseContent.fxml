@@ -16,7 +16,7 @@
          </font>
       </Text>
       <TreeView fx:id="courseContentList" layoutX="372.0" layoutY="62.0" prefHeight="297.0" prefWidth="200.0" />
-      <Button layoutX="372.0" layoutY="361.0" mnemonicParsing="false" onAction="#openAddTopicWindow" text="Add topic" />
+      <Button layoutX="372.0" layoutY="361.0" mnemonicParsing="false" onAction="#deleteCourseContentItem" text="Delete topic" />
       <Button onAction="#returnToPreviousForm">
          <graphic>
             <ImageView fitHeight="20" fitWidth="20">

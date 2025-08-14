@@ -22,4 +22,11 @@ public class ManageCourseContentPresenter implements  ManageCourseContentPresent
     public void getSubTopicByCourseID(int ID, List<SubTopic> subTopics){
         courseContentRepository.getSubTopicByTopicID(ID, subTopics);
     }
+
+    public void deleteTopic(int ID){
+        courseContentRepository.deleteTopic(ID);
+    }
+    public void deleteSubTopic(int ID){
+        courseContentRepository.deleteSubTopic(ID);
+    }
 }

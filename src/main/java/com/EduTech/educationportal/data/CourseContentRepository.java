@@ -82,6 +82,32 @@ public class CourseContentRepository implements CourseContentRepositoryInterface
         }
 
     }
+    public void deleteTopic(int ID){
+        String sql = "DELETE FROM topicsDB WHERE id=?";
+        try(Connection conn = DBConnection.getConnection();
+        PreparedStatement stmt = conn.prepareStatement(sql)){
+            stmt.setInt(1, ID);
+            stmt.executeUpdate();
+            Log.info("Topic was successfully deleted");
+
+        }catch(SQLException e){
+            Log.error("Error while deleting the topic");
+            e.printStackTrace();
+        }
+    }
+    public void deleteSubTopic(int ID){
+        String sql = "DELETE FROM subTopicsDB WHERE id=?";
+        try(Connection conn = DBConnection.getConnection();
+            PreparedStatement stmt = conn.prepareStatement(sql)){
+            stmt.setInt(1, ID);
+            stmt.executeUpdate();
+            Log.info("Topic was successfully deleted");
+
+        }catch(SQLException e){
+            Log.error("Error while deleting the topic");
+            e.printStackTrace();
+        }
+    }
     public void printTopicInfo(){
         String sql = "SELECT * FROM subTopicsDB";
         Log.info("Getting topic info from db");
