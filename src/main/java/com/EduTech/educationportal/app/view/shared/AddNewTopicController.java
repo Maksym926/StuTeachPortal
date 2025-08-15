@@ -1,8 +1,8 @@
 package com.EduTech.educationportal.app.view.shared;
 
 import com.EduTech.educationportal.interfaces.view.AddNewTopicInterface;
-import com.EduTech.educationportal.model.Course;
-import com.EduTech.educationportal.model.Topic;
+import com.EduTech.educationportal.model.entities.Course;
+import com.EduTech.educationportal.model.entities.Topic;
 import com.EduTech.educationportal.presenter.shared.AddNewTopicPresenter;
 import com.EduTech.educationportal.utils.Log;
 import com.EduTech.educationportal.utils.ViewNavigator;

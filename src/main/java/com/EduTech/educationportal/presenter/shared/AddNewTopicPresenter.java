@@ -3,8 +3,7 @@ package com.EduTech.educationportal.presenter.shared;
 import com.EduTech.educationportal.interfaces.presenter.AddNewTopicPresenterInterface;
 import com.EduTech.educationportal.interfaces.repository.CourseContentRepositoryInterface;
 import com.EduTech.educationportal.interfaces.view.AddNewTopicInterface;
-import com.EduTech.educationportal.interfaces.view.ManageCourseContentInterface;
-import com.EduTech.educationportal.model.Topic;
+import com.EduTech.educationportal.model.entities.Topic;
 
 public class AddNewTopicPresenter implements AddNewTopicPresenterInterface {
     AddNewTopicInterface view;

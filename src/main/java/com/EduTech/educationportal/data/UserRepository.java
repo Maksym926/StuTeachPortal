@@ -1,8 +1,8 @@
 package com.EduTech.educationportal.data;
 
 import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
-import com.EduTech.educationportal.model.Teacher;
-import com.EduTech.educationportal.model.User;
+import com.EduTech.educationportal.model.entities.Teacher;
+import com.EduTech.educationportal.model.entities.User;
 import com.EduTech.educationportal.utils.Log;
 import javafx.collections.ObservableList;
 

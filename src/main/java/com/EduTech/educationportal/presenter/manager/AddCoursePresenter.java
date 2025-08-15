@@ -4,7 +4,7 @@ import com.EduTech.educationportal.interfaces.presenter.AddCoursePresenterInterf
 import com.EduTech.educationportal.interfaces.repository.CourseRepositoryInterface;
 import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
 import com.EduTech.educationportal.interfaces.view.AddCourseViewInterface;
-import com.EduTech.educationportal.model.Teacher;
+import com.EduTech.educationportal.model.entities.Teacher;
 
 import java.util.List;
 

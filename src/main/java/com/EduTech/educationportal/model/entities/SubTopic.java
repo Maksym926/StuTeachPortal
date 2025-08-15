@@ -1,4 +1,4 @@
-package com.EduTech.educationportal.model;
+package com.EduTech.educationportal.model.entities;
 
 import com.EduTech.educationportal.interfaces.view.CourseContentItem;
 
@@ -10,23 +10,32 @@ public class SubTopic implements CourseContentItem {
     private String content;
     private String image;
     private String assignment;
+    private String fileName;
 
     public SubTopic(String title){
         this.title = title;
     }
-    public SubTopic(int topicID , String title, String content){
+    public SubTopic(int topicID , String title, String content, String selectedFile){
         this.topicID = topicID;
         this.title = title;
         this.content = content;
+        this.fileName = selectedFile;
     }
 
-    public SubTopic(int ID, int topicID, String title, String content, String image, String assignment){
+    public SubTopic(int ID, int topicID, String title, String content, String image, String assignment, String fileName){
         this.ID = ID;
         this.topicID = topicID;
         this.title = title;
         this.content = content;
         this.image = image;
         this.assignment = assignment;
+        this.fileName = fileName;
+    }
+    public String getFileName(){
+        return fileName;
+    }
+    public void setFileName(String fileName){
+        this.fileName = fileName;
     }
     public int getID(){
         return ID;

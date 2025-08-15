@@ -1,9 +1,8 @@
 package com.EduTech.educationportal.data;
 
 import com.EduTech.educationportal.interfaces.repository.CourseContentRepositoryInterface;
-import com.EduTech.educationportal.model.Course;
-import com.EduTech.educationportal.model.SubTopic;
-import com.EduTech.educationportal.model.Topic;
+import com.EduTech.educationportal.model.entities.SubTopic;
+import com.EduTech.educationportal.model.entities.Topic;
 import com.EduTech.educationportal.utils.Log;
 
 import java.sql.Connection;
@@ -58,7 +57,8 @@ public class CourseContentRepository implements CourseContentRepositoryInterface
                 String content = rs.getString("content");
                 String image = rs.getString("image");
                 String assignment = rs.getString("assignment");
-                subTopics.add(new SubTopic(id, topicID, title,content, image, assignment));
+                String fileName = rs.getString("fileName");
+                subTopics.add(new SubTopic(id, topicID, title,content, image, assignment, fileName));
                 Log.info("subTopic was successfully received");
             }
         }catch (SQLException e){
@@ -67,13 +67,14 @@ public class CourseContentRepository implements CourseContentRepositoryInterface
         }
     }
     public void addNewSubTopic(SubTopic subTopic){
-        String sql = "INSERT INTO subTopicsDB (topicID, title, content, image, assignment) VALUES (?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO subTopicsDB (topicID, title, content, image, assignment, fileName) VALUES (?, ?, ?, ?, ?, ?)";
         try(Connection conn = DBConnection.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)){
             stmt.setInt(1, subTopic.getTopicID());
             stmt.setString(2, subTopic.getTitle());
             stmt.setString(3, subTopic.getContent());
             stmt.setString(4, subTopic.getImage());
             stmt.setString(5, subTopic.getAssignment());
+            stmt.setString(6, subTopic.getFileName());
             stmt.executeUpdate();
             Log.info("subTopic was successfully inserted");
         }catch (SQLException e){

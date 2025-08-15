@@ -1,7 +1,7 @@
 package com.EduTech.educationportal.interfaces.presenter;
 
-import com.EduTech.educationportal.model.Course;
-import com.EduTech.educationportal.model.User;
+import com.EduTech.educationportal.model.entities.Course;
+import com.EduTech.educationportal.model.entities.User;
 import javafx.collections.ObservableList;
 
 public interface ManageCoursePresenterInterface {

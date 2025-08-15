@@ -1,17 +1,19 @@
 package com.EduTech.educationportal.app.view.shared;
 
 import com.EduTech.educationportal.data.CourseContentRepository;
+import com.EduTech.educationportal.data.UserRepository;
 import com.EduTech.educationportal.interfaces.presenter.AddNewSubTopicPresenterInterface;
 import com.EduTech.educationportal.interfaces.presenter.AddNewTopicPresenterInterface;
 import com.EduTech.educationportal.interfaces.repository.CourseContentRepositoryInterface;
+import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
 import com.EduTech.educationportal.interfaces.view.*;
-import com.EduTech.educationportal.model.Course;
-import com.EduTech.educationportal.model.SubTopic;
-import com.EduTech.educationportal.model.Topic;
+import com.EduTech.educationportal.model.aws.S3Uploader;
+import com.EduTech.educationportal.model.entities.Course;
+import com.EduTech.educationportal.model.entities.SubTopic;
+import com.EduTech.educationportal.model.entities.Topic;
 import com.EduTech.educationportal.presenter.shared.AddNewSubTopicPresenter;
 import com.EduTech.educationportal.presenter.shared.AddNewTopicPresenter;
 import com.EduTech.educationportal.presenter.shared.ManageCourseContentPresenter;
-import com.EduTech.educationportal.presenter.shared.ManageCoursePresenter;
 import com.EduTech.educationportal.utils.Log;
 import com.EduTech.educationportal.utils.ViewNavigator;
 import javafx.event.ActionEvent;
@@ -42,7 +44,7 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
     @FXML private Text courseTitle;
     @FXML private Text subTopicTitle;
     @FXML private Text mainContent;
-
+    @FXML private Text fileName;
     SubTopic firstSubTopic = null;
 
     public ManageCourseContentController(Course course){
@@ -100,11 +102,13 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
                 // Now you have the SubTopic object
                 subTopicTitle.setText(selectedSubTopic.getTitle());
                 mainContent.setText(selectedSubTopic.getContent());
+                fileName.setText(selectedSubTopic.getFileName());
             }
         });
     }
     @Override
     public void setup() {
+
         topics.clear();
         subTopics.clear();
         courseTitle.setText(course.getTitle());
@@ -114,6 +118,7 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
         if (firstSubTopic != null){
             subTopicTitle.setText(firstSubTopic.getTitle());
             mainContent.setText(firstSubTopic.getContent());
+            fileName.setText(firstSubTopic.getFileName());
         }
     }
 
@@ -124,9 +129,11 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
         ViewNavigator.switchScene((Node)event.getSource(), "/AddNewTopicView.fxml", "Add new Topic", addNewTopicInterface, true);
     }
     public void openAddSubTopicWindow(ActionEvent event, Topic topic){
-        AddNewSubTopicInterface addNewSubTopicInterface = new AddNewSubTopicController(topic);
+        AddNewSubTopicInterface addNewSubTopicInterface = new AddNewSubTopicController(topic,course);
         CourseContentRepositoryInterface courseContentRepositoryInterface = new CourseContentRepository();
-        AddNewSubTopicPresenterInterface addNewSubTopicPresenterInterface = new AddNewSubTopicPresenter(addNewSubTopicInterface, courseContentRepositoryInterface);
+        S3Uploader s3Uploader = new S3Uploader();
+        UserRepositoryInterface userRepositoryInterface = new UserRepository();
+        AddNewSubTopicPresenterInterface addNewSubTopicPresenterInterface = new AddNewSubTopicPresenter(addNewSubTopicInterface, courseContentRepositoryInterface, s3Uploader, userRepositoryInterface);
         ViewNavigator.switchScene((Node)event.getSource(), "/AddNewSubTopicView.fxml", "Add new Subtopic", addNewSubTopicInterface, true);
     }
     @FXML

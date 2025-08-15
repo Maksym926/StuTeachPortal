@@ -1,4 +1,4 @@
-package com.EduTech.educationportal.model;
+package com.EduTech.educationportal.model.entities;
 
 public class Student extends User {
 

@@ -1,8 +1,7 @@
 package com.EduTech.educationportal.data;
 
 import com.EduTech.educationportal.interfaces.repository.CourseRepositoryInterface;
-import com.EduTech.educationportal.model.Course;
-import com.EduTech.educationportal.model.Teacher;
+import com.EduTech.educationportal.model.entities.Course;
 import com.EduTech.educationportal.utils.Log;
 import javafx.collections.ObservableList;
 

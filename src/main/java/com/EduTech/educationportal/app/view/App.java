@@ -11,13 +11,11 @@ import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface
 import com.EduTech.educationportal.interfaces.view.MainMenuViewInterface;
 import com.EduTech.educationportal.interfaces.view.ManageCourseContentInterface;
 import com.EduTech.educationportal.interfaces.view.SetupControllerInterface;
-import com.EduTech.educationportal.model.Course;
-import com.EduTech.educationportal.model.Teacher;
-import com.EduTech.educationportal.model.User;
+import com.EduTech.educationportal.model.entities.Course;
+import com.EduTech.educationportal.model.entities.User;
 import com.EduTech.educationportal.presenter.shared.MainMenuPresenter;
 import com.EduTech.educationportal.presenter.shared.ManageCourseContentPresenter;
 import com.EduTech.educationportal.utils.Log;
-import com.EduTech.educationportal.utils.ViewNavigator;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -26,8 +24,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.h2.tools.Server;
+
+import java.nio.file.Paths;
 import java.sql.SQLException;
 
+
+import software.amazon.awssdk.core.sync.RequestBody;
+import software.amazon.awssdk.services.s3.S3Client;
+import software.amazon.awssdk.services.s3.model.PutObjectRequest;
 public class App extends Application {
 
     public static void main(String[] args) throws SQLException {
@@ -46,7 +50,7 @@ public class App extends Application {
         userRepository.getUsers(testList);
 
         for (User user : testList) {
-            Log.warn("All user's locations and name : " + user.getName() + " " + user.getCity() + " " + user.getRole());
+            Log.warn("All user's locations and name : " +user.getID() + " " + user.getName() + " " + user.getCity() + " " + user.getRole());
         }
 
 
@@ -57,15 +61,28 @@ public class App extends Application {
     public void start(Stage stage) throws Exception {
         DBConnection.init();
         Server webServer = Server.createWebServer("-web", "-webAllowOthers", "-webPort", "8082");
-        webServer.start();
-
+        webServer.stop();
+//        String bucketName = "assignments-bucket1";
+//        String keyName = "assignments/assignment1.pdf"; // S3 path
+//        String filePath = "G:/CV/Maksym_Chechotkin_CV.pdf";    // Local file path
+//
+//        try (S3Client s3 = S3Client.builder().build()) {
+//            PutObjectRequest putObjectRequest = PutObjectRequest.builder()
+//                    .bucket(bucketName)
+//                    .key(keyName)
+//                    .contentType("application/pdf")
+//                    .build();
+//
+//            s3.putObject(putObjectRequest, RequestBody.fromFile(Paths.get(filePath)));
+//            Log.info("File was successfully uploaded to the server");
+//        }
 //        Parent root = FXMLLoader.load(getClass().getResource("/MainMenuView.fxml"));
 //        Scene scene = new Scene(root);
 //        stage.setScene(scene);
 //        stage.setTitle("Main View");
 //        stage.show();
 //        ViewNavigator.addScene("/MainMenuView.fxml", "Main Menu");
-        Course course = new Course(17, "", "", 1, "", 1); // however you're getting it
+        Course course = new Course(17, "", "", 2, "", 1); // however you're getting it
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/ManageCourseContent.fxml"));
 

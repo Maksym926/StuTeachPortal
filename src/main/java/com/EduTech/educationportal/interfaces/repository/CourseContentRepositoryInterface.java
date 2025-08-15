@@ -1,7 +1,7 @@
 package com.EduTech.educationportal.interfaces.repository;
 
-import com.EduTech.educationportal.model.SubTopic;
-import com.EduTech.educationportal.model.Topic;
+import com.EduTech.educationportal.model.entities.SubTopic;
+import com.EduTech.educationportal.model.entities.Topic;
 
 import java.util.List;
 

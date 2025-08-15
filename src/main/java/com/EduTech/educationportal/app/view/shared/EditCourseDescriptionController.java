@@ -2,7 +2,7 @@ package com.EduTech.educationportal.app.view.shared;
 
 import com.EduTech.educationportal.interfaces.view.EditCourseDescriptionInterface;
 import com.EduTech.educationportal.interfaces.view.SetupControllerInterface;
-import com.EduTech.educationportal.model.Course;
+import com.EduTech.educationportal.model.entities.Course;
 import com.EduTech.educationportal.presenter.shared.EditCourseDescriptionPresenter;
 import com.EduTech.educationportal.utils.Log;
 import com.EduTech.educationportal.utils.ViewNavigator;

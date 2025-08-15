@@ -70,7 +70,8 @@ public class DBConnection {
                     "title VARCHAR(255), " +
                     "content VARCHAR(255), " +
                     "image VARCHAR(255), " +
-                    "assignment VARCHAR(255) " +
+                    "assignment VARCHAR(255), " +
+                    "fileName VARCHAR(255) " +
                     ")";
             stmt.execute(subTopicDBSQL);
             Log.info("subTopic table was created or already exists");

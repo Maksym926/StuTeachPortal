@@ -3,8 +3,8 @@ package com.EduTech.educationportal.presenter.shared;
 import com.EduTech.educationportal.interfaces.presenter.ManageCourseContentPresenterInterface;
 import com.EduTech.educationportal.interfaces.repository.CourseContentRepositoryInterface;
 import com.EduTech.educationportal.interfaces.view.ManageCourseContentInterface;
-import com.EduTech.educationportal.model.SubTopic;
-import com.EduTech.educationportal.model.Topic;
+import com.EduTech.educationportal.model.entities.SubTopic;
+import com.EduTech.educationportal.model.entities.Topic;
 
 import java.util.List;
 

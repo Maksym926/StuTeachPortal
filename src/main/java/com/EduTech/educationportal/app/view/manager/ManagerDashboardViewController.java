@@ -9,7 +9,7 @@ import com.EduTech.educationportal.interfaces.presenter.ManageCoursePresenterInt
 import com.EduTech.educationportal.interfaces.repository.CourseRepositoryInterface;
 import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
 import com.EduTech.educationportal.interfaces.view.*;
-import com.EduTech.educationportal.model.User;
+import com.EduTech.educationportal.model.entities.User;
 import com.EduTech.educationportal.presenter.manager.AddCoursePresenter;
 import com.EduTech.educationportal.presenter.manager.AddTeacherPresenter;
 import com.EduTech.educationportal.presenter.manager.ManagerDashboardPresenter;

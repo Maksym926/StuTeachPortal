@@ -4,7 +4,7 @@ import com.EduTech.educationportal.data.UserRepository;
 import com.EduTech.educationportal.interfaces.presenter.MainMenuPresenterInterface;
 import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
 import com.EduTech.educationportal.interfaces.view.MainMenuViewInterface;
-import com.EduTech.educationportal.model.ManagerAccount;
+import com.EduTech.educationportal.model.entities.ManagerAccount;
 
 public class MainMenuPresenter implements MainMenuPresenterInterface {
 

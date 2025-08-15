@@ -3,7 +3,7 @@ package com.EduTech.educationportal.app.view.manager;
 import com.EduTech.educationportal.interfaces.presenter.AddTeacherPresenterInterface;
 import com.EduTech.educationportal.interfaces.view.AddTeacherViewInterface;
 import com.EduTech.educationportal.interfaces.view.SetupControllerInterface;
-import com.EduTech.educationportal.model.Course;
+import com.EduTech.educationportal.model.entities.Course;
 import com.EduTech.educationportal.presenter.manager.AddTeacherPresenter;
 import com.EduTech.educationportal.utils.Log;
 import com.EduTech.educationportal.utils.ViewNavigator;
@@ -15,11 +15,8 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-import java.awt.event.MouseEvent;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class AddTeacherController implements AddTeacherViewInterface, SetupControllerInterface {
 

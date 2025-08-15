@@ -1,10 +1,9 @@
 package com.EduTech.educationportal.app.view.manager;
 
 import com.EduTech.educationportal.data.CourseRepository;
-import com.EduTech.educationportal.data.UserRepository;
 import com.EduTech.educationportal.interfaces.view.AddCourseViewInterface;
 import com.EduTech.educationportal.interfaces.view.SetupControllerInterface;
-import com.EduTech.educationportal.model.Teacher;
+import com.EduTech.educationportal.model.entities.Teacher;
 import com.EduTech.educationportal.presenter.manager.AddCoursePresenter;
 import com.EduTech.educationportal.utils.Log;
 import com.EduTech.educationportal.utils.ViewNavigator;
@@ -17,9 +16,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class AddCourseController implements AddCourseViewInterface, SetupControllerInterface {
 

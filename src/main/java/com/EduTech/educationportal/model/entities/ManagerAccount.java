@@ -1,4 +1,4 @@
-package com.EduTech.educationportal.model;
+package com.EduTech.educationportal.model.entities;
 
 public class ManagerAccount {
     public String name = "System Manager";

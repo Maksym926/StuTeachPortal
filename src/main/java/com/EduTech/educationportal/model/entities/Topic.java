@@ -1,4 +1,4 @@
-package com.EduTech.educationportal.model;
+package com.EduTech.educationportal.model.entities;
 
 import com.EduTech.educationportal.interfaces.view.CourseContentItem;
 

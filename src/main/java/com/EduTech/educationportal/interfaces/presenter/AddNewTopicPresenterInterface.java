@@ -1,6 +1,6 @@
 package com.EduTech.educationportal.interfaces.presenter;
 
-import com.EduTech.educationportal.model.Topic;
+import com.EduTech.educationportal.model.entities.Topic;
 
 public interface AddNewTopicPresenterInterface {
     void insertNewTopic(Topic topic);
