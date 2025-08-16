@@ -33,6 +33,6 @@
          </graphic>
       </Button>
       <Button fx:id="uploadButton" layoutX="20.0" layoutY="383.0" mnemonicParsing="false" onAction="#uploadAssignment" text="Select a file" />
-      <Text fx:id="selectedFile" layoutX="24.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No file was selected " />
+      <Text fx:id="selectedFileName" layoutX="24.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No file was selected " />
    </children>
 </AnchorPane>

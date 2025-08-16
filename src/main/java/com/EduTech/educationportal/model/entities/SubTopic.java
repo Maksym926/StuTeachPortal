@@ -9,27 +9,44 @@ public class SubTopic implements CourseContentItem {
 
     private String content;
     private String image;
-    private String assignment;
+
     private String fileName;
+    private String filePath;
 
     public SubTopic(String title){
         this.title = title;
+    }
+    public SubTopic(int topicID , String title, String content, String filePath,  String selectedFile){
+        this.topicID = topicID;
+        this.title = title;
+        this.content = content;
+        this.fileName = selectedFile;
+        this.filePath = filePath;
+
+
     }
     public SubTopic(int topicID , String title, String content, String selectedFile){
         this.topicID = topicID;
         this.title = title;
         this.content = content;
         this.fileName = selectedFile;
+
     }
 
-    public SubTopic(int ID, int topicID, String title, String content, String image, String assignment, String fileName){
+    public SubTopic(int ID, int topicID, String title, String content, String image, String filePath, String fileName){
         this.ID = ID;
         this.topicID = topicID;
         this.title = title;
         this.content = content;
         this.image = image;
-        this.assignment = assignment;
+        this.filePath = filePath;
         this.fileName = fileName;
+    }
+    public String getFilePath(){
+        return filePath;
+    }
+    public void setFilePath(String filePath){
+        this.filePath = filePath;
     }
     public String getFileName(){
         return fileName;
@@ -65,12 +82,7 @@ public class SubTopic implements CourseContentItem {
     public String getImage(){
         return image;
     }
-    public void setAssignment(String assignment){
-        this.assignment = assignment;
-    }
-    public String getAssignment(){
-        return assignment;
-    }
+
 
 
 }

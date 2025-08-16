@@ -23,6 +23,7 @@ import javafx.scene.control.TreeCell;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeView;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,7 +46,9 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
     @FXML private Text subTopicTitle;
     @FXML private Text mainContent;
     @FXML private Text fileName;
-    SubTopic firstSubTopic = null;
+
+    SubTopic selectedSubTopic = null;
+
 
     public ManageCourseContentController(Course course){
         this.course = course;
@@ -97,13 +100,16 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
             }
         });
         courseContentList.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
-            if (newSelection != null && newSelection.getValue() instanceof SubTopic selectedSubTopic) {
-
-                // Now you have the SubTopic object
-                subTopicTitle.setText(selectedSubTopic.getTitle());
-                mainContent.setText(selectedSubTopic.getContent());
-                fileName.setText(selectedSubTopic.getFileName());
+            if (newSelection != null && newSelection.getValue() instanceof SubTopic subTopic) {
+                selectedSubTopic = subTopic;
+                subTopicTitle.setText(subTopic.getTitle());
+                mainContent.setText(subTopic.getContent());
+                fileName.setText(subTopic.getFileName());
             }
+        });
+        fileName.setOnMouseClicked(e ->{
+            if(selectedSubTopic != null)
+                presenter.downloadAssignment(selectedSubTopic.getFilePath(), selectedSubTopic.getFileName());
         });
     }
     @Override
@@ -115,10 +121,11 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
         setupTree();
         presenter.getTopicByCourseID(course.getID(), topics);
         addTopics();
-        if (firstSubTopic != null){
-            subTopicTitle.setText(firstSubTopic.getTitle());
-            mainContent.setText(firstSubTopic.getContent());
-            fileName.setText(firstSubTopic.getFileName());
+        if (selectedSubTopic != null){
+            subTopicTitle.setText(selectedSubTopic.getTitle());
+            mainContent.setText(selectedSubTopic.getContent());
+            fileName.setText(selectedSubTopic.getFileName());
+
         }
     }
 
@@ -166,6 +173,10 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
         this.presenter = presenter;
     }
 
+    public Stage getStage(){
+        return (Stage)fileName.getScene().getWindow();
+    }
+
     private void addTopics(){
         rootItem.setExpanded(true);
         for (Topic topic : topics){
@@ -178,8 +189,9 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
             for(SubTopic subTopic: subTopics){
                 if(topic.getID() == subTopic.getTopicID()){
                     topicItem.getChildren().add(new TreeItem<>(subTopic));
-                    if (firstSubTopic == null) {
-                        firstSubTopic = subTopic; // store the first match
+                    if (selectedSubTopic == null) {
+                        selectedSubTopic = subTopic; // store the first match
+
                     }
                 }
 

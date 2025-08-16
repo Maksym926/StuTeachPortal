@@ -73,7 +73,7 @@ public class CourseContentRepository implements CourseContentRepositoryInterface
             stmt.setString(2, subTopic.getTitle());
             stmt.setString(3, subTopic.getContent());
             stmt.setString(4, subTopic.getImage());
-            stmt.setString(5, subTopic.getAssignment());
+            stmt.setString(5, subTopic.getFilePath());
             stmt.setString(6, subTopic.getFileName());
             stmt.executeUpdate();
             Log.info("subTopic was successfully inserted");

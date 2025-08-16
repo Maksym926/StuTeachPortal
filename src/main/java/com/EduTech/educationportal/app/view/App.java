@@ -11,6 +11,7 @@ import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface
 import com.EduTech.educationportal.interfaces.view.MainMenuViewInterface;
 import com.EduTech.educationportal.interfaces.view.ManageCourseContentInterface;
 import com.EduTech.educationportal.interfaces.view.SetupControllerInterface;
+import com.EduTech.educationportal.model.aws.S3Downloader;
 import com.EduTech.educationportal.model.entities.Course;
 import com.EduTech.educationportal.model.entities.User;
 import com.EduTech.educationportal.presenter.shared.MainMenuPresenter;
@@ -116,8 +117,9 @@ public class App extends Application {
 
         CourseContentRepositoryInterface courseContentRepositoryInterface= new CourseContentRepository();
         CourseContentRepository test = new CourseContentRepository();
+        S3Downloader downloader = new S3Downloader();
         test.printTopicInfo();
-        ManageCourseContentPresenterInterface manageCourseContentPresenterInterface = new ManageCourseContentPresenter(manageCourseContentInterface, courseContentRepositoryInterface);
+        ManageCourseContentPresenterInterface manageCourseContentPresenterInterface = new ManageCourseContentPresenter(manageCourseContentInterface, courseContentRepositoryInterface, downloader);
         SetupControllerInterface setupController = (SetupControllerInterface) manageCourseContentInterface;
 
         setupController.setup();

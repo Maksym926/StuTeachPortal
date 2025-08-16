@@ -3,7 +3,6 @@ package com.EduTech.educationportal.app.view.shared;
 import com.EduTech.educationportal.interfaces.view.AddNewSubTopicInterface;
 import com.EduTech.educationportal.model.entities.*;
 import com.EduTech.educationportal.presenter.shared.AddNewSubTopicPresenter;
-import com.EduTech.educationportal.presenter.shared.ManageCoursePresenter;
 import com.EduTech.educationportal.utils.Log;
 import com.EduTech.educationportal.utils.ViewNavigator;
 import javafx.fxml.FXML;
@@ -15,6 +14,7 @@ import javafx.scene.control.TextField;
 import javafx.event.ActionEvent;
 import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
+import org.h2.store.fs.FilePath;
 
 import java.io.File;
 
@@ -24,12 +24,13 @@ public class AddNewSubTopicController implements AddNewSubTopicInterface {
     @FXML TextField title;
     @FXML TextArea content;
     @FXML Button uploadButton;
-    @FXML Text selectedFile;
+
+    @FXML Text selectedFileName;
 
     AddNewSubTopicPresenter presenter;
     Topic topic;
     Course course;
-    File newSelectedfile;
+    File selectedFilePath;
 
 
     public AddNewSubTopicController(Topic topic, Course course){
@@ -39,13 +40,22 @@ public class AddNewSubTopicController implements AddNewSubTopicInterface {
     public void addSubTopic(ActionEvent event){
         String newTitle = title.getText();
         String newContent = content.getText();
-        String newSelectedFile  = selectedFile.getText();
-        SubTopic newSubTopic = new SubTopic(topic.getID(), newTitle, newContent, newSelectedFile);
-        presenter.addSubTopic(newSubTopic);
-        if(newSelectedfile != null){
+        String newSelectedFile  = selectedFileName.getText();
+
+
+        if(selectedFilePath != null){
             User teacher = presenter.getTeacherByID(course.getTeacherId());
-            presenter.uploadAssignment(teacher.getName(), newSelectedfile);
+            String key = "assignments" + teacher.getName() + "/" + selectedFilePath.getName();
+            presenter.uploadAssignment(teacher.getName(), selectedFilePath);
+            SubTopic newSubTopic = new SubTopic(topic.getID(), newTitle, newContent, key, newSelectedFile );
+            presenter.addSubTopic(newSubTopic);
         }
+        else{
+            SubTopic newSubTopic = new SubTopic(topic.getID(), newTitle, newContent, newSelectedFile);
+            presenter.addSubTopic(newSubTopic);
+        }
+
+
 
 
     }
@@ -59,9 +69,9 @@ public class AddNewSubTopicController implements AddNewSubTopicInterface {
         );
         File file = fileChooser.showOpenDialog(uploadButton.getScene().getWindow());
         if(file != null){
-            selectedFile.setText(file.getName());
+            selectedFileName.setText(file.getName());
 
-            newSelectedfile = file;
+            selectedFilePath = file;
 
         }
     }
