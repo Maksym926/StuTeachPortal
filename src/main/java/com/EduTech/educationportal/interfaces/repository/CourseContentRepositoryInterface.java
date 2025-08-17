@@ -12,4 +12,6 @@ public interface CourseContentRepositoryInterface {
     void getSubTopicByTopicID(int topicID, List<SubTopic> subTopics);
     void deleteTopic(int ID);
     void deleteSubTopic(int ID);
+    void updateExistingTopic(Topic topic );
+    void updateExistingSubTopic(SubTopic subTopic );
 }

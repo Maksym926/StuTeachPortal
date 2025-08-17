@@ -37,4 +37,7 @@ public class AddNewSubTopicPresenter implements AddNewSubTopicPresenterInterface
         return userRepositoryInterface.getTeacherByID(id);
 
     }
+    public void updateSubTopic(SubTopic subTopic){
+        contentRepository.updateExistingSubTopic(subTopic);
+    }
 }

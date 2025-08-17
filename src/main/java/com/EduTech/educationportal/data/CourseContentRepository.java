@@ -1,6 +1,7 @@
 package com.EduTech.educationportal.data;
 
 import com.EduTech.educationportal.interfaces.repository.CourseContentRepositoryInterface;
+import com.EduTech.educationportal.model.entities.Course;
 import com.EduTech.educationportal.model.entities.SubTopic;
 import com.EduTech.educationportal.model.entities.Topic;
 import com.EduTech.educationportal.utils.Log;
@@ -23,6 +24,31 @@ public class CourseContentRepository implements CourseContentRepositoryInterface
         }catch (SQLException e){
             e.printStackTrace();
             Log.info("Error while inserting new topics");
+        }
+    }
+    public void updateExistingTopic(Topic topic ){
+        Log.info("Starting updating course");
+        String sql = "UPDATE topicsDB SET title = ? WHERE id = ?";
+        try(Connection conn = DBConnection.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)){
+            stmt.setString(1,topic.getTitle());
+            stmt.setInt(2, topic.getID());
+            stmt.executeUpdate();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
+    public void updateExistingSubTopic(SubTopic subTopic ){
+        Log.info("Starting updating course");
+        String sql = "UPDATE subTopicsDB SET title = ?, content = ?, assignment = ?, fileName = ? WHERE id = ?";
+        try(Connection conn = DBConnection.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)){
+            stmt.setString(1,subTopic.getTitle());
+            stmt.setString(2,subTopic.getContent());
+            stmt.setString(3,subTopic.getFilePath());
+            stmt.setString(4,subTopic.getFileName());
+            stmt.setInt(5, subTopic.getID());
+            stmt.executeUpdate();
+        }catch (SQLException e){
+            e.printStackTrace();
         }
     }
 

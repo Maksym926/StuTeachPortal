@@ -30,29 +30,48 @@ public class AddNewSubTopicController implements AddNewSubTopicInterface {
     AddNewSubTopicPresenter presenter;
     Topic topic;
     Course course;
+    SubTopic subTopic;
     File selectedFilePath;
 
 
-    public AddNewSubTopicController(Topic topic, Course course){
-        this.topic = topic; this.course = course;
+    public AddNewSubTopicController(Topic topic, Course course,SubTopic subTopic){
+        this.topic = topic; this.course = course; this.subTopic = subTopic;
     }
     @FXML
     public void addSubTopic(ActionEvent event){
-        String newTitle = title.getText();
-        String newContent = content.getText();
-        String newSelectedFile  = selectedFileName.getText();
+        if(subTopic == null){
+            String newTitle = title.getText();
+            String newContent = content.getText();
+            String newSelectedFile  = selectedFileName.getText();
 
 
-        if(selectedFilePath != null){
-            User teacher = presenter.getTeacherByID(course.getTeacherId());
-            String key = "assignments" + teacher.getName() + "/" + selectedFilePath.getName();
-            presenter.uploadAssignment(teacher.getName(), selectedFilePath);
-            SubTopic newSubTopic = new SubTopic(topic.getID(), newTitle, newContent, key, newSelectedFile );
-            presenter.addSubTopic(newSubTopic);
+            if(selectedFilePath != null){
+                User teacher = presenter.getTeacherByID(course.getTeacherId());
+                String key = "assignments" + teacher.getName() + "/" + selectedFilePath.getName();
+                presenter.uploadAssignment(teacher.getName(), selectedFilePath);
+                SubTopic newSubTopic = new SubTopic(topic.getID(), newTitle, newContent, key, newSelectedFile );
+                presenter.addSubTopic(newSubTopic);
+            }
+            else{
+                SubTopic newSubTopic = new SubTopic(topic.getID(), newTitle, newContent, newSelectedFile);
+                presenter.addSubTopic(newSubTopic);
+            }
+
         }
         else{
-            SubTopic newSubTopic = new SubTopic(topic.getID(), newTitle, newContent, newSelectedFile);
-            presenter.addSubTopic(newSubTopic);
+
+            subTopic.setTitle(title.getText());
+            subTopic.setContent(content.getText());
+            subTopic.setFileName(selectedFileName.getText());
+            if(selectedFilePath != null){
+                User teacher = presenter.getTeacherByID(course.getTeacherId());
+                String key = "assignments" + teacher.getName() + "/" + selectedFilePath.getName();
+                presenter.uploadAssignment(teacher.getName(), selectedFilePath);
+                subTopic.setFilePath(key);
+
+
+            }
+            presenter.updateSubTopic(subTopic);
         }
 
 

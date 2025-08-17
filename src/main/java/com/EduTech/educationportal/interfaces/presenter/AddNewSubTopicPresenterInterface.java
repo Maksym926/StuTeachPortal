@@ -8,4 +8,5 @@ public interface AddNewSubTopicPresenterInterface {
     void addSubTopic(SubTopic subTopic);
     void setSelectedFile(File file);
     void uploadAssignment(String teacherName, File selectedFile);
+    void updateSubTopic(SubTopic subTopic);
 }

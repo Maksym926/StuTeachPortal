@@ -167,11 +167,6 @@ public class CourseRepository implements CourseRepositoryInterface {
             stmt.setInt(5, course.getDuration());
             stmt.setInt(6, course.getID());
             stmt.executeUpdate();
-
-
-
-
-
         }catch (SQLException e){
             e.printStackTrace();
         }

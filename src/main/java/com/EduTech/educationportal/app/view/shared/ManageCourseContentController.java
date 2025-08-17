@@ -46,7 +46,7 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
     @FXML private Text subTopicTitle;
     @FXML private Text mainContent;
     @FXML private Text fileName;
-
+    Topic selectedTopic = null;
     SubTopic selectedSubTopic = null;
 
 
@@ -81,7 +81,7 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
                     setStyle("-fx-text-fill: blue; -fx-underline: true;");
                     setOnMouseClicked(e -> {
                         if (e.getClickCount() == 1) {
-                            openAddTopicWindow(new ActionEvent(e.getSource(), null));
+                            openAddTopicWindow(new ActionEvent(e.getSource(), null), null);
                         }
                     });
                 } else if (title.equals("[Add new subtopic]")) {
@@ -91,7 +91,7 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
                             TreeItem<CourseContentItem> parentItem = getTreeItem().getParent();
                             if(parentItem != null){
                                 Topic topic = (Topic)parentItem.getValue();
-                                openAddSubTopicWindow(new ActionEvent(e.getSource(),null), topic);
+                                openAddSubTopicWindow(new ActionEvent(e.getSource(),null), topic, null);
                             }
 
                         }
@@ -129,20 +129,21 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
         }
     }
 
-    public void openAddTopicWindow(ActionEvent event){
-        AddNewTopicInterface addNewTopicInterface = new AddNewTopicController(course);
+    public void openAddTopicWindow(ActionEvent event, Topic topic){
+        AddNewTopicInterface addNewTopicInterface = new AddNewTopicController(course, topic);
         CourseContentRepositoryInterface courseContentRepositoryInterface = new CourseContentRepository();
         AddNewTopicPresenterInterface addNewTopicPresenter = new AddNewTopicPresenter(addNewTopicInterface, courseContentRepositoryInterface);
         ViewNavigator.switchScene((Node)event.getSource(), "/AddNewTopicView.fxml", "Add new Topic", addNewTopicInterface, true);
     }
-    public void openAddSubTopicWindow(ActionEvent event, Topic topic){
-        AddNewSubTopicInterface addNewSubTopicInterface = new AddNewSubTopicController(topic,course);
+    public void openAddSubTopicWindow(ActionEvent event, Topic topic, SubTopic subTopic){
+        AddNewSubTopicInterface addNewSubTopicInterface = new AddNewSubTopicController(topic,course, subTopic);
         CourseContentRepositoryInterface courseContentRepositoryInterface = new CourseContentRepository();
         S3Uploader s3Uploader = new S3Uploader();
         UserRepositoryInterface userRepositoryInterface = new UserRepository();
         AddNewSubTopicPresenterInterface addNewSubTopicPresenterInterface = new AddNewSubTopicPresenter(addNewSubTopicInterface, courseContentRepositoryInterface, s3Uploader, userRepositoryInterface);
         ViewNavigator.switchScene((Node)event.getSource(), "/AddNewSubTopicView.fxml", "Add new Subtopic", addNewSubTopicInterface, true);
     }
+
     @FXML
     public void deleteCourseContentItem(){
         TreeItem<CourseContentItem> selectedItem = courseContentList.getSelectionModel().getSelectedItem();
@@ -155,12 +156,32 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
                 // delete logic for topic
             }
             else if (value instanceof SubTopic) {
-                SubTopic subTopic = (SubTopic) value;
-                presenter.deleteSubTopic(subTopic.getID());
+//                TreeItem<CourseContentItem> subTopicItem = getTreeItem();
+////                SubTopic subTopic = (SubTopic) value;
+////                TreeItem<CourseContentItem> topicItem = subTopic
+////                Topic topic = subTopic.getParent();
+//
+//                presenter.deleteSubTopic(subTopic.getID());
                 // delete logic for subtopic
             }
             setup();
         }
+    }
+    @FXML
+    public void editCourseContent(ActionEvent event){
+        TreeItem<CourseContentItem> selectedItem = courseContentList.getSelectionModel().getSelectedItem();
+        if(selectedItem != null){
+            Object value =selectedItem.getValue();
+            if(value instanceof Topic topic){
+                openAddTopicWindow(event, topic);
+            }
+            else if(value instanceof SubTopic subTopic){
+                openAddSubTopicWindow(event, t);
+            }
+
+        }
+
+
     }
     @FXML
     public void returnToPreviousForm(ActionEvent event){
