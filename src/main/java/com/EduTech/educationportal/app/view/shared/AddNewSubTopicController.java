@@ -1,6 +1,7 @@
 package com.EduTech.educationportal.app.view.shared;
 
 import com.EduTech.educationportal.interfaces.view.AddNewSubTopicInterface;
+import com.EduTech.educationportal.interfaces.view.SetupControllerInterface;
 import com.EduTech.educationportal.model.entities.*;
 import com.EduTech.educationportal.presenter.shared.AddNewSubTopicPresenter;
 import com.EduTech.educationportal.utils.Log;
@@ -19,7 +20,7 @@ import org.h2.store.fs.FilePath;
 import java.io.File;
 
 
-public class AddNewSubTopicController implements AddNewSubTopicInterface {
+public class AddNewSubTopicController implements AddNewSubTopicInterface, SetupControllerInterface {
 
     @FXML TextField title;
     @FXML TextArea content;
@@ -39,7 +40,7 @@ public class AddNewSubTopicController implements AddNewSubTopicInterface {
     }
     @FXML
     public void addSubTopic(ActionEvent event){
-        if(subTopic == null){
+        if(subTopic == null ){
             String newTitle = title.getText();
             String newContent = content.getText();
             String newSelectedFile  = selectedFileName.getText();
@@ -104,6 +105,12 @@ public class AddNewSubTopicController implements AddNewSubTopicInterface {
     }
 
 
-
-
+    @Override
+    public void setup() {
+        if(subTopic!=null){
+            title.setText(subTopic.getTitle());
+            content.setText(subTopic.getContent());
+            selectedFileName.setText(subTopic.getFileName());
+        }
+    }
 }

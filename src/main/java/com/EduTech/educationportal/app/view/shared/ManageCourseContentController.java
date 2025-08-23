@@ -150,19 +150,13 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
         if (selectedItem != null) {
             Object value = selectedItem.getValue();
 
-            if (value instanceof Topic) {
-                Topic topic = (Topic) value;
+            if (value instanceof Topic topic) {
                 presenter.deleteTopic(topic.getID());
                 // delete logic for topic
             }
-            else if (value instanceof SubTopic) {
-//                TreeItem<CourseContentItem> subTopicItem = getTreeItem();
-////                SubTopic subTopic = (SubTopic) value;
-////                TreeItem<CourseContentItem> topicItem = subTopic
-////                Topic topic = subTopic.getParent();
-//
-//                presenter.deleteSubTopic(subTopic.getID());
-                // delete logic for subtopic
+            else if (value instanceof SubTopic subTopic) {
+                presenter.deleteSubTopic(subTopic.getID());
+//                 delete logic for subtopic
             }
             setup();
         }
@@ -176,7 +170,7 @@ public class ManageCourseContentController implements ManageCourseContentInterfa
                 openAddTopicWindow(event, topic);
             }
             else if(value instanceof SubTopic subTopic){
-                openAddSubTopicWindow(event, t);
+                openAddSubTopicWindow(event, null, subTopic);
             }
 
         }
