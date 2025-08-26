@@ -1,10 +1,16 @@
 package com.EduTech.educationportal.app.view.shared;
 
+import com.EduTech.educationportal.data.CourseContentRepository;
+import com.EduTech.educationportal.interfaces.presenter.ManageCourseContentPresenterInterface;
+import com.EduTech.educationportal.interfaces.repository.CourseContentRepositoryInterface;
 import com.EduTech.educationportal.interfaces.view.CourseDescriptionPreviewInterface;
+import com.EduTech.educationportal.interfaces.view.ManageCourseContentInterface;
 import com.EduTech.educationportal.interfaces.view.ManageCourseViewInterface;
 import com.EduTech.educationportal.interfaces.view.SetupControllerInterface;
+import com.EduTech.educationportal.model.aws.S3Downloader;
 import com.EduTech.educationportal.model.entities.Course;
 import com.EduTech.educationportal.model.entities.User;
+import com.EduTech.educationportal.presenter.shared.ManageCourseContentPresenter;
 import com.EduTech.educationportal.presenter.shared.ManageCoursePresenter;
 import com.EduTech.educationportal.utils.Log;
 import com.EduTech.educationportal.utils.ViewNavigator;
@@ -69,6 +75,23 @@ public class ManageCourseController implements SetupControllerInterface, ManageC
         }
         CourseDescriptionPreviewInterface courseDescriptionPreviewController = new CourseDescriptionPreviewController(course);
         ViewNavigator.switchScene((Node)event.getSource(), "/CourseDescriptionPreview.fxml", "Edit description", courseDescriptionPreviewController, true);
+    }
+    @FXML
+    public void openManageCourseContentWindow(ActionEvent event){
+        Log.info("Opening manage course content Window");
+        Course course = courseTable.getSelectionModel().getSelectedItem();
+        if(course == null){
+            Log.info("Selected Item is empty");
+            return;
+        }
+
+        CourseContentRepositoryInterface courseContentRepositoryInterface= new CourseContentRepository();
+        S3Downloader downloader = new S3Downloader();
+        ManageCourseContentInterface manageCourseContentController = new ManageCourseContentController(course);
+        ManageCourseContentPresenterInterface manageCourseContentPresenterInterface = new ManageCourseContentPresenter(manageCourseContentController, courseContentRepositoryInterface, downloader);
+        ViewNavigator.switchScene((Node)event.getSource(), "/ManageCourseContent.fxml", "Manage Course Content", manageCourseContentController, true);
+
+
     }
 
     @FXML

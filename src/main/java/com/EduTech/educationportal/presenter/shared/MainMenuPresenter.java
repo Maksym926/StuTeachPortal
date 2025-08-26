@@ -4,7 +4,7 @@ import com.EduTech.educationportal.data.UserRepository;
 import com.EduTech.educationportal.interfaces.presenter.MainMenuPresenterInterface;
 import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
 import com.EduTech.educationportal.interfaces.view.MainMenuViewInterface;
-import com.EduTech.educationportal.model.entities.ManagerAccount;
+import com.EduTech.educationportal.model.entities.Manager;
 
 public class MainMenuPresenter implements MainMenuPresenterInterface {
 
@@ -20,7 +20,7 @@ public class MainMenuPresenter implements MainMenuPresenterInterface {
 
     @Override
     public void setManager() {
-        ManagerAccount manager = new ManagerAccount();
+        Manager manager = new Manager();
         userRepositoryInterface.createDefaultManager(manager.name, manager.email, manager.password, manager.role);
 
     }

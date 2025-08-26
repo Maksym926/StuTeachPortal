@@ -1,18 +1,22 @@
 package com.EduTech.educationportal.app.view.manager;
 
+import com.EduTech.educationportal.app.view.shared.AccountInfoController;
 import com.EduTech.educationportal.app.view.shared.ManageCourseController;
 import com.EduTech.educationportal.data.CourseRepository;
 import com.EduTech.educationportal.data.UserRepository;
+import com.EduTech.educationportal.interfaces.presenter.AccountInfoPresenterInterface;
 import com.EduTech.educationportal.interfaces.presenter.AddCoursePresenterInterface;
 import com.EduTech.educationportal.interfaces.presenter.AddTeacherPresenterInterface;
 import com.EduTech.educationportal.interfaces.presenter.ManageCoursePresenterInterface;
 import com.EduTech.educationportal.interfaces.repository.CourseRepositoryInterface;
 import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
 import com.EduTech.educationportal.interfaces.view.*;
+import com.EduTech.educationportal.model.entities.Manager;
 import com.EduTech.educationportal.model.entities.User;
 import com.EduTech.educationportal.presenter.manager.AddCoursePresenter;
 import com.EduTech.educationportal.presenter.manager.AddTeacherPresenter;
 import com.EduTech.educationportal.presenter.manager.ManagerDashboardPresenter;
+import com.EduTech.educationportal.presenter.shared.AccountInfoPresenter;
 import com.EduTech.educationportal.presenter.shared.ManageCoursePresenter;
 import com.EduTech.educationportal.utils.Log;
 import com.EduTech.educationportal.utils.ViewNavigator;
@@ -23,6 +27,7 @@ import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.text.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,9 +56,16 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
 
     @FXML TextField userSearch;
 
+    @FXML
+    Text manageAccountText;
+
     public String selectedLocation;
 
+    User manager;
 
+    public ManagerDashboardViewController(User currentManager){
+        manager = currentManager;
+    }
 
     @Override
     public void setManagerDashboardPresenter(ManagerDashboardPresenter presenter) {
@@ -62,6 +74,7 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
 
     @Override
     public List<User> getFilteredUsers(String location, boolean isStudent, boolean isTeacher) {
+
         userList.clear();
         presenter.getAllUsers(userList);
 
@@ -140,6 +153,12 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
 
 
 
+        });
+
+        manageAccountText.setOnMouseClicked(event ->{
+            AccountInfoViewInterface accountInfoViewInterface = new AccountInfoController(manager);
+            AccountInfoPresenterInterface accountInfoPresenterInterface = new AccountInfoPresenter(accountInfoViewInterface);
+            ViewNavigator.switchScene((Node)event.getSource(), "/AccountInfoView.fxml", "Account info", accountInfoViewInterface, true);
         });
 
 

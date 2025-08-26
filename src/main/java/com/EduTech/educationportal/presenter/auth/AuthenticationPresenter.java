@@ -4,6 +4,7 @@ import com.EduTech.educationportal.data.UserRepository;
 import com.EduTech.educationportal.interfaces.presenter.AuthPresenterInterface;
 import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
 import com.EduTech.educationportal.interfaces.view.AuthViewInterface;
+import com.EduTech.educationportal.model.entities.User;
 
 public class AuthenticationPresenter implements AuthPresenterInterface {
     UserRepositoryInterface userRepositoryInterface;
@@ -28,8 +29,8 @@ public class AuthenticationPresenter implements AuthPresenterInterface {
         return userRepositoryInterface.loginUser(username, password);
     }
 
-    public String checkUserRole(String email) {
-        return userRepositoryInterface.checkUserRole(email);
+    public User checkUserRole(String email) {
+        return userRepositoryInterface.getCurrentUser(email);
     }
 
     @Override

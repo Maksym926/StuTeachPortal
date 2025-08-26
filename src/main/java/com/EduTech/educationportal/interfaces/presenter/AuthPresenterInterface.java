@@ -1,5 +1,6 @@
 package com.EduTech.educationportal.interfaces.presenter;
 
+import com.EduTech.educationportal.model.entities.User;
 import com.EduTech.educationportal.presenter.auth.AuthenticationPresenter;
 
 public interface AuthPresenterInterface {
@@ -9,7 +10,7 @@ public interface AuthPresenterInterface {
 
     boolean checkUserPresence(String email);
 
-    String checkUserRole(String email);
+    User checkUserRole(String email);
 
 
 

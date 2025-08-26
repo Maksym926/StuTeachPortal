@@ -187,26 +187,31 @@ public class UserRepository implements UserRepositoryInterface {
         }
 
     }
-    public String checkUserRole(String email){
-        Log.info("Check user role");
-        String sql = "SELECT role FROM usersDB WHERE email = ?";
+    public User getCurrentUser(String userEmail){
+        Log.info("Get user ");
+        String sql = "SELECT id, name, email, city, password, role FROM usersDB WHERE email = ?";
         try(Connection conn = DBConnection.getConnection();
         PreparedStatement stmt = conn.prepareStatement(sql);
         ){
-            stmt.setString(1,email);
+            stmt.setString(1,userEmail);
             ResultSet rs = stmt.executeQuery();
-            rs.next();
-            return switch (rs.getString("role")) {
-                case "student" -> "student";
-                case "teacher" -> "teacher";
-                default -> "manager";
-            };
+            if(rs.next()){
+                int id = rs.getInt("id");
+                String name = rs.getString("name");
+                String email = rs.getString("email");
+                String city = rs.getString("city");
+                String password = rs.getString("password");
+                String role = rs.getString("role");
+                return new User(id, name, email, city, password, role);
+            }
+
 
         }catch (SQLException e){
             Log.error("Error while checking user role");
             e.printStackTrace();
-            return null;
+
         }
+        return null;
 
     }
     public void createDefaultManager(String firstName, String email, String password, String role){

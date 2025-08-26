@@ -17,6 +17,7 @@ import com.EduTech.educationportal.model.entities.User;
 import com.EduTech.educationportal.presenter.shared.MainMenuPresenter;
 import com.EduTech.educationportal.presenter.shared.ManageCourseContentPresenter;
 import com.EduTech.educationportal.utils.Log;
+import com.EduTech.educationportal.utils.ViewNavigator;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -51,7 +52,7 @@ public class App extends Application {
         userRepository.getUsers(testList);
 
         for (User user : testList) {
-            Log.warn("All user's locations and name : " +user.getID() + " " + user.getName() + " " + user.getCity() + " " + user.getRole());
+            Log.warn("All user's locations and name : " + user.getEmail() + " " + user.getPassword());
         }
 
 
@@ -77,52 +78,52 @@ public class App extends Application {
 //            s3.putObject(putObjectRequest, RequestBody.fromFile(Paths.get(filePath)));
 //            Log.info("File was successfully uploaded to the server");
 //        }
-//        Parent root = FXMLLoader.load(getClass().getResource("/MainMenuView.fxml"));
-//        Scene scene = new Scene(root);
-//        stage.setScene(scene);
-//        stage.setTitle("Main View");
-//        stage.show();
-//        ViewNavigator.addScene("/MainMenuView.fxml", "Main Menu");
-        Course course = new Course(17, "", "", 2, "", 1); // however you're getting it
-
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/ManageCourseContent.fxml"));
-
-// Tell FXMLLoader how to create the controller
-        loader.setControllerFactory(param -> {
-            if (param == ManageCourseContentController.class) {
-                return new ManageCourseContentController(course);
-            } else {
-                try {
-                    return param.getDeclaredConstructor().newInstance();
-                } catch (Exception e) {
-                    throw new RuntimeException(e);
-                }
-            }
-        });
-
-        Parent root = loader.load();
-
-// Get controller instance with course set
-        ManageCourseContentInterface manageCourseContentInterface = loader.getController();
-
-// Setup scene
+        Parent root = FXMLLoader.load(getClass().getResource("/MainMenuView.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.setTitle("Manage course");
+        stage.setTitle("Main View");
         stage.show();
-
-
-
-// Setup logic
-
-        CourseContentRepositoryInterface courseContentRepositoryInterface= new CourseContentRepository();
-        CourseContentRepository test = new CourseContentRepository();
-        S3Downloader downloader = new S3Downloader();
-        test.printTopicInfo();
-        ManageCourseContentPresenterInterface manageCourseContentPresenterInterface = new ManageCourseContentPresenter(manageCourseContentInterface, courseContentRepositoryInterface, downloader);
-        SetupControllerInterface setupController = (SetupControllerInterface) manageCourseContentInterface;
-
-        setupController.setup();
+        ViewNavigator.addScene("/MainMenuView.fxml", "Main Menu");
+//        Course course = new Course(17, "", "", 2, "", 1); // however you're getting it
+//
+//        FXMLLoader loader = new FXMLLoader(getClass().getResource("/ManageCourseContent.fxml"));
+//
+//// Tell FXMLLoader how to create the controller
+//        loader.setControllerFactory(param -> {
+//            if (param == ManageCourseContentController.class) {
+//                return new ManageCourseContentController(course);
+//            } else {
+//                try {
+//                    return param.getDeclaredConstructor().newInstance();
+//                } catch (Exception e) {
+//                    throw new RuntimeException(e);
+//                }
+//            }
+//        });
+//
+//        Parent root = loader.load();
+//
+//// Get controller instance with course set
+//        ManageCourseContentInterface manageCourseContentInterface = loader.getController();
+//
+//// Setup scene
+//        Scene scene = new Scene(root);
+//        stage.setScene(scene);
+//        stage.setTitle("Manage course");
+//        stage.show();
+//
+//
+//
+//// Setup logic
+//
+//        CourseContentRepositoryInterface courseContentRepositoryInterface= new CourseContentRepository();
+//        CourseContentRepository test = new CourseContentRepository();
+//        S3Downloader downloader = new S3Downloader();
+//        test.printTopicInfo();
+//        ManageCourseContentPresenterInterface manageCourseContentPresenterInterface = new ManageCourseContentPresenter(manageCourseContentInterface, courseContentRepositoryInterface, downloader);
+//        SetupControllerInterface setupController = (SetupControllerInterface) manageCourseContentInterface;
+//
+//        setupController.setup();
 
     }
 }
