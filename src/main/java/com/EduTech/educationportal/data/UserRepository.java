@@ -5,6 +5,7 @@ import com.EduTech.educationportal.model.entities.Teacher;
 import com.EduTech.educationportal.model.entities.User;
 import com.EduTech.educationportal.utils.Log;
 import javafx.collections.ObservableList;
+import software.amazon.awssdk.services.s3.endpoints.internal.Value;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -89,7 +90,8 @@ public class UserRepository implements UserRepositoryInterface {
     public void getUsers(ObservableList<User> userList){
         Log.info("Start getting teachers from database");
         try (Connection conn = DBConnection.getConnection();
-             PreparedStatement stmt = conn.prepareStatement("SELECT id, name, email, city, password, role FROM usersDB WHERE role != 'manager'");
+             PreparedStatement stmt = conn.prepareStatement("SELECT id, name, email, city, password, role FROM usersDB ");
+//             WHERE role != 'manager'
 
              ResultSet rs = stmt.executeQuery()) {
 
@@ -254,6 +256,20 @@ public class UserRepository implements UserRepositoryInterface {
         }catch (SQLException e){
             Log.error("Error while deleting user");
             e.printStackTrace();
+        }
+    }
+    public void updateUserInfo(User user){
+        Log.info("start updating user info");
+        String sql = "Update usersDB SET name = ?, city = ?, email = ? WHERE id = ?";
+        try(Connection conn = DBConnection.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)){
+            stmt.setString(1, user.getName());
+            stmt.setString(2, user.getCity());
+            stmt.setString(3, user.getEmail());
+            stmt.setInt(4, user.getID());
+            stmt.executeUpdate();
+        Log.info("User info was updated");
+        }catch (SQLException e){
+            Log.error("Error while updating user info");
         }
     }
 

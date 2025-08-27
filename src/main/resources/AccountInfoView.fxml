@@ -12,10 +12,10 @@
             <Font size="27.0" />
          </font>
       </Text>
-      <Text fx:id="userName" layoutX="12.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name: " />
+      <Text  layoutX="12.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name: " />
       <Button layoutX="17.0" layoutY="291.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="118.0" text="Sign out " />
       <Button layoutX="16.0" layoutY="348.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="118.0" text="Delete account" />
-      <Text layoutX="16.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personl info">
+      <Text layoutX="12.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personl info">
          <font>
             <Font size="16.0" />
          </font>
@@ -23,9 +23,10 @@
       <Text layoutX="13.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City: " />
       <Text layoutX="13.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email: " />
       <Text layoutX="14.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role:" />
-      <Text fx:id="userCity" layoutX="61.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fx:id="userName" layoutX="61.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
       <Text fx:id="userEmail" layoutX="61.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
       <Text fx:id="userRole" layoutX="62.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="61.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fx:id="userCity" layoutX="61.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Button layoutX="523.0" layoutY="60.0" mnemonicParsing="false" text="Edit" onAction="#editUserInfo"/>
    </children>
 </AnchorPane>
