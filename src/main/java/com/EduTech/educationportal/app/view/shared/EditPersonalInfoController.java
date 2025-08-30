@@ -5,8 +5,10 @@ import com.EduTech.educationportal.interfaces.view.SetupControllerInterface;
 import com.EduTech.educationportal.model.entities.User;
 import com.EduTech.educationportal.presenter.shared.EditPersonalInfoPresenter;
 import com.EduTech.educationportal.utils.Log;
+import com.EduTech.educationportal.utils.ViewNavigator;
 import javafx.fxml.FXML;
 
+import javafx.scene.Node;
 import javafx.scene.control.TextField;
 import javafx.event.ActionEvent;
 
@@ -46,6 +48,11 @@ public class EditPersonalInfoController implements EditPersonalInfoViewInterface
         nameField.setText(user.getName());
         cityField.setText(user.getCity());
         emailField.setText(user.getEmail());
+    }
+    @FXML
+    public void returnToPreviousForm(ActionEvent event){
+        Log.info("Returning to previous form");
+        ViewNavigator.goBack((Node) event.getSource());
     }
 
 

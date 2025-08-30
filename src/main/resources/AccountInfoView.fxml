@@ -5,6 +5,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Text layoutX="251.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account">
@@ -28,5 +31,14 @@
       <Text fx:id="userRole" layoutX="62.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
       <Text fx:id="userCity" layoutX="61.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
       <Button layoutX="523.0" layoutY="60.0" mnemonicParsing="false" text="Edit" onAction="#editUserInfo"/>
+      <Button onAction="#returnToPreviousForm">
+         <graphic>
+            <ImageView fitHeight="20" fitWidth="20">
+               <image>
+                  <Image url="@/images/arrow_back.png"/>
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
    </children>
 </AnchorPane>

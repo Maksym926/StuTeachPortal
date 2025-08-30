@@ -9,6 +9,7 @@ import com.EduTech.educationportal.interfaces.view.SetupControllerInterface;
 import com.EduTech.educationportal.model.entities.User;
 import com.EduTech.educationportal.presenter.shared.AccountInfoPresenter;
 import com.EduTech.educationportal.presenter.shared.EditPersonalInfoPresenter;
+import com.EduTech.educationportal.utils.Log;
 import com.EduTech.educationportal.utils.ViewNavigator;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -47,5 +48,10 @@ public class AccountInfoController implements AccountInfoViewInterface, SetupCon
         UserRepositoryInterface userRepositoryInterface = new UserRepository();
         EditPersonalInfoPresenterInterface editPersonalInfoPresenterInterface = new EditPersonalInfoPresenter(editPersonalInfoViewInterface, userRepositoryInterface);
         ViewNavigator.switchScene((Node)event.getSource(), "/EditPersonalInfo.fxml", "Edit personal info", editPersonalInfoViewInterface, true);
+    }
+    @FXML
+    public void returnToPreviousForm(ActionEvent event){
+        Log.info("Returning to previous form");
+        ViewNavigator.goBack((Node) event.getSource());
     }
 }

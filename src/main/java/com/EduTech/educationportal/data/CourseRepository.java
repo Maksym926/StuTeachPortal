@@ -2,6 +2,7 @@ package com.EduTech.educationportal.data;
 
 import com.EduTech.educationportal.interfaces.repository.CourseRepositoryInterface;
 import com.EduTech.educationportal.model.entities.Course;
+import com.EduTech.educationportal.model.entities.Teacher;
 import com.EduTech.educationportal.utils.Log;
 import javafx.collections.ObservableList;
 
@@ -56,6 +57,28 @@ public class CourseRepository implements CourseRepositoryInterface {
             e.printStackTrace();
         }
 
+    }
+    public void getCoursesByTeacherID(int teacherID, ObservableList<Course> courses){
+        String sql = "SELECT * FROM coursesDB WHERE teacherID = ?";
+        try(Connection conn = DBConnection.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)) {
+            Log.info("getting teaching courses by teacher ID");
+            stmt.setInt(1, teacherID);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()){
+                Course course = new Course();
+                course.setID(rs.getInt("id"));
+                course.setTitle(rs.getString("courseTitle"));
+                course.setCode(rs.getString("courseCode"));
+                course.setTeacherId(teacherID);
+                course.setDescription(rs.getString("courseDescription"));
+                course.setDuration(rs.getInt("courseDuration"));
+                courses.add(course);
+                Log.info("Courses was successfully parsed");
+            }
+        }catch (SQLException e){
+            Log.error("error while getting courses from DB");
+            e.printStackTrace();
+        }
     }
     public void getAllCourses(ObservableList<Course> courses){
         Log.info("Getting all courses from db");

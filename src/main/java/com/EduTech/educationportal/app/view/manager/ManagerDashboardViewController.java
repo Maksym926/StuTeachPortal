@@ -4,10 +4,7 @@ import com.EduTech.educationportal.app.view.shared.AccountInfoController;
 import com.EduTech.educationportal.app.view.shared.ManageCourseController;
 import com.EduTech.educationportal.data.CourseRepository;
 import com.EduTech.educationportal.data.UserRepository;
-import com.EduTech.educationportal.interfaces.presenter.AccountInfoPresenterInterface;
-import com.EduTech.educationportal.interfaces.presenter.AddCoursePresenterInterface;
-import com.EduTech.educationportal.interfaces.presenter.AddTeacherPresenterInterface;
-import com.EduTech.educationportal.interfaces.presenter.ManageCoursePresenterInterface;
+import com.EduTech.educationportal.interfaces.presenter.*;
 import com.EduTech.educationportal.interfaces.repository.CourseRepositoryInterface;
 import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
 import com.EduTech.educationportal.interfaces.view.*;
@@ -16,6 +13,7 @@ import com.EduTech.educationportal.model.entities.User;
 import com.EduTech.educationportal.presenter.manager.AddCoursePresenter;
 import com.EduTech.educationportal.presenter.manager.AddTeacherPresenter;
 import com.EduTech.educationportal.presenter.manager.ManagerDashboardPresenter;
+import com.EduTech.educationportal.presenter.manager.TeacherInfoPresenter;
 import com.EduTech.educationportal.presenter.shared.AccountInfoPresenter;
 import com.EduTech.educationportal.presenter.shared.ManageCoursePresenter;
 import com.EduTech.educationportal.utils.Log;
@@ -212,6 +210,27 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
         } else {
           List<User> users = getFilteredUsers(selectedLocation, studentCheckBox.isSelected(), teacherCheckBox.isSelected());
           userTable.setItems(FXCollections.observableArrayList(users));
+        }
+
+    }
+    @FXML
+    public void manageUser(ActionEvent event){
+        User selectedUser = userTable.getSelectionModel().getSelectedItem();
+        switch (selectedUser.getRole()){
+            case "student":
+                Log.info("Student was selected");
+
+                break;
+            case "teacher":
+                Log.info("Teacher was selected");
+                TeacherInformationViewInterface teacherInformationViewInterface = new TeacherInformationController(selectedUser);
+                UserRepository userRepository = new UserRepository();
+                CourseRepository courseRepository= new CourseRepository();
+                TeacherInfoPresenterInterface teacherInfoPresenterInterface = new TeacherInfoPresenter(teacherInformationViewInterface, userRepository, courseRepository);
+                ViewNavigator.switchScene((Node)event.getSource(), "/TeacherInformationView.fxml", "Teacher Information", teacherInformationViewInterface, true);
+                break;
+            default:
+                Log.info("Select user...");
         }
 
     }

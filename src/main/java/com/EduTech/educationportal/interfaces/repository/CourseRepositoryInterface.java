@@ -13,5 +13,6 @@ public interface CourseRepositoryInterface {
     void setTeacher(String email, Integer courseID);
     void getAllCourses(ObservableList<Course> courses);
     void updateCourseDescription(Course course);
+    void getCoursesByTeacherID(int teacherID, ObservableList<Course> courses);
 
 }

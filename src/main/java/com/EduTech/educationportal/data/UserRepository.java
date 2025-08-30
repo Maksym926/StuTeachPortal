@@ -90,8 +90,8 @@ public class UserRepository implements UserRepositoryInterface {
     public void getUsers(ObservableList<User> userList){
         Log.info("Start getting teachers from database");
         try (Connection conn = DBConnection.getConnection();
-             PreparedStatement stmt = conn.prepareStatement("SELECT id, name, email, city, password, role FROM usersDB ");
-//             WHERE role != 'manager'
+             PreparedStatement stmt = conn.prepareStatement("SELECT id, name, email, city, password, role FROM usersDB WHERE role != 'manager' ");
+//
 
              ResultSet rs = stmt.executeQuery()) {
 

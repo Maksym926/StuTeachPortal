@@ -52,6 +52,7 @@ public class AuthViewController implements AuthViewInterface {
         Log.info("Starting register");
         String name = nameField.getText();
         String email = emailField.getText();
+
         if(passwordField.getText().equals(repeatPasswordField.getText()) && isValidPassword(passwordField.getText())){
             if(!presenter.checkUserPresence(email)){
                 errorMassageRegister.setText("");
