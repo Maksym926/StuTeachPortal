@@ -14,5 +14,6 @@ public interface CourseRepositoryInterface {
     void getAllCourses(ObservableList<Course> courses);
     void updateCourseDescription(Course course);
     void getCoursesByTeacherID(int teacherID, ObservableList<Course> courses);
+    void unassignCourse(int id);
 
 }

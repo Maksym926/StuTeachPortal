@@ -9,6 +9,7 @@ import com.EduTech.educationportal.interfaces.repository.CourseRepositoryInterfa
 import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
 import com.EduTech.educationportal.interfaces.view.*;
 import com.EduTech.educationportal.model.entities.Manager;
+import com.EduTech.educationportal.model.entities.Teacher;
 import com.EduTech.educationportal.model.entities.User;
 import com.EduTech.educationportal.presenter.manager.AddCoursePresenter;
 import com.EduTech.educationportal.presenter.manager.AddTeacherPresenter;
@@ -101,7 +102,7 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
         List<User> filteredUsers = new ArrayList<>();
         for(User user: userList){
             if(user.getName().toLowerCase().contains(query.toLowerCase()) || user.getEmail().toLowerCase().contains(query.toLowerCase()))
-                filteredUsers.add(user);
+                    filteredUsers.add(user);
         }
         return filteredUsers;
     }
@@ -216,14 +217,16 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
     @FXML
     public void manageUser(ActionEvent event){
         User selectedUser = userTable.getSelectionModel().getSelectedItem();
+
         switch (selectedUser.getRole()){
             case "student":
                 Log.info("Student was selected");
 
                 break;
             case "teacher":
+
                 Log.info("Teacher was selected");
-                TeacherInformationViewInterface teacherInformationViewInterface = new TeacherInformationController(selectedUser);
+                TeacherInformationViewInterface teacherInformationViewInterface = new TeacherInformationController((Teacher) selectedUser);
                 UserRepository userRepository = new UserRepository();
                 CourseRepository courseRepository= new CourseRepository();
                 TeacherInfoPresenterInterface teacherInfoPresenterInterface = new TeacherInfoPresenter(teacherInformationViewInterface, userRepository, courseRepository);

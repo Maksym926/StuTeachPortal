@@ -1,6 +1,7 @@
 package com.EduTech.educationportal.data;
 
 import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
+import com.EduTech.educationportal.model.entities.Student;
 import com.EduTech.educationportal.model.entities.Teacher;
 import com.EduTech.educationportal.model.entities.User;
 import com.EduTech.educationportal.utils.Log;
@@ -90,20 +91,34 @@ public class UserRepository implements UserRepositoryInterface {
     public void getUsers(ObservableList<User> userList){
         Log.info("Start getting teachers from database");
         try (Connection conn = DBConnection.getConnection();
-             PreparedStatement stmt = conn.prepareStatement("SELECT id, name, email, city, password, role FROM usersDB WHERE role != 'manager' ");
+             PreparedStatement stmt = conn.prepareStatement("SELECT id, name, email, city, subject, role FROM usersDB WHERE role != 'manager' ");
 //
 
              ResultSet rs = stmt.executeQuery()) {
 
             while (rs.next()) {
-                Log.info("Get teachers from database");
-                int id = rs.getInt("id");
-                String name = rs.getString("name");
-                String email = rs.getString("email");
-                String city = rs.getString("city");
-                String password = rs.getString("password");
                 String role = rs.getString("role");
-                userList.add(new User(id, name, email, city, password, role));
+                User user = new User();
+                if ("teacher".equals(role)) {
+                    Teacher teacher = new Teacher();
+                    teacher.setID(rs.getInt("id"));
+                    teacher.setName(rs.getString("name"));
+                    teacher.setEmail( rs.getString("email"));
+                    teacher.setCity(rs.getString("city"));
+                    teacher.setSubject(rs.getInt("subject"));
+                    teacher.setRole(role);
+                    user = teacher;
+                }else if("student".equals(role)){
+                    Student student = new Student();
+                    student.setID(rs.getInt("id"));
+                    student.setName(rs.getString("name"));
+                    student.setEmail(rs.getString("email"));
+                    student.setCity(rs.getString("city"));
+                    student.setRole(role);
+                    user = student;
+                }
+
+                userList.add(user);
             }
 
         } catch (SQLException e) {
@@ -215,6 +230,18 @@ public class UserRepository implements UserRepositoryInterface {
         }
         return null;
 
+    }
+    public void unassignCourse(int id){
+        Log.info("Deleting teaching course");
+        String sql = "UPDATE usersDB SET subject = NULL WHERE id = ?";
+        try(Connection conn = DBConnection.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)){
+            stmt.setInt(1, id);
+            stmt.executeUpdate();
+            Log.info("Teaching course was deleted");
+
+        }catch (SQLException e){
+            Log.error("error occur while trying to delete teaching course");
+        }
     }
     public void createDefaultManager(String firstName, String email, String password, String role){
         String sql = "SELECT * FROM usersDB where role = ?";

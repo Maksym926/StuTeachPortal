@@ -30,7 +30,7 @@ public class DBConnection {
             stmt.execute(usersDBSQL);
             Log.info("Users table created or already exists.");
 
-//            String deleteDBSQL2 = "DROP TABLE IF EXISTS coursesDB";
+//            String deleteDBSQL2 = "DROP TABLE IF EXISTS usersDB";
 //            stmt.execute(deleteDBSQL2);
             String subjectsDBSQL = "CREATE TABLE IF NOT EXISTS coursesDB (" +
                     "id INT AUTO_INCREMENT PRIMARY KEY," +

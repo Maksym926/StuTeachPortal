@@ -5,4 +5,5 @@ import javafx.collections.ObservableList;
 
 public interface TeacherInfoPresenterInterface {
     void setTeachingCourses(int teacherID, ObservableList<Course> courses);
+    void unassignTeachingCourse(int courseID);
 }

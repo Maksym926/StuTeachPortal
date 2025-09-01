@@ -13,6 +13,7 @@ import com.EduTech.educationportal.interfaces.view.ManageCourseContentInterface;
 import com.EduTech.educationportal.interfaces.view.SetupControllerInterface;
 import com.EduTech.educationportal.model.aws.S3Downloader;
 import com.EduTech.educationportal.model.entities.Course;
+import com.EduTech.educationportal.model.entities.Teacher;
 import com.EduTech.educationportal.model.entities.User;
 import com.EduTech.educationportal.presenter.shared.MainMenuPresenter;
 import com.EduTech.educationportal.presenter.shared.ManageCourseContentPresenter;
@@ -52,7 +53,9 @@ public class App extends Application {
         userRepository.getUsers(testList);
 
         for (User user : testList) {
-            Log.warn("All user's locations and name : " + user.getEmail() + " " + user.getPassword());
+            if(user instanceof Teacher teacher){
+                Log.warn("Name " + teacher.getName() + "Subject " + teacher.getSubject());
+            }
         }
 
 

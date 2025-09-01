@@ -80,6 +80,18 @@ public class CourseRepository implements CourseRepositoryInterface {
             e.printStackTrace();
         }
     }
+    public void unassignCourse(int id){
+        Log.info("Deleting teaching course");
+        String sql = "UPDATE coursesDB SET teacherID = NULL WHERE teacherID = ?";
+        try(Connection conn = DBConnection.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)){
+            stmt.setInt(1, id);
+            stmt.executeUpdate();
+            Log.info("Teaching course was deleted");
+
+        }catch (SQLException e){
+            Log.error("error occur while trying to delete teaching course");
+        }
+    }
     public void getAllCourses(ObservableList<Course> courses){
         Log.info("Getting all courses from db");
         String sql = "SELECT * From coursesDB";
@@ -102,6 +114,7 @@ public class CourseRepository implements CourseRepositoryInterface {
             e.printStackTrace();
         }
     }
+
     @Override
     public void setSubject(String courseTitle, Integer teacherID) {
         Log.info("Entering setSubject method");

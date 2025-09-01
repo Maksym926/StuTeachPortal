@@ -6,12 +6,17 @@ import com.EduTech.educationportal.model.entities.Course;
 import com.EduTech.educationportal.model.entities.Teacher;
 import com.EduTech.educationportal.model.entities.User;
 import com.EduTech.educationportal.presenter.manager.TeacherInfoPresenter;
+import com.EduTech.educationportal.utils.Log;
+import com.EduTech.educationportal.utils.ViewNavigator;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 import javafx.scene.text.Text;
+
+import javafx.event.ActionEvent;
 
 public class TeacherInformationController implements TeacherInformationViewInterface, SetupControllerInterface {
 
@@ -26,10 +31,12 @@ public class TeacherInformationController implements TeacherInformationViewInter
 
     private ObservableList<Course> teachingCourses = FXCollections.observableArrayList();
 
-    User selectedUser;
+    Teacher selectedTeacher;
 
-    public TeacherInformationController(User selectedUser){
-        this.selectedUser = selectedUser;
+    public TeacherInformationController(Teacher selectedTeacher){
+
+        this.selectedTeacher = selectedTeacher;
+
     }
 
     TeacherInfoPresenter presenter;
@@ -40,10 +47,17 @@ public class TeacherInformationController implements TeacherInformationViewInter
 
     @Override
     public void setup() {
-        presenter.setTeachingCourses(selectedUser.getID(), teachingCourses);
-        teacherName.setText(selectedUser.getName());
-        teacherLocation.setText(selectedUser.getCity());
-        teacherEmail.setText(selectedUser.getEmail());
+
+        teacherName.setText(selectedTeacher.getName());
+        teacherLocation.setText(selectedTeacher.getCity());
+        teacherEmail.setText(selectedTeacher.getEmail());
+        setUpTeachingCoursesList();
+
+
+    }
+    private void setUpTeachingCoursesList(){
+        teachingCourses.clear();
+        presenter.setTeachingCourses(selectedTeacher.getID(), teachingCourses);
         teachingCoursesListView.setItems(teachingCourses);
         teachingCoursesListView.setCellFactory(list -> new ListCell<Course>(){
             @Override
@@ -55,8 +69,23 @@ public class TeacherInformationController implements TeacherInformationViewInter
                 else {
                     setText(course.getTitle());
                 }
-            }
+              }
         });
 
     }
+
+    @FXML
+    public void unassignCourse(ActionEvent event){
+        Log.info("Unassign course");
+        presenter.unassignTeachingCourse(selectedTeacher.getID());
+        setUpTeachingCoursesList();
+
+    }
+    @FXML
+    public void returnToPreviousForm(ActionEvent event){
+        Log.info("Returning to previous form");
+        ViewNavigator.goBack((Node) event.getSource());
+    }
+
+
 }

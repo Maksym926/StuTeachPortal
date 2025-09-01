@@ -17,6 +17,9 @@ public class Teacher extends User {
     public int getSubject() {
         return subject;
     }
+    public void setSubject(Integer subject){
+        this.subject = subject;
+    }
 
 
 }

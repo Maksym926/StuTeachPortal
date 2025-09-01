@@ -21,4 +21,8 @@ public class TeacherInfoPresenter implements TeacherInfoPresenterInterface {
         courseRepository.getCoursesByTeacherID(teacherID, courses);
 
     }
+    public void unassignTeachingCourse(int id){
+        userRepository.unassignCourse(id);
+        courseRepository.unassignCourse(id);
+    }
 }

@@ -20,4 +20,5 @@ public interface UserRepositoryInterface {
 
     User getTeacherByID(int id);
     void updateUserInfo(User user);
+    void unassignCourse(int id);
 }
