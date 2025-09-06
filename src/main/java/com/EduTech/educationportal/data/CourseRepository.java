@@ -10,6 +10,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class CourseRepository implements CourseRepositoryInterface {
@@ -112,6 +113,31 @@ public class CourseRepository implements CourseRepositoryInterface {
         }catch (SQLException e){
             Log.error("Error while getting all courses");
             e.printStackTrace();
+        }
+    }
+    public List<Course> getAllCourses(){
+        List<Course> allCoursesList = new ArrayList<>();
+        Log.info("Getting all courses from db");
+        String sql = "SELECT * From coursesDB";
+        try(Connection conn = DBConnection.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)){
+            ResultSet rs = stmt.executeQuery();
+            while(rs.next()){
+                Course course = new Course();
+                course.setID(rs.getInt("id"));
+                course.setTitle(rs.getString("courseTitle"));
+                course.setCode(rs.getString("courseCode"));
+                course.setTeacherId(rs.getInt("teacherID"));
+                course.setDescription(rs.getString("courseDescription"));
+                course.setDuration(rs.getInt("courseDuration"));
+                allCoursesList.add(course);
+                Log.info("Course was successfully parsed");
+            }
+            return allCoursesList;
+
+        }catch (SQLException e){
+            Log.error("Error while getting all courses");
+            e.printStackTrace();
+            return null;
         }
     }
 

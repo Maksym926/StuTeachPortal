@@ -3,10 +3,12 @@ package com.EduTech.educationportal.app.view.auth;
 import com.EduTech.educationportal.app.view.manager.ManagerDashboardViewController;
 import com.EduTech.educationportal.app.view.student.StudentDashboardViewController;
 import com.EduTech.educationportal.app.view.teacher.TeacherDashboardViewController;
+import com.EduTech.educationportal.data.CourseRepository;
 import com.EduTech.educationportal.data.UserRepository;
 import com.EduTech.educationportal.interfaces.presenter.ManagerPresenterInterface;
 import com.EduTech.educationportal.interfaces.presenter.StudentPresenterInterface;
 import com.EduTech.educationportal.interfaces.presenter.TeacherPresenterInterface;
+import com.EduTech.educationportal.interfaces.repository.CourseRepositoryInterface;
 import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
 import com.EduTech.educationportal.interfaces.view.AuthViewInterface;
 import com.EduTech.educationportal.interfaces.view.ManagerDashboardViewInterface;
@@ -94,7 +96,8 @@ public class AuthViewController implements AuthViewInterface {
             case "student":
                 Log.info("Opening student dashboard");
                 StudentDashboardViewInterface StudentDashboardView = new StudentDashboardViewController(currentUser);
-                StudentPresenterInterface StudentDashboardPresenter = new StudentDashboardPresenter(StudentDashboardView);
+                CourseRepositoryInterface courseRepository = new CourseRepository();
+                StudentPresenterInterface StudentDashboardPresenter = new StudentDashboardPresenter(StudentDashboardView, courseRepository);
                 ViewNavigator.switchScene((Node)event.getSource(), "/StudentDashboard.fxml", "Student Dashboard", StudentDashboardView, true);
                 break;
             case "teacher":

@@ -41,8 +41,8 @@
       <Button layoutX="428.0" layoutY="178.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0" text="Assign new course" />
       <ListView fx:id="teachingCoursesListView" layoutX="12.0" layoutY="213.0" prefHeight="200.0" prefWidth="548.0" />
       <Button layoutX="286.0" layoutY="178.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0" text="Unassign course" onAction="#unassignCourse"/>
-      <Button layoutX="14.0" layoutY="416.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0" text="Delete Account" />
-      <Button layoutX="506.0" layoutY="17.0" mnemonicParsing="false" text="Edit" />
+      <Button layoutX="14.0" layoutY="416.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0" text="Delete Account" onAction="#deleteAccount"/>
+      <Button layoutX="506.0" layoutY="17.0" mnemonicParsing="false" text="Edit"  onAction="#editPersonalInfo"/>
       <Button onAction="#returnToPreviousForm">
          <graphic>
             <ImageView fitHeight="20" fitWidth="20">

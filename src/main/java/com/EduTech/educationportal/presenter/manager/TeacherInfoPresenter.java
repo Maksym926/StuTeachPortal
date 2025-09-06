@@ -25,4 +25,7 @@ public class TeacherInfoPresenter implements TeacherInfoPresenterInterface {
         userRepository.unassignCourse(id);
         courseRepository.unassignCourse(id);
     }
+    public void deleteTeacherAccount(String email){
+        userRepository.deleteUser(email);
+    }
 }

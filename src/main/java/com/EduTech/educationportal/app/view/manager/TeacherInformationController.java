@@ -1,11 +1,16 @@
 package com.EduTech.educationportal.app.view.manager;
 
+import com.EduTech.educationportal.app.view.shared.EditPersonalInfoController;
+import com.EduTech.educationportal.data.UserRepository;
+import com.EduTech.educationportal.interfaces.presenter.EditPersonalInfoPresenterInterface;
+import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
+import com.EduTech.educationportal.interfaces.view.EditPersonalInfoViewInterface;
 import com.EduTech.educationportal.interfaces.view.SetupControllerInterface;
 import com.EduTech.educationportal.interfaces.view.TeacherInformationViewInterface;
 import com.EduTech.educationportal.model.entities.Course;
 import com.EduTech.educationportal.model.entities.Teacher;
-import com.EduTech.educationportal.model.entities.User;
 import com.EduTech.educationportal.presenter.manager.TeacherInfoPresenter;
+import com.EduTech.educationportal.presenter.shared.EditPersonalInfoPresenter;
 import com.EduTech.educationportal.utils.Log;
 import com.EduTech.educationportal.utils.ViewNavigator;
 import javafx.collections.FXCollections;
@@ -29,7 +34,7 @@ public class TeacherInformationController implements TeacherInformationViewInter
 
     @FXML ListView<Course> teachingCoursesListView;
 
-    private ObservableList<Course> teachingCourses = FXCollections.observableArrayList();
+    private final ObservableList<Course> teachingCoursesList = FXCollections.observableArrayList();
 
     Teacher selectedTeacher;
 
@@ -56,9 +61,9 @@ public class TeacherInformationController implements TeacherInformationViewInter
 
     }
     private void setUpTeachingCoursesList(){
-        teachingCourses.clear();
-        presenter.setTeachingCourses(selectedTeacher.getID(), teachingCourses);
-        teachingCoursesListView.setItems(teachingCourses);
+        teachingCoursesList.clear();
+        presenter.setTeachingCourses(selectedTeacher.getID(), teachingCoursesList);
+        teachingCoursesListView.setItems(teachingCoursesList);
         teachingCoursesListView.setCellFactory(list -> new ListCell<Course>(){
             @Override
             protected void updateItem(Course course, boolean empty){
@@ -85,6 +90,17 @@ public class TeacherInformationController implements TeacherInformationViewInter
     public void returnToPreviousForm(ActionEvent event){
         Log.info("Returning to previous form");
         ViewNavigator.goBack((Node) event.getSource());
+    }
+    @FXML
+    public void editPersonalInfo(ActionEvent event){
+        EditPersonalInfoViewInterface editPersonalInfoViewInterface = new EditPersonalInfoController(selectedTeacher);
+        UserRepositoryInterface userRepositoryInterface = new UserRepository();
+        EditPersonalInfoPresenterInterface editPersonalInfoPresenterInterface = new EditPersonalInfoPresenter(editPersonalInfoViewInterface, userRepositoryInterface);
+        ViewNavigator.switchScene((Node)event.getSource(), "/EditPersonalInfo.fxml", "Edit personal info", editPersonalInfoViewInterface, true);
+    }
+    @FXML
+    public void deleteAccount(ActionEvent event){
+        presenter.deleteTeacherAccount(selectedTeacher.getEmail());
     }
 
 
