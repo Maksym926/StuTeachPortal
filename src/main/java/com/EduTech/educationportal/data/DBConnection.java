@@ -76,6 +76,16 @@ public class DBConnection {
             stmt.execute(subTopicDBSQL);
             Log.info("subTopic table was created or already exists");
 
+            String enrolmentTable = "CREATE TABLE IF NOT EXISTS enrolmentTable (" +
+                    "id INT AUTO_INCREMENT PRIMARY KEY, " +
+                    "studentID INT, " +
+                    "courseID INT " +
+                    ")";
+            stmt.execute(enrolmentTable);
+            Log.info("enrolment table was created or already exists");
+
+
+
 
 
         } catch (SQLException e) {

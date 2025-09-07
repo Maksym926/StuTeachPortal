@@ -1,11 +1,18 @@
 package com.EduTech.educationportal.app.view.student;
+import com.EduTech.educationportal.app.view.shared.CourseDescriptionPreviewController;
+import com.EduTech.educationportal.data.EnrolmentRepository;
+import com.EduTech.educationportal.interfaces.presenter.CourseDescriptionPresenterInterface;
+import com.EduTech.educationportal.interfaces.repository.EnrolmentRepositoryInterface;
+import com.EduTech.educationportal.interfaces.view.CourseDescriptionPreviewInterface;
 import com.EduTech.educationportal.interfaces.view.SetupControllerInterface;
 import com.EduTech.educationportal.interfaces.view.StudentDashboardViewInterface;
 import com.EduTech.educationportal.model.entities.Course;
 import com.EduTech.educationportal.model.entities.Student;
 import com.EduTech.educationportal.model.entities.User;
+import com.EduTech.educationportal.presenter.student.CourseDescriptionPresenter;
 import com.EduTech.educationportal.presenter.student.StudentDashboardPresenter;
 import com.EduTech.educationportal.utils.Log;
+import com.EduTech.educationportal.utils.ViewNavigator;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -55,6 +62,11 @@ public class StudentDashboardViewController implements StudentDashboardViewInter
                         setText(null);
                     } else {
                         setText(course.getTitle());
+                        setOnMouseClicked(event -> {
+                            if(event.getClickCount() == 2){
+                                openCourseDescriptionWindow(course);
+                            }
+                        });
                     }
                 }
             });
@@ -66,5 +78,11 @@ public class StudentDashboardViewController implements StudentDashboardViewInter
     }
     public void setSubscribedCoursesList(List<Course> newSubscribedCoursesList){
         subscribedCoursesList.addAll(newSubscribedCoursesList);
+    }
+    private void openCourseDescriptionWindow(Course course){
+        EnrolmentRepositoryInterface enrolmentRepositoryInterface = new EnrolmentRepository();
+        CourseDescriptionPreviewInterface courseDescriptionPreviewInterface = new CourseDescriptionPreviewController(course, student);
+        CourseDescriptionPresenterInterface courseDescriptionPresenterInterface = new CourseDescriptionPresenter(enrolmentRepositoryInterface, courseDescriptionPreviewInterface);
+        ViewNavigator.switchScene(courseTabPane, "/CourseDescriptionPreviewStudentDashboard.fxml", "Course description", courseDescriptionPreviewInterface, true);
     }
 }

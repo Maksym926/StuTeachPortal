@@ -1,13 +1,17 @@
 package com.EduTech.educationportal.app.view.shared;
 
 import com.EduTech.educationportal.data.CourseRepository;
+import com.EduTech.educationportal.data.EnrolmentRepository;
 import com.EduTech.educationportal.interfaces.presenter.EditCourseDescriptionPresenterInterface;
 import com.EduTech.educationportal.interfaces.repository.CourseRepositoryInterface;
+import com.EduTech.educationportal.interfaces.repository.EnrolmentRepositoryInterface;
 import com.EduTech.educationportal.interfaces.view.CourseDescriptionPreviewInterface;
 import com.EduTech.educationportal.interfaces.view.EditCourseDescriptionInterface;
 import com.EduTech.educationportal.interfaces.view.SetupControllerInterface;
 import com.EduTech.educationportal.model.entities.Course;
+import com.EduTech.educationportal.model.entities.User;
 import com.EduTech.educationportal.presenter.shared.EditCourseDescriptionPresenter;
+import com.EduTech.educationportal.presenter.student.CourseDescriptionPresenter;
 import com.EduTech.educationportal.utils.Log;
 import com.EduTech.educationportal.utils.ViewNavigator;
 import javafx.event.ActionEvent;
@@ -24,6 +28,9 @@ public class CourseDescriptionPreviewController implements CourseDescriptionPrev
     @FXML Text courseDescription;
     @FXML Text courseDuration;
 
+    User student;
+    CourseDescriptionPresenter presenter;
+
     @Override
     public void setup() {
         courseTitle.setText(course.getTitle());
@@ -35,6 +42,11 @@ public class CourseDescriptionPreviewController implements CourseDescriptionPrev
 
     public CourseDescriptionPreviewController(Course course){
         this.course = course;
+    }
+
+    public CourseDescriptionPreviewController(Course course, User student){
+        this.course = course;
+        this.student = student;
     }
     @FXML
     public void returnToPreviousForm(ActionEvent event){
@@ -48,5 +60,13 @@ public class CourseDescriptionPreviewController implements CourseDescriptionPrev
         EditCourseDescriptionPresenterInterface editCourseDescriptionPresenterInterface = new EditCourseDescriptionPresenter(editCourseDescriptionInterface, courseRepositoryInterface);
         ViewNavigator.switchScene((Node)event.getSource(), "/EditCourseDescriptionView.fxml", "Edit Course", editCourseDescriptionInterface, true);
     }
+    @FXML
+    public void subscribeOnCourse(){
+        presenter.subscribeStudentOnCourse(course, student);
+    }
 
+    @Override
+    public void setPresenter(CourseDescriptionPresenter presenter) {
+        this.presenter = presenter;
+    }
 }
