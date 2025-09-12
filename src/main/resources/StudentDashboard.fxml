@@ -25,7 +25,7 @@
               <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="332.0" prefWidth="120.0">
                       <children>
-                          <ListView fx:id="subscribedCoursesList" prefHeight="279.0" prefWidth="412.0" />
+                          <ListView fx:id="subscribedCoursesListView" prefHeight="279.0" prefWidth="412.0" />
                       </children></AnchorPane>
               </content>
           </Tab>

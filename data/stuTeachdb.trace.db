@@ -3099,3 +3099,231 @@ UPDATE usersDB SET teacherID = NULL WHERE teacherID = ? [42122-224]
 	at javafx.graphics@24.0.1/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
 	at javafx.graphics@24.0.1/com.sun.glass.ui.win.WinApplication.lambda$runLoop$0(WinApplication.java:168)
 	at java.base/java.lang.Thread.run(Thread.java:1570)
+2025-09-12 17:37:26.064574+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COURSEDB" not found; SQL statement:
+    SELECT c.courseID, c.courseCode, c.courseTitle,
+           c.teacherID, c.courseDescription, c.courseDuration
+    FROM enrolmentTable e
+    JOIN courseDB c ON e.courseID = c.courseID
+    WHERE e.studentID = ?
+ [42102-224]
+2025-09-12 17:37:29.039334+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COURSEDB" not found; SQL statement:
+    SELECT c.courseID, c.courseCode, c.courseTitle,
+           c.teacherID, c.courseDescription, c.courseDuration
+    FROM enrolmentTable e
+    JOIN courseDB c ON e.courseID = c.courseID
+    WHERE e.studentID = ?
+ [42102-224]
+2025-09-12 17:38:29.282904+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COURSEDB" not found; SQL statement:
+    SELECT c.courseID, c.courseCode, c.courseTitle,
+           c.teacherID, c.courseDescription, c.courseDuration
+    FROM enrolmentTable e
+    JOIN courseDB c ON e.courseID = c.courseID
+    WHERE e.studentID = ?
+ [42102-224]
+2025-09-12 17:42:56.276935+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "C.COURSEID" not found; SQL statement:
+SELECT c.courseID, c.courseCode, c.courseTitle,
+           c.teacherID, c.courseDescription, c.courseDuration
+    FROM enrolmentTable e
+    JOIN coursesDB c ON e.courseID = c.courseID
+    WHERE e.studentID = ? [42122-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1170)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:489)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:316)
+	at com.EduTech.educationportal.data.EnrolmentRepository.getSubscribedCourses(EnrolmentRepository.java:42)
+	at com.EduTech.educationportal.presenter.student.StudentDashboardPresenter.setSubscribedCourses(StudentDashboardPresenter.java:28)
+	at com.EduTech.educationportal.app.view.student.StudentDashboardViewController.lambda$setup$2(StudentDashboardViewController.java:76)
+	at javafx.base@24.0.1/com.sun.javafx.binding.ExpressionHelper$Generic.fireValueChangedEvent(ExpressionHelper.java:386)
+	at javafx.base@24.0.1/com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:91)
+	at javafx.base@24.0.1/javafx.beans.property.ReadOnlyObjectPropertyBase.fireValueChangedEvent(ReadOnlyObjectPropertyBase.java:80)
+	at javafx.base@24.0.1/javafx.beans.property.ReadOnlyObjectWrapper.fireValueChangedEvent(ReadOnlyObjectWrapper.java:103)
+	at javafx.base@24.0.1/javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:113)
+	at javafx.base@24.0.1/javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:147)
+	at javafx.controls@24.0.1/javafx.scene.control.SelectionModel.setSelectedItem(SelectionModel.java:105)
+	at javafx.controls@24.0.1/javafx.scene.control.TabPane$TabPaneSelectionModel.select(TabPane.java:652)
+	at javafx.controls@24.0.1/javafx.scene.control.TabPane$TabPaneSelectionModel.select(TabPane.java:670)
+	at javafx.controls@24.0.1/javafx.scene.control.TabPane$TabPaneSelectionModel.select(TabPane.java:589)
+	at javafx.controls@24.0.1/com.sun.javafx.scene.control.behavior.TabPaneBehavior.selectTab(TabPaneBehavior.java:82)
+	at javafx.controls@24.0.1/javafx.scene.control.skin.TabPaneSkin$TabHeaderSkin$5.handle(TabPaneSkin.java:1535)
+	at javafx.controls@24.0.1/javafx.scene.control.skin.TabPaneSkin$TabHeaderSkin$5.handle(TabPaneSkin.java:1513)
+	at javafx.base@24.0.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@24.0.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@24.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@24.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@24.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@24.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@24.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@24.0.1/javafx.event.Event.fireEvent(Event.java:199)
+	at javafx.graphics@24.0.1/javafx.scene.Scene$MouseHandler.process(Scene.java:4005)
+	at javafx.graphics@24.0.1/javafx.scene.Scene.processMouseEvent(Scene.java:1934)
+	at javafx.graphics@24.0.1/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2763)
+	at javafx.graphics@24.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.get(GlassViewEventHandler.java:352)
+	at javafx.graphics@24.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.get(GlassViewEventHandler.java:254)
+	at javafx.graphics@24.0.1/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@24.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:386)
+	at javafx.graphics@24.0.1/com.sun.glass.ui.View.handleMouseEvent(View.java:560)
+	at javafx.graphics@24.0.1/com.sun.glass.ui.View.notifyMouse(View.java:946)
+	at javafx.graphics@24.0.1/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@24.0.1/com.sun.glass.ui.win.WinApplication.lambda$runLoop$0(WinApplication.java:168)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2025-09-12 17:43:50.825251+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "C.COURSEID" not found; SQL statement:
+SELECT c.courseID, c.courseCode, c.courseTitle,
+           c.teacherID, c.courseDescription, c.courseDuration
+    FROM enrolmentTable e
+    JOIN coursesDB c ON e.courseID = c.courseID
+    WHERE e.studentID = ? [42122-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1170)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:489)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:316)
+	at com.EduTech.educationportal.data.EnrolmentRepository.getSubscribedCourses(EnrolmentRepository.java:42)
+	at com.EduTech.educationportal.presenter.student.StudentDashboardPresenter.setSubscribedCourses(StudentDashboardPresenter.java:28)
+	at com.EduTech.educationportal.app.view.student.StudentDashboardViewController.lambda$setup$2(StudentDashboardViewController.java:76)
+	at javafx.base@24.0.1/com.sun.javafx.binding.ExpressionHelper$Generic.fireValueChangedEvent(ExpressionHelper.java:386)
+	at javafx.base@24.0.1/com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:91)
+	at javafx.base@24.0.1/javafx.beans.property.ReadOnlyObjectPropertyBase.fireValueChangedEvent(ReadOnlyObjectPropertyBase.java:80)
+	at javafx.base@24.0.1/javafx.beans.property.ReadOnlyObjectWrapper.fireValueChangedEvent(ReadOnlyObjectWrapper.java:103)
+	at javafx.base@24.0.1/javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:113)
+	at javafx.base@24.0.1/javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:147)
+	at javafx.controls@24.0.1/javafx.scene.control.SelectionModel.setSelectedItem(SelectionModel.java:105)
+	at javafx.controls@24.0.1/javafx.scene.control.TabPane$TabPaneSelectionModel.select(TabPane.java:652)
+	at javafx.controls@24.0.1/javafx.scene.control.TabPane$TabPaneSelectionModel.select(TabPane.java:670)
+	at javafx.controls@24.0.1/javafx.scene.control.TabPane$TabPaneSelectionModel.select(TabPane.java:589)
+	at javafx.controls@24.0.1/com.sun.javafx.scene.control.behavior.TabPaneBehavior.selectTab(TabPaneBehavior.java:82)
+	at javafx.controls@24.0.1/javafx.scene.control.skin.TabPaneSkin$TabHeaderSkin$5.handle(TabPaneSkin.java:1535)
+	at javafx.controls@24.0.1/javafx.scene.control.skin.TabPaneSkin$TabHeaderSkin$5.handle(TabPaneSkin.java:1513)
+	at javafx.base@24.0.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@24.0.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@24.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@24.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@24.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@24.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@24.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@24.0.1/javafx.event.Event.fireEvent(Event.java:199)
+	at javafx.graphics@24.0.1/javafx.scene.Scene$MouseHandler.process(Scene.java:4005)
+	at javafx.graphics@24.0.1/javafx.scene.Scene.processMouseEvent(Scene.java:1934)
+	at javafx.graphics@24.0.1/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2763)
+	at javafx.graphics@24.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.get(GlassViewEventHandler.java:352)
+	at javafx.graphics@24.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.get(GlassViewEventHandler.java:254)
+	at javafx.graphics@24.0.1/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@24.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:386)
+	at javafx.graphics@24.0.1/com.sun.glass.ui.View.handleMouseEvent(View.java:560)
+	at javafx.graphics@24.0.1/com.sun.glass.ui.View.notifyMouse(View.java:946)
+	at javafx.graphics@24.0.1/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@24.0.1/com.sun.glass.ui.win.WinApplication.lambda$runLoop$0(WinApplication.java:168)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2025-09-12 17:44:21.868850+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "C.COURSEID" not found; SQL statement:
+SELECT c.id, c.courseCode, c.courseTitle,
+           c.teacherID, c.courseDescription, c.courseDuration
+    FROM enrolmentTable e
+    JOIN coursesDB c ON e.courseID = c.courseID
+    WHERE e.studentID = ? [42122-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:148)
+	at org.h2.expression.condition.ConditionAndOr.optimize(ConditionAndOr.java:137)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1177)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:489)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:316)
+	at com.EduTech.educationportal.data.EnrolmentRepository.getSubscribedCourses(EnrolmentRepository.java:42)
+	at com.EduTech.educationportal.presenter.student.StudentDashboardPresenter.setSubscribedCourses(StudentDashboardPresenter.java:28)
+	at com.EduTech.educationportal.app.view.student.StudentDashboardViewController.lambda$setup$2(StudentDashboardViewController.java:76)
+	at javafx.base@24.0.1/com.sun.javafx.binding.ExpressionHelper$Generic.fireValueChangedEvent(ExpressionHelper.java:386)
+	at javafx.base@24.0.1/com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:91)
+	at javafx.base@24.0.1/javafx.beans.property.ReadOnlyObjectPropertyBase.fireValueChangedEvent(ReadOnlyObjectPropertyBase.java:80)
+	at javafx.base@24.0.1/javafx.beans.property.ReadOnlyObjectWrapper.fireValueChangedEvent(ReadOnlyObjectWrapper.java:103)
+	at javafx.base@24.0.1/javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:113)
+	at javafx.base@24.0.1/javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:147)
+	at javafx.controls@24.0.1/javafx.scene.control.SelectionModel.setSelectedItem(SelectionModel.java:105)
+	at javafx.controls@24.0.1/javafx.scene.control.TabPane$TabPaneSelectionModel.select(TabPane.java:652)
+	at javafx.controls@24.0.1/javafx.scene.control.TabPane$TabPaneSelectionModel.select(TabPane.java:670)
+	at javafx.controls@24.0.1/javafx.scene.control.TabPane$TabPaneSelectionModel.select(TabPane.java:589)
+	at javafx.controls@24.0.1/com.sun.javafx.scene.control.behavior.TabPaneBehavior.selectTab(TabPaneBehavior.java:82)
+	at javafx.controls@24.0.1/javafx.scene.control.skin.TabPaneSkin$TabHeaderSkin$5.handle(TabPaneSkin.java:1535)
+	at javafx.controls@24.0.1/javafx.scene.control.skin.TabPaneSkin$TabHeaderSkin$5.handle(TabPaneSkin.java:1513)
+	at javafx.base@24.0.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@24.0.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@24.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@24.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@24.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@24.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@24.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@24.0.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@24.0.1/javafx.event.Event.fireEvent(Event.java:199)
+	at javafx.graphics@24.0.1/javafx.scene.Scene$MouseHandler.process(Scene.java:4005)
+	at javafx.graphics@24.0.1/javafx.scene.Scene.processMouseEvent(Scene.java:1934)
+	at javafx.graphics@24.0.1/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2763)
+	at javafx.graphics@24.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.get(GlassViewEventHandler.java:352)
+	at javafx.graphics@24.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.get(GlassViewEventHandler.java:254)
+	at javafx.graphics@24.0.1/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@24.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:386)
+	at javafx.graphics@24.0.1/com.sun.glass.ui.View.handleMouseEvent(View.java:560)
+	at javafx.graphics@24.0.1/com.sun.glass.ui.View.notifyMouse(View.java:946)
+	at javafx.graphics@24.0.1/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@24.0.1/com.sun.glass.ui.win.WinApplication.lambda$runLoop$0(WinApplication.java:168)
+	at java.base/java.lang.Thread.run(Thread.java:1570)

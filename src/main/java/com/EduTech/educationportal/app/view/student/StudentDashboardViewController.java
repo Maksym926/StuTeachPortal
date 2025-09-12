@@ -48,31 +48,63 @@ public class StudentDashboardViewController implements StudentDashboardViewInter
     @Override
     public void setup() {
 
-        Tab selectedTab = courseTabPane.getSelectionModel().getSelectedItem();
 
-        if (selectedTab == allCoursesTab) {
-            allCoursesList.clear();
-            presenter.setAllCoursesTab();
-            allCoursesListView.setItems(allCoursesList);
-            allCoursesListView.setCellFactory(list -> new ListCell<>() {
-                @Override
-                protected void updateItem(Course course, boolean empty) {
-                    super.updateItem(course, empty);
-                    if (empty || course == null) {
-                        setText(null);
-                    } else {
-                        setText(course.getTitle());
-                        setOnMouseClicked(event -> {
-                            if(event.getClickCount() == 2){
-                                openCourseDescriptionWindow(course);
-                            }
-                        });
+        courseTabPane.getSelectionModel().selectedItemProperty().addListener((obs, oldTab, newTab) ->{
+
+            if(newTab == allCoursesTab){
+                loadAllCourses();
+
+            }else if(newTab == subscribedCoursesTab){
+                subscribedCoursesList.clear();
+                presenter.setSubscribedCourses(student.getID());
+
+                subscribedCoursesListView.setItems(subscribedCoursesList);
+                subscribedCoursesListView.setCellFactory(list -> new ListCell<>() {
+                    @Override
+                    protected void updateItem(Course course, boolean empty) {
+                        super.updateItem(course, empty);
+                        if (empty || course == null) {
+                            setText(null);
+                        } else {
+                            setText(course.getTitle());
+
+                        }
                     }
-                }
-            });
-        }
-    }
+                });
+            }
 
+        });
+        loadAllCourses();
+
+
+
+
+
+
+
+
+    }
+    private void loadAllCourses(){
+        allCoursesList.clear();
+        presenter.setAllCoursesTab();
+        allCoursesListView.setItems(allCoursesList);
+        allCoursesListView.setCellFactory(list -> new ListCell<>() {
+            @Override
+            protected void updateItem(Course course, boolean empty) {
+                super.updateItem(course, empty);
+                if (empty || course == null) {
+                    setText(null);
+                } else {
+                    setText(course.getTitle());
+                    setOnMouseClicked(event -> {
+                        if(event.getClickCount() == 2){
+                            openCourseDescriptionWindow(course);
+                        }
+                    });
+                }
+            }
+        });
+    }
     public void setAllCoursesList(List<Course> newAllCoursesList){
         allCoursesList.addAll(newAllCoursesList);
     }
