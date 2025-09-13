@@ -52,13 +52,10 @@ public class TeacherInformationController implements TeacherInformationViewInter
 
     @Override
     public void setup() {
-
         teacherName.setText(selectedTeacher.getName());
         teacherLocation.setText(selectedTeacher.getCity());
         teacherEmail.setText(selectedTeacher.getEmail());
         setUpTeachingCoursesList();
-
-
     }
     private void setUpTeachingCoursesList(){
         teachingCoursesList.clear();
@@ -76,7 +73,6 @@ public class TeacherInformationController implements TeacherInformationViewInter
                 }
               }
         });
-
     }
 
     @FXML

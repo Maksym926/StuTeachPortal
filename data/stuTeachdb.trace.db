@@ -3327,3 +3327,6 @@ SELECT c.id, c.courseCode, c.courseTitle,
 	at javafx.graphics@24.0.1/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
 	at javafx.graphics@24.0.1/com.sun.glass.ui.win.WinApplication.lambda$runLoop$0(WinApplication.java:168)
 	at java.base/java.lang.Thread.run(Thread.java:1570)
+2025-09-13 18:25:23.480584+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM enrolmentTable WHERE studentID = ?[*], courseID = ?"; SQL statement:
+SELECT * FROM enrolmentTable WHERE studentID = ?, courseID = ? [42000-224]

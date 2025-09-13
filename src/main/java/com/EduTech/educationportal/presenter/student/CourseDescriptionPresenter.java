@@ -21,4 +21,9 @@ public class CourseDescriptionPresenter implements CourseDescriptionPresenterInt
     public void subscribeStudentOnCourse(Course course, User student){
         enrolmentRepository.subscribeStudentOnCourse(course, student);
     }
+    public boolean isSubscribedOnCourse(User user, Course course){
+
+        return  enrolmentRepository.isSubscribedOnCourse(user, course);
+
+    }
 }

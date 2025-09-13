@@ -3,18 +3,18 @@ package com.EduTech.educationportal.app.view.manager;
 import com.EduTech.educationportal.app.view.shared.AccountInfoController;
 import com.EduTech.educationportal.app.view.shared.ManageCourseController;
 import com.EduTech.educationportal.data.CourseRepository;
+import com.EduTech.educationportal.data.EnrolmentRepository;
 import com.EduTech.educationportal.data.UserRepository;
 import com.EduTech.educationportal.interfaces.presenter.*;
 import com.EduTech.educationportal.interfaces.repository.CourseRepositoryInterface;
+import com.EduTech.educationportal.interfaces.repository.EnrolmentRepositoryInterface;
 import com.EduTech.educationportal.interfaces.repository.UserRepositoryInterface;
 import com.EduTech.educationportal.interfaces.view.*;
 import com.EduTech.educationportal.model.entities.Manager;
+import com.EduTech.educationportal.model.entities.Student;
 import com.EduTech.educationportal.model.entities.Teacher;
 import com.EduTech.educationportal.model.entities.User;
-import com.EduTech.educationportal.presenter.manager.AddCoursePresenter;
-import com.EduTech.educationportal.presenter.manager.AddTeacherPresenter;
-import com.EduTech.educationportal.presenter.manager.ManagerDashboardPresenter;
-import com.EduTech.educationportal.presenter.manager.TeacherInfoPresenter;
+import com.EduTech.educationportal.presenter.manager.*;
 import com.EduTech.educationportal.presenter.shared.AccountInfoPresenter;
 import com.EduTech.educationportal.presenter.shared.ManageCoursePresenter;
 import com.EduTech.educationportal.utils.Log;
@@ -221,6 +221,10 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
         switch (selectedUser.getRole()){
             case "student":
                 Log.info("Student was selected");
+                StudentInformationViewInterface studentInformationViewInterface = new StudentInformationController((Student) selectedUser);
+                EnrolmentRepositoryInterface enrolmentRepository = new EnrolmentRepository();
+                StudentInfoPresenterInterface studentInfoPresenterInterface = new StudentInfoPresenter(studentInformationViewInterface, enrolmentRepository);
+                ViewNavigator.switchScene((Node)event.getSource(), "/StudentInformationView.fxml", "Student Information", studentInformationViewInterface, true);
 
                 break;
             case "teacher":

@@ -21,7 +21,7 @@ import javafx.scene.text.Text;
 
 public class CourseDescriptionPreviewController implements CourseDescriptionPreviewInterface, SetupControllerInterface {
 
-    private Course course;
+
     @FXML Text courseTitle;
     @FXML Text courseCode;
     @FXML Text courseInstructor;
@@ -29,6 +29,7 @@ public class CourseDescriptionPreviewController implements CourseDescriptionPrev
     @FXML Text courseDuration;
 
     User student;
+    Course course;
     CourseDescriptionPresenter presenter;
 
     @Override
@@ -62,7 +63,13 @@ public class CourseDescriptionPreviewController implements CourseDescriptionPrev
     }
     @FXML
     public void subscribeOnCourse(){
-        presenter.subscribeStudentOnCourse(course, student);
+        if(!presenter.isSubscribedOnCourse(student, course)){
+            presenter.subscribeStudentOnCourse(course, student);
+        }
+        else{
+            Log.warn("You already subscribed on this course");
+        }
+
     }
 
     @Override

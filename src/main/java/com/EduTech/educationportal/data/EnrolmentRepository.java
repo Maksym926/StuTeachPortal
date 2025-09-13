@@ -4,6 +4,7 @@ import com.EduTech.educationportal.interfaces.repository.EnrolmentRepositoryInte
 import com.EduTech.educationportal.model.entities.Course;
 import com.EduTech.educationportal.model.entities.User;
 import com.EduTech.educationportal.utils.Log;
+import javafx.collections.ObservableList;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -62,4 +63,57 @@ public class EnrolmentRepository implements EnrolmentRepositoryInterface {
 
         return subscribedCourses;
     }
+
+    public boolean isSubscribedOnCourse(User student, Course course){
+        String sql = "SELECT * FROM enrolmentTable WHERE studentID = ? AND courseID = ?";
+        try(Connection conn = DBConnection.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)){
+
+            stmt.setInt(1, student.getID());
+            stmt.setInt(2, course.getID());
+
+            try (ResultSet rs = stmt.executeQuery()) {
+                return rs.next(); // returns true if a row exists
+            }
+        }catch (SQLException e){
+            Log.info("Error while checking subscribed course" + e);
+        }
+        return false;
+    }
+    public List<Course> getCoursesByStudentID(int studentID){
+        List<Course> courses = new ArrayList<>();
+        String sql = "SELECT * FROM enrolmentTable WHERE studentID = ?";
+        try(Connection conn = DBConnection.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)) {
+            Log.info("getting teaching courses by teacher ID");
+            stmt.setInt(1, studentID);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()){
+                Course course = new Course();
+                course.setID(rs.getInt("id"));
+                course.setTitle(rs.getString("courseTitle"));
+                course.setCode(rs.getString("courseCode"));
+                course.setTeacherId(studentID);
+                course.setDescription(rs.getString("courseDescription"));
+                course.setDuration(rs.getInt("courseDuration"));
+                courses.add(course);
+                Log.info("Courses was successfully parsed");
+                return courses;
+            }
+        }catch (SQLException e){
+            Log.error("error while getting courses from DB");
+            e.printStackTrace();
+        }
+        return null;
+    }
+//    public void showSubscribedCourses(){
+//        String sql = "SELECT * FROM enrolmentTable";
+//        try(Connection conn = DBConnection.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)){
+//            ResultSet rs = stmt.executeQuery();
+//            while (rs.next()){
+//                Log.info("StudentID " + rs.getInt("studentID") + " CourseID" + rs.getInt("courseID"));
+//
+//            }
+//        }catch (SQLException e){
+//
+//        }
+//    }
 }

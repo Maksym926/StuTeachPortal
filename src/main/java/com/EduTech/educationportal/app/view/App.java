@@ -3,6 +3,7 @@ import com.EduTech.educationportal.app.view.shared.MainMenuViewController;
 import com.EduTech.educationportal.app.view.shared.ManageCourseContentController;
 import com.EduTech.educationportal.data.CourseContentRepository;
 import com.EduTech.educationportal.data.DBConnection;
+import com.EduTech.educationportal.data.EnrolmentRepository;
 import com.EduTech.educationportal.data.UserRepository;
 import com.EduTech.educationportal.interfaces.presenter.MainMenuPresenterInterface;
 import com.EduTech.educationportal.interfaces.presenter.ManageCourseContentPresenterInterface;
@@ -86,7 +87,10 @@ public class App extends Application {
         stage.setScene(scene);
         stage.setTitle("Main View");
         stage.show();
+        EnrolmentRepository enrolmentRepository = new EnrolmentRepository();
+//        enrolmentRepository.showSubscribedCourses();
         ViewNavigator.addScene("/MainMenuView.fxml", "Main Menu");
+
 //        Course course = new Course(17, "", "", 2, "", 1); // however you're getting it
 //
 //        FXMLLoader loader = new FXMLLoader(getClass().getResource("/ManageCourseContent.fxml"));
