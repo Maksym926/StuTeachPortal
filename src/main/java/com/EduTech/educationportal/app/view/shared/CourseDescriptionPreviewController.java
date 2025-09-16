@@ -49,6 +49,9 @@ public class CourseDescriptionPreviewController implements CourseDescriptionPrev
         this.course = course;
         this.student = student;
     }
+    public CourseDescriptionPreviewController(User student){
+        this.student = student;
+    }
     @FXML
     public void returnToPreviousForm(ActionEvent event){
         Log.info("Returning to previous form");

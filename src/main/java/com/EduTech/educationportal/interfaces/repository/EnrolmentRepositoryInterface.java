@@ -10,4 +10,6 @@ public interface EnrolmentRepositoryInterface {
     List<Course> getSubscribedCourses(int studentId);
     boolean isSubscribedOnCourse(User student, Course course);
     List<Course> getCoursesByStudentID(int studentID);
+    void unassignCourse(int studentID , int courseID);
+    void deleteUser(int userID);
 }

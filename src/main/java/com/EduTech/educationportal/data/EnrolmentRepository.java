@@ -104,6 +104,29 @@ public class EnrolmentRepository implements EnrolmentRepositoryInterface {
         }
         return null;
     }
+    public void unassignCourse(int studentID , int courseID){
+        String sql = "UPDATE enrolmentTable SET courseID = NULL WHERE studentID = ? AND courseID = ?";
+        try(Connection conn = DBConnection.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)){
+            stmt.setInt(1,studentID);
+            stmt.setInt(2, courseID);
+            stmt.executeUpdate();
+            Log.info("You were successfully unsubscribed from the course");
+        }catch (SQLException e){
+            Log.error("Error occur while unassigning from the course" + e);
+        }
+    }
+    public void deleteUser(int userID){
+        String sql = "DELETE FROM enrolmentTable WHERE studentID = ?";
+        Log.info("Deleting user");
+        try(Connection conn = DBConnection.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)){
+            stmt.setInt(1, userID);
+            stmt.executeUpdate();
+            Log.info("User was successfully deleted from enrolmentTable");
+        }catch (SQLException e){
+            Log.error("Error while deleting user");
+            e.printStackTrace();
+        }
+    }
 //    public void showSubscribedCourses(){
 //        String sql = "SELECT * FROM enrolmentTable";
 //        try(Connection conn = DBConnection.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)){

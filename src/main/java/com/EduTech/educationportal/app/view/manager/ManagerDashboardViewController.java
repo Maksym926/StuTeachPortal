@@ -223,7 +223,8 @@ public class ManagerDashboardViewController  implements ManagerDashboardViewInte
                 Log.info("Student was selected");
                 StudentInformationViewInterface studentInformationViewInterface = new StudentInformationController((Student) selectedUser);
                 EnrolmentRepositoryInterface enrolmentRepository = new EnrolmentRepository();
-                StudentInfoPresenterInterface studentInfoPresenterInterface = new StudentInfoPresenter(studentInformationViewInterface, enrolmentRepository);
+                UserRepositoryInterface userRepositoryInterface = new UserRepository();
+                StudentInfoPresenterInterface studentInfoPresenterInterface = new StudentInfoPresenter(studentInformationViewInterface, enrolmentRepository, userRepositoryInterface);
                 ViewNavigator.switchScene((Node)event.getSource(), "/StudentInformationView.fxml", "Student Information", studentInformationViewInterface, true);
 
                 break;
